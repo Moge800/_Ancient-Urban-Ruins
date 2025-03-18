@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <MainButtonDef>
+        <defName>AM_LevelSchedule</defName>
+        <label>level schedule</label>
+        <description>Schedule colonists' activities to certain times of day, and set their allowed areas.</description>
+        <tabWindowClass>AncientMarket_Libraray.MainTabWindow_LevelSchedule</tabWindowClass>
+        <workerClass>AncientMarket_Libraray.MainButtonWorker_LevelSchedule</workerClass>
+        <order>20</order>
+        <defaultHotKey>F9</defaultHotKey>
+        <closesWorldView>true</closesWorldView>
+    </MainButtonDef>
+
+</Defs>

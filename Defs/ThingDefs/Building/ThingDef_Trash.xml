@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef Name="AM_BaseFilth" Abstract="True">
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <selectable>true</selectable>
+        <altitudeLayer>Filth</altitudeLayer>
+        <drawerType>MapMeshOnly</drawerType>
+        <canOverlapZones>true</canOverlapZones>
+        <clearBuildingArea>true</clearBuildingArea>
+        <graphicData>
+          <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <statBases>
+          <Beauty>-15</Beauty>
+          <Cleanliness>-5</Cleanliness>
+          <MaxHitPoints>30</MaxHitPoints>
+        </statBases>
+        <building>
+          <isEdifice>false</isEdifice>
+		  <isTargetable>false</isTargetable>
+        </building>
+         
+    </ThingDef>
+    
+
+    <ThingDef ParentName="AM_BaseFilth">
+      <defName>AM_PotatoChips</defName>
+      <label>potato chips</label>
+      <graphicData>
+        <texPath>Things/Food/PotatoChips</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+   </ThingDef>
+
+   <ThingDef ParentName="AM_BaseFilth">
+    <defName>AM_Filth_DriedBlood</defName>
+    <label>dried blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ruins/DriedBlood</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_BaseFilth">
+    <defName>AM_Filth_ScatteredDocuments</defName>
+    <label>scattered documents</label>
+    <graphicData>
+      <texPath>Things/Building/Ruins/ScatteredDocuments</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_BaseFilth">
+    <defName>AM_Filth_MoldyUniform</defName>
+    <label>ragged uniform</label>
+    <graphicData>
+      <texPath>Things/Building/Ruins/MoldyUniform</texPath>
+    </graphicData>
+  </ThingDef>
+  
+    <ThingDef ParentName="AM_BaseFilth">
+    <defName>AM_Filth_OilSmear</defName>
+    <label>oil smear</label>
+    <graphicData>
+      <texPath>Things/Building/Ruins/OilSmear</texPath>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Experimental discarding sabot -->
+  <SSAAP.label>实验型脱壳穿甲弹</SSAAP.label>
+  <!-- EN: Experimental type ultra-high bore pressure tungsten core armor piercing discarding sabot，only special thick barrels can withstand the chamber pressure of this type of bullet.. -->
+  <SSAAP.description>实验型超高膛压钨芯脱壳穿甲弹，只有特殊的厚壁枪管才能承受这种子弹的膛压，旨在以极限压榨传统弹头及火药性能的方式极限击穿新兴动力装甲。</SSAAP.description>
+  
+</LanguageData>

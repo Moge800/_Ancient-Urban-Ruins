@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ate potato chips -->
+  <AM_PotatoChips.stages.ate_potato_chips.label>吃了薯片</AM_PotatoChips.stages.ate_potato_chips.label>
+  <!-- EN: Mmmmm. Crispy. -->
+  <AM_PotatoChips.stages.ate_potato_chips.description>嗯.....脆脆的</AM_PotatoChips.stages.ate_potato_chips.description>
+  
+  <!-- EN: drank soft drink -->
+  <AM_Softdrink.stages.drank_soft_drink.label>喝了饮料</AM_Softdrink.stages.drank_soft_drink.label>
+  <!-- EN: That sugary taste can make me happy all day long. -->
+  <AM_Softdrink.stages.drank_soft_drink.description>甜甜的味道能让我快乐一整天。</AM_Softdrink.stages.drank_soft_drink.description>
+  
+</LanguageData>

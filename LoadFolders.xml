@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li IfModActive="ceteam.combatextended">CE</li>
+		<li IfModNotActive="CETeam.CombatExtended">Vanilla</li>
+	</v1.5>
+</loadFolders>

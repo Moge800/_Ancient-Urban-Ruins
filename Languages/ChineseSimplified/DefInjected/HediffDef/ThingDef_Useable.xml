@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: essential balm -->
+  <AM_Analgesic.label>风油精</AM_Analgesic.label>
+  <!-- EN: Stimulate the brain with strong essential balm to secrete endorphins for pain relief and improve focus. -->
+  <AM_Analgesic.description>用强效风油精刺激大脑，使它分泌内啡肽，缓解疼痛并提高专注力。</AM_Analgesic.description>
+  <!-- EN: Essential balm -->
+  <AM_Analgesic.labelNoun>风油精</AM_Analgesic.labelNoun>
+  <!-- EN: Essential balm -->
+  <AM_Analgesic.stages.Essential_balm-0.label>风油精</AM_Analgesic.stages.Essential_balm-0.label>
+  <!-- EN: Essential balm -->
+  <AM_Analgesic.stages.Essential_balm-1.label>风油精</AM_Analgesic.stages.Essential_balm-1.label>
+  
+  <!-- EN: Antibiotic -->
+  <AM_AntibioticS.label>抗生素</AM_AntibioticS.label>
+  <!-- EN: Spectral antibiotics, used to combat various bacterial diseases. -->
+  <AM_AntibioticS.description>广谱抗生素，用于对抗各种细菌性疾病。</AM_AntibioticS.description>
+  <!-- EN: Antibiotic -->
+  <AM_AntibioticS.labelNoun>抗生素</AM_AntibioticS.labelNoun>
+  <!-- EN: Antibiotic -->
+  <AM_AntibioticS.stages.Antibiotic-0.label>抗生素</AM_AntibioticS.stages.Antibiotic-0.label>
+  <!-- EN: Antibiotic -->
+  <AM_AntibioticS.stages.Antibiotic-1.label>抗生素</AM_AntibioticS.stages.Antibiotic-1.label>
+  
+  <!-- EN: Antipyretic and analgesic -->
+  <AM_AntipyreticAnalgesic.label>解热镇痛</AM_AntipyreticAnalgesic.label>
+  <!-- EN: To exert anti-inflammatory, analgesic, and antipyretic effects by inhibiting the activity of cyclooxygenase (COX). -->
+  <AM_AntipyreticAnalgesic.description>通过抑制环氧化酶（COX）的活性来发挥抗炎、镇痛和解热作用。</AM_AntipyreticAnalgesic.description>
+  <!-- EN: Antipyretic and analgesic -->
+  <AM_AntipyreticAnalgesic.labelNoun>解热镇痛</AM_AntipyreticAnalgesic.labelNoun>
+  <!-- EN: ibuprofen -->
+  <AM_AntipyreticAnalgesic.stages.ibuprofen-0.label>布洛芬</AM_AntipyreticAnalgesic.stages.ibuprofen-0.label>
+  <!-- EN: ibuprofen -->
+  <AM_AntipyreticAnalgesic.stages.ibuprofen-1.label>布洛芬</AM_AntipyreticAnalgesic.stages.ibuprofen-1.label>
+  
+  <!-- EN: Cell regeneration -->
+  <AM_CellRegeneration.label>细胞再生</AM_CellRegeneration.label>
+  <!-- EN: Regenerated substances are rapidly repairing the body,but has strong side effects. -->
+  <AM_CellRegeneration.description>再生的组织正在迅速修复身体，但有很强的副作用。</AM_CellRegeneration.description>
+  <!-- EN: Cell Regeneration -->
+  <AM_CellRegeneration.labelNoun>细胞再生</AM_CellRegeneration.labelNoun>
+  <!-- EN: Exhaustion syndrome -->
+  <AM_CellRegeneration.stages.Exhaustion_syndrome.label>衰竭综合征</AM_CellRegeneration.stages.Exhaustion_syndrome.label>
+  <!-- EN: Regeneration -->
+  <AM_CellRegeneration.stages.Regeneration.label>再生</AM_CellRegeneration.stages.Regeneration.label>
+  
+  <!-- EN: metalblood stimulant -->
+  <AM_Metalblood.label>钢血兴奋剂</AM_Metalblood.label>
+  <!-- EN: The metal blood stimulant used in combat does not cause discoloration of the skin at a special concentration dose, which improves the ability of muscle tissue to withstand impact damage and to some extent increases movement speed. However, it is also more susceptible to fire damage and metabolism becomes higher. -->
+  <AM_Metalblood.description>在战斗中使用的钢血兴奋剂，它在特定浓度剂量下不会导致皮肤变色，提高了肌肉组织承受冲击损伤的能力，并在一定程度上提高了运动速度。然而，它也使注射者更容易受到火焰伤害，新陈代谢也变得更高。</AM_Metalblood.description>
+  
+  <!-- EN: Analgesic Regeneration -->
+  <AM_RegenerativeHormone.label>镇痛再生</AM_RegenerativeHormone.label>
+  <!-- EN: Stimulate the regeneration process by increasing the biosynthesis of purine and pyrimidine bases, RNA, and functional enzymes to promote cellular elements.But there will be side effects within a few days after injection. -->
+  <AM_RegenerativeHormone.description>通过增加嘌呤和嘧啶碱基、RNA和功能酶的生物合成来促进细胞元件的再生过程。但注射后几天内就会出现副作用。</AM_RegenerativeHormone.description>
+  <!-- EN: Analgesic Regeneration -->
+  <AM_RegenerativeHormone.labelNoun>镇痛再生</AM_RegenerativeHormone.labelNoun>
+  <!-- EN: Exhaustion syndrome -->
+  <AM_RegenerativeHormone.stages.Exhaustion_syndrome.label>衰竭综合征</AM_RegenerativeHormone.stages.Exhaustion_syndrome.label>
+  <!-- EN: Regeneration -->
+  <AM_RegenerativeHormone.stages.Regeneration.label>再生</AM_RegenerativeHormone.stages.Regeneration.label>
+  
+</LanguageData>

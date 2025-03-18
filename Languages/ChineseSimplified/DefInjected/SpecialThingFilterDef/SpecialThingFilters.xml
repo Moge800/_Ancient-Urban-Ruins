@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: allow -->
+  <AM_Test_Filter.label>允许</AM_Test_Filter.label>
+  <!-- EN: Allow the dead bodies of friendly mechanoids. -->
+  <AM_Test_Filter.description>允许</AM_Test_Filter.description>
+  
+</LanguageData>

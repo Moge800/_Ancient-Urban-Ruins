@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Budweiser -->
+  <AM_Budweiser.label>百威啤酒</AM_Budweiser.label>
+  <!-- EN: A once popular ancient beer brand, canned for its ancient customers. -->
+  <AM_Budweiser.description>一个曾经很受欢迎的古代啤酒品牌，为古代顾客罐装。</AM_Budweiser.description>
+  <!-- EN: Drink {0} -->
+  <AM_Budweiser.ingestible.ingestCommandString>喝</AM_Budweiser.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <AM_Budweiser.ingestible.ingestReportString>喝</AM_Budweiser.ingestible.ingestReportString>
+  
+  <!-- EN: canned braised pork -->
+  <AM_CannedBraisedPorkbelly.label>红烧肉罐头</AM_CannedBraisedPorkbelly.label>
+  <!-- EN: An ancient can of braised pork. Its a great source of happiness despite the dust. -->
+  <AM_CannedBraisedPorkbelly.description>一罐古老的红烧肉。尽管表面满是灰尘，但它仍然是幸福的源泉。</AM_CannedBraisedPorkbelly.description>
+  
+  <!-- EN: canned herring -->
+  <AM_CannedHerring.label>鲱鱼罐头</AM_CannedHerring.label>
+  <!-- EN: An ancient can of herring. Quite salty, but the freshness is appealing. -->
+  <AM_CannedHerring.description>一罐古老的鲱鱼。很咸，但有令人难忘的鲜味。</AM_CannedHerring.description>
+  
+  <!-- EN: canned peas -->
+  <AM_CannedPeas.label>豌豆罐头</AM_CannedPeas.label>
+  <!-- EN: An ancient can of soft, sweet peas. -->
+  <AM_CannedPeas.description>一罐古老的柔软甜豌豆。</AM_CannedPeas.description>
+  
+  <!-- EN: canned stewed muffalo -->
+  <AM_CannedStewedBeef.label>炖雪牛罐头</AM_CannedStewedBeef.label>
+  <!-- EN: An ancient can of muffalo meat stewed with potatoes and tomatoes. Very delicious. -->
+  <AM_CannedStewedBeef.description>一罐古老的雪牛肉，用土豆和西红柿炖。非常美味。</AM_CannedStewedBeef.description>
+  
+  <!-- EN: Coca-Cola -->
+  <AM_Coca.label>可口可乐</AM_Coca.label>
+  <!-- EN: An ancient sparkling beverage with high sugar content. Just a sip could make someone happy for an entire day. -->
+  <AM_Coca.description>一种古老的含糖量高的气泡饮料。仅仅一小口，就能让人快乐一整天。</AM_Coca.description>
+  <!-- EN: Drink {0} -->
+  <AM_Coca.ingestible.ingestCommandString>喝</AM_Coca.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <AM_Coca.ingestible.ingestReportString>喝</AM_Coca.ingestible.ingestReportString>
+  
+  <!-- EN: deluxe canned muffalo -->
+  <AM_DeliciousCannedBeef.label>豪华雪牛罐头</AM_DeliciousCannedBeef.label>
+  <!-- EN: An ancient can of pure muffalo meat stew. Has a very strong buttery aroma. -->
+  <AM_DeliciousCannedBeef.description>一罐古老的纯雪牛炖肉。有很浓的黄油味。</AM_DeliciousCannedBeef.description>
+  
+  <!-- EN: fanta -->
+  <AM_Fanta.label>芬达</AM_Fanta.label>
+  <!-- EN: An ancient carbonated orange-flavored soft drink, sweet and delicious. -->
+  <AM_Fanta.description>一种古老的碳酸橙味软饮料，甜美可口。</AM_Fanta.description>
+  <!-- EN: Drink {0} -->
+  <AM_Fanta.ingestible.ingestCommandString>喝</AM_Fanta.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <AM_Fanta.ingestible.ingestReportString>喝</AM_Fanta.ingestible.ingestReportString>
+  
+  <!-- EN: milk beer -->
+  <AM_MilkBeer.label>奶啤</AM_MilkBeer.label>
+  <!-- EN: An ancient concoction of milk and beer mixed with canned drinks. It can even fill the stomach! -->
+  <AM_MilkBeer.description>一种古老的牛奶和啤酒混合罐装饮料。它甚至可以填饱肚子！</AM_MilkBeer.description>
+  <!-- EN: Drink {0} -->
+  <AM_MilkBeer.ingestible.ingestCommandString>喝</AM_MilkBeer.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <AM_MilkBeer.ingestible.ingestReportString>喝</AM_MilkBeer.ingestible.ingestReportString>
+  
+  <!-- EN: military ration -->
+  <AM_MRE.label>军事配给</AM_MRE.label>
+  <!-- EN: A pack of ancient military rations. It's intact and won't spoil, but it doesn't look very appetizing. -->
+  <AM_MRE.description>一包古代军用口粮。它完好无损，不会变质，但看起来不太开胃。</AM_MRE.description>
+  
+  <!-- EN: Pepsi -->
+  <AM_Pepsi.label>百事可乐</AM_Pepsi.label>
+  <!-- EN: An ancient, slightly inferior carbonated soft drink. Seems sweeter than the others. -->
+  <AM_Pepsi.description>一种古老的、稍逊的碳酸软饮料。比其他饮料更甜。</AM_Pepsi.description>
+  <!-- EN: Drink {0} -->
+  <AM_Pepsi.ingestible.ingestCommandString>喝</AM_Pepsi.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <AM_Pepsi.ingestible.ingestReportString>喝</AM_Pepsi.ingestible.ingestReportString>
+  
+  <!-- EN: classic potato chips -->
+  <AM_PotatoChipsA.label>经典薯片</AM_PotatoChipsA.label>
+  <!-- EN: An ancient bag of classic thin cut salted potato chips. and packaged with nitrogen gas making it difficult to spoil. -->
+  <AM_PotatoChipsA.description>一袋古老的经典薄片咸薯片。并且用氮气包装，使其难以损坏。</AM_PotatoChipsA.description>
+  
+  <!-- EN: tomato potato chips -->
+  <AM_PotatoChipsB.label>番茄味薯片</AM_PotatoChipsB.label>
+  <!-- EN: An ancient bag of tomato flavored potato chips. It's sweet and sour, delicious, and packaged with nitrogen gas making it difficult to spoil. -->
+  <AM_PotatoChipsB.description>一袋古老的番茄味薯片。它酸甜可口，用氮气包装，很难变质。</AM_PotatoChipsB.description>
+  
+  <!-- EN: cucumber potato chips -->
+  <AM_PotatoChipsC.label>黄瓜味薯片</AM_PotatoChipsC.label>
+  <!-- EN: An ancient bag of potato chips with a unique cucumber flavor，packaged with nitrogen gas making it difficult to spoil. -->
+  <AM_PotatoChipsC.description>一袋古老的薯片，有独特的黄瓜味，用氮气包装，很难变质。</AM_PotatoChipsC.description>
+  
+  <!-- EN: steak potato chips -->
+  <AM_PotatoChipsD.label>牛排味薯片</AM_PotatoChipsD.label>
+  <!-- EN: An ancient bag of steak flavored potato chips. Eating them feels like enjoying a feast. Packaged with nitrogen gas making it difficult to spoil. -->
+  <AM_PotatoChipsD.description>一袋古老的牛排味薯片。吃它们感觉就像在享受盛宴。用氮气包装，很难变质。</AM_PotatoChipsD.description>
+  
+  <!-- EN: lemon potato chips -->
+  <AM_PotatoChipsE.label>柠檬味薯片</AM_PotatoChipsE.label>
+  <!-- EN: An ancient bag of lemon flavored potato chips. Bursting with that summer flavor, and packaged with a nitrogen gas, making difficult to spoil. -->
+  <AM_PotatoChipsE.description>一袋古老的柠檬味薯片。散发着夏日的味道，用氮气包装，很难变质。</AM_PotatoChipsE.description>
+  
+  <!-- EN: italian red stew potato chips -->
+  <AM_PotatoChipsF.label>意大利红烩味薯片</AM_PotatoChipsF.label>
+  <!-- EN: An ancient bag of Italian braised potato chips. Its taste is like eating a strong and fragrant tomato minced meat stew. Packaged with a nitrogen gas, making difficult to spoil. -->
+  <AM_PotatoChipsF.description>一袋古老的意大利炖菜味薯片。它的味道就像吃了一道浓香的番茄肉末炖肉。用氮气包装，很难变质。</AM_PotatoChipsF.description>
+  
+  <!-- EN: Sprite -->
+  <AM_Sprite.label>雪碧</AM_Sprite.label>
+  <!-- EN: An ancient lemon-lime flavored soft drink with a strong sour taste. -->
+  <AM_Sprite.description>一种古老的柠檬酸橙味软饮料，有强烈的酸味。</AM_Sprite.description>
+  <!-- EN: Drink {0} -->
+  <AM_Sprite.ingestible.ingestCommandString>喝</AM_Sprite.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <AM_Sprite.ingestible.ingestReportString>喝</AM_Sprite.ingestible.ingestReportString>
+  
+  <!-- EN: Tsingtao -->
+  <AM_TsingtaoBeer.label>青岛啤酒</AM_TsingtaoBeer.label>
+  <!-- EN: An ancient canned beer with a lovely aftertaste. -->
+  <AM_TsingtaoBeer.description>一种回味悠长的古老罐装啤酒。</AM_TsingtaoBeer.description>
+  <!-- EN: Drink {0} -->
+  <AM_TsingtaoBeer.ingestible.ingestCommandString>喝</AM_TsingtaoBeer.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <AM_TsingtaoBeer.ingestible.ingestReportString>T喝</AM_TsingtaoBeer.ingestible.ingestReportString>
+  
+</LanguageData>

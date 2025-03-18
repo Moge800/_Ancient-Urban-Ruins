@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef Name="AM_HighValueItem" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <statBases>
+          <Flammability>0</Flammability>
+          <DeteriorationRate>2.0</DeteriorationRate>
+          <Beauty>0</Beauty>
+        </statBases>
+        <comps>
+          <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>14</pathCost>
+		<tradeTags>
+        <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem" Name="AM_HighValueItem_Few" Abstract="True">
+        <stackLimit>5</stackLimit>
+        <allowedArchonexusCount>5</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem" Name="AM_HighValueItem_LEGO" Abstract="True">
+        <stackLimit>10</stackLimit>
+        <possessionCount>5</possessionCount>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+        <statBases>
+          <MaxHitPoints>75</MaxHitPoints>
+          <MarketValue>350</MarketValue>
+          <Mass>0.5</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few" Name="AM_HighValueItem_Few_Nonmetal" Abstract="True">
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_BakingThermometer</defName>
+        <label>baking thermometer</label>
+        <description>Some thermometers for cooking, maybe traders could be interested.</description>
+        <graphicData>
+          <texPath>Things/Misc/BakingThermometer</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>90</MarketValue>
+          <Mass>0.3</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Tool</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_CPU</defName>
+        <label>CPU</label>
+        <description>An ancient computer component with specifications completely different from modern devices.</description>
+        <graphicData>
+          <texPath>Things/Misc/CPUs</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>200</MarketValue>
+          <Mass>0.08</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_AluminumSplint</defName>
+        <label>aluminum splint</label>
+        <description>A medical fracture splint, which needs to be used in conjunction with other items in the medical kit. It is not very useful if it is the only one.</description>
+        <graphicData>
+          <texPath>Things/Misc/AluminumSplint</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>120</MarketValue>
+          <Mass>0.1</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_PelvicHammock</defName>
+        <label>pelvic hammock</label>
+        <description>A clamp for thigh fractures in emergency situations, which needs to be used in conjunction with other items in the medical kit, is not very useful on its own.</description>
+        <graphicData>
+          <texPath>Things/Misc/PelvicHammock</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>80</MarketValue>
+          <Mass>0.1</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_PackagedCPU</defName>
+        <label>packaged CPU</label>
+        <description>An unopened ancient computer component, once a very rare commodity.</description>
+        <graphicData>
+          <texPath>Things/Misc/PackagedCPU</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1</drawSize>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>150</MaxHitPoints>
+          <MarketValue>400</MarketValue>
+          <Mass>0.1</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_GPU</defName>
+        <label>GPU</label>
+        <description>An ancient graphics display card. May still be usable.</description>
+		<thingClass>AncientMarket_Libraray.GPU</thingClass>
+        <graphicData>
+          <texPath>Things/Misc/GPU</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.9</drawSize>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>1000</MarketValue>
+          <Mass>0.6</Mass>
+        </statBases>
+        <thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>		
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_PackagedGPU</defName>
+        <label>packaged GPU</label>
+        <description>A well packaged ancient graphics display card, brand new.</description>
+		<thingClass>AncientMarket_Libraray.GPU</thingClass>
+        <graphicData>
+          <texPath>Things/Misc/PackagedGPU</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1</drawSize>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>150</MaxHitPoints>
+          <MarketValue>1500</MarketValue>
+          <Mass>0.8</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_HDD</defName>
+        <label>HDD</label>
+        <description>Mechanical hard drives used in ancient computers.</description>
+        <graphicData>
+          <texPath>Things/Misc/HDD</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>120</MarketValue>
+          <Mass>0.25</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_SSD</defName>
+        <label>SSD</label>
+        <description>A solid-state drive used in ancient computers. Appears to still function.</description>
+        <graphicData>
+          <texPath>Things/Misc/SSD</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>120</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_CreditCard</defName>
+        <label>credit card</label>
+        <description>A set of various abandoned credit cards. Unclear whether they can still be used.</description>
+        <graphicData>
+          <texPath>Things/Misc/CreditCard</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>50</MarketValue>
+          <Mass>0.05</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_KeyCard</defName>
+        <label>key card</label>
+        <description>A discarded key card used for an unknown door. May have interest from traders.</description>
+        <graphicData>
+          <texPath>Things/Misc/KeyCard</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>200</MarketValue>
+          <Mass>0.05</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_ElectricalTape</defName>
+        <label>electrical tape</label>
+        <description>A roll of electrical tape,it can be used to repair weapons or equipment</description>
+        <graphicData>
+          <texPath>Things/Misc/ElectricalTape</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>20</MarketValue>
+          <Mass>0.05</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Tool</li>
+        </thingCategories>
+		  <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="AncientMarket_Libraray.CompProperties_TargetEffectRepair">
+        <repairTick>120</repairTick>        <!-- 修复时间 -->
+        <repairPercentage>0.1</repairPercentage>        <!-- 修复百分比 -->
+      </li>
+      <li Class="AncientMarket_Libraray.CompProperties_Targetable_AppareWeapon">
+        <compClass>AncientMarket_Libraray.CompTargetable_Appare</compClass>
+      </li>
+    </comps>
+    </ThingDef>
+      
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_GameConsole</defName>
+        <label>game console</label>
+        <description>A strange game console. Internals seem to be fried.</description>
+        <graphicData>
+          <texPath>Things/Misc/GameConsole</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>40</MaxHitPoints>
+          <MarketValue>150</MarketValue>
+          <Mass>0.13</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem">
+        <defName>AM_OneLiterGlassAdhesive</defName>
+        <label>glass adhesive</label>
+        <description>One tube of glass adhesive, one liter pack,it can be used to repair weapons or equipment</description>
+        <graphicData>
+          <texPath>Things/Misc/GlassAdhesive</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>75</MaxHitPoints>
+          <MarketValue>27</MarketValue>
+          <Mass>0.75</Mass>
+        </statBases>
+		<stackLimit>2</stackLimit>
+		<thingCategories>
+        <li>AM_Tool</li>
+        </thingCategories>
+		 <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="AncientMarket_Libraray.CompProperties_TargetEffectRepair">
+        <repairTick>50</repairTick>        <!-- 修复时间 -->
+        <repairPercentage>0.05</repairPercentage>        <!-- 修复百分比 -->
+      </li>
+      <li Class="AncientMarket_Libraray.CompProperties_Targetable_AppareWeapon">
+        <compClass>AncientMarket_Libraray.CompTargetable_Appare</compClass>
+      </li>
+    </comps>
+    </ThingDef>
+
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_LEDX</defName>
+        <label>LEDX</label>
+        <description>A device designed to accurately confirm the position of subcutaneous veins, which is very useful for emergency treatment.</description>
+        <graphicData>
+          <texPath>Things/Misc/LEDX</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>1500</MarketValue>
+          <Mass>0.08</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_RadioIntercom</defName>
+        <label>radio intercom</label>
+        <description>An ancient radio intercom is already out of power.</description>
+        <graphicData>
+          <texPath>Things/Misc/RadioIntercom</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>150</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Electronics</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_TapeMeasure</defName>
+        <label>tape measure</label>
+        <description>Common tape measures on construction sites.</description>
+        <graphicData>
+          <texPath>Things/Misc/TapeMeasure</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>50</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<thingCategories>
+        <li>AM_Tool</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_WayBill</defName>
+        <label>way bill</label>
+        <description>A shopping mall supply waybill, maybe it can be used to find the source warehouse.</description>
+        <graphicData>
+          <texPath>Things/Misc/WayBill</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>2550</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<tradeTags>
+        <li>AM_Intel</li>
+        </tradeTags>
+		<comps>
+        <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Read</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+            <li Class="CompProperties_UseEffectGiveQuest">
+                <quest>AM_Quest_Reserve</quest>
+            </li>
+    </comps>
+	<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_IntelMap</defName>
+        <label>intel map</label>
+        <description>An intelligence map that records a certain location.</description>
+        <graphicData>
+          <texPath>Things/Misc/IntelMap</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>1500</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<tradeTags>
+        <li>AM_Intel</li>
+        </tradeTags>
+		<comps>
+        <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Read</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+            <li Class="CompProperties_UseEffectGiveQuest">
+                <quest>AM_Quest_Street</quest>
+            </li>
+    </comps>
+	<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_ConfidentialIntelMapA</defName>
+        <label>confidential intel map</label>
+        <description>An confidential intelligence map that records a certain location.</description>
+        <graphicData>
+          <texPath>Things/Misc/ConfidentialIntelMap</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>3500</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<tradeTags>
+        <li>AM_Intel</li>
+        </tradeTags>
+		<comps>
+        <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Read</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+            <li Class="CompProperties_UseEffectGiveQuest">
+                <quest>AM_Quest_Mall_S</quest>
+            </li>
+    </comps>
+	<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_ConfidentialIntelMapB</defName>
+        <label>confidential intel map</label>
+        <description>An confidential intelligence map that records a certain location.</description>
+        <graphicData>
+          <texPath>Things/Misc/ConfidentialIntelMap</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>4000</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<tradeTags>
+        <li>AM_Intel</li>
+        </tradeTags>
+		<comps>
+        <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Read</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+            <li Class="CompProperties_UseEffectGiveQuest">
+                <quest>AM_Quest_Mall_L</quest>
+            </li>
+    </comps>
+	<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+        <defName>AM_DilapidatedMap</defName>
+        <label>dilapidated map</label>
+        <description>An dilapidated map that records a certain location.</description>
+        <graphicData>
+          <texPath>Things/Misc/DilapidatedMap</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <MarketValue>500</MarketValue>
+          <Mass>0.4</Mass>
+        </statBases>
+		<tradeTags>
+        <li>AM_Intel</li>
+        </tradeTags>
+		<comps>
+        <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Read</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+            <li Class="CompProperties_UseEffectGiveQuest">
+                <quest>ACM_AncientRandomSite</quest>
+            </li>
+    </comps>
+	<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_HighValueItem_Few">
+      <defName>AM_GoldenEgg</defName>
+      <label>golden egg</label>
+      <description>Hollow egg ornaments made of gold.</description>
+      <graphicData>
+        <texPath>Things/Misc/GoldenEgg</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+      </graphicData>
+      <statBases>
+        <MaxHitPoints>50</MaxHitPoints>
+        <MarketValue>55</MarketValue>
+        <Mass>1</Mass>
+      </statBases>
+	  <thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+	
+	<ThingDef ParentName="ArtBuildingBase" Name="AM_SculptureBase" Abstract="True">
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <statBases>
+      <SellPriceFactor>1.10</SellPriceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
+    <building>
+      <paintable>true</paintable>
+    </building>
+	<thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+  </ThingDef>
+	
+	<ThingDef ParentName="AM_SculptureBase">
+     <defName>AM_BrassLionStatue</defName>
+     <label>brass lion statue</label>
+     <description>A lion ornaments made of brass.</description>
+     <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Misc/BrassLionStatue</texPath>
+	  <drawSize>1.3</drawSize>		
+     </graphicData>
+	 <altitudeLayer>BuildingOnTop</altitudeLayer>
+	 <passability>PassThroughOnly</passability>
+     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	 <clearBuildingArea>false</clearBuildingArea>
+	 <building>
+	 <isEdifice>false</isEdifice>
+	 </building>
+     <fillPercent>0.15</fillPercent>
+     <statBases>
+      <MaxHitPoints>105</MaxHitPoints>
+      <Mass>4</Mass>
+      <Beauty>80</Beauty>
+	  <MarketValue>120</MarketValue>
+     </statBases>
+    </ThingDef>
+
+	<ThingDef ParentName="AM_SculptureBase">
+     <defName>AM_GoldenRoosterStatue</defName>
+     <label>golden rooster statue</label>
+     <description>A rooster ornament made of gold.</description>
+     <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Misc/GoldenRoosterStatue</texPath>
+	  <drawSize>1.3</drawSize>		
+     </graphicData>
+	 <altitudeLayer>BuildingOnTop</altitudeLayer>
+	 <passability>PassThroughOnly</passability>
+     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	 <clearBuildingArea>false</clearBuildingArea>
+	 <building>
+	 <isEdifice>false</isEdifice>
+	 </building>
+     <fillPercent>0.15</fillPercent>
+     <statBases>
+      <MaxHitPoints>105</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>120</Beauty>
+	  <MarketValue>100</MarketValue>
+     </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+      <defName>AM_SICC</defName>
+      <label>SICC</label>
+      <description>A small soft bag used to store various small items such as keycards, banknotes, coins, as well as dog tags and metal keys, popular brands, and loved by collectors.</description>
+      <graphicData>
+        <texPath>Things/Bags/SICC</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <stackLimit>1</stackLimit>
+      <statBases>
+        <MaxHitPoints>50</MaxHitPoints>
+        <MarketValue>500</MarketValue>
+        <Mass>0.8</Mass>
+      </statBases>
+	  <thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+      <defName>AM_BriefCase</defName>
+      <label>briefcase</label>
+      <description>A leather briefcase from a well-known brand that collectors will love.</description>
+      <graphicData>
+        <texPath>Things/Bags/BriefCase</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <stackLimit>1</stackLimit>
+      <statBases>
+        <MaxHitPoints>50</MaxHitPoints>
+        <MarketValue>100</MarketValue>
+        <Mass>0.82</Mass>
+      </statBases>
+	  <thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_LEGO">
+        <defName>AM_LEGO_GiantRockExcavator_NotOpen</defName>
+        <label>LEGO giant rock excavator</label>
+        <description>A plastic building block toy for a giant excavator.</description>
+        <graphicData>
+          <texPath>Things/Misc/LEGO_GiantRockExcavator_NotOpen</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>1.5</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_LEGO">
+      <defName>AM_LEGO_HeavyCrane_NotOpen</defName>
+      <label>LEGO heavy crane</label>
+      <description>A plastic building block toy for a heavy crane.</description>
+      <graphicData>
+        <texPath>Things/Misc/LEGO_HeavyCrane_NotOpen</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1.5</drawSize>
+      </graphicData>
+    </ThingDef>
+  
+    <ThingDef ParentName="AM_HighValueItem_LEGO">
+      <defName>AM_LEGO_LandmarkBuilding_NotOpen</defName>
+      <label>LEGO landmark building</label>
+      <description>A plastic building block toy for a landmark building.</description>
+      <graphicData>
+        <texPath>Things/Misc/LEGO_LandmarkBuilding_NotOpen</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1.5</drawSize>
+      </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_LEGO">
+      <defName>AM_LEGO_LightCrane_NotOpen</defName>
+      <label>LEGO light crane</label>
+      <description>A plastic building block toy for a light crane.</description>
+      <graphicData>
+        <texPath>Things/Misc/LEGO_LightCrane_NotOpen</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1.5</drawSize>
+      </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_LEGO">
+      <defName>AM_LEGO_MediumCrane_NotOpen</defName>
+      <label>LEGO medium crane</label>
+      <description>A plastic building block toy for a medium crane.</description>
+      <graphicData>
+        <texPath>Things/Misc/LEGO_MediumCrane_NotOpen</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+		 <drawSize>1.5</drawSize>
+      </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_LEGO">
+      <defName>AM_LEGO_Palace_NotOpen</defName>
+      <label>LEGO palace</label>
+      <description>A plastic building block toy for a palace.</description>
+      <graphicData>
+        <texPath>Things/Misc/LEGO_Palace_NotOpen</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1.5</drawSize>
+      </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_HighValueItem_Few">
+      <defName>AM_EmptyBox</defName>
+      <label>empty box</label>
+      <description>Empty LEGO box.</description>
+      <graphicData>
+        <texPath>Things/Misc/EmptyBox</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1.5</drawSize>
+      </graphicData>
+      <statBases>
+        <MaxHitPoints>5</MaxHitPoints>
+        <MarketValue>50</MarketValue>
+        <Mass>0.05</Mass>
+      </statBases>
+	  <thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef Name="AM_LEGO" ParentName="BuildingBase" Abstract="True">
+      <thingClass>Building_Art</thingClass>
+      <altitudeLayer>Building</altitudeLayer>
+      <passability>PassThroughOnly</passability>
+      <pathCost>50</pathCost>
+      <useHitPoints>true</useHitPoints>
+      <rotatable>false</rotatable>
+      <minifiedDef>MinifiedThing</minifiedDef>
+      <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+      <fillPercent>0.35</fillPercent>
+      <statBases>
+        <MaxHitPoints>150</MaxHitPoints>
+        <Mass>0.45</Mass>
+        <Beauty>100</Beauty>
+        <WorkToMake>10000</WorkToMake>
+        <Flammability>0.5</Flammability>
+        <MeditationFocusStrength>0.0</MeditationFocusStrength>
+        <SellPriceFactor>1.10</SellPriceFactor>
+      </statBases>
+      <placeWorkers>
+        <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+      </placeWorkers>
+      <comps>
+        <li>
+          <compClass>CompQuality</compClass>
+        </li>
+        <li Class="CompProperties_Styleable" />
+        <li Class="CompProperties_MeditationFocus">
+          <statDef>MeditationFocusStrength</statDef>
+          <focusTypes>
+            <li>Artistic</li>
+          </focusTypes>
+        </li>
+      </comps>
+      <tradeTags>
+        <li>Art</li>
+      </tradeTags>
+      <inspectorTabs>
+        <li>ITab_Art</li>
+      </inspectorTabs>
+      <recipeMaker>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <unfinishedThingDef>UnfinishedLEGO</unfinishedThingDef>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>AM_Recipe_Lego</soundWorking>
+        <recipeUsers>
+          <li>TableSculpting</li>
+          <li>CraftingSpot</li>
+          <li>TableMachining</li>
+        </recipeUsers>
+      </recipeMaker>
+      <ritualFocus>
+        <spectateDistance>2</spectateDistance>
+        <allowedSpectateSides>Down</allowedSpectateSides>
+      </ritualFocus>
+	  <thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_LEGO">
+      <defName>LEGO_GiantRockExcavator_Accomplish</defName>
+      <label>LEGO giant rock excavator</label>
+      <description>A plastic building block toy for a giant excavator.</description>
+      <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>1.7</drawSize>
+        <drawOffset>(0,0,0)</drawOffset>
+        <texPath>Things/Misc/LEGO_GiantRockExcavator_Accomplish</texPath>
+      </graphicData>
+      <size>(1,1)</size>
+      <costList>
+        <AM_LEGO_GiantRockExcavator_NotOpen>1</AM_LEGO_GiantRockExcavator_NotOpen>
+      </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_LEGO">
+      <defName>LEGO_HeavyCrane_Accomplish</defName>
+      <label>LEGO heavy crane</label>
+      <description>A plastic building block toy for a heavy crane.</description>
+      <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>1.7</drawSize>
+        <drawOffset>(0,0,0)</drawOffset>
+        <texPath>Things/Misc/LEGO_HeavyCrane_Accomplish</texPath>
+      </graphicData>
+      <costList>
+        <AM_LEGO_HeavyCrane_NotOpen>1</AM_LEGO_HeavyCrane_NotOpen>
+      </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_LEGO">
+      <defName>LEGO_LandmarkBuilding_Accomplish</defName>
+      <label>LEGO landmark building</label>
+      <description>A plastic building block toy for a landmark building.</description>
+      <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>Things/Misc/LEGO_LandmarkBuilding_Accomplish</texPath>
+      </graphicData>
+      <costList>
+        <AM_LEGO_LandmarkBuilding_NotOpen>1</AM_LEGO_LandmarkBuilding_NotOpen>
+      </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_LEGO">
+      <defName>LEGO_LightCrane_Accomplish</defName>
+      <label>LEGO light crane</label>
+      <description>A plastic building block toy for a light crane.</description>
+      <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>1.05</drawSize>
+        <drawOffset>(0,0,0)</drawOffset>
+        <texPath>Things/Misc/LEGO_LightCrane_Accomplish</texPath>
+      </graphicData>
+      <costList>
+        <AM_LEGO_LightCrane_NotOpen>1</AM_LEGO_LightCrane_NotOpen>
+      </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_LEGO">
+      <defName>LEGO_MediumCrane_Accomplish</defName>
+      <label>LEGO medium crane</label>
+      <description>A plastic building block toy for a medium crane.</description>
+      <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>1.3</drawSize>
+        <drawOffset>(0,0,0)</drawOffset>
+        <texPath>Things/Misc/LEGO_MediumCrane_Accomplish</texPath>
+      </graphicData>
+      <size>(1,1)</size>
+      <costList>
+        <AM_LEGO_MediumCrane_NotOpen>1</AM_LEGO_MediumCrane_NotOpen>
+      </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_LEGO">
+      <defName>LEGO_Palace_Accomplish</defName>
+      <label>LEGO palace</label>
+      <description>A plastic building block toy for a palace.</description>
+      <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>Things/Misc/LEGO_Palace_Accomplish</texPath>
+      </graphicData>
+      <costList>
+        <AM_LEGO_Palace_NotOpen>1</AM_LEGO_Palace_NotOpen>
+      </costList>
+
+    </ThingDef>
+
+    <ThingDef Name="AM_UnfinishedBase" Abstract="True">
+      <thingClass>UnfinishedThing</thingClass>
+      <category>Item</category>
+      <altitudeLayer>Item</altitudeLayer>
+      <useHitPoints>true</useHitPoints>
+      <isUnfinishedThing>true</isUnfinishedThing>
+      <scatterableOnMapGen>false</scatterableOnMapGen>
+      <selectable>true</selectable>
+      <tradeability>None</tradeability>
+      <drawerType>MapMeshOnly</drawerType>
+      <statBases>
+        <MaxHitPoints>50</MaxHitPoints>
+        <DeteriorationRate>2.0</DeteriorationRate>
+        <Beauty>-5</Beauty>
+        <Mass>0.45</Mass> 
+        <Flammability>0.5</Flammability>
+      </statBases>
+      <comps>
+        <li Class="CompProperties_Forbiddable"/>
+        <li Class="CompProperties_Styleable"/>
+      </comps>
+      <alwaysHaulable>true</alwaysHaulable>
+      <rotatable>false</rotatable>
+      <pathCost>14</pathCost>
+      <thingCategories>
+        <li>Unfinished</li>
+      </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_UnfinishedBase">
+      <defName>UnfinishedLEGO</defName>
+      <label>unfinished Lego</label>
+      <description>unfinished Lego.</description>
+      <statBases>
+        <Flammability>0.5</Flammability>
+      </statBases>
+      <graphicData>
+        <texPath>Things/Misc/LEGO_Assembling</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+      </graphicData>
+      <stuffCategories Inherit="false" />
+	  <thingCategories>
+        <li>AM_Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

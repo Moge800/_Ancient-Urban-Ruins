@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ADAR215 -->
+  <AM_ADAR.label>ADAR215</AM_ADAR.label>
+  
+  <!-- EN: AK101 -->
+  <AM_AK101A.label>AK101</AM_AK101A.label>
+
+  
+  <!-- EN: AK6.8 -->
+  <AM_AK68A.label>AK6.8</AM_AK68A.label>
+
+  
+  <!-- EN: APS -->
+  <AM_APS.label>APS</AM_APS.label>
+ 
+  
+  <!-- EN: ASVAL -->
+  <AM_ASVAL.label>ASVAL</AM_ASVAL.label>
+ 
+  
+  <!-- EN: AVT -->
+  <AM_AVT.label>AVT</AM_AVT.label>
+ 
+  
+  <!-- EN: CP46 -->
+  <AM_CPHG.label>CP46</AM_CPHG.label>
+ 
+  
+  <!-- EN: DT MDR308 -->
+  <AM_DTMDR.label>DT MDR308</AM_DTMDR.label>
+
+  
+  <!-- EN: FN57 -->
+  <AM_FNHG.label>FN57</AM_FNHG.label>
+ 
+  
+  <!-- EN: Hunter -->
+  <AM_Hunter.label>Hunter</AM_Hunter.label>
+  
+  
+  <!-- EN: M4A1 2U -->
+  <AM_M42U.label>M4A1/2U</AM_M42U.label>
+ 
+  
+  <!-- EN: M4A1 -->
+  <AM_M4A.label>M4A1</AM_M4A.label>
+ 
+  
+  <!-- EN: M4A1 Sopmod II -->
+  <AM_M4ASOP.label>M4A1 Sopmod II</AM_M4ASOP.label>
+
+  
+  <!-- EN: M4A1 CQB -->
+  <AM_M4C.label>M4A1 CQB</AM_M4C.label>
+ 
+  
+  <!-- EN: MCX M5A3 -->
+  <AM_M5A3LT.label>MCX M5A3</AM_M5A3LT.label>
+
+  
+  <!-- EN: M700 -->
+  <AM_M700A.label>M700</AM_M700A.label>
+
+  
+  <!-- EN: Makarov -->
+  <AM_Makarov.label>Makarov</AM_Makarov.label>
+ 
+  
+  <!-- EN: MCX -->
+  <AM_MCX.label>MCX</AM_MCX.label>
+ 
+  
+  <!-- EN: MCX CQB -->
+  <AM_MCXC.label>MCX CQB</AM_MCXC.label>
+
+  
+  <!-- EN: MK17 -->
+  <AM_MK17A.label>MK17</AM_MK17A.label>
+ 
+  
+  <!-- EN: MK18 338LM -->
+  <AM_MK18M.label>MK18 338LM</AM_MK18M.label>
+
+  
+  <!-- EN: SCAR6.8 -->
+  <AM_MK68A.label>SCAR6.8</AM_MK68A.label>
+ 
+  
+  <!-- EN: MPX -->
+  <AM_MPX.label>MPX</AM_MPX.label>
+ 
+  
+  <!-- EN: MPX lb -->
+  <AM_MPXL.label>MPX lb</AM_MPXL.label>
+
+  
+  <!-- EN: PKM -->
+  <AM_PKM.label>PKM</AM_PKM.label>
+ 
+  
+  <!-- EN: PKP -->
+  <AM_PKP.label>PKP</AM_PKP.label>
+ 
+  
+  <!-- EN: R11 -->
+  <AM_R11A.label>R11</AM_R11A.label>
+ 
+  
+  <!-- EN: RM 6.8 -->
+  <AM_RM68A.label>RM 6.8</AM_RM68A.label>
+
+  
+  <!-- EN: M7 Spear -->
+  <AM_Spear68A.label>M7 Spear</AM_Spear68A.label>
+
+  
+  <!-- EN: M7 Spear CQB -->
+  <AM_Spear68C.label>M7 Spear CQB</AM_Spear68C.label>
+
+  <!-- EN: SR25 -->
+  <AM_SR25A.label>SR25</AM_SR25A.label>
+
+  
+  <!-- EN: STM9 -->
+  <AM_STM.label>STM9</AM_STM.label>
+ 
+  
+  <!-- EN: STM9 custom -->
+  <AM_STMC.label>STM9 custom</AM_STMC.label>
+
+  
+  <!-- EN: TKB 6.8 -->
+  <AM_TKB68A.label>TKB 6.8</AM_TKB68A.label>
+ 
+  <!-- EN: VSS -->
+  <AM_VSS.label>VSS</AM_VSS.label>
+ 
+  
+  <!-- EN: SS190 bullet -->
+  <Bullet_190SS.label>SS190子弹</Bullet_190SS.label>
+  
+  <!-- EN: Hybird bullet -->
+  <Bullet_277A.label>Hybird子弹</Bullet_277A.label>
+  
+  <!-- EN: .300 BLK bullet -->
+  <Bullet_300BLK.label>.300 BLK子弹</Bullet_300BLK.label>
+  
+  <!-- EN: .338AP bullet -->
+  <Bullet_338LM.label>.338AP子弹</Bullet_338LM.label>
+  
+  <!-- EN: M80bullet -->
+  <Bullet_51N.label>M80子弹</Bullet_51N.label>
+  
+  <!-- EN: 7N37 bullet -->
+  <Bullet_54R.label>7N37子弹</Bullet_54R.label>
+  
+  <!-- EN: SP5 bullet -->
+  <Bullet_939A.label>SP5子弹</Bullet_939A.label>
+  
+  <!-- EN: 7N31 bullet -->
+  <Bullet_9AP.label>7N31子弹</Bullet_9AP.label>
+  
+  <!-- EN: APSX bullet -->
+  <Bullet_APSX.label>APSX子弹</Bullet_APSX.label>
+  
+  <!-- EN: Luger CCI bullet -->
+  <Bullet_CCI.label>鲁格CCI子弹</Bullet_CCI.label>
+  
+  <!-- EN: 556 WG bullet -->
+  <Bullet_WG.label>5.56狂怒子弹</Bullet_WG.label>
+  
+    <Bullet_SSAAP.label>SSAAP穿甲弹</Bullet_SSAAP.label>
+  
+</LanguageData>

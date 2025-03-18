@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="AM_IntegratedTorsoArmor"]/stages/li[1]/statOffsets</xpath>
+		<value>
+			<CarryWeight>20</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="AM_RampageParasite"]/stages/li[1]/statOffsets</xpath>
+		<value>
+			<CarryWeight>30</CarryWeight>
+			<CarryBulk>30</CarryBulk>
+		</value>
+	</Operation>
+</Patch>

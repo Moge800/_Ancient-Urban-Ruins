@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: damaged large shelves -->
+  <AM_BDAShelfA.label>损坏的大型货架</AM_BDAShelfA.label>
+  <!-- EN: There are still some goods on top that have not been crushed. -->
+  <AM_BDAShelfA.description>一个损坏的大型货架，上面还有一些货物没有被压碎。</AM_BDAShelfA.description>
+  
+   <AM_BookCase.label>书架</AM_BookCase.label>
+  <!-- EN: There are still some goods on top that have not been crushed. -->
+  <AM_BookCase.description>一个装着书的旧书架。</AM_BookCase.description>
+  
+  <!-- EN: damaged large shelves -->
+  <AM_BDAShelfB.label>损坏的大型货架</AM_BDAShelfB.label>
+  <!-- EN: There are still some goods on top that have not been crushed. -->
+  <AM_BDAShelfB.description>一个损坏的大型货架，上面还有一些货物没有被压碎。</AM_BDAShelfB.description>
+  
+  <!-- EN: large military supplies case -->
+  <AM_BigCase.label>大型军用补给箱</AM_BigCase.label>
+  <!-- EN: A large military supplies case. Maybe it has something inside. -->
+  <AM_BigCase.description>一个大型军用物资箱。也许里面有什么东西。</AM_BigCase.description>
+  
+  <!-- EN: briefcase -->
+  <AM_BriefCase_SalvagePoint.label>文件包</AM_BriefCase_SalvagePoint.label>
+  <!-- EN: A briefcase, probably containing something. -->
+  <AM_BriefCase_SalvagePoint.description>一个文件包，可能装着什么东西。</AM_BriefCase_SalvagePoint.description>
+  
+  <!-- EN: ancient suspended IFV -->
+  <AM_BTR82A.label>远古浮空步兵战车</AM_BTR82A.label>
+  <!-- EN: A damaged suspended IFV. -->
+  <AM_BTR82A.description>一个被摧毁的远古浮空步战车残骸。</AM_BTR82A.description>
+  
+  <!-- EN: Clothes rack -->
+  <AM_ClothesHanger.label>挂衣架</AM_ClothesHanger.label>
+  <!-- EN: A set of hangers holding old pieces of clothing. -->
+  <AM_ClothesHanger.description>一套商场里挂衣服的旧衣架。</AM_ClothesHanger.description>
+  
+  <!-- EN: computer case -->
+  <AM_ComputerCase.label>电脑机箱</AM_ComputerCase.label>
+  <!-- EN: An ancient computer case. -->
+  <AM_ComputerCase.description>一个远古电脑机箱</AM_ComputerCase.description>
+  
+  <!-- EN: large shelves -->
+  <AM_DoubleDeckRacks.label>大型货架</AM_DoubleDeckRacks.label>
+  <!-- EN: The top layer of the large shelf is missing, and there are still some boxes on it. -->
+  <AM_DoubleDeckRacks.description>一个顶层已经消失的大型货架，上面还有一些未打开的箱子。</AM_DoubleDeckRacks.description>
+  
+  <!-- EN: freezer -->
+  <AM_Freezer.label>冷柜</AM_Freezer.label>
+  <!-- EN: An old dessert refrigerator with unknown contents. -->
+  <AM_Freezer.description>一个内容不明的旧甜点冰箱。</AM_Freezer.description>
+  
+  <!-- EN: injection storage racks -->
+  <AM_Injection_StorageRacks.label>注射器货架</AM_Injection_StorageRacks.label>
+  <!-- EN: Some shelves scattered with syringes and medical supplies. -->
+  <AM_Injection_StorageRacks.description>一个散落着注射器和医疗用品的货架。</AM_Injection_StorageRacks.description>
+  
+  <!-- EN: large backpack -->
+  <AM_LargeBackpack.label>大背包</AM_LargeBackpack.label>
+  <!-- EN: An oversized military backpack that is already broken, but seems to contain something inside. -->
+  <AM_LargeBackpack.description>一个超大尺寸的军用背包，早已损坏，但是看起来里面还有一些东西。</AM_LargeBackpack.description>
+  
+  <!-- EN: LBT -->
+  <AM_LBT.label>LBT医疗包</AM_LBT.label>
+  <!-- EN: A medical supplies backpack that is broken, but seems to contain something inside. -->
+  <AM_LBT.description>医疗物资专用背包，早已损坏，看起来里面还有一些东西。</AM_LBT.description>
+  
+  <!-- EN: MBSS -->
+  <AM_MBSS.label>MBSS户外包</AM_MBSS.label>
+  <!-- EN: A small military backpack that is broken, but seems to contain something inside. -->
+  <AM_MBSS.description>一个小型军用背包，早已损坏，看起来里面还有一些东西。</AM_MBSS.description>
+  
+  <!-- EN: medical storage racks -->
+  <AM_MedicalSupplies_StorageRacks.label>医药货架</AM_MedicalSupplies_StorageRacks.label>
+  <!-- EN: Some shelves scattered with medical supplies. -->
+  <AM_MedicalSupplies_StorageRacks.description>一个散落着医疗用品的货架</AM_MedicalSupplies_StorageRacks.description>
+  
+  <!-- EN: Military storage racks -->
+  <AM_MilitarySupplies_StorageRacks.label>军用物资货架</AM_MilitarySupplies_StorageRacks.label>
+  <!-- EN: Some shelves with scattered military supplies. -->
+  <AM_MilitarySupplies_StorageRacks.description>一个散落着军用物资的货架。</AM_MilitarySupplies_StorageRacks.description>
+  
+  <!-- EN: model dummy -->
+  <AM_Model.label>模特假人</AM_Model.label>
+  <!-- EN: A clothing model dummy. -->
+  <AM_Model.description>服装店的模特假人。</AM_Model.description>
+  
+  <!-- EN: model dummy -->
+  <AM_Modelf.label>模特假人</AM_Modelf.label>
+  <!-- EN: A clothing model dummy. -->
+  <AM_Modelf.description>服装店的模特假人</AM_Modelf.description>
+  
+  <!-- EN: ancient large military supplies case -->
+  <AM_OldBigCase.label>远古大型军用补给箱</AM_OldBigCase.label>
+  <!-- EN: A damaged military supplies case. Maybe it has something inside. -->
+  <AM_OldBigCase.description>一个远古大型军用补给箱，也许里面有什么东西。</AM_OldBigCase.description>
+  
+  <!-- EN: ancient small military Case -->
+  <AM_OldSmallCase.label>远古小型军用补给箱</AM_OldSmallCase.label>
+  <!-- EN: A damaged military supplies case. Maybe it has something inside. -->
+  <AM_OldSmallCase.description>一个远古小型军用补给箱，也许里面有什么东西。</AM_OldSmallCase.description>
+  
+  <!-- EN: ancient weapon case -->
+  <AM_OldWeaponCase.label>远古武器箱</AM_OldWeaponCase.label>
+  <!-- EN: A long forgotten container. It seems to have something inside. -->
+  <AM_OldWeaponCase.description>一个被遗忘已久的箱子。里面好像有什么东西。</AM_OldWeaponCase.description>
+  
+  <!-- EN: Cardboard box -->
+  <AM_PaperBox_A.label>纸箱</AM_PaperBox_A.label>
+  <!-- EN: A cardboard box. It seems to have something inside. -->
+  <AM_PaperBox_A.description>一个纸箱。里面好像有什么东西。</AM_PaperBox_A.description>
+  
+  <!-- EN: Cardboard box -->
+  <AM_PaperBox_B.label>纸箱</AM_PaperBox_B.label>
+  <!-- EN: A cardboard box. It seems to have something inside. -->
+  <AM_PaperBox_B.description>一个纸箱。里面好像有什么东西。</AM_PaperBox_B.description>
+  
+  <!-- EN: Cardboard box -->
+  <AM_PaperBox_C.label>纸箱</AM_PaperBox_C.label>
+  <!-- EN: A cardboard box. It seems to have something inside. -->
+  <AM_PaperBox_C.description>一个纸箱。里面好像有什么东西。</AM_PaperBox_C.description>
+  
+  <!-- EN: postman shoulder bag -->
+  <AM_PostmanShoulderBag.label>邮差单肩包</AM_PostmanShoulderBag.label>
+  <!-- EN: A mail-carrying shoulder bag. While already broken, it seems to contain something inside. -->
+  <AM_PostmanShoulderBag.description>一个带邮差肩包。虽然已经坏了，但里面似乎有什么东西。</AM_PostmanShoulderBag.description>
+  
+  <!-- EN: refrigerator -->
+  <AM_Refrigerator.label>远古冰柜</AM_Refrigerator.label>
+  <!-- EN: A refrigerator containing various foods. Has long been powered off. -->
+  <AM_Refrigerator.description>一个装有各种食物的冰箱。长期以来一直处于断电状态。</AM_Refrigerator.description>
+  
+  <!-- EN: scav bag -->
+  <AM_Scav.label>SCAV背包</AM_Scav.label>
+  <!-- EN: A backpack made by a scavenger. It is broken, but it seems to hold something. -->
+  <AM_Scav.description>拾荒者自制的背包。已经损坏，也许里面有什么东西。</AM_Scav.description>
+  
+  <!-- EN: SICC -->
+  <AM_SICC_SalvagePoint.label>SICC</AM_SICC_SalvagePoint.label>
+  <!-- EN: A small soft bag that seems to hold various items. -->
+  <AM_SICC_SalvagePoint.description>一个柔软的小包，似乎可以装各种物品。</AM_SICC_SalvagePoint.description>
+  
+  <!-- EN: small military Case Case -->
+  <AM_SmallCase.label>小型军用补给箱</AM_SmallCase.label>
+  <!-- EN: A military supplies case. It seems to have something inside. -->
+  <AM_SmallCase.description>一个小型军用补给箱，也许里面有什么东西。</AM_SmallCase.description>
+  
+  <!-- EN: snack storage racks -->
+  <AM_Snack_StorageRacks.label>零食货架</AM_Snack_StorageRacks.label>
+  <!-- EN: Some shelves with scattered packaged snacks. -->
+  <AM_Snack_StorageRacks.description>一个散落着包装好的零食的货架。</AM_Snack_StorageRacks.description>
+  
+  <!-- EN: sports bag -->
+  <AM_SportsBag.label>运动包</AM_SportsBag.label>
+  <!-- EN: A sporting bag. It is already broken, but it seems to contain something inside. -->
+  <AM_SportsBag.description>一个运动包。它已经坏了，但里面似乎装着什么东西。</AM_SportsBag.description>
+  
+  <!-- EN: storage racks -->
+  <AM_StorageRacks.label>货架</AM_StorageRacks.label>
+  <!-- EN: Some shelves with scattered goods. -->
+  <AM_StorageRacks.description>一个装着各种货物的货架。</AM_StorageRacks.description>
+  
+  <!-- EN: large shelves -->
+  <AM_ThreeLayerRacks.label>大型货架</AM_ThreeLayerRacks.label>
+  <!-- EN: A large shelf cluttered with boxes. -->
+  <AM_ThreeLayerRacks.description>堆满箱子的大货架。</AM_ThreeLayerRacks.description>
+  
+  <!-- EN: miscellaneous storage racks -->
+  <AM_TousledStorageRacks.label>杂物货架</AM_TousledStorageRacks.label>
+  <!-- EN: Some shelves with scattered goods. -->
+  <AM_TousledStorageRacks.description>一个装着各种货物的货架</AM_TousledStorageRacks.description>
+  
+  <!-- EN: travel bag -->
+  <AM_TravelBag.label>旅行包</AM_TravelBag.label>
+  <!-- EN: An oversized and eye-catching purple travel bag. It is already broken, but seems to contain something inside. -->
+  <AM_TravelBag.description>一个引人注目的超大尺寸紫色背包，早已损坏，但里面似乎装着什么东西</AM_TravelBag.description>
+  
+  <!-- EN: vegetable shelf -->
+  <AM_VegetableShelf.label>蔬菜货架</AM_VegetableShelf.label>
+  <!-- EN: A long forgotten shelf containing vegetables. -->
+  <AM_VegetableShelf.description>一个被遗忘已久的蔬菜架。</AM_VegetableShelf.description>
+  
+  <!-- EN: vending machine -->
+  <AM_VendingMachine.label>自动售货机</AM_VendingMachine.label>
+  <!-- EN: A damaged ancient vending machine. -->
+  <AM_VendingMachine.description>一台损坏的老式自动售货机。</AM_VendingMachine.description>
+  
+  <!-- EN: weapon case -->
+  <AM_WeaponCase.label>武器箱</AM_WeaponCase.label>
+  <!-- EN: A well-worn container. It seems to have something inside. -->
+  <AM_WeaponCase.description>一个磨损严重的箱子。里面好像有什么东西。</AM_WeaponCase.description>
+  
+  <!-- EN: opened weapon case -->
+  <AM_WeaponCaseLow.label>被撬开的武器箱</AM_WeaponCaseLow.label>
+  <!-- EN: A weapon case that has been pried open. It seems to have something inside. -->
+  <AM_WeaponCaseLow.description>一个被撬开的武器箱。里面好像有什么东西。</AM_WeaponCaseLow.description>
+  
+</LanguageData>

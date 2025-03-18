@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: drifter -->
+  <AM_Drifter.label>流浪者</AM_Drifter.label>
+  
+  <!-- EN: scavenger gunner -->
+  <AM_EnemyScavenger.label>拾荒枪手</AM_EnemyScavenger.label>
+  
+  <!-- EN: megascarab -->
+  <AM_Megascarab.label>巨型甲虫</AM_Megascarab.label>
+  
+  <!-- EN: megaspider -->
+  <AM_Megaspider.label>巨型蜘蛛</AM_Megaspider.label>
+  
+  <!-- EN: mercenary slasher -->
+  <AM_Mercenary_Slasher.label>雇佣刀手</AM_Mercenary_Slasher.label>
+  
+  <!-- EN: pirate gunner -->
+  <AM_Pirate.label>海盗枪手</AM_Pirate.label>
+  
+  <!-- EN: boss -->
+  <AM_PirateBoss.label>帮派头目</AM_PirateBoss.label>
+  <!-- EN: bosses -->
+  <AM_PirateBoss.labelPlural>头目</AM_PirateBoss.labelPlural>
+  
+  <!-- EN: spelopede -->
+  <AM_Spelopede.label>洞穴阔步虫</AM_Spelopede.label>
+  
+  <!-- EN: scavenger thrasher -->
+  <AM_Thrasher.label>拾荒打手</AM_Thrasher.label>
+  
+</LanguageData>

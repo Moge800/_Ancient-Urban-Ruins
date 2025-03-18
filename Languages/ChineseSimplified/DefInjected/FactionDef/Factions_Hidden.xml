@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: pirate scavenger -->
+  <AM_EnemyPirate.label>拾荒者海盗</AM_EnemyPirate.label>
+  <!-- EN: boss -->
+  <AM_EnemyPirate.leaderTitle>老板</AM_EnemyPirate.leaderTitle>
+  <!-- EN: pirate -->
+  <AM_EnemyPirate.pawnSingular>海盗</AM_EnemyPirate.pawnSingular>
+  <!-- EN: pirates -->
+  <AM_EnemyPirate.pawnsPlural>海盗们</AM_EnemyPirate.pawnsPlural>
+  
+</LanguageData>

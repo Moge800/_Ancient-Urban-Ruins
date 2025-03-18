@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ========== Tools ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AM_Makarov" or defName="AM_APS" or defName="AM_FNHG" or defName="AM_CPHG"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>grip</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>1.54</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>1.54</cooldownTime>
+					<armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+			defName="AM_Spear68C" or
+			defName="AM_Spear68A" or
+			defName="AM_M5A3LT" or
+			defName="AM_TKB68A" or
+			defName="AM_AK68A" or
+			defName="AM_MK68A" or
+			defName="AM_RM68A" or
+			defName="AM_MCX" or
+			defName="AM_MCXC" or
+			defName="AM_ADAR" or
+			defName="AM_M4A" or
+			defName="AM_M4ASOP" or
+			defName="AM_M4C" or
+			defName="AM_M42U" or
+			defName="AM_AK101A" or
+			defName="AM_ASVAL" or
+			defName="AM_VSS" or
+			defName="AM_DTMDR" or
+			defName="AM_MK17A" or
+			defName="AM_R11A" or
+			defName="AM_SR25A" or
+			defName="AM_Hunter" or
+			defName="AM_M700A" or
+			defName="AM_MK18M" or
+			defName="AM_PKM" or
+			defName="AM_PKP" or
+			defName="AM_AVT" or
+			defName="AM_MPX" or
+			defName="AM_MPXL" or
+			defName="AM_STM" or
+			defName="AM_STMC"
+			]/tools
+		</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2.02</cooldownTime>
+					<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<!-- ========== M7 Spear CQB ========== -->
+	<!-- Desc mentions low range and high fire rate-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_Spear68C</defName>
+		<statBases>
+			<Bulk>7.3</Bulk>
+			<Mass>2.61</Mass>
+			<SwayFactor>0.99</SwayFactor>
+			<ShotSpread>0.13</ShotSpread>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.47</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+			<warmupTime>0.8</warmupTime>
+			<range>48</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_227A</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_277Fury</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_Spear68C"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== M7 Spear ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_Spear68A</defName>
+		<statBases>
+			<Bulk>7.93</Bulk>
+			<Mass>2.71</Mass>
+			<SwayFactor>1.1</SwayFactor>
+			<ShotSpread>0.11</ShotSpread>
+			<SightsEfficiency>2.24</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.42</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+			<warmupTime>1.3</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_227SD</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_277Fury</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_Spear68A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MCX M5A3 ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_M5A3LT</defName>
+		<statBases>
+			<Bulk>7.3</Bulk>
+			<Mass>2.61</Mass>
+			<SwayFactor>1.02</SwayFactor>
+			<ShotSpread>0.13</ShotSpread>
+			<SightsEfficiency>2.1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.03</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_300AACBlackout</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_M5A3LT"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== TKB 6.8 ========== -->
+	<!--Desc mentions low accuracy-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_TKB68A</defName>
+		<statBases>
+			<Bulk>5.25</Bulk>
+			<Mass>2.34</Mass>
+			<SwayFactor>0.82</SwayFactor>
+			<ShotSpread>0.29</ShotSpread>
+			<SightsEfficiency>2.36</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.61</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+			<warmupTime>1.2</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_227A</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>25</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_277Fury</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_TKB68A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== AK 6.8 ========== -->
+	<!--Desc mentions low range and high fire rate-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_AK68A</defName>
+		<statBases>
+			<Bulk>9.45</Bulk>
+			<Mass>3.3</Mass>
+			<SwayFactor>1.28</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.2</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>48</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_227A</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_277Fury</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_AK68A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== SCAR 6.8 ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_MK68A</defName>
+		<statBases>
+			<Bulk>7.11</Bulk>
+			<Mass>3.5</Mass>
+			<SwayFactor>1.32</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.13</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_227SD</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_277Fury</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_MK68A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== RM 6.8 ========== -->
+	<!--Desc mentions low fire rate-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_RM68A</defName>
+		<statBases>
+			<Bulk>7.3</Bulk>
+			<Mass>3.5</Mass>
+			<SwayFactor>1.08</SwayFactor>
+			<ShotSpread>0.06</ShotSpread>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.13</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_227SD</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_277Fury</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_RM68A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MCX ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_MCX</defName>
+		<statBases>
+			<Bulk>7.93</Bulk>
+			<Mass>2.71</Mass>
+			<SwayFactor>1.12</SwayFactor>
+			<ShotSpread>0.11</ShotSpread>
+			<SightsEfficiency>2.36</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.03</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
+			<warmupTime>1.4</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_556SD</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_300AACBlackout</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_MCX"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MCX CQB ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_MCXC</defName>
+		<statBases>
+			<Bulk>8.3</Bulk>
+			<Mass>2.61</Mass>
+			<SwayFactor>0.99</SwayFactor>
+			<ShotSpread>0.15</ShotSpread>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.03</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
+			<warmupTime>0.9</warmupTime>
+			<range>48</range>
+			<burstShotCount>10</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>60</magazineSize>
+			<reloadTime>4.9</reloadTime>
+			<ammoSet>AmmoSet_300AACBlackout</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>5</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_MCXC"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== ADAR ========== -->
+	<!--Default Hollow Point-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_ADAR</defName>
+		<statBases>
+			<Bulk>8.2</Bulk>
+			<Mass>2.9</Mass>
+			<SwayFactor>1.11</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.59</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_556x45mmNATO_HP</defaultProjectile>
+			<warmupTime>0.9</warmupTime>
+			<range>48</range>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>10</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_ADAR"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== M4A1 ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_M4A</defName>
+		<statBases>
+			<Bulk>6.8</Bulk>
+			<Mass>2.72</Mass>
+			<SwayFactor>1.03</SwayFactor>
+			<ShotSpread>0.12</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.65</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+			<warmupTime>0.9</warmupTime>
+			<range>44</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_M4A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== M4A1 SOPII ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_M4ASOP</defName>
+		<statBases>
+			<Bulk>7.56</Bulk>
+			<Mass>2.92</Mass>
+			<SwayFactor>1.17</SwayFactor>
+			<ShotSpread>0.1</ShotSpread>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.59</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_556x45mmNATO_SSAAP</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_556SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_556x45mmSSAAP</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_M4ASOP"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== M4A1 CQB ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_M4C</defName>
+		<statBases>
+			<Bulk>6.8</Bulk>
+			<Mass>2.72</Mass>
+			<SwayFactor>1.03</SwayFactor>
+			<ShotSpread>0.12</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.65</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_556x45mmNATO_SSAAP</defaultProjectile>
+			<warmupTime>0.9</warmupTime>
+			<range>44</range>
+			<burstShotCount>10</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>60</magazineSize>
+			<reloadTime>4.9</reloadTime>
+			<ammoSet>AmmoSet_556x45mmSSAAP</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>5</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_M4C"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== M4A1 2U ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_M42U</defName>
+		<statBases>
+			<Bulk>7.8</Bulk>
+			<Mass>2.92</Mass>
+			<SwayFactor>1.11</SwayFactor>
+			<ShotSpread>0.12</ShotSpread>
+			<SightsEfficiency>2.36</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.59</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_556x45mmNATO_SSAAP</defaultProjectile>
+			<warmupTime>1.2</warmupTime>
+			<range>51</range>
+			<burstShotCount>10</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>60</magazineSize>
+			<reloadTime>4.9</reloadTime>
+			<ammoSet>AmmoSet_556x45mmSSAAP</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>5</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_M42U"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== AK101 ========== -->
+	<!--Desc mentions low recoil-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_AK101A</defName>
+		<statBases>
+			<Bulk>7</Bulk>
+			<Mass>3.6</Mass>
+			<SwayFactor>1.3</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.3</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_556x45mmNATO_SSAAP</defaultProjectile>
+			<warmupTime>0.8</warmupTime>
+			<range>44</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_556SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_556x45mmSSAAP</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_AK101A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== AS VAL ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_ASVAL</defName>
+		<statBases>
+			<Bulk>6.15</Bulk>
+			<Mass>2.6</Mass>
+			<SwayFactor>1.2</SwayFactor>
+			<ShotSpread>0.14</ShotSpread>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.98</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x39mmSoviet_FMJ</defaultProjectile>
+			<warmupTime>1.2</warmupTime>
+			<range>44</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_556SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_9x39mmSoviet</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_ASVAL"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== AS VAL ========== -->
+	<!--Desc mentions small mag-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_VSS</defName>
+		<statBases>
+			<Bulk>8.94</Bulk>
+			<Mass>2.6</Mass>
+			<SwayFactor>1.19</SwayFactor>
+			<ShotSpread>0.14</ShotSpread>
+			<SightsEfficiency>2.24</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.98</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x39mmSoviet_FMJ</defaultProjectile>
+			<warmupTime>1.3</warmupTime>
+			<range>44</range>
+			<burstShotCount>4</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_556SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_9x39mmSoviet</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>2</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_VSS"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MDR ========== -->
+	<!--Desc mentions low recoil-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_DTMDR</defName>
+		<statBases>
+			<Bulk>6.91</Bulk>
+			<Mass>3.94</Mass>
+			<SwayFactor>1.15</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SightsEfficiency>2.36</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.7</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+			<warmupTime>1.4</warmupTime>
+			<range>75</range>
+			<burstShotCount>3</burstShotCount>
+			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_762SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>2</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_DTMDR"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MK17 ========== -->
+	<!--Desc mentions low recoil-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_MK17A</defName>
+		<statBases>
+			<Bulk>7.11</Bulk>
+			<Mass>3.50</Mass>
+			<SwayFactor>1.32</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.13</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_762SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_MK17A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== R11 ========== -->
+	<!--Desc mentions accuracy, which already is-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_R11A</defName>
+		<statBases>
+			<Bulk>10.00</Bulk>
+			<Mass>7.14</Mass>
+			<SwayFactor>1.75</SwayFactor>
+			<ShotSpread>0.08</ShotSpread>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.49</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+			<warmupTime>1.2</warmupTime>
+			<range>75</range>
+			<soundCast>AM_Shot_762SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_R11A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== SR25DR ========== -->
+	<!--Desc mentions CQB-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_SR25A</defName>
+		<statBases>
+			<Bulk>11.18</Bulk>
+			<Mass>4.30</Mass>
+			<SwayFactor>1.59</SwayFactor>
+			<ShotSpread>0.07</ShotSpread>
+			<SightsEfficiency>2</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.92</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>75</range>
+			<soundCast>AM_Shot_762SD</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_SR25A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Hunter ========== -->
+	<!--Desc mentions low ammo-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_Hunter</defName>
+		<statBases>
+			<Bulk>9.43</Bulk>
+			<Mass>3.60</Mass>
+			<SwayFactor>1.34</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.1</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+			<warmupTime>1.3</warmupTime>
+			<range>68</range>
+			<soundCast>AM_Shot_54R</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>10</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_Hunter"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== M700 ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_M700A</defName>
+		<statBases>
+			<Bulk>10.50</Bulk>
+			<Mass>4.1</Mass>
+			<SwayFactor>1.52</SwayFactor>
+			<ShotSpread>0.04</ShotSpread>
+			<SightsEfficiency>2.36</SightsEfficiency>
+			<RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.97</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+			<warmupTime>1.4</warmupTime>
+			<range>75</range>
+			<soundCast>Shot_SniperRifle</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>10</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_M700A"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MK18 ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_MK18M</defName>
+		<statBases>
+			<Bulk>12.45</Bulk>
+			<Mass>5.5</Mass>
+			<SwayFactor>1.84</SwayFactor>
+			<ShotSpread>0.05</ShotSpread>
+			<SightsEfficiency>1.7</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.32</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
+			<warmupTime>1.3</warmupTime>
+			<range>75</range>
+			<soundCast>AM_Shot_338LM</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>10</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_338Lapua</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_MK18M"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== PKM ========== -->
+	<!--Desc mentions AP round by default-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_PKM</defName>
+		<statBases>
+			<Bulk>13.92</Bulk>
+			<Mass>7.5</Mass>
+			<SwayFactor>1.98</SwayFactor>
+			<ShotSpread>0.05</ShotSpread>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.47</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x54mmR_AP</defaultProjectile>
+			<warmupTime>1.2</warmupTime>
+			<range>62</range>
+			<burstShotCount>10</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_54R</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>100</magazineSize>
+			<reloadTime>7.8</reloadTime>
+			<ammoSet>AmmoSet_762x54mmR</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>5</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>SuppressFire</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_LMG</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_PKM"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== PKP ========== -->
+	<!--Desc mentions AP round by default-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_PKP</defName>
+		<statBases>
+			<Bulk>14.00</Bulk>
+			<Mass>7</Mass>
+			<SwayFactor>2.07</SwayFactor>
+			<ShotSpread>0.04</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x54mmR_AP</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>62</range>
+			<burstShotCount>10</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_54R</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>100</magazineSize>
+			<reloadTime>7.8</reloadTime>
+			<ammoSet>AmmoSet_762x54mmR</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>5</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>SuppressFire</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_LMG</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_PKP"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Avtomat ========== -->
+	<!--Desc mentions poor accuracy-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_AVT</defName>
+		<statBases>
+			<Bulk>10.45</Bulk>
+			<Mass>4.4</Mass>
+			<SwayFactor>1.49</SwayFactor>
+			<ShotSpread>0.16</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_65x50mmSRArisaka_FMJ</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<soundCast>AM_Shot_54R</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>25</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x54mmR</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_AVT"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MPX ========== -->
+	<!--Desc mentions default AP round-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_MPX</defName>
+		<statBases>
+			<Bulk>4.25</Bulk>
+			<Mass>2.7</Mass>
+			<SwayFactor>0.88</SwayFactor>
+			<ShotSpread>0.15</ShotSpread>
+			<SightsEfficiency>1.10</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.41</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x19mmPara_AP</defaultProjectile>
+			<warmupTime>0.5</warmupTime>
+			<range>25</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>Shot_HeavySMG</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>AM_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_MPX"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== MPXL ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_MPXL</defName>
+		<statBases>
+			<Bulk>5.65</Bulk>
+			<Mass>2.7</Mass>
+			<SwayFactor>0.92</SwayFactor>
+			<ShotSpread>0.14</ShotSpread>
+			<SightsEfficiency>1.20</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.41</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+			<warmupTime>0.5</warmupTime>
+			<range>38</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>Shot_HeavySMG</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>50</magazineSize>
+			<reloadTime>4.9</reloadTime>
+			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>AM_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_MPXL"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== STM-7 ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_STM</defName>
+		<statBases>
+			<Bulk>6.8</Bulk>
+			<Mass>2.0</Mass>
+			<SwayFactor>0.96</SwayFactor>
+			<ShotSpread>0.12</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.64</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+			<warmupTime>0.9</warmupTime>
+			<range>31</range>
+			<soundCast>Shot_HeavySMG</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>33</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_STM"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== STMC ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_STMC</defName>
+		<statBases>
+			<Bulk>7.8</Bulk>
+			<Mass>2</Mass>
+			<SwayFactor>0.9</SwayFactor>
+			<ShotSpread>0.15</ShotSpread>
+			<SightsEfficiency>1.10</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.64</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+			<warmupTime>0.8</warmupTime>
+			<range>35</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>Shot_HeavySMG</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>50</magazineSize>
+			<reloadTime>4.9</reloadTime>
+			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>AM_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_STMC"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== APS ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_APS</defName>
+		<statBases>
+			<Bulk>2.25</Bulk>
+			<Mass>1.22</Mass>
+			<SwayFactor>1.16</SwayFactor>
+			<ShotSpread>0.16</ShotSpread>
+			<SightsEfficiency>0.7</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.64</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x18mmMakarov_FMJ</defaultProjectile>
+			<warmupTime>0.6</warmupTime>
+			<range>12</range>
+			<burstShotCount>5</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>Shot_MachinePistol</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_9x18mmMakarov</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>AM_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_APS"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Makarov ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_Makarov</defName>
+		<statBases>
+			<Bulk>1.61</Bulk>
+			<Mass>0.73</Mass>
+			<SwayFactor>0.78</SwayFactor>
+			<ShotSpread>0.18</ShotSpread>
+			<SightsEfficiency>0.7</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.31</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x18mmMakarov_FMJ</defaultProjectile>
+			<warmupTime>0.6</warmupTime>
+			<range>12</range>
+			<soundCast>Shot_MachinePistol</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>8</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_9x18mmMakarov</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>AM_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_Makarov"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== FM57 ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_FNHG</defName>
+		<statBases>
+			<Bulk>2.08</Bulk>
+			<Mass>0.67</Mass>
+			<SwayFactor>0.92</SwayFactor>
+			<ShotSpread>0.17</ShotSpread>
+			<SightsEfficiency>0.7</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.27</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
+			<warmupTime>0.6</warmupTime>
+			<range>12</range>
+			<soundCast>Shot_Autopistol</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_FN57x28mm</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>AM_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_FNHG"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== CP46 ========== -->
+	<!-- Desc mentions default AP round-->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AM_CPHG</defName>
+		<statBases>
+			<Bulk>2.69</Bulk>
+			<Mass>0.7</Mass>
+			<SwayFactor>1.13</SwayFactor>
+			<ShotSpread>0.16</ShotSpread>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.79</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_9x19mmPara_AP</defaultProjectile>
+			<warmupTime>0.5</warmupTime>
+			<range>12</range>
+			<burstShotCount>5</burstShotCount>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<soundCast>Shot_MachinePistol</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>20</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>AM_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AM_CPHG"]</xpath>
+		<value>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingOffset>-0.05,0</CasingOffset>
+			</li>
+		</value>
+	</Operation>
+</Patch>

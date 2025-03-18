@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: custom site -->
+  <AM_CustomSite.label>TODO</AM_CustomSite.label>
+  <!-- EN: A custom site. -->
+  <AM_CustomSite.description>TODO</AM_CustomSite.description>
+  <!-- EN: Investigate {0} -->
+  <AM_CustomSite.approachingReportString>TODO</AM_CustomSite.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <AM_CustomSite.approachOrderString>TODO</AM_CustomSite.approachOrderString>
+  
+  <!-- EN: Mall -->
+  <AM_MALL_L_Site.label>商业中心</AM_MALL_L_Site.label>
+  <!-- EN: A Mall. -->
+  <AM_MALL_L_Site.description>一个商业中心</AM_MALL_L_Site.description>
+  <!-- EN: Investigate {0} -->
+  <AM_MALL_L_Site.approachingReportString>前往商业中心</AM_MALL_L_Site.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <AM_MALL_L_Site.approachOrderString>进入商业中心</AM_MALL_L_Site.approachOrderString>
+  
+  <!-- EN: Mall -->
+  <AM_MALL_S_Site.label>商业中心</AM_MALL_S_Site.label>
+  <!-- EN: A Mall. -->
+  <AM_MALL_S_Site.description>商业中心</AM_MALL_S_Site.description>
+  <!-- EN: Investigate {0} -->
+  <AM_MALL_S_Site.approachingReportString>前往商业中心</AM_MALL_S_Site.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <AM_MALL_S_Site.approachOrderString>进入商业中心</AM_MALL_S_Site.approachOrderString>
+  
+  <!-- EN: Reserve -->
+  <AM_ReserveSite.label>储备站</AM_ReserveSite.label>
+  <!-- EN: A Reserve. -->
+  <AM_ReserveSite.description>一个储备站</AM_ReserveSite.description>
+  <!-- EN: Investigate {0} -->
+  <AM_ReserveSite.approachingReportString>前往储备站</AM_ReserveSite.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <AM_ReserveSite.approachOrderString>进入储备站</AM_ReserveSite.approachOrderString>
+  
+  <!-- EN: Street -->
+  <AM_StreetSite.label>街区</AM_StreetSite.label>
+  <!-- EN: A Street. -->
+  <AM_StreetSite.description>一条街区</AM_StreetSite.description>
+  <!-- EN: Investigate {0} -->
+  <AM_StreetSite.approachingReportString>前往街区</AM_StreetSite.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <AM_StreetSite.approachOrderString>进入街区</AM_StreetSite.approachOrderString>
+  
+</LanguageData>

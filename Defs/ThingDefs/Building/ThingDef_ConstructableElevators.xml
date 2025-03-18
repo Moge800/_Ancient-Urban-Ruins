@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_LargeElevator</defName>
+        <label>large facility elevator</label>
+        <description>A large facility elevator for personnel and vehicles to enter and exit.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/elevator</texPath>
+            <drawSize>(7.5,7.5)</drawSize>
+        </graphicData>
+        <size>(4,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+		<costList>
+			<Steel>750</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>60000</WorkToBuild>
+		</statBases>
+		 <designationCategory>Misc</designationCategory>	 
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_UndergroundFacilityA</li>
+					<li>AM_UndergroundFacilityB</li>
+					<li>AM_UndergroundFacilityC</li>
+					<li>AM_UndergroundFacilityD</li>
+                </maps>
+            </li>
+			<li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>-4</distance>
+            </li>
+        </modExtensions>
+		<comps>
+			<li Class="AncientMarket_Libraray.CompPropertiesFillPortal">
+                <filledBuilding>AM_BlockedLargeElevator</filledBuilding>
+                <fillingWorkAmount>3600</fillingWorkAmount>
+                <gizmoPath>Things/Icon/FillInPit</gizmoPath>
+                <gizmoName>Landfilling underground facilities</gizmoName>
+                <gizmoDesc>true</gizmoDesc>
+                <disgizmoName>Cancel landfill</disgizmoName>
+                <disgizmoDesc>true</disgizmoDesc>
+            </li>
+		</comps>
+		 <researchPrerequisites>
+         <li>MicroelectronicsBasics</li>
+        </researchPrerequisites>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<pathCost>0.3</pathCost>	 
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Exit_Staircase_LargeElevator</defName>
+        <label>large facility elevator</label>
+        <description>A large facility elevator for personnel and vehicles to enter and exit.</description>
+        <thingClass>AncientMarket_Libraray.MapExit</thingClass>
+        <category>Building</category>
+		<holdsRoof>true</holdsRoof>
+        <blockWind>true</blockWind>
+		<destroyable>false</destroyable>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/elevatorD</texPath>
+			<drawOffset>(0,0.1,0)</drawOffset>
+            <drawSize>(7.5,7.5)</drawSize>
+        </graphicData>
+        <size>(4,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>4</distance>
+            </li>
+        </modExtensions> 
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedLargeElevator</defName>
+		<label>Abandoned large elevator</label>
+		<description>Large elevators that have been abandoned and buried underground facilities are ready to be dismantled at any time.</description>
+		<graphicData>
+			<texPath>Things/Building/elevator</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>7.5</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(4,4)</size>
+		<costList>
+			<Steel>340</Steel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+	
+	
+	 <ThingDef Name="AM_ShelfBase" ParentName="BuildingBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>3</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <paintable>false</paintable>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+  </ThingDef>
+	
+	 <ThingDef Name="AM_StorageShelfBase" ParentName="AM_ShelfBase" Abstract="True">
+    <thingClass>Building_Storage</thingClass>
+    <building>
+      <storageGroupTag>Shelf</storageGroupTag>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories>
+            <li>Root</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Foods</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <designationHotKey>Misc12</designationHotKey>
+  </ThingDef>
+	
+<ThingDef ParentName="AM_StorageShelfBase">
+    <defName>AM_MaterialElevatorA</defName>
+    <label>material elevator</label>
+    <description>A large transport elevator used for transporting goods will transport the goods to the linked exit elevator when powered on. Personnel are prohibited from standing!</description>
+    <thingClass>AncientMarket_Libraray.Building_Transmit</thingClass>
+    <tickerType>Normal</tickerType>
+    <inspectorTabs>
+      <li>AncientMarket_Libraray.Tab_LevelTransmit</li>
+    </inspectorTabs>
+	 <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/MaterialElevatorA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1900</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+    </statBases>
+	<costList>
+		<Steel>750</Steel>
+		<ComponentSpacer>1</ComponentSpacer>
+		<ComponentIndustrial>10</ComponentIndustrial>
+	</costList>
+	 <designationCategory>Misc</designationCategory>	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>450</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <size>(4,4)</size>
+    <designationHotKey>Misc12</designationHotKey>
+    <building>
+      <relatedBuildCommands>
+        <li>ShelfSmall</li>
+      </relatedBuildCommands>
+    </building>
+  </ThingDef>
+  
+  
+  
+    <ThingDef ParentName="AM_StorageShelfBase">
+    <defName>AM_MaterialElevatorB</defName>
+    <label>material elevator Outlet</label>
+    <description>A large elevator used for transporting materials from the entrance to here.</description>
+    <thingClass>AncientMarket_Libraray.Building_Receive</thingClass>
+    <inspectorTabs>
+      <li>AncientMarket_Libraray.Tab_LevelTransmit</li>
+    </inspectorTabs>
+	<rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/MaterialElevatorB</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1900</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+	<costList>
+		<Steel>750</Steel>
+		<ComponentSpacer>1</ComponentSpacer>
+		<ComponentIndustrial>10</ComponentIndustrial>
+	</costList>
+	 <designationCategory>Misc</designationCategory>	
+    <size>(4,4)</size>
+    <designationHotKey>Misc12</designationHotKey>
+    <building>
+      <relatedBuildCommands>
+        <li>ShelfSmall</li>
+      </relatedBuildCommands>
+    </building>
+  </ThingDef>
+
+
+<ThingDef ParentName="AM_StorageShelfBase">
+    <defName>AM_MaterialElevatorC</defName>
+    <label>material elevator</label>
+    <description>A large transport elevator used for transporting goods will transport the goods to the linked exit elevator when powered on. Personnel are prohibited from standing!</description>
+    <thingClass>AncientMarket_Libraray.Building_Transmit</thingClass>
+    <tickerType>Normal</tickerType>
+    <inspectorTabs>
+      <li>AncientMarket_Libraray.Tab_LevelTransmit</li>
+    </inspectorTabs>
+	 <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/MaterialElevatorC</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+	<holdsRoof>true</holdsRoof>
+    <blockWind>true</blockWind>
+    <statBases>
+      <MaxHitPoints>1900</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+    </statBases>
+	<costList>
+		<Steel>750</Steel>
+		<ComponentSpacer>1</ComponentSpacer>
+		<ComponentIndustrial>10</ComponentIndustrial>
+	</costList>
+	 <designationCategory>Misc</designationCategory>	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>450</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="BuildingExtraRenderer.CompProperties_BuildingExtraRenderer">
+        <extraGraphic>
+          <li>
+            <texPath>Things/Building/MaterialElevatorE</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(7,7)</drawSize>
+            <drawOffset>(0,3,0)</drawOffset>
+          </li>
+        </extraGraphic>
+      </li>
+    </comps>
+    <size>(4,4)</size>
+    <designationHotKey>Misc12</designationHotKey>
+    <building>
+      <relatedBuildCommands>
+        <li>ShelfSmall</li>
+      </relatedBuildCommands>
+    </building>
+  </ThingDef>
+  
+   <ThingDef ParentName="AM_StorageShelfBase">
+    <defName>AM_MaterialElevatorD</defName>
+    <label>material elevator Outlet</label>
+    <description>A large elevator used for transporting materials from the entrance to here.</description>
+    <thingClass>AncientMarket_Libraray.Building_Receive</thingClass>
+    <inspectorTabs>
+      <li>AncientMarket_Libraray.Tab_LevelTransmit</li>
+    </inspectorTabs>
+	<rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/MaterialElevatorD</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+	<holdsRoof>true</holdsRoof>
+    <blockWind>true</blockWind>
+    <statBases>
+      <MaxHitPoints>1900</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+	<costList>
+		<Steel>750</Steel>
+		<ComponentSpacer>1</ComponentSpacer>
+		<ComponentIndustrial>10</ComponentIndustrial>
+	</costList>
+	 <designationCategory>Misc</designationCategory>	
+    <size>(4,4)</size>
+    <designationHotKey>Misc12</designationHotKey>
+    <building>
+      <relatedBuildCommands>
+        <li>ShelfSmall</li>
+      </relatedBuildCommands>
+    </building>
+	<comps>
+	  <li Class="BuildingExtraRenderer.CompProperties_BuildingExtraRenderer">
+        <extraGraphic>
+          <li>
+            <texPath>Things/Building/MaterialElevatorE</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(7,7)</drawSize>
+            <drawOffset>(0,3,0)</drawOffset>
+          </li>
+        </extraGraphic>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

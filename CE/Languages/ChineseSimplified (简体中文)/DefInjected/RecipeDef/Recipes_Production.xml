@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: disassemble firearm -->
+  <MakeAmmo_556x45mmNATO_SSAAP.label>制作 5.56x45mm 北约标准步枪弹 (SSAAP) x500</MakeAmmo_556x45mmNATO_SSAAP.label>
+  <!-- EN: Disassemble firearms into weapon components. -->
+  <MakeAmmo_556x45mmNATO_SSAAP.description>制作500发5.56x45mm 北约标准步枪弹 (SSAAP)</MakeAmmo_556x45mmNATO_SSAAP.description>
+  <!-- EN: disassembling firearm. -->
+  <MakeAmmo_556x45mmNATO_SSAAP.jobString>正在制作500发5.56x45mm 北约标准步枪弹 (SSAAP)</MakeAmmo_556x45mmNATO_SSAAP.jobString>
+  
+
+  
+</LanguageData>

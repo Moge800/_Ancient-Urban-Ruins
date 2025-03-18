@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Damaged large shelves -->
+  <AM_BDAShelfA_Open_Decoration.label>损坏的大型货架</AM_BDAShelfA_Open_Decoration.label>
+  <!-- EN: The damaged large shelf is now empty of goods. -->
+  <AM_BDAShelfA_Open_Decoration.description>一个已经损坏的大型货架，上面空空如也。</AM_BDAShelfA_Open_Decoration.description>
+  
+  <!-- EN: Damaged large shelves -->
+  <AM_BDAShelfB_Open_Decoration.label>损坏的大型货架</AM_BDAShelfB_Open_Decoration.label>
+  <!-- EN: The damaged large shelf is now empty of goods. -->
+  <AM_BDAShelfB_Open_Decoration.description>一个已经损坏的大型货架，上面空空如也。</AM_BDAShelfB_Open_Decoration.description>
+  
+  <!-- EN: Big case -->
+  <AM_BigCase_Open_Decoration.label>大型军用物资箱</AM_BigCase_Open_Decoration.label>
+  <!-- EN: The opened case has nothing inside. -->
+  <AM_BigCase_Open_Decoration.description>一个空空如也的箱子</AM_BigCase_Open_Decoration.description>
+  
+  <!-- EN: Empty clothes hanger -->
+  <AM_ClothesHangerEmpty_Decoration.label>空挂衣架</AM_ClothesHangerEmpty_Decoration.label>
+  <!-- EN: Clothing racks in clothing stores. -->
+  <AM_ClothesHangerEmpty_Decoration.description>一个空空如也的服装挂架。</AM_ClothesHangerEmpty_Decoration.description>
+  
+  <!-- EN: Damaged large shelves -->
+  <AM_DoubleDeckRacks_Open_Decoration.label>损坏的大型货架</AM_DoubleDeckRacks_Open_Decoration.label>
+  <!-- EN: The damaged large shelf is now empty of goods. -->
+  <AM_DoubleDeckRacks_Open_Decoration.description>一个已经损坏的大型货架，上面空空如也。</AM_DoubleDeckRacks_Open_Decoration.description>
+  
+  <!-- EN: Empty shelves -->
+  <AM_EmptyShelves_Decoration.label>空货架</AM_EmptyShelves_Decoration.label>
+  <!-- EN: Empty supermarket shelves. -->
+  <AM_EmptyShelves_Decoration.description>一个空的超市货架。</AM_EmptyShelves_Decoration.description>
+  
+  <!-- EN: Old freezer -->
+  <AM_OldFreezer_Decoration.label>旧冷柜</AM_OldFreezer_Decoration.label>
+  <!-- EN: Empty supermarket freezer. -->
+  <AM_OldFreezer_Decoration.description>一个空的旧冷柜</AM_OldFreezer_Decoration.description>
+  
+  <!-- EN: cardboard box -->
+  <AM_PaperBox_A_Open_Decoration.label>纸箱</AM_PaperBox_A_Open_Decoration.label>
+  <!-- EN: The opened cardboard box has nothing inside. -->
+  <AM_PaperBox_A_Open_Decoration.description>一个被打开的纸箱子，里面是空的。</AM_PaperBox_A_Open_Decoration.description>
+  
+  <!-- EN: cardboard box -->
+  <AM_PaperBox_B_Open_Decoration.label>纸箱</AM_PaperBox_B_Open_Decoration.label>
+  <!-- EN: The opened cardboard box has nothing inside. -->
+  <AM_PaperBox_B_Open_Decoration.description>一个被打开的纸箱子，里面是空的。</AM_PaperBox_B_Open_Decoration.description>
+  
+  <!-- EN: cardboard box -->
+  <AM_PaperBox_C_Open_Decoration.label>纸箱</AM_PaperBox_C_Open_Decoration.label>
+  <!-- EN: The opened cardboard box has nothing inside. -->
+  <AM_PaperBox_C_Open_Decoration.description>一个被打开的纸箱子，里面是空的。</AM_PaperBox_C_Open_Decoration.description>
+  
+  <!-- EN: Rusty empty shelves -->
+  <AM_RustyEmptyShelves_Decoration.label>破损的超市货架</AM_RustyEmptyShelves_Decoration.label>
+  <!-- EN: Collapsed supermarket shelves. -->
+  <AM_RustyEmptyShelves_Decoration.description>一个完全破损的超市货架</AM_RustyEmptyShelves_Decoration.description>
+  
+  <!-- EN: Small case -->
+  <AM_SmallCase_Open_Decoration.label>小型军用物资箱</AM_SmallCase_Open_Decoration.label>
+  <!-- EN: The opened case has nothing inside. -->
+  <AM_SmallCase_Open_Decoration.description>一个被打开的小型军用物资箱，里面是空的。</AM_SmallCase_Open_Decoration.description>
+  
+  <!-- EN: Damaged large shelves -->
+  <AM_ThreeLayerRacks_Open_Decoration.label>损坏的大型货架</AM_ThreeLayerRacks_Open_Decoration.label>
+  <!-- EN: The damaged large shelf is now empty of goods. -->
+  <AM_ThreeLayerRacks_Open_Decoration.description>一个已经损坏的大型货架，上面空空如也。</AM_ThreeLayerRacks_Open_Decoration.description>
+  
+  <!-- EN: empty vegetable shelf -->
+  <AM_VegetableShelfEmpty_Decoration.label>空蔬菜货架</AM_VegetableShelfEmpty_Decoration.label>
+  <!-- EN: Empty vegetable shelves. -->
+  <AM_VegetableShelfEmpty_Decoration.description>一个空的蔬菜货架。</AM_VegetableShelfEmpty_Decoration.description>
+  
+  <!-- EN: Vending machine -->
+  <AM_VendingMachine_Decoration.label>自动售货机</AM_VendingMachine_Decoration.label>
+  <!-- EN: The vending machine that has been destroyed. -->
+  <AM_VendingMachine_Decoration.description>一个已经损坏的自动售货机。</AM_VendingMachine_Decoration.description>
+  
+  <!-- EN: opened weapon case -->
+  <AM_WeaponCase_Open_Decoration.label>被打开的武器箱</AM_WeaponCase_Open_Decoration.label>
+  <!-- EN: The opened Weapon case has nothing inside. -->
+  <AM_WeaponCase_Open_Decoration.description>一个被打开的武器箱，里面是空的。</AM_WeaponCase_Open_Decoration.description>
+  
+</LanguageData>

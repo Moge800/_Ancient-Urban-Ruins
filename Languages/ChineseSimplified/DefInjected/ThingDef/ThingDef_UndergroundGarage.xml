@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Blocked underground parking lot entrance -->
+  <AM_BlockedUndergroundGarageEntrance.label>被封锁的地下停车场入口</AM_BlockedUndergroundGarageEntrance.label>
+  <!-- EN: An entrance to an underground parking lot ，that is blocked and impassable. -->
+  <AM_BlockedUndergroundGarageEntrance.description>一个地下停车场入口，被铁门封锁了，无法进入。</AM_BlockedUndergroundGarageEntrance.description>
+  
+  <!-- EN: underground parking lot entrance -->
+  <AM_Entrance_UndergroundGarage.label>地下停车场入口</AM_Entrance_UndergroundGarage.label>
+  <!-- EN: A large slope leading to the underground, dark inside, it seems that vehicles can also pass through. -->
+  <AM_Entrance_UndergroundGarage.description>一个通往地下停车场的大斜坡，看起来可以让载具进入。</AM_Entrance_UndergroundGarage.description>
+  
+  <!-- EN: underground parking lot exit -->
+  <AM_Exit_Staircase_UndergroundGarage.label>地下停车场出口</AM_Exit_Staircase_UndergroundGarage.label>
+  <!-- EN: A large slope leading to the ground. -->
+  <AM_Exit_Staircase_UndergroundGarage.description>一个通往地面的大斜坡。</AM_Exit_Staircase_UndergroundGarage.description>
+  
+</LanguageData>

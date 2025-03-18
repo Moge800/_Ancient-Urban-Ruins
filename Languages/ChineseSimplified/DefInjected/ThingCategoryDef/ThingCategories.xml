@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: container -->
+  <AM_Container.label>容器</AM_Container.label>
+  
+  <!-- EN: electronics -->
+  <AM_Electronics.label>电子产品</AM_Electronics.label>
+  
+  <!-- EN: rare items -->
+  <AM_Manufactured.label>稀有物品</AM_Manufactured.label>
+  
+  <!-- EN: medical supplies -->
+  <AM_MedicalSupplies.label>医疗补给</AM_MedicalSupplies.label>
+  
+  <!-- EN: Military components -->
+  <AM_SpecialComp.label>军规零件</AM_SpecialComp.label>
+  
+  <!-- EN: tools -->
+  <AM_Tool.label>工具</AM_Tool.label>
+  
+</LanguageData>

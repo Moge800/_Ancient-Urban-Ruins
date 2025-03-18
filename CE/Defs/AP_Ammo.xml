@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <CombatExtended.AmmoCategoryDef>
+		<defName>SSAAP</defName>
+		<label>Experimental discarding sabot</label>
+		<labelShort>SSAAP</labelShort>
+		<description>Experimental type ultra-high bore pressure tungsten core armor piercing discarding sabot，only special thick barrels can withstand the chamber pressure of this type of bullet.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_556x45mmSSAAP</defName>
+		<label>5.56x45mm NATO SSAAP</label>
+		<ammoTypes>
+			<Ammo_556x45mmNATO_FMJ>Bullet_556x45mmNATO_FMJ</Ammo_556x45mmNATO_FMJ>
+			<Ammo_556x45mmNATO_AP>Bullet_556x45mmNATO_AP</Ammo_556x45mmNATO_AP>
+			<Ammo_556x45mmNATO_HP>Bullet_556x45mmNATO_HP</Ammo_556x45mmNATO_HP>
+			<Ammo_556x45mmNATO_Incendiary>Bullet_556x45mmNATO_Incendiary</Ammo_556x45mmNATO_Incendiary>
+			<Ammo_556x45mmNATO_HE>Bullet_556x45mmNATO_HE</Ammo_556x45mmNATO_HE>
+			<Ammo_556x45mmNATO_Sabot>Bullet_556x45mmNATO_Sabot</Ammo_556x45mmNATO_Sabot>
+			<Ammo_556x45mmNATO_SSAAP>Bullet_556x45mmNATO_SSAAP</Ammo_556x45mmNATO_SSAAP>
+		</ammoTypes>
+		<similarTo>AmmoSet_RifleIntermediate</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="556x45mmNATOBase">
+		<defName>Ammo_556x45mmNATO_SSAAP</defName>
+		<label>5.56x45mm NATO (SSAAP)</label>
+		<graphicData>
+			<texPath>Things/AM_SSAAP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.07</MarketValue>
+			<Mass>0.011</Mass>
+		</statBases>
+		<ammoClass>SSAAP</ammoClass>
+		<cookOffProjectile>Bullet_556x45mmNATO_SSAAP</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base556x45mmNATOBullet">
+		<defName>Bullet_556x45mmNATO_SSAAP</defName>
+		<label>5.56mm NATO bullet (SSAAP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>35</armorPenetrationSharp>
+			<armorPenetrationBlunt>99.18</armorPenetrationBlunt>
+			<speed>227</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_556x45mmNATO_SSAAP</defName>
+		<label>make 5.56x45mm NATO (SSAAP) cartridge x500</label>
+		<description>Craft 500 5.56x45mm NATO (SSAAP) cartridges.</description>
+		<jobString>Making 5.56x45mm NATO (SSAAP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_556x45mmNATO_SSAAP>500</Ammo_556x45mmNATO_SSAAP>
+		</products>
+		<workAmount>2000</workAmount>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase" Name ="AM_FloorLabeling" Abstract="True">
+        <altitudeLayer>Floor</altitudeLayer>
+        <thingClass>Building</thingClass>
+        <selectable>false</selectable>
+        <passability>Standable</passability>
+        <category>Building</category>
+        <rotatable>false</rotatable>
+        <useHitPoints>false</useHitPoints>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+			<isTargetable>false</isTargetable>
+        </building>
+        <designationCategory>AM_FLOOR</designationCategory>	 
+    </ThingDef>
+
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_Arrow</defName>
+		<label>Arrow</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/Arrow</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+        <rotatable>true</rotatable>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_Bishop</defName>
+		<label>Bishop</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/Bishop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_Crown</defName>
+		<label>Crown</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/Crown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_D2A</defName>
+		<label>D2</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/D2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_Knight</defName>
+		<label>Knight</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/Knight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_Pawn</defName>
+		<label>Pawn</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/Pawn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_Queen</defName>
+		<label>Queen</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/Queen</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_Rook</defName>
+		<label>Rook</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/Rook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	
+	 <ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_RFC</defName>
+		<label>RFC</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/RFC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_DK</defName>
+		<label>DK</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/DK</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_ADI</defName>
+		<label>ADI</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/ADI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_HG</defName>
+		<label>HG</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/HG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_FloorLabeling">
+		<defName>AM_VC</defName>
+		<label>VC</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Building/FloorLabeling/VC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+ 
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_IndicatorLine_Yellow</defName>
+		<label>Indicator line</label>
+		<description>.</description>
+    	<thingClass>Building</thingClass>
+    	<category>Building</category>
+    	<graphicData>
+      		<texPath>Things/Building/FloorLabeling/IndicatorLine_Yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <linkType>Basic</linkType>
+            <linkFlags>
+              <li>Custom10</li>
+            </linkFlags>
+    	</graphicData>
+		 <uiIconPath>Things/Building/FloorLabeling/IndicatorLine_Yellow</uiIconPath> 
+    	<altitudeLayer>SmallWire</altitudeLayer>
+    	<passability>Standable</passability>
+        <useHitPoints>false</useHitPoints>
+    	<placingDraggableDimensions>1</placingDraggableDimensions>
+    	<costList>
+    	  <Steel>8</Steel>
+    	</costList>
+    	<rotatable>false</rotatable>
+    	<selectable>false</selectable>
+    	<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+				<designationCategory>AM_FLOOR</designationCategory>
+  	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_IndicatorLine</defName>
+		<label>Indicator line</label>
+		<description>.</description>
+    	<thingClass>Building</thingClass>
+    	<category>Building</category>
+    	<graphicData>
+      		<texPath>Things/Building/FloorLabeling/IndicatorLine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <linkType>Basic</linkType>
+            <linkFlags>
+              <li>Custom8</li>
+            </linkFlags>
+    	</graphicData>
+		 <uiIconPath>Things/Building/FloorLabeling/IndicatorLine</uiIconPath> 
+    	<altitudeLayer>SmallWire</altitudeLayer>
+    	<passability>Standable</passability>
+        <useHitPoints>false</useHitPoints>
+    	<placingDraggableDimensions>1</placingDraggableDimensions>
+    	<costList>
+    	  <Steel>8</Steel>
+    	</costList>
+    	<rotatable>false</rotatable>
+    	<selectable>false</selectable>
+    	<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+				<designationCategory>AM_FLOOR</designationCategory>
+  	</ThingDef>
+	
+	
+		<ThingDef ParentName="BuildingBase">
+		<defName>AM_Rail</defName>
+		<label>Rail</label>
+		<description>Common, rather rusty railway track.</description>
+    	<thingClass>Building</thingClass>
+    	<category>Building</category>
+    	<graphicData>
+      		<texPath>Things/Building/Railway/Rail_Altlas</texPath>
+      		<graphicClass>Graphic_Single</graphicClass>
+      		<damageData>
+       		<rect>(0,0.35,1,0.3)</rect>
+      		</damageData>
+            <linkType>Transmitter</linkType>
+            <linkFlags>
+              <li>Custom6</li>
+            </linkFlags>
+    	</graphicData>
+		<uiIconPath>Things/Building/Railway/Rail_UI</uiIconPath>
+    	<altitudeLayer>SmallWire</altitudeLayer>
+    	<passability>Standable</passability>
+    	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    	<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    	<statBases>
+      		<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+    	<placingDraggableDimensions>1</placingDraggableDimensions>
+    	<costList>
+    	  <Steel>8</Steel>
+    	</costList>
+    	<rotatable>false</rotatable>
+    	<selectable>true</selectable>
+    	<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+				<designationCategory>AM_FLOOR</designationCategory>
+  	</ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+		<defName>AM_Crosstie</defName>
+		<label>Crosstie</label>
+		<description>A rail road crosstie placed under the railroad tracks.</description>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<graphicData>
+			<texPath>Things/Building/Railway/Crosstie</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<shadowData>
+				<volume>(2, 0.8, 2)</volume>
+			</shadowData>
+		</graphicData>
+        <altitudeLayer>FloorCoverings</altitudeLayer>
+		<size>(3,1)</size>
+		<statBases>
+			<Mass>600</Mass>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+        <clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>	
+				<designationCategory>AM_FLOOR</designationCategory>
+	</ThingDef>
+</Defs>

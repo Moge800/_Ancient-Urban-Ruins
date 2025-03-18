@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef Name="AM_ArmorHelmetMakeableBase" ParentName="AM_ArmorMachineableBase" Abstract="True">
+    <thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <apparel>
+      <parentTagDef>ApparelHead</parentTagDef>
+    </apparel>
+	<tradeTags>
+      <li>AM_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="AM_ArmorHelmetMakeableBase">
+		<defName>AM_BulletproofMask</defName>
+		<label>bulletproof mask</label>
+		<description>A fully protected bulletproof mask made of aramid fiber. Its build is lightweight and has considerable armoring.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+		 <researchPrerequisites>
+		  <li>AM_RecyclingAssembly</li>
+		 </researchPrerequisites>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/BulletproofMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>4.4</Insulation_Cold>
+			<Insulation_Heat>3.5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<costList>
+			<AM_AramidCloth>65</AM_AramidCloth>
+		</costList>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/BulletproofMask</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+		</apparel>
+		    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+	</ThingDef>
+	
+
+
+</Defs>	

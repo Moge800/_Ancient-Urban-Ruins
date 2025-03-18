@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+ <!-- Wall --> 
+  <ThingDef Name ="AM_Wall" ParentName="BuildingBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+      <shadowData>
+        <volume>(1, 0.5, 0.45)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Flammability>0</Flammability>
+      <WorkToBuild>135</WorkToBuild>      
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <useHitPoints>false</useHitPoints>    
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <holdsRoof>true</holdsRoof>
+    <blockWind>true</blockWind>
+	 <blockLight>true</blockLight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <coversFloor>true</coversFloor>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <fertility>0</fertility>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <paintable>false</paintable>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+	   <supportsWallAttachments>true</supportsWallAttachments>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
+	 
+  </ThingDef>
+
+ <!-- Counter -->
+  <ThingDef Name ="AM_Counter" ParentName="BuildingBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Fences</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>70</WorkToBuild>
+    </statBases>
+    <surfaceType>Eat</surfaceType>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.55</fillPercent>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <fertility>0</fertility>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+	 
+  </ThingDef>    
+
+
+  <ThingDef ParentName="AM_Wall">
+    <defName>AM_Wall_Atlas_AcientConcrete_HP</defName>
+    <label>ancient facility wall (weathered)</label>
+    <description>A long-aged wall that seems to be destroyed easily.</description>
+    <graphicData>
+      <texPath>Things/Building/Wall_Atlas_AcientConcrete</texPath>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <uiIconPath>Things/Building/Wall_Atlas_AcientConcrete_UI</uiIconPath>    
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>   
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_Wall">
+    <defName>AM_Wall_Atlas_AcientConcrete</defName>
+    <label>ancient facility wall</label>
+    <description>A structure with waterproof layers, commonly found in underground facilities or old buildings.</description>
+    <graphicData>
+      <texPath>Things/Building/Wall_Atlas_AcientConcrete</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Wall_Atlas_AcientConcrete_UI</uiIconPath>  
+    <building>
+	  <isTargetable>false</isTargetable>
+	  <ai_neverTrashThis>true</ai_neverTrashThis>
+	  <deconstructible>false</deconstructible>
+      <alwaysDeconstructible>false</alwaysDeconstructible>
+    </building>		
+  </ThingDef>
+
+
+  <ThingDef ParentName="AM_Wall">
+    <defName>AM_Wall_Atlas_LoadBearing</defName>
+    <label>ancient load-bearing concrete walls</label>
+    <description>A long-aged concrete load-bearing wall with thick structural steel reinforcement.</description>
+    <graphicData>
+      <texPath>Things/Building/Wall_Atlas_LoadBearing</texPath>
+	  <linkType>Basic</linkType>
+    </graphicData>
+    <uiIconPath>Things/Building/Wall_Atlas_LoadBearing_UI</uiIconPath>    
+	<building>
+      <paintable>true</paintable>
+	  <isTargetable>false</isTargetable>
+	  <ai_neverTrashThis>true</ai_neverTrashThis>
+	  <deconstructible>false</deconstructible>
+      <alwaysDeconstructible>false</alwaysDeconstructible>
+    </building>	
+  </ThingDef>
+  
+  <ThingDef ParentName="AM_Wall">
+    <defName>AM_Wall_Atlas_Concrete</defName>
+    <label>ancient concrete wall</label>
+    <description>A long-aged reinforced concrete structure, sturdy and nearly indestructible.</description>
+    <graphicData>
+      <texPath>Things/Building/Wall_Atlas_Concrete</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Wall_Atlas_Concrete_UI</uiIconPath> 
+    <building>
+      <paintable>true</paintable>
+	  <isTargetable>false</isTargetable>
+	  <ai_neverTrashThis>true</ai_neverTrashThis>
+	  <deconstructible>false</deconstructible>
+       <alwaysDeconstructible>false</alwaysDeconstructible>
+    </building>	
+  </ThingDef>
+
+  <ThingDef ParentName="AM_Wall">
+    <defName>AM_Wall_Atlas_Concrete_HP</defName>
+    <label>ancient concrete wall(weathered)</label>
+    <description>A long-aged structure, can be destroyed with force.</description>
+    <graphicData>
+      <texPath>Things/Building/Wall_Atlas_Concrete</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Wall_Atlas_Concrete_UI</uiIconPath> 
+    <building>
+      <paintable>true</paintable>
+    </building>	
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Flammability>0</Flammability>   
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_Wall">
+    <defName>AM_Wall_Atlas_Glass</defName>
+    <label>ancient glass curtain wall</label>
+    <description>A long-aged wall composed of fragile glass and metal frames.</description>
+    <graphicData>
+      <texPath>Things/Building/Wall_Atlas_Glass</texPath>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	 <blockLight>false</blockLight>
+    <uiIconPath>Things/Building/Wall_Atlas_Glass_UI</uiIconPath>   
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+	<building>
+      <paintable>true</paintable>
+    </building>	
+  </ThingDef>
+
+  <ThingDef ParentName="AM_Counter">
+    <defName>AM_Counter_Atlas_Weapon</defName>
+    <label>ancient glass counter</label>
+    <description>A long-aged display counter.</description>
+    <uiIconPath>Things/Building/Counter_Atlas_Weapon_UI</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Counter_Atlas_Weapon</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_Counter">
+    <defName>AM_Counter_Atlas_JewelryA</defName>
+    <label>ancient golden glass counter</label>
+    <description>A long-aged display counter decorated with gold borders.</description>
+    <uiIconPath>Things/Building/Counter_Atlas_JewelryA_UI</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Counter_Atlas_JewelryA</texPath>
+    </graphicData>
+  </ThingDef>   
+
+  <ThingDef ParentName="AM_Counter">
+    <defName>AM_Counter_Atlas_JewelryB</defName>
+    <label>ancient golden glass counter</label>
+    <description>Glass display counter decorated with gold borders.</description>
+    <uiIconPath>Things/Building/Counter_Atlas_JewelryB_UI</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Counter_Atlas_JewelryB</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_Counter">
+    <defName>AM_FrontDesk</defName>
+    <label>ancient front desk</label>
+    <description>A desk made of metal and stone.</description>
+    <uiIconPath>Things/Building/FrontDesk_UI</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/FrontDesk</texPath>
+    </graphicData>
+  </ThingDef>  
+
+<ThingDef ParentName="AM_Counter">
+    <defName>AM_FrontDeskB</defName>
+    <label>ancient front desk</label>
+    <description>A desk made of metal and stone.</description>
+    <uiIconPath>Things/Building/FrontDeskB_UI</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/FrontDeskB</texPath>
+    </graphicData>
+	<building>
+      <paintable>true</paintable>
+    </building>	
+  </ThingDef>      
+</Defs>

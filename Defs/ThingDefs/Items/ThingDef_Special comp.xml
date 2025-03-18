@@ -1,0 +1,221 @@
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>AM_ComponentWeapon</defName>
+    <label>weapon Component</label>
+    <description>A bundle of weapon components, including barrels, mechanisms, and other essential parts.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapon/ComponentWeapon</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>90</MarketValue>
+      <Mass>1.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>AM_SpecialComp</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+	<tradeTags>
+        <li>AM_Comp</li>
+    </tradeTags>
+  </ThingDef>
+  
+   <ThingDef ParentName="ResourceBase">
+    <defName>AM_227FURYComponents</defName>
+    <label>6.8 upper receiver components</label>
+    <description>6.8 caliber modification components, including a barrel, magazine, and bolt.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapon/AM/227FURYComponents</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>400</MarketValue>
+      <Mass>3</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>AM_SpecialComp</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+  </ThingDef>
+
+   <ThingDef ParentName="ResourceBase">
+    <defName>AM_338PrecisionComponents</defName>
+    <label>.338 precision components</label>
+    <description>Some core components of the .338LM sniper rifle, including a precision barrel, upper receiver, magazine, and sight.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapon/AM/338PrecisionComponents</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>700</MarketValue>
+      <Mass>4.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>AM_SpecialComp</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+  </ThingDef>
+  
+     <ThingDef ParentName="ResourceBase">
+    <defName>AM_PKPMagazineComponents</defName>
+    <label>PKP components</label>
+    <description>Components of the PKM and PKP machine guns, including bolts and two full ammunition chain boxes.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapon/AM/PKPMagazineComponents</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>500</MarketValue>
+      <Mass>5.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>AM_SpecialComp</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+  </ThingDef>
+  
+   <ThingDef ParentName="ResourceBase">
+    <defName>AM_AramidCloth</defName>
+    <label>aramid cloth</label>
+    <description>The bulletproof aramid fiber fabric produced by Urban World has a structure that can effectively absorb impacts and resist sharp weapons. However, the disadvantage is that it is relatively heavy and cannot be produced without professional equipment.</description>
+    <graphicData>
+      <texPath>Things/Misc/AramidCloth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	   <drawSize>1.5</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>8.5</MarketValue>
+      <Mass>0.040</Mass>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>3</DeteriorationRate>
+      <StuffPower_Armor_Sharp>1.75</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.50</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(205,205,147)</color>
+      <statFactors>
+        <Flammability>0.4</Flammability>
+        <MaxHitPoints>2.3</MaxHitPoints>
+        <Beauty>4.2</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+  </ThingDef>
+  
+     <ThingDef ParentName="ResourceBase">
+    <defName>AM_HeavyCompositePlate</defName>
+    <label>heavy composite plate</label>
+    <description>A bulletproof armor plate made of heavy-duty ceramic composite materials is a necessary component for producing high-performance flak vests.</description>
+    <possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Things/Misc/HeavyCompositePlate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>150</MarketValue>
+      <Mass>3.8</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>AM_SpecialComp</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+	<tradeTags>
+        <li>AM_Comp</li>
+    </tradeTags>
+  </ThingDef>
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>AM_UHMWPEPlate</defName>
+    <label>UHMWpe plate</label>
+    <description>An ultra-light armor plate made of ultra-high molecular weight polyethylene is very lightweight and has good protective performance.</description>
+    <possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Things/Misc/UHMWPEPlate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>70</MarketValue>
+      <Mass>0.84</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>AM_SpecialComp</li>
+    </thingCategories>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+	<tradeTags>
+        <li>AM_Comp</li>
+    </tradeTags>
+  </ThingDef>
+  
+</Defs>

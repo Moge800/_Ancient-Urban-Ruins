@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: level schedule -->
+  <AM_LevelSchedule.label>楼层管制</AM_LevelSchedule.label>
+  <!-- EN: Schedule colonists' activities to certain times of day, and set their allowed areas. -->
+  <AM_LevelSchedule.description>对殖民者的活动楼层与跨楼层行为的时间段进行规划，殖民者不会前往没被允许的楼层（主地图不受限制），并且只会在允许的时间段在楼层之间行动。</AM_LevelSchedule.description>
+  
+</LanguageData>

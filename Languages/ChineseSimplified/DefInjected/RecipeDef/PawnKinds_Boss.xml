@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install Integrated parasite armor -->
+  <InstallIntegratedTorsoArmor.label>植入寄生虫装甲</InstallIntegratedTorsoArmor.label>
+  <!-- EN: Install a integrated parasite armor. -->
+  <InstallIntegratedTorsoArmor.description>植入一套寄生虫装甲</InstallIntegratedTorsoArmor.description>
+  <!-- EN: Installing integrated parasite armor. -->
+  <InstallIntegratedTorsoArmor.jobString>正在植入寄生虫装甲</InstallIntegratedTorsoArmor.jobString>
+  
+  <!-- EN: install rampage parasite -->
+  <InstallRampageParasite.label>植入狂暴寄生虫</InstallRampageParasite.label>
+  <!-- EN: Install rampage parasite. -->
+  <InstallRampageParasite.description>植入狂暴寄生虫</InstallRampageParasite.description>
+  <!-- EN: Installing rampage parasite. -->
+  <InstallRampageParasite.jobString>正在植入狂暴寄生虫</InstallRampageParasite.jobString>
+  
+</LanguageData>

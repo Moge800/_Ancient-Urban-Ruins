@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: AllowableTurn -->
+  <AM_AllowableTurn.label>允许转弯路标</AM_AllowableTurn.label>
+  <!-- EN: AllowableTurn -->
+  <AM_AllowableTurn.description>允许转弯的旧路标</AM_AllowableTurn.description>
+  
+  <!-- EN: forked road sign -->
+  <AM_AllowRightTurn.label>分叉路标</AM_AllowRightTurn.label>
+  <!-- EN: An old street sign indicating a right turn. -->
+  <AM_AllowRightTurn.description>指示右转的旧路标。</AM_AllowRightTurn.description>
+  
+  <!-- EN: Crossroad sign -->
+  <AM_Crossroad.label>十字路口路标</AM_Crossroad.label>
+  <!-- EN: An old street sign indicating a crossroad. -->
+  <AM_Crossroad.description>指示十字路口的旧路标。</AM_Crossroad.description>
+  
+  <!-- EN: Man at work sign -->
+  <AM_ManAtWork.label>工作人员标志</AM_ManAtWork.label>
+  <!-- EN: An old street sign depicting a person doing work. -->
+  <AM_ManAtWork.description>描绘一个人在工作的旧路标。</AM_ManAtWork.description>
+  
+  <!-- EN: motor vehicle lane sign -->
+  <AM_MotorVehicleLane.label>机动车道标志</AM_MotorVehicleLane.label>
+  <!-- EN: An old street sign indicating a motor vehicle lane. -->
+  <AM_MotorVehicleLane.description>指示机动车道的旧路标</AM_MotorVehicleLane.description>
+  
+  <!-- EN: no access sign -->
+  <AM_NoAccess.label>禁止进入标志</AM_NoAccess.label>
+  <!-- EN: An old street sign indicating no access. -->
+  <AM_NoAccess.description>指示禁止通行的旧路标。</AM_NoAccess.description>
+  
+  <!-- EN: no Ghouls permitted sign -->
+  <AM_NoGhoul.label>禁止食尸鬼标志</AM_NoGhoul.label>
+  <!-- EN: An old street sign indicating that ghouls are not permitted. -->
+  <AM_NoGhoul.description>一个古老的街道标志，表明不允许食尸鬼进入。</AM_NoGhoul.description>
+  
+  <!-- EN: no parking sign -->
+  <AM_NoParking.label>禁止停车标志</AM_NoParking.label>
+  <!-- EN: An old street sign indicating no parking. -->
+  <AM_NoParking.description>指示禁止停车的旧路标。</AM_NoParking.description>
+  
+  <!-- EN: notice sign -->
+  <AM_Notice.label>注意标志</AM_Notice.label>
+  <!-- EN: An old street sign warning of something. -->
+  <AM_Notice.description>一个警告某事的旧路标。</AM_Notice.description>
+  
+  <!-- EN: no U-Turn sign -->
+  <AM_NoTurningAaround.label>禁止掉头标志</AM_NoTurningAaround.label>
+  <!-- EN: An old street sign indicating a driver must not U-Turn. -->
+  <AM_NoTurningAaround.description>指示司机不得掉头的旧路标。</AM_NoTurningAaround.description>
+  
+  <!-- EN: parking permitted sign -->
+  <AM_ParkingPermitted.label>停车许可标志</AM_ParkingPermitted.label>
+  <!-- EN: An old street sign indicating permitted parking. -->
+  <AM_ParkingPermitted.description>指示允许停车的旧路标。</AM_ParkingPermitted.description>
+  
+  <!-- EN: speed limit sign -->
+  <AM_SpeedLimit40KPH.label>限速标志</AM_SpeedLimit40KPH.label>
+  <!-- EN: An old street sign depicting a speed limit of 40. -->
+  <AM_SpeedLimit40KPH.description>一个旧的路标，上面写着限速40。</AM_SpeedLimit40KPH.description>
+  
+  <!-- EN: steep ascent sign -->
+  <AM_SteepAscent.label>陡坡标志</AM_SteepAscent.label>
+  <!-- EN: An old street sign indicating an incoming steep ascent. -->
+  <AM_SteepAscent.description>指示即将到来的陡坡的旧路标。</AM_SteepAscent.description>
+  
+  <!-- EN: U-Turn sign -->
+  <AM_TurnAround.label>掉头标志</AM_TurnAround.label>
+  <!-- EN: An old street sign indicating a u-turn. -->
+  <AM_TurnAround.description>指示掉头的旧路标。</AM_TurnAround.description>
+  
+  <!-- EN: watch for insects sign -->
+  <AM_WatchForBug.label>虫灾警告标志</AM_WatchForBug.label>
+  <!-- EN: An old street sign warning about hostile insects. -->
+  <AM_WatchForBug.description>一个敌对虫族的警告旧路标。</AM_WatchForBug.description>
+  
+  <!-- EN: watch for Gorehulk sign -->
+  <AM_WatchForGorehulk.label>嗜血巨人警告标志</AM_WatchForGorehulk.label>
+  <!-- EN: An old street sign depicting an ominous warning. -->
+  <AM_WatchForGorehulk.description>一个描绘不祥警告的旧路标。</AM_WatchForGorehulk.description>
+  
+  <!-- EN: watch for Mechanoid sign -->
+  <AM_WatchForMachine.label>机械族警告标志</AM_WatchForMachine.label>
+  <!-- EN: An old street sign warning against hostile mechanoids. -->
+  <AM_WatchForMachine.description>一个敌对机械族的警告旧路标。</AM_WatchForMachine.description>
+  
+  <!-- EN: watch for Metalhorror sign -->
+  <AM_WatchForMetalhorror.label>金属怪形警告标志</AM_WatchForMetalhorror.label>
+  <!-- EN: An old street sign depicting an ominous warning. -->
+  <AM_WatchForMetalhorror.description>一个描绘不祥警告的旧路标。</AM_WatchForMetalhorror.description>
+  
+  <!-- EN: watch for Noctol sign -->
+  <AM_WatchForNoctol.label>夜枭警告标志</AM_WatchForNoctol.label>
+  <!-- EN: An old street sign depicting an ominous warning -->
+  <AM_WatchForNoctol.description>一个描绘不祥警告的旧路标。</AM_WatchForNoctol.description>
+  
+</LanguageData>

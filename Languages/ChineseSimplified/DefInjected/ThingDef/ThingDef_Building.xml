@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ancient dismantling table -->
+  <AM_AncientDismantlingWorkbench.label>远古拆卸台</AM_AncientDismantlingWorkbench.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_AncientDismantlingWorkbench.description>一种集机械加工和缝纫于一体的远古拆卸台。</AM_AncientDismantlingWorkbench.description>
+  
+  <AM_Entrance_LargeElevator.label>大型设施电梯</AM_Entrance_LargeElevator.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_Entrance_LargeElevator.description>一个用于运输人员和小型车辆的大型设施电梯。</AM_Entrance_LargeElevator.description>
+  
+    <AM_Exit_Staircase_LargeElevator.label>大型设施电梯</AM_Exit_Staircase_LargeElevator.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_Exit_Staircase_LargeElevator.description>一个用于运输人员和小型车辆的大型设施电梯。</AM_Exit_Staircase_LargeElevator.description>
+  
+    <AM_BlockedLargeElevator.label>废弃大型设施电梯</AM_BlockedLargeElevator.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_BlockedLargeElevator.description>一个已经废弃的设施电梯，随时准备被拆除。</AM_BlockedLargeElevator.description>
+  
+   <AM_MaterialElevatorA.label>物资运输电梯</AM_MaterialElevatorA.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_MaterialElevatorA.description>一个专用于物资运输的电梯，当通电时就会将物资运输到物资出口电梯处，运行时表面禁止人员站立！</AM_MaterialElevatorA.description>
+  
+    <AM_MaterialElevatorC.label>物资运输电梯（地下）</AM_MaterialElevatorC.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_MaterialElevatorC.description>一个专用于物资运输的电梯，当通电时就会将物资运输到物资出口电梯处，运行时表面禁止人员站立！这种型号常见于地下设施。</AM_MaterialElevatorC.description>
+  
+  <AM_MaterialElevatorB.label>物资出口电梯</AM_MaterialElevatorB.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_MaterialElevatorB.description>一个专用于物资运输的大型电梯，从入口进入的物资会停留在平台上。</AM_MaterialElevatorB.description>
+  
+    <AM_MaterialElevatorD.label>物资出口电梯（地下）</AM_MaterialElevatorD.label>
+  <!-- EN: An ancient dismantling table that integrates machinery and sewing. -->
+  <AM_MaterialElevatorD.description>一个专用于物资运输的大型电梯，从入口进入的物资会停留在平台上。这种型号常见于地下设施。</AM_MaterialElevatorD.description>
+  
+  <!-- EN: dining chair -->
+  <AM_DiningChair.label>远古餐椅</AM_DiningChair.label>
+  <!-- EN: A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere. -->
+  <AM_DiningChair.description>一把舒适而迷人的椅子。可以在桌子、工作站和其他地方使用。</AM_DiningChair.description>
+  
+  <!-- EN: 地堡楼梯_入建筑工地 -->
+  <AM_DownwardStairs.label>远古工地楼梯</AM_DownwardStairs.label>
+  <!-- EN: A staircase descends into the basement, where it is quite dark. -->
+  <AM_DownwardStairs.description>一个通往下层的远古楼梯。</AM_DownwardStairs.description>
+  
+  <!-- EN: 出口电梯 -->
+  <AM_Exit_L.label>远古电扶梯</AM_Exit_L.label>
+  <!-- EN: An upward escalator that has ceased operation. -->
+  <AM_Exit_L.description>一个通往上一层的远古电扶梯，已经停止运作了。</AM_Exit_L.description>
+  
+  <!-- EN: 出口电梯 -->
+  <AM_Exit_S.label>远古电扶梯</AM_Exit_S.label>
+  <!-- EN: An upward escalator that has ceased operation. -->
+  <AM_Exit_S.description>一个通往上一层的远古电扶梯，已经停止运作了。</AM_Exit_S.description>
+  
+  <!-- EN: large-screen television -->
+  <AM_LargeScreenTelevision.label>远古超巨屏电视</AM_LargeScreenTelevision.label>
+  <!-- EN: A super large ancient television capable of displaying 3D images, providing an entertainment experience akin to a 3D cinema. -->
+  <AM_LargeScreenTelevision.description>一种能够显示3D图像的超巨型古代电视，提供类似于3D影院的娱乐体验。</AM_LargeScreenTelevision.description>
+  
+  <!-- EN: small fuel generator -->
+  <AM_SmallGenerator.label>小型燃料发电机</AM_SmallGenerator.label>
+  <!-- EN: Small scale fuel generator. -->
+  <AM_SmallGenerator.description>一个小尺寸的燃料发电机</AM_SmallGenerator.description>
+  
+  <!-- EN: ancient logistics terminal -->
+  <AM_Trader.label>远古物流系统终端</AM_Trader.label>
+  <!-- EN: Ancient logistics terminal, this is part of the ancient underground automatic logistics system.You can purchase goods from ancient material storage stations through the interactive panel, which constitutes a logistics system within an ancient city. -->
+  <AM_Trader.description>一个远古物流系统终端，这是古代城市地下自动化物流系统的一部分，现在还在运行，你可以通过交互面板从远古储备站购买货物。</AM_Trader.description>
+  
+   <AM_ElectricalBox.label>配电箱</AM_ElectricalBox.label>
+  <!-- EN: Ancient logistics terminal, this is part of the ancient underground automatic logistics system.You can purchase goods from ancient material storage stations through the interactive panel, which constitutes a logistics system within an ancient city. -->
+  <AM_ElectricalBox.description>一个用于给多楼层建筑设施供电的配电箱，可以自由每一层的调节输出功率。</AM_ElectricalBox.description>
+</LanguageData>

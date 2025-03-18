@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DutyDef>
+    <defName>AM_Scavenger</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_TakeCombatEnhancingDrug">
+          <onlyIfInDanger>true</onlyIfInDanger>
+        </li>
+        <li Class="JobGiver_AIDefendPoint">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+        </li>
+        <li Class="AncientMarketAI_Libraray.ThinkNode_IsFight">
+          <invert>true</invert>
+          <subNodes>
+            <li Class="JobGiver_SelfTend" />
+          </subNodes>
+        </li>
+        <li Class="AncientMarketAI_Libraray.JobGiver_OpenLootbox" />
+        <li Class="ThinkNode_ForbidOutsideFlagRadius">
+          <maxDistToSquadFlag>16</maxDistToSquadFlag>
+          <subNodes>
+            <li Class="ThinkNode_Subtree">
+              <treeDef>SatisfyBasicNeedsAndWork</treeDef>
+            </li>
+          </subNodes>
+        </li>
+        <li Class="JobGiver_GetFood">
+          <maxLevelPercentage>0.4</maxLevelPercentage>
+        </li>
+        <li Class="AncientMarketAI_Libraray.JobGiver_ExitByLackingFood" />
+        <li Class="JobGiver_WanderNearDutyLocation">
+          <wanderRadius>5</wanderRadius>
+          <locomotionUrgencyOutsideRadius>Sprint</locomotionUrgencyOutsideRadius>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+</Defs>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <JobDef>
+    <defName>AM_StartDialog</defName>
+    <driverClass>AncientMarket_Libraray.JobDriver_StartDialog</driverClass>
+    <reportString>Talking to TargetA.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>AM_StartTrade</defName>
+    <driverClass>AncientMarket_Libraray.JobDriver_Trade</driverClass>
+    <reportString>Trading with TargetA.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>AM_Open</defName>
+    <driverClass>AncientMarket_Libraray.JobDriver_OpenLootBox</driverClass>
+    <reportString>Opening TargetA.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>AM_OpenByNPC</defName>
+    <driverClass>AncientMarketAI_Libraray.JobDriver_OpenLootBox</driverClass>
+    <reportString>Opening TargetA.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>AM_AddGPU</defName>
+    <driverClass>AncientMarket_Libraray.JobDriver_AddGraphicCard</driverClass>
+    <reportString>Add TargetA to TargetB.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>AM_Repair</defName>
+    <driverClass>AncientMarket_Libraray.JobDriver_Repair</driverClass>
+    <reportString>repair TargetB with TargetA.</reportString>
+  </JobDef>
+
+  <WorkGiverDef>
+    <defName>AM_WorkGiver_AddGPU</defName>
+    <label>Add TargetA to TargetB</label>
+    <giverClass>AncientMarket_Libraray.WorkGiver_AddGraphicCard</giverClass>
+    <workType>Hauling</workType>
+    <verb>add</verb>
+    <gerund>Adding</gerund>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+    <emergency>false</emergency>
+  </WorkGiverDef>
+
+  <JobDef>
+    <defName>AM_FillEntrance</defName>
+    <driverClass>AncientMarket_Libraray.JobDriver_FillEntrance</driverClass>
+    <reportString>Filling TargetA.</reportString>
+  </JobDef>
+</Defs>

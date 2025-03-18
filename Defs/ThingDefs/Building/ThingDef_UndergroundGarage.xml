@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_UndergroundGarage</defName>
+        <label>underground parking lot entrance</label>
+        <description>A large ramp descending to a dark underground. It seems wide enough for vehicles.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/enter</texPath>
+            <drawSize>(5,10)</drawSize>
+        </graphicData>
+        <size>(5,10)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_UDparkingLot_A</li>
+					<li>AM_UDparkingLot_B</li>
+                </maps>
+            </li>
+			<li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>5</distance>
+            </li>
+        </modExtensions>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<pathCost>0.3</pathCost>	 
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Exit_Staircase_UndergroundGarage</defName>
+        <label>underground parking lot exit</label>
+        <description>A large ramp leading to above ground.</description>
+        <thingClass>AncientMarket_Libraray.MapExit</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/exit</texPath>
+            <drawSize>(7,5)</drawSize>
+        </graphicData>
+        <size>(5,3)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+		<altitudeLayer>Item</altitudeLayer>
+		<modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>8</distance>
+            </li>
+        </modExtensions> 
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedUndergroundGarageEntrance</defName>
+		<label>Blocked underground parking lot entrance</label>
+		<description>An entrance to an underground parking lot. It is blocked off and entirely inaccessible.</description>
+		<graphicData>
+			<texPath>Things/Building/enter_sealed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,10)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(5,10)</size>
+		<costList>
+			<Steel>140</Steel>
+		</costList>
+	</ThingDef>
+</Defs>

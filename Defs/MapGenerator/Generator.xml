@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <MapGeneratorDef>
+        <defName>AM_CustomMap_Editor_Generator</defName>
+        <label>generator</label>
+        <pocketMapProperties>
+            <biome>AM_UndergroundSpace</biome>
+            <temperature>23</temperature>
+        </pocketMapProperties>
+        <disableShadows>true</disableShadows>
+        <genSteps>
+            <li>AM_CustomMap_Step_Terrain</li>
+            <li>AM_CustomMap_Step_Data</li>
+            <li>AM_CustomMap_Step_Fog</li>
+        </genSteps>
+    </MapGeneratorDef>
+
+
+    <GenStepDef>
+        <defName>AM_CustomMap_Step_Terrain</defName>
+        <order>210</order>
+        <genStep Class="AncientMarket_Libraray.GenStep_SetTerrain"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>AM_CustomMap_Step_Data</defName>
+        <order>3200</order>
+        <genStep Class="AncientMarket_Libraray.GenStep_GenerateData"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>AM_CustomMap_Step_Fog</defName>
+        <order>3400</order>
+        <genStep Class="AncientMarket_Libraray.GenStep_SetFog"/>
+    </GenStepDef>
+
+</Defs>

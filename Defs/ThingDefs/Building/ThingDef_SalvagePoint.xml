@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="PortalBase" Name="AM_PortalBase_SalvagePoint" Abstract="True">
+        <category>Building</category>
+        <thingClass>AncientMarket_Libraray.Lootbox</thingClass>
+        <rotatable>true</rotatable>
+		<useHitPoints>true</useHitPoints>
+		<destroyable>true</destroyable>
+        <building>
+            <expandHomeArea>false</expandHomeArea>
+            <claimable>true</claimable>
+			<deconstructible>true</deconstructible> 
+        </building>
+		<statBases>
+       <MaxHitPoints>200</MaxHitPoints>
+      </statBases>
+		<pathCost>40</pathCost>
+      <fillPercent>0.40</fillPercent>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_PortalBase_SalvagePoint" Name="AM_PortalBase_SalvagePoint_Unloadable" Abstract="True">
+      <minifiedDef>MinifiedThing</minifiedDef>
+	  <thingCategories>
+			<li>AM_Container</li>
+	  </thingCategories>
+      <building>
+        <deconstructible>true</deconstructible>    
+        <claimable>true</claimable>
+      </building>
+      <pathCost>20</pathCost>
+      <fillPercent>0.20</fillPercent>
+      <statBases>
+	  <MaxHitPoints>150</MaxHitPoints>
+        <Mass>35</Mass>
+        <MarketValue>10</MarketValue>
+      </statBases>
+	  <tradeTags>
+      <li>AM_SalvagePoint</li>
+    </tradeTags>
+    </ThingDef>
+	
+	
+	 <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable" Name="AM_Case" Abstract="True">
+     <tradeTags>
+      <li>AM_SalvageCase</li>
+    </tradeTags>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_BookCase</defName>
+        <label>book case</label>
+        <description>An old book case filled with books.</description>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/BookCaseFull</texPath>
+           <drawSize>(3,2)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+		<statBases>
+	  <MaxHitPoints>65</MaxHitPoints>
+        <Mass>15</Mass>
+        <MarketValue>10</MarketValue>
+      </statBases>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/BookCaseEmpty</texPath>
+                   <drawSize>(3,2)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Book</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_VegetableShelf</defName>
+        <label>vegetable shelf</label>
+        <description>A long forgotten shelf containing vegetables.</description>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/VegetableShelf</texPath>
+           <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/VegetableShelf_Empty</texPath>
+                   <drawSize>(2,1)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_vegetable</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	 <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable" Name="AM_Package" Abstract="True">
+       <building>
+          <isEdifice>false</isEdifice>
+       </building>
+	   <thingCategories>
+			<li>Manufactured</li>
+	  </thingCategories>
+       <altitudeLayer>BuildingOnTop</altitudeLayer>
+       <clearBuildingArea>true</clearBuildingArea>
+       <canOverlapZones>true</canOverlapZones>
+	   <statBases>
+	   <MaxHitPoints>100</MaxHitPoints>
+        <Mass>8</Mass>
+        <MarketValue>10</MarketValue>
+      </statBases>
+	  <tradeTags>
+      <li>AM_SalvageCase</li>
+    </tradeTags>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+        <defName>AM_BTR82A</defName>
+        <label>ancient suspended IFV</label>
+        <description>A damaged suspended IFV.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/82a</texPath>
+            <drawSize>(3.6,7.7)</drawSize>
+        </graphicData>
+		<statBases>
+       <MaxHitPoints>2200</MaxHitPoints>
+	   <WorkToBuild>50000</WorkToBuild>
+      </statBases>
+        <size>(3,6)</size>
+		<costList>
+			<Steel>30</Steel>
+			<VVE_EngineBlock MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_EngineBlock>
+			<VVE_CarAlternator MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarAlternator>
+              <VVE_CarExhaust MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarExhaust>
+              <VVE_CarBattery MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarBattery>
+              <VVE_CarSuspension MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarSuspension>
+			  <ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavingsRanges>
+    </ThingDef>
+	
+	
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint">
+        <defName>AM_Refrigerator</defName>
+        <label>refrigerator</label>
+        <description>A refrigerator containing various foods. Has long been powered off.</description>
+		<rotatable>false</rotatable>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/Refrigerator</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <size>(2,2)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Random</graphicClass>
+                    <texPath>Things/Container/RefrigeratorEmpty</texPath>
+                    <drawSize>(3,3)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+  <ThingDef ParentName="AM_PortalBase_SalvagePoint">
+        <defName>AM_VendingMachine</defName>
+        <label>vending machine</label>
+        <description>A damaged ancient vending machine.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/VendingMachine</texPath>
+            <drawSize>(2.5,2.5)</drawSize>
+        </graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/VendingMachine</texPath>
+                    <drawSize>(2.5,2.5)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Beverages</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	 <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_Model</defName>
+        <label>model dummy</label>
+		<rotatable>false</rotatable>
+        <description>A clothing model dummy.</description>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/Model</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Container/ModelEmpty</texPath>
+                    <drawSize>(3,3)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_NormApparel</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_Modelf</defName>
+        <label>model dummy</label>
+		<rotatable>false</rotatable>
+        <description>A clothing model dummy.</description>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/Modelf</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Container/ModelfEmpty</texPath>
+                    <drawSize>(3,3)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_NormApparel</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_ComputerCase</defName>
+        <label>computer case</label>
+        <description>An ancient computer case.</description>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/ComputerCase</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Random</graphicClass>
+                    <texPath>Things/Container/ComputerCase</texPath>
+                    <drawSize>(2,2)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_ComputerAccessories</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_BigCase</defName>
+        <label>large military supplies case</label>
+        <description>A large military supplies case. Maybe it has something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/BigCase</texPath>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/BigCase_Open</texPath>
+                    <drawSize>(2,1)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_FlakApparel</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_OldBigCase</defName>
+        <label>ancient large military supplies case</label>
+        <description>A damaged military supplies case. Maybe it has something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/OldBigCase</texPath>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/BigCase_Open</texPath>
+                    <drawSize>(2,1)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_FlakApparel</li>
+					<li>AM_FlakMaterial</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_OldSmallCase</defName>
+        <label>ancient small military Case</label>
+        <description>A damaged military supplies case. Maybe it has something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/OldSmallCase</texPath>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/SmallCase_Open</texPath>
+                    <drawSize>1</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_OrdinaryWeapons</li>
+					<li>AM_FlakMaterial</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_SmallCase</defName>
+        <label>small military Case Case</label>
+        <description>A military supplies case. It seems to have something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/SmallCase</texPath>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/SmallCase_Open</texPath>
+                    <drawSize>1</drawSize>
+                </openedGraphicdata>
+                <loots>
+					<li>AM_FlakMaterial</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_WeaponCase</defName>
+        <label>weapon case</label>
+        <description>A well-worn container. It seems to have something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/WeaponCase</texPath>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/WeaponCase_Open</texPath>
+                    <drawSize>(2,1)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_AdvancedWeapons</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	  <ThingDef ParentName="AM_Case">
+        <defName>AM_WeaponCaseLow</defName>
+        <label>opened weapon case</label>
+        <description>A weapon case that has been pried open. It seems to have something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/OldWeaponCase</texPath>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/WeaponCase_Open</texPath>
+                    <drawSize>(2,1)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_OrdinaryWeapons</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_OldWeaponCase</defName>
+        <label>ancient weapon case</label>
+        <description>A long forgotten container. It seems to have something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/OldWeaponCase</texPath>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/WeaponCase_Open</texPath>
+                    <drawSize>(2,1)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_VanillaWeapons</li>
+					<li>AM_AdvancedWeapons</li>
+					<li>AM_OrdinaryWeapons</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_PaperBox_A</defName>
+        <label>Cardboard box</label>
+        <description>A cardboard box. It seems to have something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/PaperBox_A</texPath>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <defaultPlacingRot>East</defaultPlacingRot>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/PaperBox_A_Open</texPath>
+                    <drawSize>1</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_ElectronicProduct</li>
+					<li>AM_Tool</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_PaperBox_B</defName>
+        <label>Cardboard box</label>
+        <description>A cardboard box. It seems to have something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/PaperBox_B</texPath>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <defaultPlacingRot>East</defaultPlacingRot>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/PaperBox_B_Open</texPath>
+                    <drawSize>1</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_ElectronicProduct</li>
+					<li>AM_Tool</li>
+					<li>AM_Collectible</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Case">
+        <defName>AM_PaperBox_C</defName>
+        <label>Cardboard box</label>
+        <description>A cardboard box. It seems to have something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Container/PaperBox_C</texPath>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Container/PaperBox_C_Open</texPath>
+                    <drawSize>1.2</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_ElectronicProduct</li>
+					<li>AM_Tool</li>
+					<li>AM_LEGO</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_ClothesHanger</defName>
+        <label>Clothes rack</label>
+        <description>A set of hangers holding old pieces of clothing.</description>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/ClothesHanger</texPath>
+           <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/ClothesHangerEmpty</texPath>
+                   <drawSize>(3,3)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_NormApparel</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_Injection_StorageRacks</defName>
+        <label>injection storage racks</label>
+        <description>Some shelves scattered with syringes and medical supplies.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/Injection_StorageRacks</texPath>
+              <drawSize>(2.75,1.5)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/RustyEmptyShelves</texPath>
+                      <drawSize>(2.75,1.5)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Injector</li>
+					<li>AM_MedicalSupplies</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_MedicalSupplies_StorageRacks</defName>
+        <label>medical storage racks</label>
+        <description>Some shelves scattered with medical supplies.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/MedicalSupplies_StorageRacks</texPath>
+              <drawSize>(2.75,1.5)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/RustyEmptyShelves</texPath>
+                      <drawSize>(2.75,1.5)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_MedicalSupplies</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_Snack_StorageRacks</defName>
+        <label>snack storage racks</label>
+        <description>Some shelves with scattered packaged snacks.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/Snack_StorageRacks</texPath>
+              <drawSize>(2.75,1.5)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/RustyEmptyShelves</texPath>
+                      <drawSize>(2.75,1.5)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_PotatoChips</li>
+					<li>AM_Beverages</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_StorageRacks</defName>
+        <label>storage racks</label>
+        <description>Some shelves with scattered goods.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/StorageRacks</texPath>
+              <drawSize>(2.75,1.5)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/RustyEmptyShelves</texPath>
+                      <drawSize>(2.75,1.5)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_ElectronicProduct</li>
+					<li>AM_Tool</li>
+					<li>AM_Food</li>
+					<li>AM_LEGO</li>
+					<li>AM_Collectible</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_TousledStorageRacks</defName>
+        <label>miscellaneous storage racks</label>
+        <description>Some shelves with scattered goods.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/TousledStorageRacks</texPath>
+              <drawSize>(2.75,1.5)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/RustyEmptyShelves</texPath>
+                      <drawSize>(2.75,1.5)</drawSize>
+                </openedGraphicdata>
+                <loots>
+				    <li>AM_ElectronicProduct</li>
+					<li>AM_Tool</li>
+					<li>AM_Food</li>
+					<li>AM_MISC</li>
+					<li>AM_LEGO</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_MilitarySupplies_StorageRacks</defName>
+        <label>Military storage racks</label>
+        <description>Some shelves with scattered military supplies.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/MilitarySupplies_StorageRacks</texPath>
+              <drawSize>(2.75,1.5)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/RustyEmptyShelves</texPath>
+                      <drawSize>(2.75,1.5)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_FlakMaterial</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint_Unloadable">
+        <defName>AM_Freezer</defName>
+        <label>freezer</label>
+        <description>An old dessert refrigerator with unknown contents.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/OldFreezer</texPath>
+           <drawSize>(2.75,1.5)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(2.75,1.5)</drawSize>
+                    <texPath>Things/Container/Freezer</texPath>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint">
+        <defName>AM_BDAShelfA</defName>
+        <label>damaged large shelves</label>
+        <description>There are still some goods on top that have not been crushed.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Container/big/BDAShelfA</texPath>
+            <drawSize>(6,4)</drawSize>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <size>(4,2)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Container/big/BDAShelfA_Open</texPath>
+                    <drawSize>(6,4)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_Tool</li>
+					<li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint">
+        <defName>AM_BDAShelfB</defName>
+        <label>damaged large shelves</label>
+        <description>There are still some goods on top that have not been crushed.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Container/big/BDAShelfA</texPath>
+            <drawSize>(6,4)</drawSize>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <size>(4,2)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Container/big/BDAShelfB_Open</texPath>
+                    <drawSize>(6,4)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_Tool</li>
+					<li>AM_Food</li>
+					<li>AM_FlakMaterial</li>
+					<li>AM_LEGO</li>
+					<li>AM_Collectible</li>
+					<li>AM_ElectronicProduct</li>
+					<li>AM_NormApparel</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint">
+        <defName>AM_DoubleDeckRacks</defName>
+        <label>large shelves</label>
+        <description>The top layer of the large shelf is missing, and there are still some boxes on it.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/big/DoubleDeckRacks</texPath>
+            <drawSize>(6,4)</drawSize>
+        </graphicData>
+        <size>(4,2)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/big/DoubleDeckRacks_Open</texPath>
+                    <drawSize>(6,4)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_Tool</li>
+					<li>AM_Food</li>
+					<li>AM_FlakMaterial</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_PortalBase_SalvagePoint">
+        <defName>AM_ThreeLayerRacks</defName>
+        <label>large shelves</label>
+        <description>A large shelf cluttered with boxes.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/big/ThreeLayerRacks</texPath>
+            <drawSize>(6,4)</drawSize>
+        </graphicData>
+        <size>(4,2)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_Search</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <texPath>Things/Container/big/ThreeLayerRacks_Open</texPath>
+                    <drawSize>(6,4)</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Materials</li>
+					<li>AM_Tool</li>
+					<li>AM_Food</li>
+					<li>AM_FlakMaterial</li>
+					<li>AM_LEGO</li>
+					<li>AM_Collectible</li>
+					<li>AM_ElectronicProduct</li>
+					<li>AM_FlakApparel</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_Package">
+        <defName>AM_BriefCase_SalvagePoint</defName>
+        <label>briefcase</label>
+        <description>A briefcase, probably containing something.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/BriefCase</texPath>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/BriefCase</texPath>
+                    <drawSize>1</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_MISC</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+	
+	    <ThingDef ParentName="AM_Package">
+        <defName>AM_SICC_SalvagePoint</defName>
+        <label>SICC</label>
+        <description>A small soft bag that seems to hold various items.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/SICC</texPath>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/SICC</texPath>
+                    <drawSize>1</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Injector</li>
+					<li>AM_MISC</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Package">
+        <defName>AM_LargeBackpack</defName>
+        <label>large backpack</label>
+        <description>An oversized military backpack that is already broken, but seems to contain something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/LargeBackpack</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/LargeBackpackB</texPath>
+                    <drawSize>1.5</drawSize>
+                </openedGraphicdata>
+                <loots>
+					<li>AM_FlakMaterial</li>
+					<li>AM_FlakApparel</li>
+					<li>AM_AdvancedWeapons</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Package">
+        <defName>AM_LBT</defName>
+        <label>LBT</label>
+        <description>A medical supplies backpack that is broken, but seems to contain something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/LBT</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/LBTB</texPath>
+                    <drawSize>1.5</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_MedicalSupplies</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Package">
+        <defName>AM_MBSS</defName>
+        <label>MBSS</label>
+        <description>A small military backpack that is broken, but seems to contain something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/MBSS</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/MBSSB</texPath>
+                    <drawSize>1.5</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Beverages</li>
+					<li>AM_Tool</li>
+					<li>AM_OrdinaryWeapons</li>
+					<li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Package">
+        <defName>AM_PostmanShoulderBag</defName>
+        <label>postman shoulder bag</label>
+        <description>A mail-carrying shoulder bag. While already broken, it seems to contain something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/PostmanShoulderBag</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/PostmanShoulderBagB</texPath>
+                    <drawSize>1.5</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Beverages</li>
+					<li>AM_Tool</li>
+					<li>AM_PotatoChips</li>
+					<li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Package">
+        <defName>AM_Scav</defName>
+        <label>scav bag</label>
+        <description>A backpack made by a scavenger. It is broken, but it seems to hold something.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/Scav</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/ScavB</texPath>
+                    <drawSize>1.5</drawSize>
+                </openedGraphicdata>
+                <loots>
+				    <li>AM_Collectible</li>
+					<li>AM_ElectronicProduct</li>
+                    <li>AM_Beverages</li>
+					<li>AM_Tool</li>
+					<li>AM_PotatoChips</li>
+					<li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_Package">
+        <defName>AM_SportsBag</defName>
+        <label>sports bag</label>
+        <description>A sporting bag. It is already broken, but it seems to contain something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/SportsBag</texPath>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/SportsBagB</texPath>
+                    <drawSize>1.3</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_MedicalSupplies</li>
+					<li>AM_Beverages</li>
+					<li>AM_Tool</li>
+					<li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+
+    <ThingDef ParentName="AM_Package">
+        <defName>AM_TravelBag</defName>
+        <label>travel bag</label>
+        <description>An oversized and eye-catching purple travel bag. It is already broken, but seems to contain something inside.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/TravelBag</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Lootbox">
+                <sound>AM_SearchBag</sound>
+                <openedGraphicdata>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <texPath>Things/Bags/TravelBagB</texPath>
+                    <drawSize>1.5</drawSize>
+                </openedGraphicdata>
+                <loots>
+                    <li>AM_Beverages</li>
+					<li>AM_Tool</li>
+					<li>AM_PotatoChips</li>
+					<li>AM_NormApparel</li>
+					<li>AM_Food</li>
+                </loots>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

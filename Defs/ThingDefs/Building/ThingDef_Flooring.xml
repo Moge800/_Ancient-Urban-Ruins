@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Name="AM_FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationCategory>AM_FLOOR</designationCategory>	 
+    <fertility>0</fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>
+      <li>Light</li>
+    </terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>70</renderPrecedence>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+      <CleaningTimeFactor>0.8</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>8</Steel>
+    </costList>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
+    <pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
+  </TerrainDef>
+
+  <TerrainDef ParentName="AM_FloorBase">
+    <defName>AM_WhiteTile</defName>
+    <label>ceramic tile</label>
+    <description>Common ceramic tiles in the city.</description>
+    <texturePath>Things/Building/WhiteTile</texturePath>
+    <uiIconPath>Things/Building/WhiteTile_UI</uiIconPath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="AM_FloorBase">
+    <defName>AM_BlackTile</defName>
+    <label>ceramic tile（black）</label>
+    <description>Common ceramic tiles in the city.</description>
+    <texturePath>Things/Building/BlackTile</texturePath>
+    <uiIconPath>Things/Building/BlackTile_UI</uiIconPath>
+  </TerrainDef>
+
+<TerrainDef ParentName="AM_FloorBase">
+    <defName>AM_Tile</defName>
+    <label>Striped ceramic tiles</label>
+    <description>Common striped tiles in fast food restaurants.</description>
+    <texturePath>Things/Building/Tile</texturePath>
+    <uiIconPath>Things/Building/Tile_UI</uiIconPath>
+  </TerrainDef>
+
+<TerrainDef ParentName="NaturalTerrainBase">
+    <defName>AM_RCFloor</defName>
+    <label>reinforced concrete floor</label>
+    <texturePath>Terrain/Surfaces/Concrete</texturePath>
+    <color>(140,140,140)</color>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>1</pathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <BeautyOutdoors>0</BeautyOutdoors>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+	<generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>0.00</fertility>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
+    <pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
+  </TerrainDef>
+
+</Defs>

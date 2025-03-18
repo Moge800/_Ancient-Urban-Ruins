@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>AncientMarket_Libraray.Designator_Open</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/JoyGiverDef[defName="WatchTelevision"]/thingDefs</xpath>
+		<value>
+			<li>AM_LargeScreenTelevision</li>
+		</value>
+	</Operation>
+
+</Patch>

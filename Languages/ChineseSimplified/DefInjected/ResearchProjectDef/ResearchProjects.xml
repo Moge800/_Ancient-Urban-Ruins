@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Recycling assembly -->
+  <AM_RecyclingAssembly.label>回收零件</AM_RecyclingAssembly.label>
+  <!-- EN: Learning how to basic disassemble and reassemble weapons, assembly is an easy task when using standardized components. -->
+  <AM_RecyclingAssembly.description>学习如何基本拆卸和重新组装武器与装甲，使用标准化零件进行再组装是一项简单的任务。</AM_RecyclingAssembly.description>
+  
+</LanguageData>

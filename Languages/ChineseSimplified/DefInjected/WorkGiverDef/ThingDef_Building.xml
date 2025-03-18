@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: take apart at dismantling table -->
+  <AM_DoBillsMachiningTable.label>在拆卸台上拆解</AM_DoBillsMachiningTable.label>
+  <!-- EN: working at -->
+  <AM_DoBillsMachiningTable.gerund>工作于</AM_DoBillsMachiningTable.gerund>
+  <!-- EN: work -->
+  <AM_DoBillsMachiningTable.verb>工作</AM_DoBillsMachiningTable.verb>
+  
+    <!-- EN: Add TargetA to TargetB -->
+  <AM_WorkGiver_AddGPU.label>为计算中心装载显卡</AM_WorkGiver_AddGPU.label>
+  <!-- EN: Adding -->
+  <AM_WorkGiver_AddGPU.gerund>正在装载</AM_WorkGiver_AddGPU.gerund>
+  <!-- EN: add -->
+  <AM_WorkGiver_AddGPU.verb>装载</AM_WorkGiver_AddGPU.verb>
+  
+</LanguageData>

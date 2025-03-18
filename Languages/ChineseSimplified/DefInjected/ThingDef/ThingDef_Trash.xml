@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dried blood -->
+  <AM_Filth_DriedBlood.label>干涸血迹</AM_Filth_DriedBlood.label>
+  
+  <!-- EN: ragged uniform -->
+  <AM_Filth_MoldyUniform.label>腐烂的制服</AM_Filth_MoldyUniform.label>
+  
+  <!-- EN: oil smear -->
+  <AM_Filth_OilSmear.label>油污</AM_Filth_OilSmear.label>
+  
+  <!-- EN: scattered documents -->
+  <AM_Filth_ScatteredDocuments.label>散落的文件</AM_Filth_ScatteredDocuments.label>
+  
+  <!-- EN: potato chips -->
+  <AM_PotatoChips.label>薯片</AM_PotatoChips.label>
+  
+</LanguageData>

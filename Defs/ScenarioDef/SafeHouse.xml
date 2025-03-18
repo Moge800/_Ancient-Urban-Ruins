@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>  
+  <ScenarioDef>
+		 <defName>AM_SafeHouse</defName>
+        <label>Safe House</label>
+		<description>You've wandered this rimworld, living off the spoils of ancient ruins. You traverse the desolate ruins of cities, devoid of any signs of life. On the outskirts of town, you discover an abandoned ancient underground shelter. Though its resources won't last long...\n\nNote: You have no operable colonists and lack essential survival resources. Scavengers start off starving, making this a challenging scenario.</description>
+		<scenario>
+		<summary>A lone scavenger discovers an old underground bunker. Particularly challenging.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>AM_PlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<pawnCount>1</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_ForcedHediff">
+				<def>ForcedHediff</def>
+				<chance>0.5</chance>
+				<context>PlayerStarter</context>
+				<hideOffMap>True</hideOffMap>
+				<hediff>Malnutrition</hediff>
+				<severityRange>0.0176001787~0.143733606</severityRange>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>7</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Steel</stuff>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Apparel_SimpleHelmet</thingDef>
+				<stuff>Steel</stuff>
+				<quality>Good</quality>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>You have discovered an ancient, abandoned small underground facility that could potentially serve as a shelter.</text>
+				<textKey>GameStartDialog</textKey>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			 <li Class="AncientMarket_Libraray.ScenPart_GenerateCustomMap">
+			 <def>AM_StartWithStructure</def>
+        <maps>
+          <li>AM_Start_A</li>
+		   <li>AM_Start_B</li>
+		    <li>AM_Start_C</li>
+        </maps>
+         </li>
+			</parts>
+	</scenario>
+  </ScenarioDef>
+  
+   <ScenarioDef>
+		 <defName>AM_ScavengerGroup</defName>
+        <label>Scavenger Group</label>
+		<description>In your earlier explorations, the regions nearer to the settlement were thoroughly examined. You've been left with no option but to venture into uncharted territories. On this day, you have discovered an entrance to an unknown underground facility. You have decided to settle here, but the strange odor and faint, incessant sounds seem to hint that this place is not as safe as you once imagined....</description>
+		<scenario>
+		<summary>A group of three scavengers wandering between the ruins of a city. Particularly challenging.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>AM_PlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<pawnCount>3</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_ForcedHediff">
+				<def>ForcedHediff</def>
+				<chance>0.5</chance>
+				<context>PlayerStarter</context>
+				<hideOffMap>True</hideOffMap>
+				<hediff>Malnutrition</hediff>
+				<severityRange>0.0176001787~0.143733606</severityRange>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>7</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Steel</stuff>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Apparel_SimpleHelmet</thingDef>
+				<stuff>Steel</stuff>
+				<quality>Good</quality>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>You have discovered an ancient underground parking lot that could serve as your stronghold, but there seems to be a strange noise underground....</text>
+				<textKey>GameStartDialog</textKey>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			 <li Class="AncientMarket_Libraray.ScenPart_GenerateCustomMap">
+			 <def>AM_StartWithStructure</def>
+        <maps>
+          <li>AM_ParkingLot1F_A</li>
+		   <li>AM_ParkingLot1F_B</li>
+        </maps>
+         </li>
+			</parts>
+	</scenario>
+  </ScenarioDef>
+</Defs>

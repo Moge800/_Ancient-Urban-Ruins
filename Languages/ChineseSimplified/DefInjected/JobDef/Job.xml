@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <!-- EN: Add TargetA to TargetB. -->
+  <AM_AddGPU.reportString>装载显卡于计算中心</AM_AddGPU.reportString>
+  
+  <!-- EN: Opening TargetA. -->
+  <AM_Open.reportString>打开</AM_Open.reportString>
+  
+  <!-- EN: Talking to TargetA. -->
+  <AM_StartDialog.reportString>对话</AM_StartDialog.reportString>
+  
+    <!-- EN: repair TargetB with TargetA. -->
+  <AM_Repair.reportString>修复</AM_Repair.reportString>
+  
+  <!-- EN: Trading with TargetA. -->
+  <AM_StartTrade.reportString>交易</AM_StartTrade.reportString>
+  
+    <AM_FillEntrance.reportString>填埋</AM_FillEntrance.reportString>
+  
+</LanguageData>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!-- 入口 -->
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_Bunker</defName>
+        <label>Ancient staircase</label>
+        <description>A staircase descends into the basement, where it is quite dark.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/DownwardStairs</texPath>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(2,3)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_Bunker_A</li>
+                    <li>AM_Bunker_B</li>
+                    <li>AM_Bunker_C</li>
+                    <li>AM_Bunker_D</li>
+                    <li>AM_Bunker_E</li>
+                    <li>AM_Bunker_F</li>
+                    <li>AM_Bunker_G</li>
+                    <li>AM_Bunker_H</li>
+                    <li>AM_Bunker_I</li>
+                </maps>
+            </li>
+        </modExtensions>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_ReserveBunker</defName>
+        <label>Ancient staircase</label>
+        <description>A staircase descends into the basement, where it is quite dark.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/DownwardStairs</texPath>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(2,3)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_ReserveBunker</li>
+                </maps>
+            </li>
+        </modExtensions>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_Shelter</defName>
+        <label>Ancient staircase</label>
+        <description>A staircase descends into the basement, where it is quite dark.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/DownwardStairs</texPath>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(2,3)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_Shelter_A</li>
+					<li>AM_Shelter_B</li>
+                    <li>AM_Shelter_C</li>
+				    <li>AM_Shelter_D</li>
+                </maps>
+            </li>
+        </modExtensions>
+		<comps>
+			<li Class="AncientMarket_Libraray.CompPropertiesFillPortal">
+                <filledBuilding>AM_BlockedStairsX</filledBuilding>
+                <fillingWorkAmount>3600</fillingWorkAmount>
+                <gizmoPath>Things/Icon/FillInPit</gizmoPath>
+                <gizmoName>Landfilling underground facilities</gizmoName>
+                <gizmoDesc>true</gizmoDesc>
+                <disgizmoName>Cancel landfill</disgizmoName>
+                <disgizmoDesc>true</disgizmoDesc>
+            </li>
+		</comps>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedStairsX</defName>
+		<label>blocked staircase</label>
+		<description>An inaccessible staircase piled with debris. Entirely inaccessible.</description>
+		<graphicData>
+			<texPath>Things/Building/BlockedStairsX</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>7</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,3)</size>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_Subway</defName>
+        <label>Ancient escalator</label>
+        <description>A stopped escalator, its destination unknown.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/DownwardEscalator</texPath>
+            <drawSize>4</drawSize>
+        </graphicData>
+        <size>(4,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_Subway_A</li>
+                    <li>AM_Subway_B</li>
+                </maps>
+            </li>
+        </modExtensions>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_Mall_A</defName>
+        <label>Ancient escalator</label>
+        <description>An upward escalator that has ceased operation.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/AscendingEscalatorA</texPath>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(2,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_Supermarket_2L_S</li>
+                </maps>
+            </li>
+			<li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>-1</distance>
+            </li>
+        </modExtensions>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_Mall_B</defName>
+        <label>Ancient escalator</label>
+        <description>An upward escalator that has ceased operation.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/AscendingEscalatorA</texPath>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(2,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_Supermarket_2L_L</li>
+                </maps>
+            </li>
+			<li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>-1</distance>
+            </li>
+        </modExtensions>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Entrance_CommercialStreet</defName>
+        <label>Ancient escalator</label>
+        <description>A stopped escalator, its destination unknown.</description>
+        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/DownwardEscalator</texPath>
+            <drawSize>4</drawSize>
+        </graphicData>
+        <size>(4,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+        <modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Map">
+                <maps>
+                    <li>AM_CommercialStreet_A</li>
+                    <li>AM_CommercialStreet_B</li>
+                    <li>AM_CommercialStreet_C</li>
+                    <li>AM_CommercialStreet_D</li>
+                    <li>AM_CommercialStreet_E</li>
+                </maps>
+            </li>
+        </modExtensions>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    </ThingDef>
+
+  <!-- 出口 -->
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Exit_Staircase</defName>
+        <label>Ancient staircase</label>
+        <description>An ancient upward staircase.</description>
+        <thingClass>AncientMarket_Libraray.MapExit</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/AscendingStairs</texPath>
+			<drawOffset>(0,0.1,0)</drawOffset>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(2,3)</size>
+        <rotatable>true</rotatable>
+
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>1</distance>
+            </li>
+        </modExtensions> 
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Exit_DoubleElevator</defName>
+        <label>Ancient escalator</label>
+        <description>An upward escalator that has ceased operation.</description>
+        <thingClass>AncientMarket_Libraray.MapExit</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/AscendingEscalator</texPath>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(4,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>1</distance>
+            </li>
+        </modExtensions> 
+    </ThingDef>
+
+    <ThingDef ParentName="PortalBase">
+        <defName>AM_Exit_Elevator</defName>
+        <label>Ancient escalator</label>
+        <description>A stopped escalator, its destination unknown.</description>
+        <thingClass>AncientMarket_Libraray.MapExit</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/DownwardEscalatorA</texPath>
+            <drawSize>4</drawSize>
+        </graphicData>
+        <size>(2,4)</size>
+        <rotatable>true</rotatable>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<modExtensions>
+            <li Class="AncientMarket_Libraray.ModExtension_Portal">
+                <distance>-1</distance>
+            </li>
+        </modExtensions> 
+    </ThingDef>
+</Defs>

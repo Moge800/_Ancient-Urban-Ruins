@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThinkTreeDef>
+        <defName>AM_ThinkTree_SubMap</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="ThinkNode_ConditionalDrafted">
+                    <invert>true</invert>
+                    <subNodes>
+                        <li Class="AncientMarketAI_Libraray.JobGiver_EnterJoyOrWorkLevel" />
+                        <li Class="AncientMarketAI_Libraray.JobGier_EnterSubMap" />
+                        <li Class="AncientMarketAI_Libraray.JobGiver_StealFromSubMap" />
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+        <insertTag>Humanlike_PostMentalState</insertTag>
+        <insertPriority>100</insertPriority>
+    </ThinkTreeDef>
+	
+    <ThinkTreeDef>
+        <defName>AM_ThinkTree_SubMap_PostMain</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="AncientMarketAI_Libraray.JobGiver_EnterAllowedLevel" />
+                <li Class="AncientMarketAI_Libraray.JobGiver_EnterSubMapByNeeding" />
+            </subNodes>
+        </thinkRoot>
+        <insertTag>Humanlike_PostMain</insertTag>
+        <insertPriority>100</insertPriority>
+    </ThinkTreeDef>
+
+</Defs>

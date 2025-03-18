@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: disassemble firearm -->
+  <AM_DecomposingWeapons.label>拆解枪械</AM_DecomposingWeapons.label>
+  <!-- EN: Disassemble firearms into weapon components. -->
+  <AM_DecomposingWeapons.description>将枪械拆卸成武器零件</AM_DecomposingWeapons.description>
+  <!-- EN: disassembling firearm. -->
+  <AM_DecomposingWeapons.jobString>正在拆解枪械</AM_DecomposingWeapons.jobString>
+  
+  <!-- EN: disassemble firearm -->
+  <AM_DecomposingWeaponsI.label>拆解精密枪械</AM_DecomposingWeaponsI.label>
+  <!-- EN: Disassemble firearms into weapon components. -->
+  <AM_DecomposingWeaponsI.description>将精密枪械拆卸成多个武器零件</AM_DecomposingWeaponsI.description>
+  <!-- EN: disassembling firearm. -->
+  <AM_DecomposingWeaponsI.jobString>正在拆解精密枪械</AM_DecomposingWeaponsI.jobString>
+  
+  <!-- EN: disassemble heavy armor -->
+  <AM_DisassembleHeavyArmor.label>拆解重型装甲</AM_DisassembleHeavyArmor.label>
+  <!-- EN: Disassemble heavy armor into armor plates and fibers. -->
+  <AM_DisassembleHeavyArmor.description>把重型装甲拆解为防弹装甲板与纤维布料</AM_DisassembleHeavyArmor.description>
+  <!-- EN: disassembling heavy armor. -->
+  <AM_DisassembleHeavyArmor.jobString>正在拆解重型装甲</AM_DisassembleHeavyArmor.jobString>
+  
+  <!-- EN: disassemble light armor -->
+  <AM_DisassembleLightArmor.label>拆解轻质装甲</AM_DisassembleLightArmor.label>
+  <!-- EN: Disassemble light armor into armor plates and fibers. -->
+  <AM_DisassembleLightArmor.description>把轻质装甲拆解为防弹装甲板与纤维布料</AM_DisassembleLightArmor.description>
+  <!-- EN: disassembling light armor. -->
+  <AM_DisassembleLightArmor.jobString>正在拆解轻质装甲</AM_DisassembleLightArmor.jobString>
+    <!-- EN: disassemble light armor -->
+  <AM_DisassemblePolyethylenePlate.label>拆解聚乙烯防弹插板</AM_DisassemblePolyethylenePlate.label>
+  <!-- EN: Disassemble light armor into armor plates and fibers. -->
+  <AM_DisassemblePolyethylenePlate.description>把聚乙烯装甲板上的芳纶布料层拆下来，以回收珍贵的芳纶</AM_DisassemblePolyethylenePlate.description>
+  <!-- EN: disassembling light armor. -->
+  <AM_DisassemblePolyethylenePlate.jobString>正在拆解聚乙烯防弹插板</AM_DisassemblePolyethylenePlate.jobString>
+</LanguageData>

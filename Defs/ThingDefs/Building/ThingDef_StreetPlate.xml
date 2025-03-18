@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding" Name ="AM_NonfunctionalBuilding_StreetPlate" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,0.75)</drawOffset>			
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<rotatable>false</rotatable>
+	</ThingDef> 
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_Notice</defName>
+		<label>notice sign</label>
+		<description>An old street sign warning of something.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/Notice</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_ManAtWork</defName>
+		<label>Man at work sign</label>
+		<description>An old street sign depicting a person doing work.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/ManAtWork</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_Crossroad</defName>
+		<label>Crossroad sign</label>
+		<description>An old street sign indicating a crossroad.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/Crossroad</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_SteepAscent</defName>
+		<label>steep ascent sign</label>
+		<description>An old street sign indicating an incoming steep ascent.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/SteepAscent</texPath>	
+		    <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_WatchForBug</defName>
+		<label>watch for insects sign</label>
+		<description>An old street sign warning about hostile insects.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/WatchForBug</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_WatchForGorehulk</defName>
+		<label>watch for Gorehulk sign</label>
+		<description>An old street sign depicting an ominous warning.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/WatchForGorehulk</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_WatchForMachine</defName>
+		<label>watch for Mechanoid sign</label>
+		<description>An old street sign warning against hostile mechanoids.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/WatchForMachine</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_WatchForMetalhorror</defName>
+		<label>watch for Metalhorror sign</label>
+		<description>An old street sign depicting an ominous warning.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/WatchForMetalhorror</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_WatchForNoctol</defName>
+		<label>watch for Noctol sign</label>
+		<description>An old street sign depicting an ominous warning</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/WatchForNoctol</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_AllowableTurn</defName>
+		<label>AllowableTurn</label>
+		<description>AllowableTurn</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/AllowableTurn</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_AllowRightTurn</defName>
+		<label>forked road sign</label>
+		<description>An old street sign indicating a right turn.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/AllowRightTurn</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_MotorVehicleLane</defName>
+		<label>motor vehicle lane sign</label>
+		<description>An old street sign indicating a motor vehicle lane.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/MotorVehicleLane</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_ParkingPermitted</defName>
+		<label>parking permitted sign</label>
+		<description>An old street sign indicating permitted parking.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/ParkingPermitted</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_TurnAround</defName>
+		<label>U-Turn sign</label>
+		<description>An old street sign indicating a u-turn.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/TurnAround</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_NoAccess</defName>
+		<label>no access sign</label>
+		<description>An old street sign indicating no access.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/NoAccess</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_NoGhoul</defName>
+		<label>no Ghouls permitted sign</label>
+		<description>An old street sign indicating that ghouls are not permitted.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/NoGhoul</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_NoParking</defName>
+		<label>no parking sign</label>
+		<description>An old street sign indicating no parking.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/NoParking</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_NoTurningAaround</defName>
+		<label>no U-Turn sign</label>
+		<description>An old street sign indicating a driver must not U-Turn.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/NoTurningAaround</texPath>	
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_StreetPlate">
+		<defName>AM_SpeedLimit40KPH</defName>
+		<label>speed limit sign</label>
+		<description>An old street sign depicting a speed limit of 40.</description>
+		<graphicData>
+			<texPath>Things/Building/StreetPlate/SpeedLimit40KPH</texPath>	
+		</graphicData>
+	</ThingDef>    
+</Defs>

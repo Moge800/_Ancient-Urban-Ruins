@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: computation center -->
+  <AM_VirutalMiner.label>计算中心</AM_VirutalMiner.label>
+  <!-- EN: A computing center pieced together from ancient high-performance computer components, with parallel computing power from multiple GPUs, automatically analyzes intelligence locations, meteorological data, mechanical swarm data, and even writes books from known information.. -->
+  <AM_VirutalMiner.description>一个由古代高性能计算机组件拼凑而成的计算中心，利用多个GPU的并行计算能力，自动分析情报位置、气象数据、机械集群数据，机械ai数据，甚至根据已知信息写书。</AM_VirutalMiner.description>
+  
+</LanguageData>

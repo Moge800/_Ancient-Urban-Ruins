@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Integrated parasite armor -->
+  <AM_IntegratedTorsoArmor.label>植入型寄生虫装甲</AM_IntegratedTorsoArmor.label>
+  <!-- EN: An ancient, specialized implant involved introducing carefully selected parasites into the body, endowing the subject with a body akin to bulletproof fibers and enhancing muscular strength. However, the technology behind it has been entirely lost and cannot be replicated. -->
+  <AM_IntegratedTorsoArmor.description>一种古代特化植入体，将精心挑选的寄生虫引入体内，赋予受试者类似于防弹纤维的身体，并显著增强他们的肌肉力量。这项技术已经完全丢失，无法复现。</AM_IntegratedTorsoArmor.description>
+  
+  <!-- EN: rampage parasite -->
+  <AM_RampageParasite.label>狂暴寄生虫</AM_RampageParasite.label>
+  <!-- EN: An unsuccessful outcome of ancient parasitic experiments, though it greatly enhances combat effectiveness, the victim lacks any semblance of intelligence and is utterly uncontrollable.. -->
+  <AM_RampageParasite.description>古代寄生虫实验的一个失败产物，尽管它大大提高了受试者的战斗力，但也让他们失去所有智力，完全无法控制。</AM_RampageParasite.description>
+  
+</LanguageData>

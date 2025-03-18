@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Burger paper bag -->
+  <AM_BurgerPaperBag.label>汉堡纸袋</AM_BurgerPaperBag.label>
+  <!-- EN: Paper bags from fried chicken restaurants. -->
+  <AM_BurgerPaperBag.description>炸鸡店的汉堡包装纸袋。</AM_BurgerPaperBag.description>
+  
+  <!-- EN: Burger paper box -->
+  <AM_BurgerPaperBox.label>汉堡纸盒</AM_BurgerPaperBox.label>
+  <!-- EN: Paper box from fried chicken restaurants. -->
+  <AM_BurgerPaperBox.description>炸鸡店外卖用的汉堡纸盒。</AM_BurgerPaperBox.description>
+  
+  <!-- EN: large backpack -->
+  <AM_LargeBackpack_Decoration.label>大背包</AM_LargeBackpack_Decoration.label>
+  <!-- EN: an oversized military backpack that is already broken. -->
+  <AM_LargeBackpack_Decoration.description>一个超大尺寸的军用背包，早已损坏。</AM_LargeBackpack_Decoration.description>
+  
+  <!-- EN: LBT -->
+  <AM_LBT_Decoration.label>LBT医疗包</AM_LBT_Decoration.label>
+  <!-- EN: The medical supplies backpack is broken. -->
+  <AM_LBT_Decoration.description>医疗物资专用背包，早已损坏。</AM_LBT_Decoration.description>
+  
+  <!-- EN: MBSS -->
+  <AM_MBSS_Decoration.label>MBSS户外包</AM_MBSS_Decoration.label>
+  <!-- EN: The small military backpack is broken. -->
+  <AM_MBSS_Decoration.description>一个小型军用背包，早已损坏。</AM_MBSS_Decoration.description>
+  
+  <!-- EN: Postman shoulder bag -->
+  <AM_PostmanShoulderBag_Decoration.label>邮差单肩包</AM_PostmanShoulderBag_Decoration.label>
+  <!-- EN: The postman's small shoulder bag is already broken. -->
+  <AM_PostmanShoulderBag_Decoration.description>一个邮差单肩小背包，早已损坏。</AM_PostmanShoulderBag_Decoration.description>
+  
+  <!-- EN: Scav bag -->
+  <AM_Scav_Decoration.label>SCAV背包</AM_Scav_Decoration.label>
+  <!-- EN: The backpack made by the scavenger is broken. -->
+  <AM_Scav_Decoration.description>一个拾荒者自制的背包，早已损坏。</AM_Scav_Decoration.description>
+  
+  <!-- EN: Sports bag -->
+  <AM_SportsBag_Decoration.label>运动包</AM_SportsBag_Decoration.label>
+  <!-- EN: The sports bag is already broken. -->
+  <AM_SportsBag_Decoration.description>一个运动包，早已损坏。</AM_SportsBag_Decoration.description>
+  
+  <!-- EN: Travel bag -->
+  <AM_TravelBag_Decoration.label>旅行包</AM_TravelBag_Decoration.label>
+  <!-- EN: The oversized and eye-catching purple travel bag is already broken. -->
+  <AM_TravelBag_Decoration.description>一个引人注目的超大尺寸紫色背包，早已损坏。</AM_TravelBag_Decoration.description>
+  
+</LanguageData>

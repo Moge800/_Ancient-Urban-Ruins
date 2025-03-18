@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+
+
+	<QuestScriptDef>
+		<defName>ACM_AncientRandomSite</defName>
+		<rootSelectionWeight>0.3</rootSelectionWeight>
+		<rootMinPoints>350</rootMinPoints>
+		<autoAccept>true</autoAccept>
+		<defaultChallengeRating>2</defaultChallengeRating>
+		<isRootSpecial>true</isRootSpecial>
+		<questNameRules>
+			<rulesStrings>
+
+				<!-- quest name -->
+				<li>questName(p=3)->[complexAdj] [complex]</li>
+				<li>questName->[complex]</li>
+				<li>complexAdj->secret</li>
+				<li>complexAdj->ancient</li>
+				<li>complexAdj->old</li>
+				<li>complexAdj->hidden</li>
+				<li>complexAdj->dusty</li>
+				<li>complexAdj->dangerous</li>
+				<li>complexAdj->hidden</li>
+				<li>complex->construction site</li>
+				<li>complex->architectural ruins</li>
+				<li>complex->construction work site</li>
+				<li>complex->ruin</li>
+
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->We've discovered the location of an abandoned construction site, rumored to hold an entrance to the ancient city's underground system. A group of guards, clad in equipment stolen from an old bunker, are stationed there. They appear oblivious to the fact that they've been discovered.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<questDescriptionAndNameRules>
+			<rulesStrings>
+			</rulesStrings>
+		</questDescriptionAndNameRules>
+		<root Class="AncientMarket_Libraray.ACM_QuestNode_Root_AncientRandomSite" />
+	</QuestScriptDef>
+
+	<SitePartDef>
+		<defName>ACM_AncientRandomComplex</defName>
+		<label>architectural ruins</label>
+		<description>An ancient complex containing the corpse of a mechanitor. You can try to penetrate this dangerous structure to extract the mechanitor's mechlink for your own use.</description>
+		<workerClass>AncientMarket_Libraray.ACM_RandomSitePartWorker</workerClass>
+		<siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+		<expandingIconTexture>Things/Icon/Site</expandingIconTexture>
+		<approachOrderString>Investigate {0}</approachOrderString>
+		<approachingReportString>Investigate {0}</approachingReportString>
+		<arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+		<wantsThreatPoints>true</wantsThreatPoints>
+		<minMapSize>(150, 1, 150)</minMapSize>
+	</SitePartDef>
+
+	<RuleDef>
+		<defName>AncientRandomComplexSketch</defName>
+		<symbol>ancientRandomComplexSketch</symbol>
+		<resolvers>
+			<li Class="SymbolResolver_AncientComplex_Sketch">
+				<minRectSize>(30, 30)</minRectSize>
+			</li>
+		</resolvers>
+	</RuleDef>
+
+	<RuleDef>
+		<defName>AncientRandomComplex</defName>
+		<symbol>ancientRandomComplex</symbol>
+		<resolvers>
+			<li Class="AncientMarket_Libraray.SymbolResolver_Main">
+				<minRectSize>(30, 30)</minRectSize>
+			</li>
+		</resolvers>
+	</RuleDef>
+
+	<RuleDef>
+		<defName>OutdoorsRandomComplePath</defName>
+		<symbol>outdoorsRandomComplePath</symbol>
+		<resolvers>
+			<li Class="AncientMarket_Libraray.SymbolResolver_OutdoorsRandomPath">
+				<minRectSize>(30, 30)</minRectSize>
+			</li>
+		</resolvers>
+	</RuleDef>
+
+	<RuleDef>
+		<defName>AncientRandomComplexDefences</defName>
+		<symbol>ancientRandomComplexDefences</symbol>
+		<resolvers>
+			<li Class="AncientMarket_Libraray.SymbolResolver_OutdoorsDefence">
+				<minRectSize>(10, 10)</minRectSize>
+			</li>
+		</resolvers>
+	</RuleDef>
+
+	<RuleDef>
+		<defName>AncientRandomDesiccatedCorpses</defName>
+		<symbol>ancientRandomDesiccatedCorpses</symbol>
+		<resolvers>
+			<li Class="AncientMarket_Libraray.SymbolResolver_RandomDesiccatedCorpses">
+			</li>
+		</resolvers>
+	</RuleDef>
+
+	<GenStepDef>
+		<defName>ACM_AncientRandomComplex</defName>
+		<linkWithSite>ACM_AncientRandomComplex</linkWithSite>
+		<order>310</order>
+		<genStep Class="AncientMarket_Libraray.GenStep_RandomAncientComplex" />
+	</GenStepDef>
+
+	<ComplexLayoutDef>
+		<defName>ACM_AncientRandomComplex_Loot</defName>
+		<workerClass>AncientMarket_Libraray.ACM_AncientRandomComplex_Loot</workerClass>
+		<roomRewardCrateFactor>0</roomRewardCrateFactor>
+		<roomDefs>
+			<li>ACM_HoboRoomLayout</li>
+			<li>ACM_StoreRoomLayout</li>
+			<li>ACM_BuildingRoomLayout</li>
+			<li>ACM_BuildingRoomWithNoForkliftLayout</li>
+			<li>ACM_ResturantLayout</li>
+			<li>ACM_UnderRoomLayout</li>
+		</roomDefs>
+		<threats>
+			<li>
+				<def>HangingPirates</def>
+			</li>
+		</threats>
+	</ComplexLayoutDef>
+
+	<ComplexThreatDef Name="HangingPirates">
+		<defName>HangingPirates</defName>
+		<workerClass>AncientMarket_Libraray.ComplexThreatWorker_HangingPirates</workerClass>
+		<faction>Pirate</faction>
+		<minPoints>100</minPoints>
+	</ComplexThreatDef>
+
+	<LayoutRoomDef>
+		<defName>ACM_StoreRoomLayout</defName>
+		<sketchResolverDef>ACM_StoreRoom</sketchResolverDef>
+		<minSingleRectWidth>7</minSingleRectWidth>
+		<minSingleRectHeight>7</minSingleRectHeight>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<countRange>1~2</countRange>
+		<floorTypes>
+			<li>Concrete</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>ACM_StoreRoom</defName>
+		<isRoot>true</isRoot>
+		<resolver Class="AncientMarket_Libraray.ACM_SketchResolver_StoreRoom" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>ACM_HoboRoomLayout</defName>
+		<sketchResolverDef>ACM_HoboRoom</sketchResolverDef>
+		<minSingleRectWidth>7</minSingleRectWidth>
+		<minSingleRectHeight>5</minSingleRectHeight>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<countRange>1</countRange>
+		<floorTypes>
+			<li>Concrete</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>ACM_HoboRoom</defName>
+		<isRoot>false</isRoot>
+		<resolver Class="AncientMarket_Libraray.ACM_SketchResolver_HoboRoom" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>ACM_UnderRoomLayout</defName>
+		<sketchResolverDef>ACM_UnderRoom</sketchResolverDef>
+		<minSingleRectWidth>4</minSingleRectWidth>
+		<minSingleRectHeight>4</minSingleRectHeight>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<countRange>1</countRange>
+		<floorTypes>
+			<li>Concrete</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>ACM_UnderRoom</defName>
+		<isRoot>false</isRoot>
+		<resolver Class="AncientMarket_Libraray.ACM_SketchResolver_UnderRoom" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>ACM_BuildingRoomLayout</defName>
+		<sketchResolverDef>ACM_BuildingRoom</sketchResolverDef>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<minSingleRectHeight>7</minSingleRectHeight>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<countRange>1</countRange>
+		<floorTypes>
+			<li>Concrete</li>
+			<li>BrokenAsphalt</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>ACM_BuildingRoom</defName>
+		<isRoot>false</isRoot>
+		<resolver Class="AncientMarket_Libraray.ACM_SketchResolver_BuildingRoom" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>ACM_ResturantLayout</defName>
+		<sketchResolverDef>ACM_Resturant</sketchResolverDef>
+		<minSingleRectWidth>5</minSingleRectWidth>
+		<minSingleRectHeight>5</minSingleRectHeight>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<countRange>1</countRange>
+		<floorTypes>
+			<li>Concrete</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>ACM_Resturant</defName>
+		<isRoot>false</isRoot>
+		<resolver Class="AncientMarket_Libraray.ACM_SketchResolver_ACM_Resturant" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>ACM_BuildingRoomWithNoForkliftLayout</defName>
+		<sketchResolverDef>ACM_BuildingRoomWithNoForklift</sketchResolverDef>
+		<minSingleRectWidth>5</minSingleRectWidth>
+		<minSingleRectHeight>5</minSingleRectHeight>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<floorTypes>
+			<li>BrokenAsphalt</li>
+			<li>Concrete</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>ACM_BuildingRoomWithNoForklift</defName>
+		<isRoot>false</isRoot>
+		<resolver Class="AncientMarket_Libraray.ACM_SketchResolver_BuildingRoomWithNoForklift" />
+	</SketchResolverDef>
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SpecialThingFilterDef>
+    <defName>AM_Test_Filter</defName>
+    <label>allow</label>
+    <description>Allow the dead bodies of friendly mechanoids.</description>
+    <parentCategory>Weapons</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>allowCorpsesMechFriendly</saveKey>
+    <workerClass>AncientMarket_Libraray.SpecialThingFilterWorker_Gun</workerClass>
+  </SpecialThingFilterDef>
+
+
+  
+  <SpecialThingFilterDef>
+    <defName>AM_AMGuns_Filter</defName>
+    <label>allow</label>
+    <description>Allow the dead bodies of friendly mechanoids.</description>
+    <parentCategory>Weapons</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>allowCorpsesMechFriendly</saveKey>
+    <workerClass>AncientMarket_Libraray.SpecialThingFilterWorker_AMGuns</workerClass>
+  </SpecialThingFilterDef>
+</Defs>

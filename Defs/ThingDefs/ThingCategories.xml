@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <ThingCategoryDef>
+      <defName>AM_Container</defName>
+      <label>container</label>
+      <parent>Buildings</parent>
+	  <iconPath>Things/Container/SmallCase_south</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>AM_Manufactured</defName>
+      <label>rare items</label>
+      <parent>Manufactured</parent>
+	  <iconPath>Things/Misc/CreditCard</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>AM_Electronics</defName>
+      <label>electronics</label>
+      <parent>Manufactured</parent>
+	  <iconPath>Things/Misc/GPU</iconPath>
+    </ThingCategoryDef>
+  
+    <ThingCategoryDef>
+      <defName>AM_Tool</defName>
+      <label>tools</label>
+      <parent>Manufactured</parent>
+	   <iconPath>Things/Misc/TapeMeasure</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>AM_MedicalSupplies</defName>
+      <label>medical supplies</label>
+      <parent>Manufactured</parent>
+	  <iconPath>Things/Misc/FirstAidKit/FirstAidKit_a</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>AM_SpecialComp</defName>
+      <label>Military components</label>
+      <parent>Manufactured</parent>
+	  <iconPath>Things/Weapon/ComponentWeapon/ComponentWeaponA</iconPath>
+    </ThingCategoryDef>
+</Defs>

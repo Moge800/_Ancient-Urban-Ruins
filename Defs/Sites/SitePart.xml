@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <SitePartDef>
+    <defName>AM_StreetSite</defName>
+    <label>Street</label>
+    <description>A Street.</description>
+    <workerClass>AncientMarket_Libraray.SitePartWorker_CustomMap</workerClass>
+    <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+    <expandingIconTexture>Things/Icon/Block</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigate {0}</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minMapSize>(120, 1, 120)</minMapSize>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Map">
+        <maps>
+          <li>AM_Street_A</li>
+          <li>AM_Street_B</li>
+          <li>AM_Street_C</li>
+		  <li>AM_Street_D</li>
+        </maps>
+      </li>
+    </modExtensions>
+  </SitePartDef>
+  
+
+  <SitePartDef>
+    <defName>AM_ReserveSite</defName>
+    <label>Reserve</label>
+    <description>A Reserve.</description>
+    <workerClass>AncientMarket_Libraray.SitePartWorker_CustomMap</workerClass>
+    <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+    <expandingIconTexture>Things/Icon/Storage</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigate {0}</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minMapSize>(120, 1, 120)</minMapSize>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Map">
+        <maps>
+          <li>AM_Reserve</li>
+		   <li>AM_ReserveRailway</li>
+        </maps>
+      </li>
+    </modExtensions>
+  </SitePartDef>
+  
+   <SitePartDef>
+    <defName>AM_MALL_S_Site</defName>
+    <label>Mall</label>
+    <description>A Mall.</description>
+    <workerClass>AncientMarket_Libraray.SitePartWorker_CustomMap</workerClass>
+    <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+    <expandingIconTexture>Things/Icon/Mall</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigate {0}</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minMapSize>(162, 1, 165)</minMapSize>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Map">
+        <maps>
+          <li>AM_Supermarket_S</li>
+        </maps>
+      </li>
+    </modExtensions>
+  </SitePartDef>
+
+  <SitePartDef>
+    <defName>AM_MALL_L_Site</defName>
+    <label>Mall</label>
+    <description>A Mall.</description>
+    <workerClass>AncientMarket_Libraray.SitePartWorker_CustomMap</workerClass>
+    <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+    <expandingIconTexture>Things/Icon/Mall</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigate {0}</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minMapSize>(203, 1, 203)</minMapSize>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Map">
+        <maps>
+          <li>AM_Supermarket_L</li>
+        </maps>
+      </li>
+    </modExtensions>
+  </SitePartDef>
+</Defs>

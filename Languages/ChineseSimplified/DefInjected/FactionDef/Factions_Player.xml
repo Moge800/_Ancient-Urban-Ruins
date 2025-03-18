@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Safe House -->
+  <AM_PlayerColony.label>安全屋</AM_PlayerColony.label>
+  <!-- EN: Poor scavengers who found an underground safe house. -->
+  <AM_PlayerColony.description>找到了一处安全屋的可怜的拾荒者们</AM_PlayerColony.description>
+  <!-- EN: leader -->
+  <AM_PlayerColony.leaderTitle>领袖</AM_PlayerColony.leaderTitle>
+  <!-- EN: scavenger -->
+  <AM_PlayerColony.pawnSingular>拾荒者</AM_PlayerColony.pawnSingular>
+  <!-- EN: scavengers -->
+  <AM_PlayerColony.pawnsPlural>拾荒者们</AM_PlayerColony.pawnsPlural>
+  
+</LanguageData>

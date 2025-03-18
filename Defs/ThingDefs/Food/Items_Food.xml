@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MealBase" Name ="AM_MealBase" Abstract="True">
+   <tradeTags>
+      <li>AM_Food</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_MealBase">
+    <defName>AM_PotatoChipsA</defName>
+    <label>classic potato chips</label>
+    <description>An ancient bag of classic thin cut salted potato chips. and packaged with nitrogen gas making it difficult to spoil.</description>
+	<uiIconPath>Things/Food/PotatoChipsA/PotatoChipsA_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/PotatoChipsA</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.07</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AM_PotatoChips</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>AM_Chips</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+    <ThingDef ParentName="AM_MealBase">
+    <defName>AM_PotatoChipsB</defName>
+    <label>tomato potato chips</label>
+    <description>An ancient bag of tomato flavored potato chips. It's sweet and sour, delicious, and packaged with nitrogen gas making it difficult to spoil.</description>
+	<uiIconPath>Things/Food/PotatoChipsB/PotatoChipsB_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/PotatoChipsB</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.07</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AM_PotatoChips</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>AM_Chips</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+  
+      <ThingDef ParentName="AM_MealBase">
+    <defName>AM_PotatoChipsC</defName>
+    <label>cucumber potato chips</label>
+    <description>An ancient bag of potato chips with a unique cucumber flavor，packaged with nitrogen gas making it difficult to spoil.</description>
+	<uiIconPath>Things/Food/PotatoChipsC/PotatoChipsC_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/PotatoChipsC</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.07</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AM_PotatoChips</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>AM_Chips</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="AM_MealBase">
+    <defName>AM_PotatoChipsD</defName>
+    <label>steak potato chips</label>
+    <description>An ancient bag of steak flavored potato chips. Eating them feels like enjoying a feast. Packaged with nitrogen gas making it difficult to spoil.</description>
+	<uiIconPath>Things/Food/PotatoChipsD/PotatoChipsD_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/PotatoChipsD</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.07</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AM_PotatoChips</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>AM_Chips</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+   <ThingDef ParentName="AM_MealBase">
+    <defName>AM_PotatoChipsE</defName>
+    <label>lemon potato chips</label>
+    <description>An ancient bag of lemon flavored potato chips. Bursting with that summer flavor, and packaged with a nitrogen gas, making difficult to spoil.</description>
+	<uiIconPath>Things/Food/PotatoChipsE/PotatoChipsE_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/PotatoChipsE</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.07</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AM_PotatoChips</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>AM_Chips</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+   <ThingDef ParentName="AM_MealBase">
+    <defName>AM_PotatoChipsF</defName>
+    <label>italian red stew potato chips</label>
+    <description>An ancient bag of Italian braised potato chips. Its taste is like eating a strong and fragrant tomato minced meat stew. Packaged with a nitrogen gas, making difficult to spoil.</description>
+	<uiIconPath>Things/Food/PotatoChipsF/PotatoChipsF_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/PotatoChipsF</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.07</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AM_PotatoChips</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>AM_Chips</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+  
+     <ThingDef ParentName="AM_MealBase">
+    <defName>AM_MRE</defName>
+    <label>military ration</label>
+    <description>A pack of ancient military rations. It's intact and won't spoil, but it doesn't look very appetizing.</description>
+	<uiIconPath>Things/Food/MRE/MRE_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/MRE</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <Mass>0.5</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>1.2</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+   <ThingDef ParentName="AM_MealBase">
+    <defName>AM_CannedBraisedPorkbelly</defName>
+    <label>canned braised pork</label>
+    <description>An ancient can of braised pork. Its a great source of happiness despite the dust.</description>
+	<uiIconPath>Things/Food/CannedBraisedPorkbelly/CannedBraisedPorkbelly_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/CannedBraisedPorkbelly</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>70</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>1.20</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+   <ThingDef ParentName="AM_MealBase">
+    <defName>AM_CannedHerring</defName>
+    <label>canned herring</label>
+    <description>An ancient can of herring. Quite salty, but the freshness is appealing.</description>
+	<uiIconPath>Things/Food/CannedHerring/CannedHerring_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/CannedHerring</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>60</WorkToMake>
+      <Nutrition>0.95</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+    <ThingDef ParentName="AM_MealBase">
+    <defName>AM_CannedPeas</defName>
+    <label>canned peas</label>
+    <description>An ancient can of soft, sweet peas.</description>
+	<uiIconPath>Things/Food/CannedPeas/CannedPeas_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/CannedPeas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.90</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+    <ThingDef ParentName="AM_MealBase">
+    <defName>AM_CannedStewedBeef</defName>
+    <label>canned stewed muffalo</label>
+    <description>An ancient can of muffalo meat stewed with potatoes and tomatoes. Very delicious.</description>
+	<uiIconPath>Things/Food/CannedStewedBeef/CannedStewedBeef_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/CannedStewedBeef</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>60</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+    <ThingDef ParentName="AM_MealBase">
+    <defName>AM_DeliciousCannedBeef</defName>
+    <label>deluxe canned muffalo</label>
+    <description>An ancient can of pure muffalo meat stew. Has a very strong buttery aroma.</description>
+	<uiIconPath>Things/Food/DeliciousCannedBeef/DeliciousCannedBeef_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/DeliciousCannedBeef</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>120</MarketValue>
+      <Mass>0.5</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>1.2</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+  
+
+
+ <ThingDef ParentName="DrugBase">
+    <defName>AM_TsingtaoBeer</defName>
+    <label>Tsingtao</label>
+    <description>An ancient canned beer with a lovely aftertaste.</description>
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+      <HediffDef>AlcoholTolerance</HediffDef>
+      <HediffDef>Hangover</HediffDef>
+      <HediffDef>AlcoholAddiction</HediffDef>
+      <HediffDef>Cirrhosis</HediffDef>
+      <HediffDef>ChemicalDamageModerate</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>6</possessionCount>
+	<uiIconPath>Things/Food/TsingtaoBeer/TsingtaoBeer_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/TsingtaoBeer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tableDesired>false</tableDesired>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <toleranceChemical>Alcohol</toleranceChemical>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.005</addictiveness>
+        <minToleranceToAddict>0.45</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Food</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="DrugBase">
+    <defName>AM_Budweiser</defName>
+    <label>Budweiser</label>
+    <description>A once popular ancient beer brand, canned for its ancient customers.</description>
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+      <HediffDef>AlcoholTolerance</HediffDef>
+      <HediffDef>Hangover</HediffDef>
+      <HediffDef>AlcoholAddiction</HediffDef>
+      <HediffDef>Cirrhosis</HediffDef>
+      <HediffDef>ChemicalDamageModerate</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>6</possessionCount>
+	<uiIconPath>Things/Food/Budweiser/Budweiser_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/Budweiser</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tableDesired>false</tableDesired>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <toleranceChemical>Alcohol</toleranceChemical>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.005</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Food</li>
+    </tradeTags>
+  </ThingDef>
+  
+   <ThingDef ParentName="DrugBase">
+    <defName>AM_MilkBeer</defName>
+    <label>milk beer</label>
+    <description>An ancient concoction of milk and beer mixed with canned drinks. It can even fill the stomach!</description>
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+      <HediffDef>AlcoholTolerance</HediffDef>
+      <HediffDef>Hangover</HediffDef>
+      <HediffDef>AlcoholAddiction</HediffDef>
+      <HediffDef>Cirrhosis</HediffDef>
+      <HediffDef>ChemicalDamageModerate</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>6</possessionCount>
+	<uiIconPath>Things/Food/MilkBeer/MilkBeer_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Food/MilkBeer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tableDesired>false</tableDesired>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <toleranceChemical>Alcohol</toleranceChemical>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Food</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef Name="AM_SoftDrinkResourceBase" ParentName="ResourceBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>25</stackLimit>
+		<rotatable>false</rotatable>
+		<statBases>
+			<DeteriorationRate>0.1</DeteriorationRate>
+			<MaxHitPoints>25</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<foodType>Fluid, Processed</foodType>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+	</ingestible>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+	    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1400</listOrder>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>AM_Food</li>
+    </tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="AM_SoftDrink" ParentName="AM_SoftDrinkResourceBase" Abstract="True">
+		<graphicData>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>25</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_SoftDrink">
+		<defName>AM_Coca</defName>
+		<label>Coca-Cola</label>
+		<description>An ancient sparkling beverage with high sugar content. Just a sip could make someone happy for an entire day.</description>
+		<uiIconPath>Things/Food/Coca/Coca_a</uiIconPath>
+		<graphicData>
+			<texPath>Things/Food/Coca</texPath>
+		</graphicData>
+		<ingestible>
+			<tasteThought>AM_Softdrink</tasteThought>
+	    </ingestible>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_SoftDrink">
+		<defName>AM_Fanta</defName>
+		<label>fanta</label>
+		<description>An ancient carbonated orange-flavored soft drink, sweet and delicious.</description>
+		<uiIconPath>Things/Food/Fanta/Fanta_a</uiIconPath>
+		<graphicData>
+			<texPath>Things/Food/Fanta</texPath>
+		</graphicData>
+		<ingestible>
+			<tasteThought>AM_Softdrink</tasteThought>
+	    </ingestible>
+	</ThingDef> 
+	
+	<ThingDef ParentName="AM_SoftDrink">
+		<defName>AM_Pepsi</defName>
+		<label>Pepsi</label>
+		<description>An ancient, slightly inferior carbonated soft drink. Seems sweeter than the others.</description>
+		<uiIconPath>Things/Food/Pepsi/Pepsi_a</uiIconPath>
+		<graphicData>
+			<texPath>Things/Food/Pepsi</texPath>
+		</graphicData>
+		<ingestible>
+			<tasteThought>AM_Softdrink</tasteThought>
+	    </ingestible>
+	</ThingDef> 
+	
+	<ThingDef ParentName="AM_SoftDrink">
+		<defName>AM_Sprite</defName>
+		<label>Sprite</label>
+		<description>An ancient lemon-lime flavored soft drink with a strong sour taste.</description>
+		<uiIconPath>Things/Food/Sprite/Sprite_a</uiIconPath>
+		<graphicData>
+			<texPath>Things/Food/Sprite</texPath>
+		</graphicData>
+		<ingestible>
+			<tasteThought>AM_Softdrink</tasteThought>
+	    </ingestible>
+	</ThingDef> 
+</Defs>

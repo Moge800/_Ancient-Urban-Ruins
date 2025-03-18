@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--去除原版武器-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ThingSetMakerDef[defName="AM_VanillaWeapons"]
+			/root/options/li[thingSetMaker/fixedParams/filter/thingDefs/li[text()="Gun_SmokeLauncher"]]
+			/thingSetMaker/fixedParams/filter/thingDefs/li[text()="Gun_SmokeLauncher" or text()="Gun_EmpLauncher"]
+		</xpath>
+	</Operation>
+
+	<!--让生成武器带弹药-->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>
+			Defs/ThingSetMakerDef[defName="AM_AdvancedWeapons" or defName="AM_OrdinaryWeapons" or defName="AM_VanillaWeapons"]
+			/root/options/li[thingSetMaker/@Class="ThingSetMaker_Count"]
+			/thingSetMaker
+		</xpath>
+		<attribute>Class</attribute>
+		<value>BreadMoCEThingSetMaker.ThingSetMaker_CountWithAmmo</value>
+	</Operation>
+
+	<!--让高级武器可以自带高级弹药-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingSetMakerDef[defName="AM_AdvancedWeapons"]
+			/root/options/li[thingSetMaker/@Class="BreadMoCEThingSetMaker.ThingSetMaker_CountWithAmmo"]
+			/thingSetMaker
+		</xpath>
+		<value>
+			<magCount>1~3</magCount>
+			<random>true</random>
+			<canGenerateAdvanced>true</canGenerateAdvanced>
+		</value>
+	</Operation>
+
+	<!--在武器池加入弹药和CE榴弹-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingSetMakerDef[defName="AM_VanillaWeapons"]/root/options</xpath>
+		<value>
+			<li>
+				<weight>10</weight>
+				<thingSetMaker Class="ThingSetMaker_RandomOption">
+					<!--普通弹药-->
+					<options>
+						<li>
+							<weight>2</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoPistols</li>
+										</categories>
+									</filter>
+									<countRange>100~180</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+						<li>
+							<weight>2</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoRifles</li>
+											<li>AmmoShotguns</li>
+										</categories>
+									</filter>
+									<countRange>80~150</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+						<li>
+							<weight>1</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoHighCaliber</li>
+										</categories>
+									</filter>
+									<countRange>25~50</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+
+						<li>
+							<weight>0.25</weight>
+							<thingSetMaker Class="ThingSetMaker_Count">
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>Grenades</li>
+										</categories>
+									</filter>
+									<countRange>1~4</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+
+						<li>
+							<weight>0.25</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_CountWithAmmo">
+								<magCount>1~3</magCount>
+								<random>true</random>
+								<canGenerateAdvanced>true</canGenerateAdvanced>
+								<fixedParams>
+									<filter>
+										<thingDefs>
+											<li>CE_GrenadeLauncher</li>
+											<li>CE_FlareGun</li>
+										</thingDefs>
+									</filter>
+									<countRange>1</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+
+
+						<li>
+							<weight>0.25</weight>
+							<thingSetMaker Class="ThingSetMaker_Count">
+								<fixedParams>
+									<filter>
+										<thingDefs>
+											<li>CE_DisposableRocketLauncher</li>
+										</thingDefs>
+									</filter>
+									<countRange>1~2</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+					</options>
+				</thingSetMaker>
+			</li>
+
+			<li>
+				<weight>2</weight>
+				<thingSetMaker Class="ThingSetMaker_RandomOption">
+					<!--高级弹药-->
+					<options>
+						<li>
+							<weight>2</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<!--允许非高级弹药 默认true-->
+								<basic>false</basic>
+								<!--允许高级弹药 默认false-->
+								<advanced>true</advanced>
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoRifles</li>
+										</categories>
+									</filter>
+									<countRange>25~70</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+						<li>
+							<weight>1</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<!--允许非高级弹药 默认true-->
+								<basic>false</basic>
+								<!--允许高级弹药 默认false-->
+								<advanced>true</advanced>
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoHighCaliber</li>
+											<li>AmmoGrenades</li>
+										</categories>
+									</filter>
+									<countRange>10~20</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+					</options>
+				</thingSetMaker>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingSetMakerDef[defName="AM_OrdinaryWeapons"]/root/options</xpath>
+		<value>
+			<li>
+				<weight>5</weight>
+				<thingSetMaker Class="ThingSetMaker_RandomOption">
+					<!--普通弹药-->
+					<options>
+						<li>
+							<weight>2</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoPistols</li>
+										</categories>
+									</filter>
+									<countRange>100~180</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+						<li>
+							<weight>2</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoRifles</li>
+											<li>AmmoShotguns</li>
+										</categories>
+									</filter>
+									<countRange>80~150</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+					</options>
+				</thingSetMaker>
+			</li>
+
+			<li>
+				<weight>1</weight>
+				<thingSetMaker Class="ThingSetMaker_RandomOption">
+					<!--高级弹药-->
+					<options>
+						<li>
+							<weight>2</weight>
+							<thingSetMaker Class="BreadMoCEThingSetMaker.ThingSetMaker_StackCountEnabledAmmoOnly">
+								<!--允许非高级弹药 默认true-->
+								<basic>false</basic>
+								<!--允许高级弹药 默认false-->
+								<advanced>true</advanced>
+								<fixedParams>
+									<filter>
+										<categories>
+											<li>AmmoPistols</li>
+											<li>AmmoRifles</li>
+											<li>AmmoShotguns</li>
+										</categories>
+									</filter>
+									<countRange>25~70</countRange>
+								</fixedParams>
+							</thingSetMaker>
+						</li>
+					</options>
+				</thingSetMaker>
+			</li>
+		</value>
+	</Operation>
+
+
+	<!--增加CE服装-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingSetMakerDef[defName="AM_NormApparel"]/root/options</xpath>
+		<value>
+			<li>
+				<weight>0.25</weight>
+				<thingSetMaker Class="ThingSetMaker_Count">
+					<fixedParams>
+						<filter>
+							<thingDefs>
+								<li>CE_Apparel_TacVest</li>
+								<li>CE_Apparel_Backpack</li>
+							</thingDefs>
+						</filter>
+						<countRange>1</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingSetMakerDef[defName="AM_FlakApparel"]/root/options</xpath>
+		<value>
+			<li>
+				<weight>0.25</weight>
+				<thingSetMaker Class="ThingSetMaker_Count">
+					<fixedParams>
+						<filter>
+							<thingDefs>
+								<li>CE_Apparel_CompositeVest</li>
+								<li>CE_Apparel_BallisticShield</li>
+							</thingDefs>
+						</filter>
+						<countRange>1</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+						<li>
+				<weight>0.2</weight>
+				<thingSetMaker Class="ThingSetMaker_Count">
+					<fixedParams>
+						<filter>
+							<thingDefs>
+								<li>CE_Apparel_CompositeVest</li>
+								<li>CE_Apparel_SimpleNightVision</li>
+								<li>CE_Apparel_GasMask</li>
+								<li>CE_Apparel_BallisticShield</li>
+								<li>CE_Apparel_ImprovGasMask</li>
+							</thingDefs>
+						</filter>
+						<countRange>1</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+			<li>
+				<weight>0.05</weight>
+				<thingSetMaker Class="ThingSetMaker_Count">
+					<fixedParams>
+						<filter>
+							<thingDefs>
+								<li>CE_Apparel_RadioPack</li>
+								<li>CE_Apparel_ExoFrame</li>
+								<li>CE_Apparel_AdvancedNightVision</li>
+							</thingDefs>
+						</filter>
+						<countRange>1</countRange>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+		</value>
+	</Operation>
+</Patch>

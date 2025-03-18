@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: architectural ruins -->
+  <ACM_AncientRandomComplex.label>TODO</ACM_AncientRandomComplex.label>
+  <!-- EN: An ancient complex containing the corpse of a mechanitor. You can try to penetrate this dangerous structure to extract the mechanitor's mechlink for your own use. -->
+  <ACM_AncientRandomComplex.description>TODO</ACM_AncientRandomComplex.description>
+  <!-- EN: Investigate {0} -->
+  <ACM_AncientRandomComplex.approachingReportString>TODO</ACM_AncientRandomComplex.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <ACM_AncientRandomComplex.approachOrderString>TODO</ACM_AncientRandomComplex.approachOrderString>
+  
+</LanguageData>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription ->  We have discovered an ancient giant shopping mall that is remarkably well-preserved and abundant in resources. Undoubtedly, other factions have also discovered this location, making a conflict inevitable.</li>
+  -->
+  <AM_Quest_Mall_L.questDescriptionRules.rulesStrings><li>questDescription -> 我们发现了一个有着巨量物资的远古巨型购物中心。其他派系也发现了这个地点，这场冲突不可避免。</li></AM_Quest_Mall_L.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName(p=3)->[complexAdj] [complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->giant</li>
+    <li>complexAdj->ancient</li>
+    <li>complexAdj->old</li>
+    <li>complexAdj->huge</li>
+    <li>complexAdj->dusty</li>
+    <li>complex->shopping mall</li>
+    <li>complex->supermarket</li>
+    <li>complex->shopping plaza</li>
+    <li>complex->mall</li>
+  -->
+  <AM_Quest_Mall_L.questNameRules.rulesStrings>
+  <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->巨型</li>
+    <li>complexAdj->远古</li>
+    <li>complexAdj->老旧</li>
+    <li>complexAdj->大型</li>
+    <li>complexAdj->蒙尘</li>
+    <li>complex->商业中心</li>
+    <li>complex->超市</li>
+    <li>complex->购物中心</li>
+    <li>complex->商场</li>
+  </AM_Quest_Mall_L.questNameRules.rulesStrings>
+  
+  <!-- EN:
+    <li>questDescription -> We have discovered an ancient giant shopping mall that is remarkably well-preserved and abundant in resources. Undoubtedly, other factions have also discovered this location, making a conflict inevitable.</li>
+  -->
+  <AM_Quest_Mall_S.questDescriptionRules.rulesStrings><li>questDescription -> 我们发现了一个有着巨量物资的远古巨型购物中心。其他派系也发现了这个地点，这场冲突不可避免。</li></AM_Quest_Mall_S.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName(p=3)->[complexAdj] [complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->giant</li>
+    <li>complexAdj->ancient</li>
+    <li>complexAdj->old</li>
+    <li>complexAdj->huge</li>
+    <li>complexAdj->dusty</li>
+    <li>complex->shopping mall</li>
+    <li>complex->supermarket</li>
+    <li>complex->shopping plaza</li>
+    <li>complex->mall</li>
+  -->
+  <AM_Quest_Mall_S.questNameRules.rulesStrings>
+  <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->巨型</li>
+    <li>complexAdj->远古</li>
+    <li>complexAdj->老旧</li>
+    <li>complexAdj->大型</li>
+    <li>complexAdj->蒙尘</li>
+    <li>complex->商业中心</li>
+    <li>complex->超市</li>
+    <li>complex->购物中心</li>
+    <li>complex->商场</li>
+  </AM_Quest_Mall_S.questNameRules.rulesStrings>
+  
+  <!-- EN:
+    <li>questDescription -> We have discovered the location of an ancient military Reservation Station, which is heavily fortified and rumored to be manned by well-equipped ancient elite soldiers. Infiltrating this location carries extreme risk, but also offers equally significant rewards..</li>
+  -->
+  <AM_Quest_Reserve.questDescriptionRules.rulesStrings><li>questDescription -> 我们发现了一个远古军事储备站的位置，该储备站戒备森严，据传由装备精良的古代精英士兵驻守。潜入这里有极大的风险，但也会带来同样的回报。</li></AM_Quest_Reserve.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName(p=3)->[complexAdj] [complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->secret</li>
+    <li>complexAdj->ancient</li>
+    <li>complexAdj->old</li>
+    <li>complexAdj->hidden</li>
+    <li>complexAdj->dusty</li>
+    <li>complexAdj->dangerous</li>
+    <li>complexAdj->hidden</li>
+    <li>complex->Reservation Station</li>
+    <li>complex->Storage station</li>
+    <li>complex->military base</li>
+    <li>complex->base</li>
+    <li>complex->Military warehouse</li>
+  -->
+  <AM_Quest_Reserve.questNameRules.rulesStrings>
+   <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->秘密</li>
+    <li>complexAdj->远古</li>
+    <li>complexAdj->老旧</li>
+    <li>complexAdj->隐蔽</li>
+    <li>complexAdj->蒙尘</li>
+    <li>complexAdj->危险</li>
+    <li>complexAdj->隐藏</li>
+    <li>complex->中转站</li>
+    <li>complex->储备站</li>
+    <li>complex->军事基地</li>
+    <li>complex->基地</li>
+    <li>complex->军事仓库</li>
+  </AM_Quest_Reserve.questNameRules.rulesStrings>
+  
+  <!-- EN:
+    <li>questDescription -> We have discovered the site of an ancient block ruins, where the streets were once lined with shops. The map also indicates the presence of an entrance to an underground commercial street, promising the discovery of numerous high-value items..</li>
+  -->
+  <AM_Quest_Street.questDescriptionRules.rulesStrings><li>questDescription -> 我们发现了一个远古街区遗址，那里的街道曾经挤满了商店。地图上还显示那里有一条地下商业街的入口，有望发现许多高价值的物品。</li></AM_Quest_Street.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName(p=3)->[complexAdj] [complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->secret</li>
+    <li>complexAdj->ancient</li>
+    <li>complexAdj->old</li>
+    <li>complexAdj->hidden</li>
+    <li>complexAdj->dusty</li>
+    <li>complexAdj->dangerous</li>
+    <li>complexAdj->hidden</li>
+    <li>complex->block ruins</li>
+    <li>complex->neighbourhood ruins</li>
+    <li>complex->street ruins</li>
+  -->
+  <AM_Quest_Street.questNameRules.rulesStrings>
+   <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->秘密</li>
+    <li>complexAdj->远古</li>
+    <li>complexAdj->老旧</li>
+    <li>complexAdj->隐藏</li>
+    <li>complexAdj->蒙尘</li>
+    <li>complexAdj->危险</li>
+    <li>complexAdj->隐蔽</li>
+    <li>complex->街区废墟</li>
+    <li>complex->街区遗迹</li>
+    <li>complex->街区残垣</li>
+  </AM_Quest_Street.questNameRules.rulesStrings>
+  
+</LanguageData>

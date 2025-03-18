@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnTableDef>
+        <defName>AM_LevelSchedule</defName>
+        <workerClass>PawnTable_PlayerPawnsTimetable</workerClass>
+        <columns>
+            <li>LabelShortWithIcon</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Ideo</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Xenotype</li>
+            <li>AM_Level_Copy</li>
+            <li>AM_Level_Timetable</li>
+            <li>GapTiny</li>
+            <li>AM_Level_AllowLevel</li>
+            <li>RemainingSpace</li>
+        </columns>
+    </PawnTableDef>
+
+    <PawnColumnDef>
+        <defName>AM_Level_Timetable</defName>
+        <workerClass>AncientMarket_Libraray.PawnColumnWorker_LevelTimetable</workerClass>
+        <sortable>true</sortable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>AM_Level_AllowLevel</defName>
+        <workerClass>AncientMarket_Libraray.PawnColumnWorker_AllowLevel</workerClass>
+        <sortable>true</sortable>
+    </PawnColumnDef>
+
+    <PawnColumnDef>
+        <defName>AM_Level_Copy</defName>
+        <workerClass>AncientMarket_Libraray.PawnColumnWorker_CopyPasteLevelTimetable</workerClass>
+        <sortable>true</sortable>
+    </PawnColumnDef>
+
+</Defs>

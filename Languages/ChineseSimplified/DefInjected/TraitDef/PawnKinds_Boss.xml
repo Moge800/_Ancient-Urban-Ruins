@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Successful products -->
+  <AM_Elite.degreeDatas.Successful_products.label>成功产物</AM_Elite.degreeDatas.Successful_products.label>
+  <!-- EN: {PAWN_nameDef} is a successful product of an ancient experimental project, {PAWN_pronoun} almost entirely specialized for combat. {PAWN_pronoun} is extremely hard to defeat. -->
+  <AM_Elite.degreeDatas.Successful_products.description>{PAWN_nameDef}是一个古老实验项目的成功产物，{PAWN_pronoun}几乎完全为战斗而特化 。这使得{PAWN_pronoun}极难被打倒。</AM_Elite.degreeDatas.Successful_products.description>
+  
+  <!-- EN: fashion guy -->
+  <AM_MallGuards.degreeDatas.fashion_guy.label>那个时髦的家伙</AM_MallGuards.degreeDatas.fashion_guy.label>
+  <!-- EN: {PAWN_nameDef} is a fashion guy who is skilled at shooting in a slide shovel, {PAWN_pronoun} can use gun to blast everything he sees. -->
+  <AM_MallGuards.degreeDatas.fashion_guy.description>{PAWN_nameDef}是一个时髦的家伙，{PAWN_pronoun}擅长用滑铲射击，{PAWN_pronoun}可以用枪打飞他看到的一切。</AM_MallGuards.degreeDatas.fashion_guy.description>
+  
+  <!-- EN: parasitic failed product -->
+  <AM_Slaughter.degreeDatas.parasitic_failed_product.label>寄生实验失败品</AM_Slaughter.degreeDatas.parasitic_failed_product.label>
+  <!-- EN: {PAWN_nameDef} was implanted with an excessive amount of parasites, which completely destroyed {PAWN_possessive} sanity but greatly increased {PAWN_possessive} strength. -->
+  <AM_Slaughter.degreeDatas.parasitic_failed_product.description>{PAWN_nameDef}植入了过量的寄生虫，这完全摧毁了{PAWN_possessive}的理智，但大大增加了{PAWN_possessive}的力量。</AM_Slaughter.degreeDatas.parasitic_failed_product.description>
+  
+</LanguageData>
