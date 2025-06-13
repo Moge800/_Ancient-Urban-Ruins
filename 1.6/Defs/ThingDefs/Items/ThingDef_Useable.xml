@@ -1,0 +1,1057 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>AM_SurgicalBag</defName>
+    <label>surgical bag</label>
+    <description>A medical kit with the necessary tools for emergency surgery on the battlefield.</description>
+    <graphicData>
+      <texPath>Things/Misc/SurgicalBag_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>370</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>2</useableCount>
+      </li>
+      <li Class="CompProperties_Drug">
+        <listOrder>1200</listOrder>
+        <teetotalerCanConsume>true</teetotalerCanConsume>
+      </li>
+    </comps>
+    <ingestible>
+      <baseIngestTicks>600</baseIngestTicks>      <!-- 时间 -->
+      <ingestSound>AM_SurgicalKits</ingestSound>      <!-- 音效 -->
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="AncientMarket_Libraray.IngestionOutcomeDoer_RestoreBodyPart" />
+      </outcomeDoers>
+    </ingestible>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>AM_BigSurgicalBag</defName>
+    <label>survival kit</label>
+    <description>A set of medical kits with tools required for emergency surgery on the battlefield. This style is larger than a typical surgical bag and can be used more times.</description>
+    <graphicData>
+      <texPath>Things/Misc/SurgicalBag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>5</useableCount>
+      </li>
+      <li Class="CompProperties_Drug">
+        <listOrder>1200</listOrder>
+        <teetotalerCanConsume>true</teetotalerCanConsume>
+      </li>
+    </comps>
+    <ingestible>
+      <baseIngestTicks>1200</baseIngestTicks>      <!-- 时间 -->
+      <ingestSound>AM_SurgicalKits</ingestSound>      <!-- 音效 -->
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="AncientMarket_Libraray.IngestionOutcomeDoer_RestoreBodyPart" />
+      </outcomeDoers>
+    </ingestible>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>AM_AI2A</defName>
+    <label>AI2A</label>
+    <description>Some emergency medicines packaged in a small plastic box.</description>
+    <possessionCount>3</possessionCount>
+	<uiIconPath>Things/Misc/AI2A/AI2A_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Misc/AI2A</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Mass>0.08</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>0.7</MedicalPotency>
+      <MedicalQualityMax>0.8</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>3</useableCount>
+      </li>
+    </comps>
+    <costList>
+      <MedicineHerbal>2</MedicineHerbal>
+      <Neutroamine>3</Neutroamine>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>AM_HemostaticAgent</defName>
+    <label>hemostatic agent</label>
+    <description>An injestible agent that can stop bleeding in emergency situations.</description>
+    <possessionCount>3</possessionCount>
+	<uiIconPath>Things/Misc/HemostaticAgent/HemostaticAgent_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Misc/HemostaticAgent</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <Mass>0.08</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1</MedicalPotency>
+      <MedicalQualityMax>1.3</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>3</useableCount>
+      </li>
+    </comps>
+    <costList>
+      <MedicineHerbal>1</MedicineHerbal>
+      <Neutroamine>4</Neutroamine>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>AM_FirstAidKit</defName>
+    <label>first aid kit</label>
+    <description>A medical kit commonly used as a backup in cars. It contains basic drugs, tools for suturing and bone setting, diagnostic devices, and various pads and fluids.</description>
+    <possessionCount>3</possessionCount>
+	<uiIconPath>Things/Misc/FirstAidKit/FirstAidKit_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Misc/FirstAidKit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <Mass>0.4</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.00</MedicalPotency>
+      <MedicalQualityMax>1.00</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>4</useableCount>
+      </li>
+    </comps>
+    <costList>
+      <MedicineHerbal>4</MedicineHerbal>
+      <Neutroamine>4</Neutroamine>
+      <Cloth>12</Cloth>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>AM_Salewa</defName>
+    <label>salewa kit</label>
+    <description>A first aid kit containing insulation blankets, various types of bandages and dressings, and medical tools.</description>
+    <possessionCount>3</possessionCount>
+	<uiIconPath>Things/Misc/Salewa/Salewa_a</uiIconPath>
+    <graphicData>
+      <texPath>Things/Misc/Salewa</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <stackLimit>5</stackLimit>
+    <statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.10</MedicalPotency>
+      <MedicalQualityMax>1.20</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>8</useableCount>
+      </li>
+    </comps>
+    <costList>
+      <AM_FirstAidKit>4</AM_FirstAidKit>
+	  <MedicineHerbal>2</MedicineHerbal>
+      <Cloth>12</Cloth>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>AM_Grizzly</defName>
+    <label>grizzly kit</label>
+    <description>Considered one of the best first aid kits. It contains all medical supplies one could need in extreme situations.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Misc/Grizzly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <stackLimit>1</stackLimit>
+    <statBases>
+	  <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>500</MarketValue>
+      <Mass>1.6</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.30</MedicalPotency>
+      <MedicalQualityMax>1.40</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>24</useableCount>
+      </li>
+    </comps>
+    <costList>
+      <AM_FirstAidKit>10</AM_FirstAidKit>
+      <AM_HemostaticAgent>1</AM_HemostaticAgent>
+      <AM_AluminumSplint>1</AM_AluminumSplint>
+      <AM_PelvicHammock>1</AM_PelvicHammock>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>AM_AncientGrizzly</defName>
+    <label>ancient grizzly kit</label>
+    <description>Considered one of the best first aid kits. It contains all medical supplies one could need in extreme situations. Its packaging is dilapidated, but it seems the medicine can still be used.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Misc/AncientGrizzly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <stackLimit>1</stackLimit>
+    <statBases>
+	  <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>500</MarketValue>
+      <Mass>1.6</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.30</MedicalPotency>
+      <MedicalQualityMax>1.40</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>24</useableCount>
+      </li>
+    </comps>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+  
+    <HediffDef>
+    <defName>AM_Metalblood</defName>
+    <label>metalblood stimulant</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>The metal blood stimulant used in combat does not cause discoloration of the skin at a special concentration dose, which improves the ability of muscle tissue to withstand impact damage and to some extent increases movement speed. However, it is also more susceptible to fire damage and metabolism becomes higher.</description>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>300000</disappearsAfterTicks> <!-- 5 days -->
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	    <painFactor>0.05</painFactor>
+		<hungerRateFactor>1.25</hungerRateFactor>
+        <capMods>
+		  <li>
+			<capacity>Moving</capacity>
+            <offset>0.08</offset>
+          </li>
+        </capMods>
+        <statFactors>
+           <IncomingDamageFactor >0.5</IncomingDamageFactor>
+        </statFactors>
+        <damageFactors>
+          <Flame>4</Flame>
+          <Burn>4</Burn>
+        </damageFactors>
+		<statOffsets>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>10</ComfyTemperatureMax>
+		</statOffsets>
+      </li>
+    </stages>
+    </HediffDef>
+	
+    <ThingDef ParentName="DrugPillBase">
+    <defName>AM_MetalbloodInjector</defName>
+    <label>metalblood injector</label>
+    <description>A blood stimulant used in combat. It was discovered that it does not cause discoloration of the skin at a special concentration dose, which improves the ability of muscle tissue to withstand impact damage and to some extent increases movement speed. However, it is also can make its user susceptible to fire damage and hightens their metabolism.</description>
+    <possessionCount>10</possessionCount>
+	<uiIconPath>Things/Misc/MetalbloodInjector/MetalbloodInjector_a</uiIconPath>
+    <descriptionHyperlinks>
+      <HediffDef>AM_Metalblood</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Misc/MetalbloodInjector</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>300</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+	<stackLimit>10</stackLimit>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+	  <foodType>Processed</foodType>
+      <baseIngestTicks>100</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestSound>AM_Injector</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>inject {0}</ingestCommandString>
+      <ingestReportString>injecting {0}.</ingestReportString>
+      <showIngestFloatOption>false</showIngestFloatOption>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AM_Metalblood</hediffDef>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+		 <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+      </li>
+	   <li Class="CompProperties_Usable">
+        <useLabel>Use {0_label}</useLabel>
+        <useJob>Ingest</useJob>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+    </comps>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+	  <AM_Ibuprofen>1</AM_Ibuprofen>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+    <HediffDef>
+    <defName>AM_RegenerativeHormone</defName>
+    <label>Analgesic Regeneration</label>
+    <labelNoun>Analgesic Regeneration</labelNoun>
+    <description>Stimulate the regeneration process by increasing the biosynthesis of purine and pyrimidine bases, RNA, and functional enzymes to promote cellular elements.But there will be side effects within a few days after injection.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>3</maxSeverity>
+    <initialSeverity>3</initialSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+	  	<painFactor>0.05</painFactor>
+        <minSeverity>0</minSeverity>
+        <label>Exhaustion syndrome</label>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.9</setMax>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+	    <painFactor>0</painFactor>
+        <minSeverity>0.5</minSeverity>
+        <label>Regeneration</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+		  </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+	<li Class ="AncientMarket_Libraray.HediffCompProperties_Regeneration">
+    <regenerations>
+     <li>
+    <key>0</key>
+    <value>75</value>
+    </li>
+	<li>
+    <key>1</key>
+    <value>75</value>
+    </li>
+    </regenerations>
+    </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+	  <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>180000</disappearsAfterTicks> <!-- 3 days -->
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  
+  <ThingDef ParentName="DrugPillBase">
+    <defName>AM_AnalgesicRegenerationInjector</defName>
+    <label>analgesic regeneration injector</label>
+    <description>An injector that stimulates the regeneration process by increasing the biosynthesis of purine and pyrimidine bases, RNA, and functional enzymes to promote cellular elements. It says there might be side effects within a few days of injection.</description>
+    <possessionCount>10</possessionCount>
+	<uiIconPath>Things/Misc/AnalgesicRegenerationInjector/AnalgesicRegenerationInjector_a</uiIconPath>
+    <descriptionHyperlinks>
+      <HediffDef>AM_RegenerativeHormone</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Misc/AnalgesicRegenerationInjector</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+	<stackLimit>10</stackLimit>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+	  <foodType>Processed</foodType>
+      <baseIngestTicks>100</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestSound>AM_Injector</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>inject {0}</ingestCommandString>
+      <ingestReportString>injecting {0}.</ingestReportString>
+      <showIngestFloatOption>false</showIngestFloatOption>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AM_RegenerativeHormone</hediffDef>
+		  <severity>3.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+	   <li Class="CompProperties_Usable">
+        <useLabel>Use {0_label}</useLabel>
+        <useJob>Ingest</useJob>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+    </comps>
+    <costList>
+	  <AM_Ibuprofen>1</AM_Ibuprofen>
+	  <AM_EssentialBalm>1</AM_EssentialBalm>
+	  <AM_Antibiotic>1</AM_Antibiotic>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>8</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+   <HediffDef>
+    <defName>AM_CellRegeneration</defName>
+    <label>Cell regeneration</label>
+    <labelNoun>Cell Regeneration</labelNoun>
+    <description>Regenerated substances are rapidly repairing the body,but has strong side effects.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+	  	<hungerRateFactor>1.5</hungerRateFactor>
+        <minSeverity>0</minSeverity>
+        <label>Exhaustion syndrome</label>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+		  <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.15</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+	    <hungerRateFactor>0.5</hungerRateFactor>
+        <minSeverity>0.25</minSeverity>
+        <label>Regeneration</label>
+        <capMods>
+         <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+	<li Class ="AncientMarket_Libraray.HediffCompProperties_Regeneration">
+    <regenerations>
+     <li>
+    <key>0</key>
+    <value>500</value>
+    </li>
+	<li>
+    <key>1</key>
+    <value>500</value>
+    </li>
+    </regenerations>
+    </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+	  <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>30000</disappearsAfterTicks> <!-- 0.5 days -->
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+ <ThingDef ParentName="DrugPillBase">
+    <defName>AM_CellRegenerationInjector</defName>
+    <label>cell regeneration injector</label>
+    <description>A powerful regeneration promoter. Once used for rapid recovery of injured or severely injured individuals during transportation, despite its strong side effects.</description>
+    <possessionCount>10</possessionCount>
+	<uiIconPath>Things/Misc/CellRegenerationInjector/CellRegenerationInjector_a</uiIconPath>
+    <descriptionHyperlinks>
+      <HediffDef>AM_CellRegeneration</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Misc/CellRegenerationInjector</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+	<stackLimit>10</stackLimit>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+	  <foodType>Processed</foodType>
+      <baseIngestTicks>100</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestSound>AM_Injector</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>inject {0}</ingestCommandString>
+      <ingestReportString>injecting {0}.</ingestReportString>
+      <showIngestFloatOption>false</showIngestFloatOption>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AM_CellRegeneration</hediffDef>
+		  <severity>0.5</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+	   <li Class="CompProperties_Usable">
+        <useLabel>Use {0_label}</useLabel>
+        <useJob>Ingest</useJob>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+    </comps>
+	<costList>
+      <Neutroamine>10</Neutroamine>
+	  <AM_AnalgesicRegenerationInjector>3</AM_AnalgesicRegenerationInjector>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>AM_Analgesic</defName>
+    <label>essential balm</label>
+    <labelNoun>Essential balm</labelNoun>
+    <description>Stimulate the brain with strong essential balm to secrete endorphins for pain relief and improve focus.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+	    <painFactor>0.3</painFactor>
+		<hungerRateFactor>0.95</hungerRateFactor>
+        <minSeverity>0</minSeverity>
+        <label>Essential balm</label>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+	    <painFactor>0.3</painFactor>
+	    <hungerRateFactor>0.75</hungerRateFactor>
+        <minSeverity>0.98</minSeverity>
+        <label>Essential balm</label>
+        <capMods>
+         <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+	  <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>60000</disappearsAfterTicks> <!-- 1 days -->
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <ThingDef ParentName="DrugPillBase">
+    <defName>AM_EssentialBalm</defName>
+    <label>essential balm</label>
+    <description>An ointment that can stimulate nerves and make people more energetic.</description>
+	<descriptionHyperlinks>
+      <HediffDef>AM_Analgesic</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Misc/EssentialBalm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<stackLimit>10</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+        <useableCount>5</useableCount>
+      </li>
+      <li Class="CompProperties_Drug">
+        <listOrder>1200</listOrder>
+        <teetotalerCanConsume>true</teetotalerCanConsume>
+		 <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+      </li>
+    </comps>
+    <ingestible>
+      <baseIngestTicks>300</baseIngestTicks>      <!-- 时间 -->
+      <ingestSound>AM_Essential</ingestSound>      <!-- 音效 -->
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>apply {0}</ingestCommandString>
+      <ingestReportString>applying {0}.</ingestReportString>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AM_Analgesic</hediffDef>
+		  <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>AM_AntipyreticAnalgesic</defName>
+    <label>Antipyretic and analgesic</label>
+    <labelNoun>Antipyretic and analgesic</labelNoun>
+    <description>To exert anti-inflammatory, analgesic, and antipyretic effects by inhibiting the activity of cyclooxygenase (COX).</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+	    <painFactor>0.2</painFactor>
+		<hungerRateFactor>1.05</hungerRateFactor>
+		<statFactors>
+        <RestFallRateFactor>1.8</RestFallRateFactor>
+        </statFactors>
+        <minSeverity>0</minSeverity>
+        <label>ibuprofen</label>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+	    <painFactor>0</painFactor>
+		<statFactors>
+        <RestFallRateFactor>1.2</RestFallRateFactor>
+        </statFactors>
+        <minSeverity>0.5</minSeverity>
+        <label>ibuprofen</label>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+	  <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>60000</disappearsAfterTicks> <!-- 1 days -->
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>AM_Ibuprofen</defName>
+    <label>ibuprofen</label>
+    <description>A non steroidal anti-inflammatory drug that can relieve fever and pain. May cause drowsiness.</description>
+	<descriptionHyperlinks>
+      <HediffDef>AM_AntipyreticAnalgesic</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Misc/Ibuprofen</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<stackLimit>25</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1200</listOrder>
+        <teetotalerCanConsume>true</teetotalerCanConsume>
+		 <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+      </li>
+    </comps>
+    <ingestible>
+      <baseIngestTicks>300</baseIngestTicks>      <!-- 时间 -->    
+      <drugCategory>Medical</drugCategory>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AM_AntipyreticAnalgesic</hediffDef>
+		  <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+
+ <HediffDef>
+    <defName>AM_AntibioticS</defName>
+    <label>Antibiotic</label>
+    <labelNoun>Antibiotic</labelNoun>
+    <description>Broad spectrum antibiotics, used to combat various bacterial diseases.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+	    <painFactor>0.75</painFactor>
+		<hungerRateFactor>1.05</hungerRateFactor>
+        <minSeverity>0</minSeverity>
+        <label>Antibiotic</label>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <statOffsets>
+          <ImmunityGainSpeed>0.03</ImmunityGainSpeed>
+        </statOffsets>
+		<capMods>
+		  <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.05</offset>
+          </li>
+		</capMods>
+      </li>
+        <li>
+	    <painFactor>0.5</painFactor>
+        <statOffsets>
+          <ImmunityGainSpeed>0.08</ImmunityGainSpeed>
+        </statOffsets>
+		<capMods>
+		  <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+        <minSeverity>0.5</minSeverity>
+        <label>Antibiotic</label>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+	  <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>60000</disappearsAfterTicks> <!-- 1 days -->
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+  
+   <ThingDef ParentName="DrugPillBase">
+    <defName>AM_Antibiotic</defName>
+    <label>antibiotic</label>
+    <description>A common tool used to combat various bacterial diseases.</description>
+	<descriptionHyperlinks>
+      <HediffDef>AM_AntibioticS</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Misc/Antibiotic</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<stackLimit>25</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>55</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1200</listOrder>
+        <teetotalerCanConsume>true</teetotalerCanConsume>
+      </li>
+    </comps>
+    <ingestible>
+      <baseIngestTicks>300</baseIngestTicks>      <!-- 时间 -->    
+      <drugCategory>Medical</drugCategory>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AM_AntibioticS</hediffDef>
+		  <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<tradeTags>
+      <li>AM_Med</li>
+    </tradeTags>
+	<thingCategories>
+        <li>AM_MedicalSupplies</li>
+        </thingCategories>
+  </ThingDef>
+  
+</Defs>

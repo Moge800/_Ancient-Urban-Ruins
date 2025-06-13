@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>AM_FormerAthlete</defName>
+    <title>former athlete</title>
+    <titleFemale>former athlete</titleFemale>
+    <titleShort>athlete</titleShort>
+    <titleShortFemale>athlete</titleShortFemale>
+    <description>[PAWN_nameDef] was a former athlete. [PAWN_pronoun] had won multiple sports championships before injury.[PAWN_pronoun] had a twin brother who started working in a chemical factory during his youth, but has never heard from him since.</description>
+    <slot>Childhood</slot>
+    <spawnCategories><li>AM_Fashion</li></spawnCategories>
+    <skillGains>
+      <Melee>6</Melee>
+	  <Shooting>4</Shooting>
+    </skillGains>
+  </BackstoryDef>
+
+  
+   <BackstoryDef>
+     <defName>AM_FashionGuy</defName>
+    <title>fashion guy</title>
+    <titleShort>fashion guy</titleShort>
+    <description>After being injured,[PAWN_nameDef] was no longer able to continue [PAWN_pronoun] career as an athlete. Disappointed, [PAWN_pronoun] was hired as a security guard by a shopping mall. This fashionable guy liked to patrol the mall at night in his classic black striped sportswear and use a machine gun to knock out every sneaky thief.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  <spawnCategories><li>AM_Fashion</li></spawnCategories>
+    <skillGains>
+      <Shooting>4</Shooting>
+    </skillGains>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>AM_ChemicalPlantIntern</defName>
+    <title>chemical plant intern</title>
+    <titleFemale>chemical plant intern</titleFemale>
+    <titleShort>intern</titleShort>
+    <titleShortFemale>intern</titleShortFemale>
+    <description>[PAWN_nameDef] is an intern at a chemical plant, tasked with handling certain chemical agents and learning to operate the factory equipment. [PAWN_pronoun] learns rapidly and occasionally assists workers in treating injuries sustained while on the job.[PAWN_pronoun] also enjoys drawing in his spare time.</description>
+    <slot>Childhood</slot>
+    <spawnCategories><li>AM_Slaughter</li></spawnCategories>
+    <skillGains>
+      <Medicine>2</Medicine>
+	  <Artistic>3</Artistic>
+	  <Social>1</Social>
+	  <Intellectual>10</Intellectual>
+    </skillGains>
+  </BackstoryDef>
+
+  <BackstoryDef>
+     <defName>AM_FailedExperimentalSubjects</defName>
+    <title>failed subjects</title>
+    <titleShort>failed subjects</titleShort>
+    <description>[PAWN_nameDef] inhaled a large amount of toxic gas during a chemical plant accident .[PAWN_possessive] twin brother sent [PAWN_pronoun] to the hospital affiliated with the chemical plant to save [PAWN_pronoun], but the hospital did not treat [PAWN_nameDef]. Instead, they lied to [PAWN_possessive] family that [PAWN_pronoun] had died and used [PAWN_nameDef] as an experimental subject in a parasite experiment. This failed experiment destroyed [PAWN_possessive] mind.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  <spawnCategories><li>AM_Slaughter</li></spawnCategories>
+    <skillGains>
+      <Melee>10</Melee>
+	  <Social>-20</Social>
+    </skillGains>
+	 <workDisables>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+    </workDisables>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <defName>AM_LaboratoryKid</defName>
+    <title>laboratory kid</title>
+    <titleFemale>laboratory kid</titleFemale>
+    <titleShort>lab kid</titleShort>
+    <titleShortFemale>lab kid</titleShortFemale>
+    <description>[PAWN_nameDef] was conceived in a test tube in a secret laboratory, where every child underwent military-style education and was frequently administered drugs. There, [PAWN_nameDef] acquired a great deal of knowledge.</description>
+    <slot>Childhood</slot>
+    <spawnCategories><li>AM_SpecialUnits</li></spawnCategories>
+    <skillGains>
+      <Medicine>5</Medicine>
+	  <Artistic>-10</Artistic>
+	  <Social>10</Social>
+	  <Intellectual>5</Intellectual>
+    </skillGains>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+     <defName>AM_SpecialUnits</defName>
+    <title>Special units</title>
+    <titleShort>Special units</titleShort>
+    <description>Following a specialized "consensual" parasite experiment, [PAWN_nameDef] was enhanced and designated as a unique unit, frequently undertaking covert missions.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  <spawnCategories><li>AM_SpecialUnits</li></spawnCategories>
+    <skillGains>
+      <Melee>6</Melee>
+	  <Shooting>4</Shooting>
+    </skillGains>
+  </BackstoryDef>
+  
+   <BackstoryDef>
+    <defName>AM_DisasterOrphans</defName>
+    <title>disaster orphans</title>
+    <titleFemale>disaster orphans</titleFemale>
+    <titleShort>orphans</titleShort>
+    <titleShortFemale>orphans</titleShortFemale>
+    <description>[PAWN_nameDef] lost [PAWN_possessive] parents in the insect infestation and lived alone in an underground network of caves.  [PAWN_pronoun] often went hungry until one day [PAWN_pronoun] discovered the back door of a secret laboratory warehouse. [PAWN_pronoun] broke in and stole the food inside, but was caught on [PAWN_possessive] second attempt.</description>
+    <slot>Childhood</slot>
+    <spawnCategories><li>AM_SpecialUnits</li></spawnCategories>
+    <skillGains>
+    <Melee>3</Melee>
+    </skillGains>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <defName>AM_ResearchersChild</defName>
+    <title>researcher's child</title>
+    <titleFemale>researcher's child</titleFemale>
+    <titleShort>researcher's child</titleShort>
+    <titleShortFemale>researcher's child</titleShortFemale>
+    <description>[PAWN_nameDef]'s father was a researcher at an ancient laboratory, with an unnatural fondness for experimentation. Consequently, [PAWN_nameDef] was frequently administered unauthorized drugs, inflicting severe pain upon [PAWN_nameDef].</description>
+    <slot>Childhood</slot>
+    <spawnCategories><li>AM_SpecialUnits</li></spawnCategories>
+    <skillGains>
+      <Medicine>2</Medicine>
+	  <Social>-10</Social>
+    </skillGains>
+	 <workDisables>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+    </workDisables>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <defName>AM_RunawayChild</defName>
+    <title>runaway child</title>
+    <titleFemale>runaway child</titleFemale>
+    <titleShort>runaway child</titleShort>
+    <titleShortFemale>runaway child</titleShortFemale>
+    <description>[PAWN_nameDef] was frequently mistreated by [PAWN_possessive] parents, leading [PAWN_pronoun] to leave home in a fit of rage. Tragically, [PAWN_pronoun] was soon kidnapped by individuals and spirited away to a covert laboratory.</description>
+    <slot>Childhood</slot>
+    <spawnCategories><li>AM_SpecialUnits</li></spawnCategories>
+    <skillGains>
+     <Melee>-6</Melee>
+    </skillGains>
+	 <workDisables>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+    </workDisables>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <defName>AM_RisingStar</defName>
+    <title>rising star of the military academy</title>
+    <titleFemale>rising star of the military academy</titleFemale>
+    <titleShort>rising star</titleShort>
+    <titleShortFemale>rising star</titleShortFemale>
+    <description>[PAWN_nameDef] is a rising star in the military academy with excellent physical fitness and combat skills, which led to [PAWN_pronoun] being kidnapped and sent to a secret laboratory, where a clone was sent to [PAWN_possessive] family as a substitute.</description>
+    <slot>Childhood</slot>
+    <spawnCategories><li>AM_SpecialUnits</li></spawnCategories>
+    <skillGains>
+     <Melee>5</Melee>
+	  <Shooting>4</Shooting>
+    </skillGains>
+	 <workDisables>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+    </workDisables>
+  </BackstoryDef>
+</Defs>

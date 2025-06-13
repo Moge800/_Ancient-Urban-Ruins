@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <SoundDef>
+        <defName>AM_Shot_54R</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/54R</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>AM_Shot_227A</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/227A</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>AM_Shot_227SD</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/227SD</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>AM_Shot_338LM</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/338LM</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>AM_Shot_556SD</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/556SD</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+	
+	    <SoundDef>
+        <defName>AM_Shot_762SD</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/762SD</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+	
+	 <SoundDef>
+    <defName>AM_Recipe_Lego</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/legos_out</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~7</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+	
+	 <SoundDef>
+    <defName>AM_Chips</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/Chips_out</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~7</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	 <SoundDef>
+    <defName>AM_SurgicalKits</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/SurgicalKits</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~7</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+	
+	<SoundDef>
+    <defName>AM_Injector</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/Injector</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~7</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>AM_Essential</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/EssentialBalm</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~7</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>AM_Search</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/Search</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~7</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>AM_SearchBag</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/SearchBag</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~7</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

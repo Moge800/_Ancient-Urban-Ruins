@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingSetMakerDef>
+    <defName>AM_FlakMaterial</defName><!-- 军用材料 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!-- 高价值武器材料 -->
+        <li>
+          <weight>0.15</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_227FURYComponents</li>
+			    <li>AM_338PrecisionComponents</li>
+			    <li>AM_PKPMagazineComponents</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--护甲板 -->
+        <li>
+          <weight>0.75</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_HeavyCompositePlate</li>
+			    <li>AM_UHMWPEPlate</li>
+				<li>AM_ComponentWeapon</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~4</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- 高级布料 -->
+        <li>
+          <weight>0.75</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                <li>AM_AramidCloth</li>
+                </thingDefs>
+              </filter>
+              <countRange>14~25</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!-- 超织物 -->
+        <li>
+          <weight>0.1</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+			  <thingDefs>
+               <li>Hyperweave</li>
+                </thingDefs>
+              </filter>
+              <countRange>10~25</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+	
+	<ThingSetMakerDef>
+    <defName>AM_OrdinaryWeapons</defName><!-- 初期武器 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--初期武器 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_ComponentWeapon</li>
+				<li>AM_CPHG</li>
+				<li>AM_ADAR</li>
+                <li>AM_FNHG</li>
+                <li>AM_Makarov</li>
+                <li>AM_APS</li>
+                <li>AM_STMC</li>
+                <li>AM_STM</li>
+                <li>AM_AVT</li>
+                <li>AM_Hunter</li>
+				<li>AM_VSS</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+
+	<ThingSetMakerDef>
+    <defName>AM_AdvancedWeapons</defName><!-- 高级武器 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--顶级武器 -->
+        <li>
+          <weight>0.05</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_Spear68C</li>
+                <li>AM_Spear68A</li>
+                <li>AM_TKB68A</li>
+                <li>AM_AK68A</li>
+                <li>AM_MK68A</li>
+                <li>AM_RM68A</li>
+                <li>AM_PKM</li>
+                <li>AM_PKP</li>
+                <li>AM_MK18M</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--进阶武器 -->
+        <li>
+          <weight>0.85</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_MCX</li>
+                <li>AM_MCXC</li>
+                <li>AM_M4A</li>
+                <li>AM_M4ASOP</li>
+                <li>AM_M4C</li>
+                <li>AM_M42U</li>
+                <li>AM_AK101A</li>
+				<li>AM_ASVAL</li>
+                <li>AM_DTMDR</li>
+				<li>AM_MK17A</li>
+				<li>AM_R11A</li>
+				<li>AM_SR25A</li>
+				<li>AM_M700A</li>
+				<li>AM_MPX</li>
+				<li>AM_MPXL</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+	
+	<ThingSetMakerDef>
+    <defName>AM_VanillaWeapons</defName><!-- 原版武器 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--手枪 -->
+        <li>
+          <weight>0.75</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>Gun_Revolver</li>
+                <li>Gun_Autopistol</li>
+                <li>Gun_MachinePistol</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--轻武器 -->
+        <li>
+          <weight>0.75</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>Gun_BoltActionRifle</li>
+                <li>Gun_PumpShotgun</li>
+                <li>Gun_ChainShotgun</li>
+				<li>Gun_HeavySMG</li>
+				<li>Gun_LMG</li>
+				<li>Gun_AssaultRifle</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- 重武器 -->
+        <li>
+          <weight>0.15</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>Gun_IncendiaryLauncher</li>
+                <li>Gun_SmokeLauncher</li>
+                <li>Gun_EmpLauncher</li>
+				<li>Gun_SniperRifle</li>
+				<li>Gun_Minigun</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!-- 手雷 -->
+        <li>
+          <weight>0.25</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>Weapon_GrenadeFrag</li>
+				<li>Weapon_GrenadeMolotov</li>
+				<li>Weapon_GrenadeEMP</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+      </options>
+    </root>
+  </ThingSetMakerDef>
+	
+	
+	<ThingSetMakerDef>
+    <defName>AM_Materials</defName><!-- 杂物材料 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--高级零件 -->
+        <li>
+          <weight>0.35</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>ComponentSpacer</li>
+				<li>ComponentIndustrial</li>
+				<li>AM_MRE</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--零件 -->
+        <li>
+          <weight>0.5</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>ComponentIndustrial</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~5</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- 杂物 -->
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_ElectricalTape</li>
+                <li>AM_OneLiterGlassAdhesive</li>
+                </thingDefs>
+              </filter>
+              <countRange>2~3</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!-- 复数材料 -->
+        <li>
+          <weight>0.75</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>Synthread</li>
+                <li>Uranium</li>
+                <li>Steel</li>
+                <li>Neutroamine</li>
+				<li>AM_AramidCloth</li>
+                </thingDefs>
+              </filter>
+              <countRange>8~20</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+  
+     <ThingSetMakerDef>
+    <defName>AM_FlakApparel</defName><!-- 军用衣物 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!-- 头盔 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>AM_BulletproofMask</li>
+			      <li>Apparel_SimpleHelmet</li>
+			      <li>Apparel_AdvancedHelmet</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- 护甲 -->
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+			<li>AM_AScompFD</li>
+			<li>AM_MK4aDefensive</li>
+			<li>AM_MK4aConcealed</li>
+			<li MayRequire="TW.FlakDress">TW_FlakDress</li>
+			<li MayRequire="TW.FlakDress">FD_HeavyFD</li>
+			<li MayRequire="TW.FlakDress">FD_CompFD</li>
+			<li MayRequire="TW.FlakDress">TW_Bowknot</li>
+			<li MayRequire="TW.FlakDress">TW_RoseHelmet</li>
+			<li MayRequire="TW.FlakDress">TW_ReinforcedHelmet</li>
+			<li MayRequire="TW.FlakDress">TW_GasHelmet</li>
+			<li MayRequire="ExGT UrbanCombat">ST_AdvancedHelmet</li>
+			<li MayRequire="ExGT UrbanCombat">ST_BulletproofShield</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		 <!-- 原版护甲 -->
+        <li>
+          <weight>0.6</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+            <li>Apparel_SmokepopBelt</li>
+			<li>Apparel_FlakVest</li>
+			<li>Apparel_FlakPants</li>
+			<li>AM_AScompFD</li>
+			<li>AM_MK4aConcealed</li>
+			<li>Apparel_FlakJacket</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		
+		 <!-- 神器 -->
+        <li>
+          <weight>0.1</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+            <li>Apparel_PsychicShockLance</li>
+			<li>Apparel_PsychicInsanityLance</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_ShardPsychicShockLance</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_ShardPsychicInsanityLance</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_BiomutationLance</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">ShardAnimalPulser</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+   <ThingSetMakerDef>
+    <defName>AM_NormApparel</defName><!-- 常规衣物 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!-- 帽子 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Apparel_HatHood</li>
+				  <li>Apparel_CowboyHat</li>
+				  <li>Apparel_BowlerHat</li>
+				  <li>Apparel_Tuque</li>
+			      <li>Apparel_Parka</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- 衣服 -->
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Apparel_Pants</li>
+			      <li>Apparel_BasicShirt</li>
+			      <li>Apparel_CollarShirt</li>
+			      <li>Apparel_Duster</li>
+			      <li>Apparel_Jacket</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_KidRomper</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_KidShirt</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_KidPants</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_KidParka</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_KidHelmet</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+
+	
+	<ThingSetMakerDef>
+    <defName>AM_LEGO</defName><!-- 乐高 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--乐高 -->
+        <li>
+          <weight>0.35</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_LEGO_GiantRockExcavator_NotOpen</li>
+                <li>AM_LEGO_HeavyCrane_NotOpen</li>
+                <li>AM_LEGO_LandmarkBuilding_NotOpen</li>
+                <li>AM_LEGO_LightCrane_NotOpen</li>
+                <li>AM_LEGO_MediumCrane_NotOpen</li>
+                <li>AM_LEGO_Palace_NotOpen</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--空盒子 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_EmptyBox</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+    </ThingSetMakerDef>
+  
+  
+	
+	<ThingSetMakerDef>
+    <defName>AM_ComputerAccessories</defName><!-- 电脑配件 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--高价值 -->
+        <li>
+          <weight>0.025</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_CPU</li>
+                <li>AM_GPU</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--一般配件 -->
+        <li>
+          <weight>0.5</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_HDD</li>
+                <li>AM_SSD</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!--零件 -->
+        <li>
+          <weight>0.7</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>ComponentSpacer</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~3</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+ 
+	
+	<ThingSetMakerDef>
+    <defName>AM_MISC</defName><!-- 情报/杂项 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--高价值 -->
+        <li>
+          <weight>0.025</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_SICC</li>
+				<li>AM_BriefCase</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--一般杂物 -->
+        <li>
+          <weight>0.75</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_KeyCard</li>
+                <li>AM_CreditCard</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!--情报 -->
+        <li>
+          <weight>0.25</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_WayBill</li>
+				<li>AM_IntelMap</li>
+				<li>AM_ConfidentialIntelMapA</li>
+				<li>AM_ConfidentialIntelMapB</li>
+				<li>AM_DilapidatedMap</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!-- 神器 -->
+        <li>
+          <weight>0.05</weight> 
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingSetMakerTagsToAllow>
+                  <li>PsychicAnimalPulser</li>
+				  <li>PsychicSoothePulser</li>
+                </thingSetMakerTagsToAllow>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+	
+	<ThingSetMakerDef>
+    <defName>AM_MedicalSupplies</defName><!-- 医疗物资 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--超高价值 -->
+        <li>
+          <weight>0.01</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_LEDX</li>
+				<li>AM_IntegratedTorsoArmor</li>
+				<li>AM_RampageParasite</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--针剂 -->
+        <li>
+          <weight>0.35</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_MetalbloodInjector</li>
+				<li>AM_AnalgesicRegenerationInjector</li>
+				<li>AM_CellRegenerationInjector</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!--医疗包 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_AI2A</li>
+				<li>AM_HemostaticAgent</li>
+				<li>AM_FirstAidKit</li>
+				<li>AM_Salewa</li>
+				<li>AM_Grizzly</li>
+				<li>AM_AncientGrizzly</li>
+				<li>AM_SurgicalBag</li>
+				<li>AM_BigSurgicalBag</li>
+				<li>AM_EssentialBalm</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--医药 -->
+        <li>
+          <weight>0.75</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                <li>MedicineIndustrial</li>
+                <li>AM_AluminumSplint</li>
+                <li>AM_PelvicHammock</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~3</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--药物 -->
+        <li>
+          <weight>0.75</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                <li>Penoxycyline</li>
+                <li>Neutroamine</li>
+				<li>AM_Ibuprofen</li>
+				<li>AM_Antibiotic</li>
+                </thingDefs>
+              </filter>
+              <countRange>3~5</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--魔鬼素 -->
+        <li>
+          <weight>0.15</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                <li>Luciferium</li>
+                </thingDefs>
+              </filter>
+              <countRange>2~7</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+
+  <ThingSetMakerDef>
+    <defName>AM_Injector</defName><!-- 注射器 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--超高价值 -->
+        <li>
+          <weight>0.01</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_LEDX</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--针剂 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_MetalbloodInjector</li>
+				<li>AM_AnalgesicRegenerationInjector</li>
+				<li>AM_CellRegenerationInjector</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+	
+
+	<ThingSetMakerDef>
+    <defName>AM_Collectible</defName><!-- 奢侈品 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--雕塑 -->
+        <li>
+          <weight>0.5</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_BrassLionStatue</li>
+                <li>AM_GoldenRoosterStatue</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--常见奢侈品 -->
+        <li>
+          <weight>0.5</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>ElephantTusk</li>
+                <li>ThrumboHorn</li>
+				<li>AM_GoldenEgg</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!--多数奢侈品 -->
+        <li>
+          <weight>0.3</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>Ambrosia</li>
+                <li>Hyperweave</li>
+				<li>Silver</li>
+                <li>Gold</li>
+                <li>Jade</li>
+                </thingDefs>
+              </filter>
+              <countRange>10~20</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+  
+	
+	<ThingSetMakerDef>
+    <defName>AM_Tool</defName><!-- 工具 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--工具 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_BakingThermometer</li>
+                <li>AM_TapeMeasure</li>
+                <li>AM_ElectricalTape</li>
+                <li>AM_OneLiterGlassAdhesive</li>
+                <li>MeleeWeapon_Knife</li>
+                <li>MeleeWeapon_BreachAxe</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+  <ThingSetMakerDef>
+    <defName>AM_ElectronicProduct</defName><!-- 电子产品 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--超高价值 -->
+        <li>
+          <weight>0.025</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_GameConsole</li>
+				<li>AM_CPU</li>
+                <li>AM_GPU</li>
+                <li>AM_PackagedCPU</li>
+                <li>AM_PackagedGPU</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--一般电子产品 -->
+        <li>
+          <weight>0.75</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>AM_BakingThermometer</li>
+				<li>AM_SSD</li>
+                <li>AM_HDD</li>
+				<li>AM_RadioIntercom</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!--零件 -->
+        <li>
+          <weight>0.45</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>ComponentSpacer</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~3</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+  	
+	<ThingSetMakerDef>
+    <defName>AM_PotatoChips</defName><!-- 薯片 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--薯片-->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+			  <li>AM_PotatoChipsA</li>
+              <li>AM_PotatoChipsB</li>
+              <li>AM_PotatoChipsC</li>
+              <li>AM_PotatoChipsD</li>
+              <li>AM_PotatoChipsE</li>
+              <li>AM_PotatoChipsF</li>
+                </thingDefs>
+              </filter>
+              <countRange>2~6</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+
+	
+	<ThingSetMakerDef>
+    <defName>AM_Food</defName><!-- 食物 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+	  
+	  <!--包装食物 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+			  <li>MealSurvivalPack</li>
+			  <li>AM_MRE</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~3</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+        <!--食物 -->
+        <li>
+          <weight>0.65</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+              <li>AM_CannedBraisedPorkbelly</li>
+              <li>AM_CannedHerring</li>
+              <li>AM_CannedPeas</li>
+              <li>AM_CannedStewedBeef</li>
+              <li>AM_DeliciousCannedBeef</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~3</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+		<!--干肉饼 -->
+        <li>
+          <weight>0.25</weight>
+           <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+				<li>Pemmican</li>
+                </thingDefs>
+              </filter>
+              <countRange>25~75</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+  
+
+    <ThingSetMakerDef>
+    <defName>AM_Beverages</defName><!-- 饮料 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--饮料 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+			  <li>AM_Coca</li>
+              <li>AM_Fanta</li>
+              <li>AM_MilkBeer</li>
+              <li>AM_Pepsi</li>
+              <li>AM_Sprite</li>
+              <li>AM_TsingtaoBeer</li>
+			  <li>AM_Budweiser</li>
+			  <li>GoJuice</li>
+			  <li>Beer</li>
+                </thingDefs>
+              </filter>
+              <countRange>3~5</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+    <ThingSetMakerDef>
+    <defName>AM_Book</defName><!-- 书籍 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--书籍 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+			  <li>TextBook</li>
+              <li>Schematic</li>
+              <li>Novel</li>
+              <li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li>
+                </thingDefs>
+              </filter>
+              <countRange>0~1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+   <ThingSetMakerDef>
+    <defName>AM_vegetable</defName><!-- 蔬菜 -->
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <!--蔬菜 -->
+        <li>
+          <weight>1</weight>
+           <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+			  <li>RawPotatoes</li>
+              <li>RawFungus</li>
+              <li>RawRice</li>
+              <li>RawAgave</li>
+              <li>RawCorn</li>
+              <li>RawBerries</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawOnion</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPumpkin</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPepper</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPeas</li>
+		      <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawEggplant</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawCabbage</li>
+              <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawTomatoes</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawApple</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPeach</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawCherry</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPlum</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPrunes</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPear</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawPricklyPear</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_Bearberry</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawBanana</li>
+			  <li MayRequire="VanillaExpanded.VPlantsE">VCE_RawOrange</li>
+                </thingDefs>
+              </filter>
+              <countRange>13~30</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+    
+</Defs>

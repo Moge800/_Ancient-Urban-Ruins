@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Boss -->
+  <PawnKindDef Name="AMBossBase">
+  <defName>AncientSoldierBoss</defName>
+    <label>ancient special unit</label>
+    <race>Human</race>
+    <maxGenerationAge>55</maxGenerationAge>
+    <combatPower>225</combatPower>
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>AM_SpecialUnits</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	 <isFighter>false</isFighter>
+    <defaultFactionType>AncientsHostile</defaultFactionType>
+	<forceDeathOnDowned>true</forceDeathOnDowned>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+      <combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <invNutrition>2.55</invNutrition>
+	<gearHealthRange>1~3</gearHealthRange>
+    <itemQuality>Excellent</itemQuality>
+	<weaponTags>
+     <li>AMHP</li>
+    </weaponTags>
+    <weaponMoney>2100~7500</weaponMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>25000~30000</apparelMoney>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelTags>
+      <li>AM_Boss</li>
+      <li>AM_Bossbelt</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>AM_CompFlakSuit</li>
+      <li>AM_FullyEnclosedHelmet</li>
+	   <li>Apparel_Pants</li>
+	    <li>Apparel_CollarShirt</li>
+    </apparelRequired>
+    <techHediffsChance>1</techHediffsChance>
+	  <techHediffsMoney>2000~3000</techHediffsMoney>
+    <techHediffsTags>
+      <li>IntegratedTorsoArmor</li>
+    </techHediffsTags>
+    <biocodeWeaponChance>1</biocodeWeaponChance>
+	<fixedInventory>
+	<AM_HemostaticAgent>1</AM_HemostaticAgent>
+	<GoJuice>1</GoJuice>
+	<AM_AnalgesicRegenerationInjector>1</AM_AnalgesicRegenerationInjector>
+	</fixedInventory>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+	
+	<forcedTraits>
+	<li>AM_Elite</li>
+	</forcedTraits>
+	
+	   <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	 <initialWillRange>10</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>14~18</range>
+      </li>
+    </skills>
+	 <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AMBossBase">
+  <defName>AncientSoldierBossN</defName>
+	<apparelRequired Inherit="False">
+      <li>AM_CompFlakSuit</li>
+      <li>AM_NightVisionHelmet</li>
+	   <li>Apparel_Pants</li>
+	    <li>Apparel_CollarShirt</li>
+    </apparelRequired>
+  </PawnKindDef>
+  
+  
+  <PawnKindDef>
+  <defName>AncientMallGuards</defName>
+    <label>"Fashion guy"</label>
+    <race>Human</race>
+    <maxGenerationAge>55</maxGenerationAge>
+    <combatPower>425</combatPower>
+	  <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>AM_Fashion</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	 <isFighter>false</isFighter>
+    <defaultFactionType>AncientsHostile</defaultFactionType>
+	<forceDeathOnDowned>true</forceDeathOnDowned>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+      <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <invNutrition>2.55</invNutrition>
+	<gearHealthRange>1~3</gearHealthRange>
+    <itemQuality>Excellent</itemQuality>
+	<weaponTags>
+      <li>PKM</li>
+    </weaponTags>
+    <weaponMoney>2100~7500</weaponMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>25000~30000</apparelMoney>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelTags>
+	    <li>AM_Fashion</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>AM_MK4aDefensive</li>
+      <li>AM_CataphractHelmetFashion</li>
+      <li>Apparel_FlakPants</li>
+	  <li>Apparel_CollarShirt</li>
+    </apparelRequired>
+	<specificApparelRequirements>
+	  <li>
+	   <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(77, 77, 77)</only> <!-- dark brown -->
+            </li>
+          </options>
+        </colorGenerator>
+		</li>
+      <li>
+        <apparelLayer>Overhead</apparelLayer>
+        <color>(1, 1, 1)</color>
+        <alternateTagChoices>
+          <li>
+            <tag>AM_Fashion</tag>
+            <chance>1</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+    <biocodeWeaponChance>0.50</biocodeWeaponChance>
+	 <techHediffsChance>1</techHediffsChance>
+	  <techHediffsMoney>2000~3000</techHediffsMoney>
+    <techHediffsTags>
+      <li>IntegratedTorsoArmor</li>
+    </techHediffsTags>
+	<fixedInventory>
+	<AM_Grizzly>1</AM_Grizzly>
+	<AM_AnalgesicRegenerationInjector>1</AM_AnalgesicRegenerationInjector>
+	<AM_MetalbloodInjector>1</AM_MetalbloodInjector>
+	</fixedInventory>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+	
+	<forcedTraits>
+	<li>AM_MallGuards</li>
+	</forcedTraits>
+	
+	   <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	 <initialWillRange>10</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>14~18</range>
+      </li>
+    </skills>
+	 <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+  <PawnKindDef>
+  <defName>AncientSlaughter</defName>
+    <label>slaughter</label>
+    <race>Human</race>
+    <maxGenerationAge>55</maxGenerationAge>
+    <combatPower>525</combatPower>
+	  <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>AM_Slaughter</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	 <isFighter>false</isFighter>
+    <defaultFactionType>AncientsHostile</defaultFactionType>
+	<forceDeathOnDowned>true</forceDeathOnDowned>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+      <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <invNutrition>2.55</invNutrition>
+	<gearHealthRange>1~3</gearHealthRange>
+    <itemQuality>Excellent</itemQuality>
+	<weaponTags>
+      <li>NeolithicMeleeDestructive</li>
+    </weaponTags>
+    <weaponMoney>600~750</weaponMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelMoney>25000~30000</apparelMoney>
+    <apparelTags>
+      <li>AM_Slaughter</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>Apparel_FlakVest</li>
+      <li>AM_CataphractHelmetSlaughter</li>
+      <li>Apparel_FlakPants</li>
+    </apparelRequired>
+	<specificApparelRequirements>
+	<li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(128, 116, 84)</only> <!-- dark brown -->
+            </li>
+          </options>
+        </colorGenerator>
+		</li>
+      <li>
+        <apparelLayer>Overhead</apparelLayer>
+        <color>(1, 1, 1)</color>
+        <alternateTagChoices>
+          <li>
+            <tag>AM_Slaughter</tag>
+            <chance>1</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+    <biocodeWeaponChance>0.50</biocodeWeaponChance>
+	<fixedInventory>
+	<AM_Salewa>1</AM_Salewa>
+	<AM_MetalbloodInjector>1</AM_MetalbloodInjector>
+	<AM_KeyCard>1</AM_KeyCard>
+	</fixedInventory>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+	
+	<forcedTraits>
+	<li>AM_Slaughter</li>
+	<li>Bloodlust</li>
+	</forcedTraits>
+	
+	<techHediffsChance>1</techHediffsChance>
+	  <techHediffsMoney>2500~3000</techHediffsMoney>
+    <techHediffsTags>
+      <li>RampageParasite</li>
+    </techHediffsTags>
+	
+	   <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	 <initialWillRange>10</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>14~18</range>
+      </li>
+    </skills>
+	 <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.4</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+   <TraitDef>
+    <defName>AM_Elite</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>Successful products</label>
+        <description>{PAWN_nameDef} is a successful product of an ancient experimental project, {PAWN_pronoun} almost entirely specialized for combat. {PAWN_pronoun} is extremely hard to defeat.</description>
+        <statFactors>
+          <IncomingDamageFactor>0.60</IncomingDamageFactor>
+		  <AimingDelayFactor>0.75</AimingDelayFactor>
+          <ShootingAccuracyPawn>1.05</ShootingAccuracyPawn>
+		  <ImmunityGainSpeed>1.30</ImmunityGainSpeed>
+		  <PsychicSensitivity>0</PsychicSensitivity>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+  </TraitDef>
+  
+   <TraitDef>
+    <defName>AM_MallGuards</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>fashion guy</label>
+        <description>{PAWN_nameDef} is a fashion guy who is skilled at shooting in a slide shovel, {PAWN_pronoun} can use gun to blast everything he sees.</description>
+        <statFactors>
+          <IncomingDamageFactor>0.70</IncomingDamageFactor>
+		  <AimingDelayFactor>0.01</AimingDelayFactor>
+          <ShootingAccuracyPawn>1.55</ShootingAccuracyPawn>
+		  <PsychicSensitivity>0</PsychicSensitivity>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>AM_Slaughter</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>parasitic failed product</label>
+        <description>{PAWN_nameDef} was implanted with an excessive amount of parasites, which completely destroyed {PAWN_possessive} sanity but greatly increased {PAWN_possessive} strength.</description>
+        <statFactors>
+          <IncomingDamageFactor>0.45</IncomingDamageFactor>
+		  <PsychicSensitivity>0</PsychicSensitivity>
+		  <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+		<statOffsets>
+		    <MeleeDodgeChance>50</MeleeDodgeChance>
+			 <MeleeHitChance>-10.5</MeleeHitChance>
+			<MeleeDamageFactor>3</MeleeDamageFactor>
+			 <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+		</statOffsets>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <HediffDef ParentName="ImplantHediffBase" >
+    <defName>AM_IntegratedTorsoArmor</defName>
+    <label>Integrated parasite armor</label>
+    <labelNoun>a Integrated parasite armor</labelNoun>
+	<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+    <description>An ancient, specialized implant involved introducing carefully selected parasites into the body, endowing the subject with a body akin to bulletproof fibers and enhancing muscular strength. However, the technology behind it has been entirely lost and cannot be replicated.</description>
+    <descriptionHyperlinks><ThingDef>AM_IntegratedTorsoArmor</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ChunkSlagSteel</spawnThingOnRemoved>
+	 <isBad>false</isBad>
+    <stages>
+      <li>
+	  <hungerRateFactor>0</hungerRateFactor>
+	   <statFactors>
+        <RestFallRateFactor>0.5</RestFallRateFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.01</postFactor>
+          </li>
+		   <li>
+            <capacity>Hearing</capacity>
+            <postFactor>0.3</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+        </statOffsets>
+		<painFactor>0.5</painFactor>
+		<totalBleedFactor>0.05</totalBleedFactor>
+      </li>
+    </stages>
+	<comps>
+	<li Class ="AncientMarket_Libraray.HediffCompProperties_Regeneration">
+	<regenerations>
+	<li>
+    <key>0</key>
+    <value>75</value>
+    </li>
+    </regenerations>
+	</li>
+    </comps>
+  </HediffDef>
+  
+  
+   <ThingDef ParentName="BodyPartBase">
+    <defName>AM_IntegratedTorsoArmor</defName>
+    <label>Integrated parasite armor</label>
+	<tradeability>None</tradeability>
+    <techLevel>Spacer</techLevel>
+	<description>An ancient, specialized implant involved introducing carefully selected parasites into the body, endowing the subject with a body akin to bulletproof fibers and enhancing muscular strength. However, the technology behind it has been entirely lost and cannot be replicated.</description>
+    <descriptionHyperlinks><RecipeDef>InstallIntegratedTorsoArmor</RecipeDef></descriptionHyperlinks>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(189,169,118)</color>
+    </graphicData>
+    <tradeTags Inherit="false">
+	</tradeTags>
+    <techHediffsTags>
+      <li>IntegratedTorsoArmor</li>
+    </techHediffsTags>
+    <statBases>
+	<MarketValue>1200</MarketValue>
+	 <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallIntegratedTorsoArmor</defName>
+    <label>install Integrated parasite armor</label>
+    <description>Install a integrated parasite armor.</description>
+
+    <descriptionHyperlinks>
+      <ThingDef>AM_IntegratedTorsoArmor</ThingDef>
+      <HediffDef>AM_IntegratedTorsoArmor</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing integrated parasite armor.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AM_IntegratedTorsoArmor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AM_IntegratedTorsoArmor</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AM_IntegratedTorsoArmor</addsHediff>
+  </RecipeDef>
+
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>AM_RampageParasite</defName>
+    <label>rampage parasite</label>
+    <labelNoun>A group of violent parasites</labelNoun>
+	<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+    <description>An unsuccessful outcome of ancient parasitic experiments, though it greatly enhances combat effectiveness, the victim lacks any semblance of intelligence and is utterly uncontrollable.</description>
+    <descriptionHyperlinks><ThingDef>AM_RampageParasite</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ChunkSlagSteel</spawnThingOnRemoved>
+	 <isBad>false</isBad>
+    <stages>
+      <li>
+	  <hungerRateFactor>0.25</hungerRateFactor>
+	  <statFactors>
+        <RestFallRateFactor>0.5</RestFallRateFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.02</postFactor>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+        </statOffsets>
+		<painFactor>0</painFactor>
+		<totalBleedFactor>0.01</totalBleedFactor>
+      </li>
+    </stages>
+	<comps>
+	<li Class ="AncientMarket_Libraray.HediffCompProperties_Regeneration">
+	<regenerations>
+	<li>
+    <key>0</key>
+    <value>250</value>
+    </li>
+    </regenerations>
+	</li>
+    </comps>
+  </HediffDef>
+
+  
+  
+   <ThingDef ParentName="BodyPartBase">
+    <defName>AM_RampageParasite</defName>
+    <label>rampage parasite</label>
+    <techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+	<description>An unsuccessful outcome of ancient parasitic experiments, though it greatly enhances combat effectiveness, the victim lacks any semblance of intelligence and is utterly uncontrollable..</description>
+    <descriptionHyperlinks><RecipeDef>InstallRampageParasite</RecipeDef></descriptionHyperlinks>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(189,169,118)</color>
+    </graphicData>
+     <tradeTags Inherit="false">
+	 </tradeTags>
+    <techHediffsTags>
+      <li>RampageParasite</li>
+    </techHediffsTags>
+    <statBases>
+	<MarketValue>2200</MarketValue>
+	 <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallRampageParasite</defName>
+    <label>install rampage parasite</label>
+    <description>Install rampage parasite.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AM_RampageParasite</ThingDef>
+      <HediffDef>AM_RampageParasite</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rampage parasite.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AM_RampageParasite</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AM_RampageParasite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AM_RampageParasite</addsHediff>
+  </RecipeDef>
+
+  
+
+  
+</Defs>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<QuestScriptDef>
+        <defName>AM_Quest_Street</defName>
+		<root Class="RimWorld.QuestGen.QuestNode_Sequence">
+			<nodes>
+				<li Class="AncientMarket_Libraray.QuestNode_GenerateCustomSite">
+					<worldObjectDef>AM_CustomSite</worldObjectDef>
+					<siteParts>
+						<li>AM_StreetSite</li>
+					</siteParts>
+					<storeAs>Test</storeAs>
+					<distance>
+						<min>7</min>
+						<max>15</max>
+					</distance>
+				</li>
+				<li Class="RimWorld.QuestGen.QuestNode_Signal">
+          <inSignal>Test.Destroyed</inSignal>
+          <node Class="RimWorld.QuestGen.QuestNode_Sequence">
+            <nodes>
+              <li Class="RimWorld.QuestGen.QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+              <li Class="RimWorld.QuestGen.QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label>Location cleared</label>
+                <text>The ancient architectural complex has been searched and wiped out, and it will disappear into the tide of history.</text>
+              </li>
+            </nodes>
+          </node>
+        </li>
+			</nodes>
+		</root>
+		<rootSelectionWeight>0.2</rootSelectionWeight>
+		<rootMinPoints>0</rootMinPoints>
+		<rootMinProgressScore>0</rootMinProgressScore>
+		<rootIncreasesPopulation>False</rootIncreasesPopulation>
+		<minRefireDays>40</minRefireDays>
+		<decreeSelectionWeight>0</decreeSelectionWeight>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription -&gt; We have discovered the site of an ancient block ruins, where the streets were once lined with shops. The map also indicates the presence of an entrance to an underground commercial street, promising the discovery of numerous high-value items.</li>
+			</rulesStrings>
+			<rulesFiles />
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questDescriptionRules>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName(p=3)->[complexAdj] [complex]</li>
+				<li>questName->[complex]</li>
+				<li>complexAdj->secret</li>
+				<li>complexAdj->ancient</li>
+				<li>complexAdj->old</li>
+				<li>complexAdj->hidden</li>
+				<li>complexAdj->dusty</li>
+				<li>complexAdj->dangerous</li>
+				<li>complexAdj->hidden</li>
+				<li>complex->block ruins</li>
+				<li>complex->neighbourhood ruins</li>
+				<li>complex->street ruins</li>
+			</rulesStrings>
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questNameRules>
+		<autoAccept>True</autoAccept>
+		<hideOnCleanup>False</hideOnCleanup>
+		<expireDaysRange>
+			<min>-1</min>
+			<max>-1</max>
+		</expireDaysRange>
+		<nameMustBeUnique>False</nameMustBeUnique>
+		<defaultChallengeRating>-1</defaultChallengeRating>
+		<defaultHidden>False</defaultHidden>
+		<isRootSpecial>True</isRootSpecial>
+		<canGiveRoyalFavor>False</canGiveRoyalFavor>
+		<hideInvolvedFactionsInfo>False</hideInvolvedFactionsInfo>
+		<affectedByPopulation>False</affectedByPopulation>
+		<affectedByPoints>True</affectedByPoints>
+		<defaultCharity>False</defaultCharity>
+		<sendAvailableLetter>True</sendAvailableLetter>
+		<epic>False</epic>
+		<endOnColonyMove>True</endOnColonyMove>
+		<ignoreConfigErrors>False</ignoreConfigErrors>
+		<ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>
+	</QuestScriptDef>
+	
+
+	<QuestScriptDef>
+        <defName>AM_Quest_Reserve</defName>
+		<root Class="RimWorld.QuestGen.QuestNode_Sequence">
+			<nodes>
+				<li Class="AncientMarket_Libraray.QuestNode_GenerateCustomSite">
+					<worldObjectDef>AM_CustomSite</worldObjectDef>
+					<siteParts>
+						<li>AM_ReserveSite</li>
+					</siteParts>
+					<storeAs>Test</storeAs>
+					<distance>
+						<min>10</min>
+						<max>20</max>
+					</distance>
+				</li>
+				<li Class="RimWorld.QuestGen.QuestNode_Signal">
+          <inSignal>Test.Destroyed</inSignal>
+          <node Class="RimWorld.QuestGen.QuestNode_Sequence">
+            <nodes>
+              <li Class="RimWorld.QuestGen.QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+              <li Class="RimWorld.QuestGen.QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label>Location cleared</label>
+                <text>The ancient architectural complex has been searched and wiped out, and it will disappear into the tide of history.</text>
+              </li>
+            </nodes>
+          </node>
+        </li>
+			</nodes>
+		</root>
+		<rootSelectionWeight>0.1</rootSelectionWeight>
+		<rootMinPoints>4000</rootMinPoints>
+		<rootMinProgressScore>4000</rootMinProgressScore>
+		<rootIncreasesPopulation>False</rootIncreasesPopulation>
+		<minRefireDays>120</minRefireDays>
+		<decreeSelectionWeight>0</decreeSelectionWeight>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription -&gt; We have discovered the location of an ancient military Reservation Station, which is heavily fortified and rumored to be manned by well-equipped ancient elite soldiers. Infiltrating this location carries extreme risk, but also offers equally significant rewards.</li>
+			</rulesStrings>
+			<rulesFiles />
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questDescriptionRules>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName(p=3)->[complexAdj] [complex]</li>
+				<li>questName->[complex]</li>
+				<li>complexAdj->secret</li>
+				<li>complexAdj->ancient</li>
+				<li>complexAdj->old</li>
+				<li>complexAdj->hidden</li>
+				<li>complexAdj->dusty</li>
+				<li>complexAdj->dangerous</li>
+				<li>complexAdj->hidden</li>
+				<li>complex->Reservation Station</li>
+				<li>complex->Storage station</li>
+				<li>complex->military base</li>
+				<li>complex->base</li>
+				<li>complex->Military warehouse</li>
+			</rulesStrings>
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questNameRules>
+		<autoAccept>True</autoAccept>
+		<hideOnCleanup>False</hideOnCleanup>
+		<expireDaysRange>
+			<min>-1</min>
+			<max>-1</max>
+		</expireDaysRange>
+		<nameMustBeUnique>False</nameMustBeUnique>
+		<defaultChallengeRating>-1</defaultChallengeRating>
+		<defaultHidden>False</defaultHidden>
+		<isRootSpecial>True</isRootSpecial>
+		<canGiveRoyalFavor>False</canGiveRoyalFavor>
+		<hideInvolvedFactionsInfo>False</hideInvolvedFactionsInfo>
+		<affectedByPopulation>False</affectedByPopulation>
+		<affectedByPoints>True</affectedByPoints>
+		<defaultCharity>False</defaultCharity>
+		<sendAvailableLetter>True</sendAvailableLetter>
+		<epic>False</epic>
+		<endOnColonyMove>True</endOnColonyMove>
+		<ignoreConfigErrors>False</ignoreConfigErrors>
+		<ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>
+	</QuestScriptDef>
+
+
+    <QuestScriptDef>
+        <defName>AM_Quest_Mall_S</defName>
+		<root Class="RimWorld.QuestGen.QuestNode_Sequence">
+			<nodes>
+				<li Class="AncientMarket_Libraray.QuestNode_GenerateCustomSite">
+					<worldObjectDef>AM_CustomSite</worldObjectDef>
+					<siteParts>
+						<li>AM_MALL_S_Site</li>
+					</siteParts>
+					<storeAs>Test</storeAs>
+					<distance>
+						<min>8</min>
+						<max>20</max>
+					</distance>
+				</li>
+				<li Class="RimWorld.QuestGen.QuestNode_Signal">
+          <inSignal>Test.Destroyed</inSignal>
+          <node Class="RimWorld.QuestGen.QuestNode_Sequence">
+            <nodes>
+              <li Class="RimWorld.QuestGen.QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+              <li Class="RimWorld.QuestGen.QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label>Location cleared</label>
+                <text>The ancient architectural complex has been searched and wiped out, and it will disappear into the tide of history.</text>
+              </li>
+            </nodes>
+          </node>
+        </li>
+			</nodes>
+		</root>
+		<rootSelectionWeight>0.1</rootSelectionWeight>
+		<rootMinPoints>5000</rootMinPoints>
+		<rootMinProgressScore>5000</rootMinProgressScore>
+		<rootIncreasesPopulation>False</rootIncreasesPopulation>
+		<minRefireDays>120</minRefireDays>
+		<decreeSelectionWeight>0</decreeSelectionWeight>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription -&gt; We have discovered an ancient giant shopping mall that is remarkably well-preserved and abundant in resources. Undoubtedly, other factions have also discovered this location, making a conflict inevitable.</li>
+			</rulesStrings>
+			<rulesFiles />
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questDescriptionRules>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName(p=3)->[complexAdj] [complex]</li>
+				<li>questName->[complex]</li>
+				<li>complexAdj->giant</li>
+				<li>complexAdj->ancient</li>
+				<li>complexAdj->old</li>
+				<li>complexAdj->huge</li>
+				<li>complexAdj->dusty</li>
+				<li>complex->shopping mall</li>
+				<li>complex->supermarket</li>
+				<li>complex->shopping plaza</li>
+				<li>complex->mall</li>
+			</rulesStrings>
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questNameRules>
+		<autoAccept>True</autoAccept>
+		<hideOnCleanup>False</hideOnCleanup>
+		<expireDaysRange>
+			<min>-1</min>
+			<max>-1</max>
+		</expireDaysRange>
+		<nameMustBeUnique>False</nameMustBeUnique>
+		<defaultChallengeRating>-1</defaultChallengeRating>
+		<defaultHidden>False</defaultHidden>
+		<isRootSpecial>True</isRootSpecial>
+		<canGiveRoyalFavor>False</canGiveRoyalFavor>
+		<hideInvolvedFactionsInfo>False</hideInvolvedFactionsInfo>
+		<affectedByPopulation>False</affectedByPopulation>
+		<affectedByPoints>True</affectedByPoints>
+		<defaultCharity>False</defaultCharity>
+		<sendAvailableLetter>True</sendAvailableLetter>
+		<epic>False</epic>
+		<endOnColonyMove>True</endOnColonyMove>
+		<ignoreConfigErrors>False</ignoreConfigErrors>
+		<ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>
+	</QuestScriptDef>
+	
+	<QuestScriptDef>
+        <defName>AM_Quest_Mall_L</defName>
+		<root Class="RimWorld.QuestGen.QuestNode_Sequence">
+			<nodes>
+				<li Class="AncientMarket_Libraray.QuestNode_GenerateCustomSite">
+					<worldObjectDef>AM_CustomSite</worldObjectDef>
+					<siteParts>
+						<li>AM_MALL_L_Site</li>
+					</siteParts>
+					<storeAs>Test</storeAs>
+					<distance>
+						<min>8</min>
+						<max>20</max>
+					</distance>
+				</li>
+				<li Class="RimWorld.QuestGen.QuestNode_Signal">
+          <inSignal>Test.Destroyed</inSignal>
+          <node Class="RimWorld.QuestGen.QuestNode_Sequence">
+            <nodes>
+              <li Class="RimWorld.QuestGen.QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+              <li Class="RimWorld.QuestGen.QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label>Location cleared</label>
+                <text>The ancient architectural complex has been searched and wiped out, and it will disappear into the tide of history.</text>
+              </li>
+            </nodes>
+          </node>
+        </li>
+			</nodes>
+		</root>
+		<rootSelectionWeight>0.1</rootSelectionWeight>
+		<rootMinPoints>7000</rootMinPoints>
+		<rootMinProgressScore>7000</rootMinProgressScore>
+		<rootIncreasesPopulation>False</rootIncreasesPopulation>
+		<minRefireDays>120</minRefireDays>
+		<decreeSelectionWeight>0</decreeSelectionWeight>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription -&gt;  We have discovered an ancient giant shopping mall that is remarkably well-preserved and abundant in resources. Undoubtedly, other factions have also discovered this location, making a conflict inevitable.</li>
+			</rulesStrings>
+			<rulesFiles />
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questDescriptionRules>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName(p=3)->[complexAdj] [complex]</li>
+				<li>questName->[complex]</li>
+				<li>complexAdj->giant</li>
+				<li>complexAdj->ancient</li>
+				<li>complexAdj->old</li>
+				<li>complexAdj->huge</li>
+				<li>complexAdj->dusty</li>
+				<li>complex->shopping mall</li>
+				<li>complex->supermarket</li>
+				<li>complex->shopping plaza</li>
+				<li>complex->mall</li>
+			</rulesStrings>
+			<rulesRaw IsNull="True" />
+			<include IsNull="True" />
+		</questNameRules>
+		<autoAccept>True</autoAccept>
+		<hideOnCleanup>False</hideOnCleanup>
+		<expireDaysRange>
+			<min>-1</min>
+			<max>-1</max>
+		</expireDaysRange>
+		<nameMustBeUnique>False</nameMustBeUnique>
+		<defaultChallengeRating>-1</defaultChallengeRating>
+		<defaultHidden>False</defaultHidden>
+		<isRootSpecial>True</isRootSpecial>
+		<canGiveRoyalFavor>False</canGiveRoyalFavor>
+		<hideInvolvedFactionsInfo>False</hideInvolvedFactionsInfo>
+		<affectedByPopulation>False</affectedByPopulation>
+		<affectedByPoints>True</affectedByPoints>
+		<defaultCharity>False</defaultCharity>
+		<sendAvailableLetter>True</sendAvailableLetter>
+		<epic>False</epic>
+		<endOnColonyMove>True</endOnColonyMove>
+		<ignoreConfigErrors>False</ignoreConfigErrors>
+		<ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>
+	</QuestScriptDef>
+</Defs>

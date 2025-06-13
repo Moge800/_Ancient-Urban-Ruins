@@ -1,0 +1,1795 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase" Name ="AM_NonfunctionalBuilding" Abstract="True">
+        <altitudeLayer>Building</altitudeLayer>
+        <thingClass>Building</thingClass>
+        <selectable>true</selectable>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <passability>PassThroughOnly</passability>
+        <category>Building</category>
+        <rotatable>true</rotatable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+		<fillPercent>0.40</fillPercent>
+		<pathCost>50</pathCost>	 
+        <designationCategory>Misc</designationCategory>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding" Name ="AM_NonfunctionalBuilding_Impassable" Abstract="True">
+        <passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+        <building>
+		     <deconstructible>false</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+    </ThingDef>
+	
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable" Name ="AM_Building_Atrium" Abstract="True">
+        <building>
+            <deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+			<displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+        </building>
+		<rotatable>false</rotatable>
+		<useHitPoints>false</useHitPoints>		
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding" Name ="AM_NonfunctionalBuilding_Unloadable" Abstract="True">
+		<minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+			<li>AM_Container</li>
+	  </thingCategories>
+    </ThingDef>
+	
+   <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ArmoredGate_invincible</defName>
+		<label>ancient armored gate</label>
+		<description>A structure commonly found in some underground military facilities.</description>
+		<graphicData>
+			<texPath>Things/Building/ArmoredGate</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.1,1)</drawSize>
+		</graphicData>
+        <useHitPoints>false</useHitPoints>
+		<holdsRoof>true</holdsRoof>
+		<blockLight>true</blockLight>
+		<fillPercent>1</fillPercent>
+		<size>(3,1)</size>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_ParterreD_East</defName>
+		<label>parterre</label>
+		<description>An ancient rectangular parterre</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/ParterreD_east</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<canOverlapZones>true</canOverlapZones>
+		<clearBuildingArea>true</clearBuildingArea>
+		<coversFloor>false</coversFloor>
+		<passability>Standable</passability>
+		<altitudeLayer>Building</altitudeLayer>	
+		<size>(1,4)</size>
+		<building>
+			<isEdifice>true</isEdifice>
+			 <deconstructible>true</deconstructible>
+			<isTargetable>true</isTargetable>
+			<claimable>true</claimable>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_Amublance</defName>
+		<label>ancient amublance</label>
+		<description>A damaged and corroded ancient vehicle.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Amublance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6.6,3.5)</drawSize>
+		</graphicData>
+		<size>(5,2)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>2000</Mass>
+			<WorkToBuild>30000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<VVE_EngineBlock MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_EngineBlock>
+			<VVE_CarAlternator MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarAlternator>
+              <VVE_CarExhaust MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarExhaust>
+              <VVE_CarWheel MayRequire="OskarPotocki.VanillaVehiclesExpanded">4</VVE_CarWheel>
+              <VVE_CarBattery MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarBattery>
+              <VVE_CarSuspension MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarSuspension>
+			  <ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_FireTruck</defName>
+		<label>ancient fire truck</label>
+		<description>A damaged and corroded ancient vehicle.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/FireTruck</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(9,4)</drawSize>
+		</graphicData>
+		<size>(7,3)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>2000</Mass>
+			<WorkToBuild>30000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<VVE_EngineBlock MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_EngineBlock>
+			<VVE_CarAlternator MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarAlternator>
+              <VVE_CarExhaust MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarExhaust>
+              <VVE_CarWheel MayRequire="OskarPotocki.VanillaVehiclesExpanded">4</VVE_CarWheel>
+              <VVE_CarBattery MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarBattery>
+              <VVE_CarSuspension MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarSuspension>
+			  <ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_ParterreD_north</defName>
+		<label>parterre</label>
+		<description>An ancient rectangular parterre</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/ParterreD_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<canOverlapZones>true</canOverlapZones>
+		<clearBuildingArea>true</clearBuildingArea>
+		<coversFloor>false</coversFloor>
+		<passability>Standable</passability>
+		<altitudeLayer>Building</altitudeLayer>	
+		<size>(4,1)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+			<deconstructible>true</deconstructible>
+			<isTargetable>true</isTargetable>
+			<claimable>true</claimable>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+		</building>
+	</ThingDef>
+	
+	 <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+    <defName>AM_DamagedEmptyShelves</defName>
+    <label>collapsed shelves</label>
+    <description>Some dilapidated shelves.</description>
+    <graphicData>
+        <texPath>Things/Container/DamagedEmptyShelves</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3.35,2.25)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Mass>8</Mass>
+        <MarketValue>450</MarketValue>
+    </statBases>
+    <costList>
+        <Steel>15</Steel>
+    </costList>
+ </ThingDef>
+ 
+ <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_AncientTruckCarriages</defName>
+		<label>ancient truck carriages</label>
+		<description>The carriages of ancient trucks.</description>
+		<graphicData>
+			<texPath>Things/Building/AncientTruckCarriages</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.8,6.9)</drawSize>
+			<shadowData>
+          <volume>(2.4, 0.9, 4.2)</volume>
+        </shadowData>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<fillPercent>0.8</fillPercent>
+		<size>(3,5)</size>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+
+ <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_FreightTrainCarriages</defName>
+		<label>freight train carriages</label>
+		<description>The carriages of ancient freight trains.</description>
+		<graphicData>
+			<texPath>Things/Building/FreightTrainCarriages</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.8,6.9)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+          <volume>(2.4, 0.9, 4.2)</volume>
+        </shadowData>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<fillPercent>0.8</fillPercent>
+		<size>(3,5)</size>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ArmoredGate</defName>
+		<label>ancient armored gate</label>
+		<description>Armored gates, commonly found in some underground military facilities.</description>
+		<graphicData>
+			<texPath>Things/Building/ArmoredGate</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.1,1)</drawSize>
+		</graphicData>
+		<holdsRoof>true</holdsRoof>
+		<blockLight>true</blockLight>
+		<fillPercent>1</fillPercent>
+		<size>(3,1)</size>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+			<WorkToBuild>30000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>2~3</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ArmoredGateL</defName>
+		<label>ancient armored gate</label>
+		<description>Armored gates, commonly found in some underground military facilities.</description>
+		<graphicData>
+			<texPath>Things/Building/ArmoredGateL</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.1,1)</drawSize>
+		</graphicData>
+		<holdsRoof>true</holdsRoof>
+		<blockLight>true</blockLight>
+		<fillPercent>1</fillPercent>
+		<size>(4,1)</size>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<WorkToBuild>60000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>3~4</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ArmoredGateS</defName>
+		<label>ancient armored gate</label>
+		<description>Armored gates, commonly found in some underground military facilities.</description>
+		<graphicData>
+			<texPath>Things/Building/ArmoredGateS</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.1,1)</drawSize>
+		</graphicData>
+		<holdsRoof>true</holdsRoof>
+		<blockLight>true</blockLight>
+		<fillPercent>1</fillPercent>
+		<size>(2,1)</size>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<WorkToBuild>18000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>1~2</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ArmoredGateXS</defName>
+		<label>ancient armored gate</label>
+		<description>Armored gates, commonly found in some underground military facilities.</description>
+		<graphicData>
+			<texPath>Things/Building/ArmoredGateXS</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+		</graphicData>
+		<holdsRoof>true</holdsRoof>
+		<blockLight>true</blockLight>
+		<fillPercent>1</fillPercent>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>4000</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_RollingShutter</defName>
+		<label>rolling shutter door</label>
+		<description>Rolling shutter doors, commonly found in warehouses.</description>
+		<graphicData>
+			<texPath>Things/Building/RollingShutter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.1,1)</drawSize>
+		</graphicData>
+		<holdsRoof>true</holdsRoof>
+		<blockLight>true</blockLight> 
+		<fillPercent>1</fillPercent>
+		<size>(4,1)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+		</statBases>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedStairs</defName>
+		<label>blocked staircase</label>
+		<description>An inaccessible staircase piled with debris. Entirely inaccessible.</description>
+		<graphicData>
+			<texPath>Things/Building/BlockedStairs</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>7</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,3)</size>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedStairsD</defName>
+		<label>blocked staircase</label>
+		<description>An inaccessible staircase piled with debris. Entirely inaccessible.</description>
+		<graphicData>
+			<texPath>Things/Building/BlockedStairsD</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>7</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,3)</size>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+	
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedElevators</defName>
+		<label>blocked escalator</label>
+		<description>This escalator is blocked by debris and cannot pass through from here.</description>
+		<graphicData>
+			<texPath>Things/Building/BlockedElevators</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(4,4)</size>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedElevatorsD</defName>
+		<label>blocked escalator</label>
+		<description>This escalator is blocked by debris and cannot pass through from here.</description>
+		<graphicData>
+			<texPath>Things/Building/BlockedElevatorsD</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>7</drawSize>
+		</graphicData>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(4,4)</size>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedElevatorsA</defName>
+		<label>blocked escalator</label>
+		<description>This escalator is blocked by debris and cannot pass through from here.</description>
+		<graphicData>
+			<texPath>Things/Building/BlockedElevatorsA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,4)</size>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BlockedElevatorsDA</defName>
+		<label>blocked escalator</label>
+		<description>This escalator is blocked by debris and cannot pass through from here.</description>
+		<graphicData>
+			<texPath>Things/Building/BlockedElevatorsDA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>7</drawSize>
+		</graphicData>
+		 <useHitPoints>false</useHitPoints>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,4)</size>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_MallBench</defName>
+		<label>mall bench</label>
+		<description>Badly rusted mall bench.</description>
+		<graphicData>
+			<texPath>Things/Building/MallBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>6</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_MallPew</defName>
+		<label>mall pew</label>
+		<description>A bench at the mall.</description>
+		<graphicData>
+			<texPath>Things/Building/MallPew</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>6</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_MallWoodenBench</defName>
+		<label>mall wooden bench</label>
+		<description>Wooden benches at the mall.</description>
+		<graphicData>
+			<texPath>Things/Building/MallWoodenBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_SlideSign</defName>
+		<label>slide Sign</label>
+		<description>Caution! Wet Floor</description>
+		<graphicData>
+			<texPath>Things/Building/SlideSign</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_SmallShoppingGuideMapA</defName>
+		<label>shopping guide map</label>
+		<description>Small shopping guide map</description>
+		<graphicData>
+			<texPath>Things/Building/SmallShoppingGuideMapA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>         
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_SmallShoppingGuideMapB</defName>
+		<label>shopping guide map</label>
+		<description>Small shopping guide map</description>
+		<graphicData>
+			<texPath>Things/Building/SmallShoppingGuideMapB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_SmallShoppingGuideMapC</defName>
+		<label>shopping guide map</label>
+		<description>Small shopping guide map</description>
+		<graphicData>
+			<texPath>Things/Building/SmallShoppingGuideMapC</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_FloorSignageA</defName>
+		<label>floor signage</label>
+		<description>Floor guide map of the shopping mall</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/FloorSignageA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<drawOffset>(0,0.2,0)</drawOffset>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_FloorSignageB</defName>
+		<label>floor signage</label>
+		<description>Floor guide map of the shopping mall</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/FloorSignageB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<drawOffset>(0,0.2,0)</drawOffset>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_FloorSignageC</defName>
+		<label>floor signage</label>
+		<description>Floor guide map of the shopping mall</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/FloorSignageC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<drawOffset>(0,0.2,0)</drawOffset>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_FloorSignageD</defName>
+		<label>floor signage</label>
+		<description>Floor guide map of the shopping mall</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/FloorSignageD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<drawOffset>(0,0.2,0)</drawOffset>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_HallSignage</defName>
+		<label>hall signage</label>
+		<description>Signs in the halls of ancient shopping malls</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/HallSignage</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<drawOffset>(0,0.2,0)</drawOffset>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BusRouteSignA</defName>
+		<label>bus route sign</label>
+		<description>Ancient bus route signs</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/BusRouteSignA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BusRouteSignB</defName>
+		<label>bus route sign</label>
+		<description>Ancient bus route signs</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/BusRouteSignB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_SpiritualFortressA</defName>
+		<label>spiritual fortress</label>
+		<description>A giant ancient shopping mall iconic sculpture with some advertisements on it</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/SpiritualFortressA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(12,12)</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_SpiritualFortressB</defName>
+		<label>spiritual fortress</label>
+		<description>A giant ancient shopping mall iconic sculpture with some advertisements on it</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/SpiritualFortressB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(12,12)</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_SpiritualFortressC</defName>
+		<label>spiritual fortress</label>
+		<description>A giant ancient shopping mall iconic sculpture with some advertisements on it</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/SpiritualFortressC</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(12,12)</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_SpiritualFortressD</defName>
+		<label>spiritual fortress</label>
+		<description>A giant ancient shopping mall iconic sculpture with some advertisements on it</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/SpiritualFortressD</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(12,12)</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ShoppingMallGuideMap</defName>
+		<label>shopping mall guide map</label>
+		<description>A guide map for guiding the internal zoning of the shopping mall</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/ShoppingMallGuideMap</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<size>(4,1)</size>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ParkingLotSignage</defName>
+		<label>parking lot signage</label>
+		<description>A parking Lot Signage</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/ParkingLotSignage</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>6</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_BusStop</defName>
+		<label>bus stop</label>
+		<description>An ancient bus stop</description>
+		<graphicData>
+			<texPath>Things/Building/BusStop</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_AncientRoadblocks</defName>
+		<label>ancient roadblocks</label>
+		<description>Ancient roadblocks</description>
+		<graphicData>
+			<texPath>Things/Building/AncientRoadblocks</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>100</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_AncientRevolvingDoorA</defName>
+		<label>ancient revolving door</label>
+		<description>An ancient glass revolving door, now it's stuck</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/AncientRevolvingDoorA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4.5</drawSize>
+			<drawOffset>(0,0,-0.35)</drawOffset>
+		</graphicData>
+		<size>(3,3)</size>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_AncientRevolvingDoorB</defName>
+		<label>ancient revolving door</label>
+		<description>An ancient glass revolving door, now it's stuck</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/AncientRevolvingDoorB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4.5</drawSize>
+			<drawOffset>(0,0,-0.35)</drawOffset>
+		</graphicData>
+		<size>(3,3)</size>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_AncientRevolvingDoorC</defName>
+		<label>ancient revolving door</label>
+		<description>An ancient glass revolving door, now it's stuck</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/AncientRevolvingDoorC</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4.5</drawSize>
+			<drawOffset>(0,0,-0.35)</drawOffset>
+		</graphicData>
+		<size>(3,3)</size>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>  
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_MallColumn</defName>
+		<label>mall column</label>
+		<description>The structural support columns of the shopping mall</description>
+		<holdsRoof>true</holdsRoof>
+		<useHitPoints>false</useHitPoints>
+		<graphicData>
+			<texPath>Things/Building/MallColumn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ParkingLotColumn</defName>
+		<label>parking lot column</label>
+		<description>Structural support columns for parking lots</description>
+		<holdsRoof>true</holdsRoof>
+		<useHitPoints>false</useHitPoints>
+		<graphicData>
+			<texPath>Things/Building/ParkingLotColumn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
+            <drawOffset>(0,0,0.2)</drawOffset>
+	        <shadowData>
+             <volume>(0.3, 0.5, 0.3)</volume>
+             <offset>(0,0,-0.23)</offset>
+            </shadowData>
+            <damageData>
+              <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>	
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_AncientCashRegister</defName>
+		<label>ancient cash register</label>
+		<description>The cash register commonly found in ancient supermarkets has been damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/AncientCashRegister</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.4,1.4)</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+	
+	   <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_CardboardBox_Impassable</defName>
+		<label>cardboard box</label>
+		<description>Stacked densely with cardboard boxes, it's hard to tell what's inside.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/CardboxSmallStack</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>4.8</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Mass>4</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_brokedLogisticsTerminal</defName>
+		<label>broked logistics terminal</label>
+		<description>Damaged ancient logistics terminal, this is part of the ancient underground automatic logistics system.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/brokedLogisticsTerminal</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(4,4)</size>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_AbandonedBigBread</defName>
+		<label>abandoned big bread</label>
+		<description>Damaged ancient van.</description>
+		<graphicData>
+			<texPath>Things/Building/AbandonedBigBread</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,6)</drawSize>
+		</graphicData>
+		<size>(2,5)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>2000</Mass>
+			<WorkToBuild>40000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<VVE_EngineBlock MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_EngineBlock>
+			<VVE_CarAlternator MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarAlternator>
+              <VVE_CarExhaust MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarExhaust>
+              <VVE_CarWheel MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarWheel>
+              <VVE_CarRadiator MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarRadiator>
+              <VVE_CarSuspension MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarSuspension>
+              <ChunkSlagSteel>3</ChunkSlagSteel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_AbandonedBus</defName>
+		<label>abandoned bus</label>
+		<description>Damaged ancient buses.</description>
+		<graphicData>
+			<texPath>Things/Building/AbandonedBus</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.3,9)</drawSize>
+		</graphicData>
+		<size>(3,8)</size>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Mass>5000</Mass>
+			<WorkToBuild>50000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<VVE_EngineBlock MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_EngineBlock>
+			<VVE_CarAlternator MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarAlternator>
+              <VVE_CarExhaust MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarExhaust>
+              <VVE_CarWheel MayRequire="OskarPotocki.VanillaVehiclesExpanded">4</VVE_CarWheel>
+              <VVE_CarBattery MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarBattery>
+              <VVE_CarSuspension MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarSuspension>
+              <ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_AbandonedForklift</defName>
+		<label>abandoned forklift</label>
+		<description>An ancient forklift, whose parts are completely useless, was abandoned.</description>
+		<graphicData>
+			<texPath>Things/Building/AbandonedForklift</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+		<size>(2,4)</size>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>1000</Mass>
+			<WorkToBuild>30000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<VVE_EngineBlock MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_EngineBlock>
+			<VVE_CarAlternator MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarAlternator>
+              <VVE_CarExhaust MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarExhaust>
+              <VVE_CarWheel MayRequire="OskarPotocki.VanillaVehiclesExpanded">2</VVE_CarWheel>
+              <VVE_CarBattery MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarBattery>
+              <VVE_CarSuspension MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</VVE_CarSuspension>
+			  <ChunkSlagSteel>8</ChunkSlagSteel>
+		</costList>
+		<building>
+            <claimable>true</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>false</alwaysDeconstructible>
+        </building>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_AtriumA</defName>
+		<label>atrium</label>
+		<description>The atrium of an ancient shopping mall, where light can penetrate from the ceiling, makes the entire mall bright.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Atrium_A</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>13.2</drawSize>
+		</graphicData>
+		<fillPercent>0</fillPercent>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<size>(13,13)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_AtriumB</defName>
+		<label>atrium</label>
+		<description>The atrium of an ancient shopping mall, where light can penetrate from the ceiling, makes the entire mall bright.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Atrium_B</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>13.2</drawSize>
+		</graphicData>
+		<fillPercent>0</fillPercent>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<size>(13,13)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_AtriumC</defName>
+		<label>atrium</label>
+		<description>The atrium of an ancient shopping mall, where light can penetrate from the ceiling, makes the entire mall bright.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Atrium_C</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>13.2</drawSize>
+		</graphicData>
+		<fillPercent>0</fillPercent>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<size>(13,13)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_AtriumCorridorEast</defName>
+		<label>atrium</label>
+		<rotatable>false</rotatable>
+		<description>The atrium of an ancient shopping mall, where light can penetrate from the ceiling, makes the entire mall bright.</description>
+		<graphicData>
+			<texPath>Things/Building/AtriumCorridorEast</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(13.2,7.5)</drawSize>
+		</graphicData>
+		<fillPercent>0</fillPercent>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<size>(13,7)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_AtriumCorridorNorth</defName>
+		<label>atrium</label>
+		<rotatable>false</rotatable>
+		<description>The atrium of an ancient shopping mall, where light can penetrate from the ceiling, makes the entire mall bright.</description>
+		<graphicData>
+			<texPath>Things/Building/AtriumCorridorNorth</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(7.5,13.2)</drawSize>
+		</graphicData>
+		<fillPercent>0</fillPercent>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<size>(7,13)</size>
+	</ThingDef>
+
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_EmptyCans</defName>
+		<label>empty cans</label>
+		<description>A pile of beverage cans thrown on the ground that have been consumed by someone unknown</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/EmptyCans</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>Filth</altitudeLayer>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_CardboardBox</defName>
+		<label>cardboard box</label>
+		<description>A pile of disorganized cardboard boxes</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/CardboardBox</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Mass>4</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_ParterreA</defName>
+		<label>parterre</label>
+		<description>Decorative parterre in shopping malls.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Parterre/ParterreA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>5</drawSize>
+		</graphicData>
+		<canOverlapZones>true</canOverlapZones>
+		<clearBuildingArea>true</clearBuildingArea>
+		<coversFloor>false</coversFloor>
+		<passability>Standable</passability>
+		<altitudeLayer>Building</altitudeLayer>	
+		<size>(6,6)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_ParterreB</defName>
+		<label>parterre</label>
+		<description>Decorative parterre in shopping malls.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Parterre/ParterreRound</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>5</drawSize>
+		</graphicData>
+		<canOverlapZones>true</canOverlapZones>
+		<clearBuildingArea>true</clearBuildingArea>
+		<coversFloor>false</coversFloor>
+		<passability>Standable</passability>
+		<altitudeLayer>Building</altitudeLayer>	
+		<size>(6,6)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_ParterreC</defName>
+		<label>parterre</label>
+		<description>Decorative parterre in shopping malls.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Parterre/ParterreC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>5</drawSize>
+		</graphicData>
+		<canOverlapZones>true</canOverlapZones>
+		<clearBuildingArea>true</clearBuildingArea>
+		<coversFloor>false</coversFloor>
+		<passability>Standable</passability>
+		<altitudeLayer>Building</altitudeLayer>	
+		<size>(6,6)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_Building_Atrium">
+		<defName>AM_Effigy</defName>
+		<label>modern art sculpture</label>
+		<description>Modern art sculptures inside ancient shopping malls.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Effigy</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>8</drawSize>
+			<drawOffset>(0,0,0.9)</drawOffset>
+		</graphicData>
+		<canOverlapZones>true</canOverlapZones>
+		<clearBuildingArea>true</clearBuildingArea>
+		<coversFloor>false</coversFloor>
+		<altitudeLayer>PawnUnused</altitudeLayer>	
+		<size>(2,2)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_THICC</defName>
+		<label>THICC</label>
+		<description>Some large capacity storage boxes "thicc" are piled up on the ground.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/THICC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.1</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Mass>20</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_OilDrum</defName>
+		<label>oil drum</label>
+		<description>A pile of haphazardly stacked iron drums</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/OilDrum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>20</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+		<defName>AM_RefrigeratorEmpty</defName>
+        <label>refrigerator</label>
+        <description>The refrigerator containing various foods has long been powered off.</description>
+		<rotatable>false</rotatable>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Container/RefrigeratorEmpty</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <size>(2,2)</size>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+   <defName>AM_AVendingMachine</defName>
+        <label>ancient vending machine</label>
+        <description>Damaged ancient vending machines.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Container/AVendingMachine</texPath>
+            <drawSize>(2.5,2.5)</drawSize>
+        </graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <size>(1,1)</size>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+   <defName>AM_ModelEmpty</defName>
+        <label>model dummy</label>
+		<rotatable>false</rotatable>
+        <description>A clothing model dummy.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Container/ModelEmpty</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <size>(1,1)</size>
+	</ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding">
+   <defName>AM_ModelfEmpty</defName>
+        <label>model dummy</label>
+		<rotatable>false</rotatable>
+        <description>A clothing model dummy.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Container/ModelfEmpty</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <size>(1,1)</size>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+        <defName>AM_RollingShutter_I_HP</defName>
+        <label>weathered rolling shutter door</label>
+        <description>Rolling shutter doors, commonly found in warehouses.</description>
+        <graphicData>
+            <texPath>Things/Building/RollingShutter_I</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1.1,1)</drawSize>
+        </graphicData>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight> 
+        <fillPercent>1</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+        </statBases>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+        <costList>
+            <Steel>40</Steel>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+        <defName>AM_RollingShutter_I</defName>
+        <label>rolling shutter door</label>
+        <description>Rolling shutter doors, commonly found in warehouses.</description>
+        <graphicData>
+            <texPath>Things/Building/RollingShutter_I</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1.1,1)</drawSize>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight> 
+        <fillPercent>1</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+        <defName>AM_RollingShutter_II_HP</defName>
+        <label>weathered rolling shutter door</label>
+        <description>Rolling shutter doors, commonly found in warehouses.</description>
+        <graphicData>
+            <texPath>Things/Building/RollingShutter_II</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.1,1)</drawSize>
+        </graphicData>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight> 
+        <fillPercent>1</fillPercent>
+        <size>(2,1)</size>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+        </statBases>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+        <costList>
+            <Steel>40</Steel>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+        <defName>AM_RollingShutter_II</defName>
+        <label>rolling shutter door</label>
+        <description>Rolling shutter doors, commonly found in warehouses.</description>
+        <graphicData>
+            <texPath>Things/Building/RollingShutter_II</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.1,1)</drawSize>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight> 
+        <fillPercent>1</fillPercent>
+        <size>(2,1)</size>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+        <defName>AM_RollingShutter_III_HP</defName>
+        <label>weathered rolling shutter door</label>
+        <description>Rolling shutter doors, commonly found in warehouses.</description>
+        <graphicData>
+            <texPath>Things/Building/RollingShutter_III</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.1,1)</drawSize>
+        </graphicData>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight> 
+        <fillPercent>1</fillPercent>
+        <size>(3,1)</size>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+        </statBases>
+		<building>
+            <claimable>false</claimable>
+            <deconstructible>true</deconstructible>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+        </building>
+        <costList>
+            <Steel>40</Steel>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+        <defName>AM_RollingShutter_III</defName>
+        <label>rolling shutter door</label>
+        <description>Rolling shutter doors, commonly found in warehouses.</description>
+        <graphicData>
+            <texPath>Things/Building/RollingShutter_III</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.1,1)</drawSize>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <holdsRoof>true</holdsRoof>
+        <blockLight>true</blockLight> 
+        <fillPercent>1</fillPercent>
+        <size>(3,1)</size>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+        </costList>
+    </ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_RollingShutter_NoHP</defName>
+		<label>rolling shutter door</label>
+		<description>Rolling shutter doors, commonly found in warehouses.</description>
+		<graphicData>
+			<texPath>Things/Building/RollingShutter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.1,1)</drawSize>
+		</graphicData>
+        <useHitPoints>false</useHitPoints>
+		<holdsRoof>true</holdsRoof>
+		<blockLight>true</blockLight> 
+		<fillPercent>1</fillPercent>
+		<size>(4,1)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_ConstructionSite</defName>
+		<label>construction site</label>
+		<description>Hot work in progress.</description>
+		<graphicData>
+			<texPath>Things/Building/ConstructionSite</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_Cone</defName>
+		<label>cone</label>
+		<description>Triangular obstacle.</description>
+		<graphicData>
+			<texPath>Things/Building/Cone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+        <rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Mass>5</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_Palisade</defName>
+		<label>concrete barrier</label>
+		<description>Concrete barriers marked with warning signs</description>
+		<graphicData>
+			<texPath>Things/Building/Palisade</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>100</Mass>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="AM_NonfunctionalBuilding" Name ="AM_NonfunctionalBuilding_Package" Abstract="True">
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+			<li>AM_Container</li>
+	  </thingCategories>
+        <building>
+          <deconstructible>true</deconstructible>    
+          <claimable>true</claimable>
+			<isEdifice>false</isEdifice>
+        </building>
+		 <altitudeLayer>BuildingOnTop</altitudeLayer>
+       <clearBuildingArea>false</clearBuildingArea>
+       <canOverlapZones>true</canOverlapZones>
+        <pathCost>20</pathCost>
+        <fillPercent>0.20</fillPercent>
+        <statBases>
+        <MaxHitPoints>150</MaxHitPoints>
+          <Mass>35</Mass>
+          <MarketValue>10</MarketValue>
+        </statBases>
+		<designationCategory>AM_FLOOR</designationCategory>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_LargeBackpack_Decoration</defName>
+        <label>large backpack</label>
+        <description>an oversized military backpack that is already broken.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/LargeBackpackB</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_LBT_Decoration</defName>
+        <label>LBT</label>
+        <description>The medical supplies backpack is broken.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/LBTB</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_MBSS_Decoration</defName>
+        <label>MBSS</label>
+        <description>The small military backpack is broken.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/MBSSB</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_PostmanShoulderBag_Decoration</defName>
+        <label>Postman shoulder bag</label>
+        <description>The postman's small shoulder bag is already broken.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/PostmanShoulderBagB</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_Scav_Decoration</defName>
+        <label>Scav bag</label>
+        <description>The backpack made by the scavenger is broken.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/ScavB</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_SportsBag_Decoration</defName>
+        <label>Sports bag</label>
+        <description>The sports bag is already broken.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/SportsBagB</texPath>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_TravelBag_Decoration</defName>
+        <label>Travel bag</label>
+        <description>The oversized and eye-catching purple travel bag is already broken.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/TravelBagB</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_BurgerPaperBag</defName>
+        <label>Burger paper bag</label>
+        <description>Paper bags from fried chicken restaurants.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/BurgerPaperBag</texPath>
+            <drawSize>1.1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+	
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Package">
+        <defName>AM_BurgerPaperBox</defName>
+        <label>Burger paper box</label>
+        <description>Paper box from fried chicken restaurants.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Bags/BurgerPaperBox</texPath>
+            <drawSize>1.1</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+    </ThingDef>
+	
+</Defs>

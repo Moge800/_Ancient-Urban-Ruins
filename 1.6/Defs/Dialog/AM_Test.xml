@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AncientMarket_Libraray.DialogTreeDef>
+    <defName>AM_Test</defName>
+    <title>DefaultDialogKey</title>
+    <requireNonHostile>true</requireNonHostile>
+    <dialogReportKey>DefaultDialogKey</dialogReportKey>
+    <curIndex>1</curIndex>
+    <nodeMoulds>
+      <li>
+        <key>0</key>
+        <value>
+          <text>DD</text>
+          <index>0</index>
+          <subNodeIndexs />
+          <options>
+            <li>
+              <text>Yes</text>
+              <removeDialogAfterSelect>true</removeDialogAfterSelect>
+              <results>
+                <li>
+                  <resultName>Undefined</resultName>
+                </li>
+              </results>
+              <requiredThings>
+                <li Class="AncientMarket_Libraray.CQFThingDefCount">
+                  <count>5000~5000</count>
+                  <thing>Silver</thing>
+                </li>
+              </requiredThings>
+            </li>
+            <li>
+              <text>No</text>
+              <results>
+                <li>
+                  <resultName>Undefined</resultName>
+                </li>
+              </results>
+            </li>
+          </options>
+        </value>
+      </li>
+    </nodeMoulds>
+  </AncientMarket_Libraray.DialogTreeDef>
+</Defs>

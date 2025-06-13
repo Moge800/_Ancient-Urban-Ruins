@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_ClothesHangerEmpty_Decoration</defName>
+		<label>Empty clothes hanger</label>
+		<description>Clothing racks in clothing stores.</description>
+		<graphicData>
+			<texPath>Things/Container/ClothesHangerEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+            <MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_EmptyShelves_Decoration</defName>
+		<label>Empty shelves</label>
+		<description>Empty supermarket shelves.</description>
+		<graphicData>
+			<texPath>Things/Container/EmptyShelves</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,1.5)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+
+	<ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_OldFreezer_Decoration</defName>
+		<label>Old freezer</label>
+		<description>Empty supermarket freezer.</description>
+		<graphicData>
+			<texPath>Things/Container/OldFreezer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,1.5)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_RustyEmptyShelves_Decoration</defName>
+		<label>Rusty empty shelves</label>
+		<description>Collapsed supermarket shelves.</description>
+		<graphicData>
+			<texPath>Things/Container/RustyEmptyShelves</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,1.5)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_VegetableShelfEmpty_Decoration</defName>
+		<label>empty vegetable shelf</label>
+		<description>Empty vegetable shelves.</description>
+		<graphicData>
+			<texPath>Things/Container/VegetableShelf_Empty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_BigCase_Open_Decoration</defName>
+		<label>Big case</label>
+		<description>The opened case has nothing inside.</description>
+		<graphicData>
+			<texPath>Things/Container/BigCase_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_WeaponCase_Open_Decoration</defName>
+		<label>opened weapon case</label>
+		<description>The opened Weapon case has nothing inside.</description>
+		<graphicData>
+			<texPath>Things/Container/WeaponCase_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+    
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_SmallCase_Open_Decoration</defName>
+		<label>Small case</label>
+		<description>The opened case has nothing inside.</description>
+		<graphicData>
+			<texPath>Things/Container/SmallCase_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>    
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_PaperBox_A_Open_Decoration</defName>
+		<label>cardboard box</label>
+		<description>The opened cardboard box has nothing inside.</description>
+		<graphicData>
+			<texPath>Things/Container/PaperBox_A_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>  
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_PaperBox_B_Open_Decoration</defName>
+		<label>cardboard box</label>
+		<description>The opened cardboard box has nothing inside.</description>
+		<graphicData>
+			<texPath>Things/Container/PaperBox_B_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef> 
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_PaperBox_C_Open_Decoration</defName>
+		<label>cardboard box</label>
+		<description>The opened cardboard box has nothing inside.</description>
+		<graphicData>
+			<texPath>Things/Container/PaperBox_C_Open</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef> 
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Unloadable">
+		<defName>AM_VendingMachine_Decoration</defName>
+		<label>Vending machine</label>
+		<description>The vending machine that has been destroyed.</description>
+		<graphicData>
+			<texPath>Things/Container/VendingMachine</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+<MarketValue>10</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BDAShelfA_Open_Decoration</defName>
+		<label>Damaged large shelves</label>
+		<description>The damaged large shelf is now empty of goods.</description>
+		<graphicData>
+			<texPath>Things/Container/big/BDAShelfA_Open</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,4)</drawSize>
+		</graphicData>
+        <rotatable>false</rotatable>
+		<size>(4,2)</size>
+		<statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+    
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_BDAShelfB_Open_Decoration</defName>
+		<label>Damaged large shelves</label>
+		<description>The damaged large shelf is now empty of goods.</description>
+		<graphicData>
+			<texPath>Things/Container/big/BDAShelfB_Open</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,4)</drawSize>
+		</graphicData>
+        <rotatable>false</rotatable>
+		<size>(4,2)</size>
+		<statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_DoubleDeckRacks_Open_Decoration</defName>
+		<label>Damaged large shelves</label>
+		<description>The damaged large shelf is now empty of goods.</description>
+		<graphicData>
+			<texPath>Things/Container/big/DoubleDeckRacks_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,4)</drawSize>
+		</graphicData>
+		<size>(4,2)</size>
+		<statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+
+    <ThingDef ParentName="AM_NonfunctionalBuilding_Impassable">
+		<defName>AM_ThreeLayerRacks_Open_Decoration</defName>
+		<label>Damaged large shelves</label>
+		<description>The damaged large shelf is now empty of goods.</description>
+		<graphicData>
+			<texPath>Things/Container/big/ThreeLayerRacks_Open</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,4)</drawSize>
+		</graphicData>
+		<size>(4,2)</size>
+		<statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+</Defs>

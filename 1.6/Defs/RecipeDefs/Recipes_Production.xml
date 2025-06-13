@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>AM_DecomposingWeapons</defName>
+    <label>disassemble firearm</label>
+    <description>Disassemble firearms into weapon components.</description>
+    <jobString>disassembling firearm.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	 <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>WeaponsRanged</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <!-- Switched to standard products so we can do "do until you have X"
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>-->
+    <recipeUsers>
+      <li>AM_AncientDismantlingWorkbench</li>
+    </recipeUsers>
+    <products>
+      <AM_ComponentWeapon>1</AM_ComponentWeapon>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>WeaponsRanged</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AM_Test_Filter</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+   <RecipeDef>
+    <defName>AM_DecomposingWeaponsI</defName>
+    <label>disassemble precise firearm</label>
+    <description>Disassemble precise firearms into weapon components.</description>
+    <jobString>disassembling precise firearm.</jobString>
+    <workAmount>12000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	 <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>WeaponsRanged</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <!-- Switched to standard products so we can do "do until you have X"
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>-->
+    <recipeUsers>
+      <li>AM_AncientDismantlingWorkbench</li>
+    </recipeUsers>
+    <products>
+      <AM_ComponentWeapon>2</AM_ComponentWeapon>
+    </products>
+	 <researchPrerequisites>
+      <li>AM_RecyclingAssembly</li>
+	  <li>PrecisionRifling</li>
+    </researchPrerequisites>
+    <fixedIngredientFilter>
+      <categories>
+        <li>WeaponsRanged</li>
+      </categories>
+      <specialFiltersToDisallow>
+		 <li>AM_AMGuns_Filter</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  
+  
+   <RecipeDef>
+    <defName>AM_DisassembleLightArmor</defName>
+    <label>disassemble light armor</label>
+    <description>Disassemble light armor into armor plates and fibers.</description>
+    <jobString>disassembling light armor.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	 <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+           <li>Apparel_FlakJacket</li>
+			<li>Apparel_FlakVest</li>
+			<li>Apparel_FlakPants</li>
+			<li>AM_AScompFD</li>
+			<li>AM_MK4aConcealed</li>
+			<li MayRequire="TW.FlakDress">TW_FlakDress</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+          <thingDefs>
+            <li>Apparel_FlakJacket</li>
+			<li>Apparel_FlakVest</li>
+			<li>Apparel_FlakPants</li>
+			<li>AM_AScompFD</li>
+			<li>AM_MK4aConcealed</li>
+			<li MayRequire="TW.FlakDress">TW_FlakDress</li>
+          </thingDefs>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltableApparel</li>
+      <li>AllowBurnableApparel</li>
+      <li>AllowNonBurnableApparel</li>
+    </forceHiddenSpecialFilters>
+	<products>
+      <AM_UHMWPEPlate>1</AM_UHMWPEPlate>
+	  <AM_AramidCloth>3</AM_AramidCloth>
+    </products>
+    <recipeUsers>
+      <li>AM_AncientDismantlingWorkbench</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>AM_DisassemblePolyethylenePlate</defName>
+    <label>disassemble polyethylene plate</label>
+    <description>Remove the aramid fabric layer from the polyethylene armor plate to recycle precious aramid.</description>
+    <jobString>disassembling polyethylene plate.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	 <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+           <li>AM_UHMWPEPlate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+          <thingDefs>
+           <li>AM_UHMWPEPlate</li>
+          </thingDefs>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltableApparel</li>
+      <li>AllowBurnableApparel</li>
+      <li>AllowNonBurnableApparel</li>
+    </forceHiddenSpecialFilters>
+	<products>
+	  <AM_AramidCloth>2</AM_AramidCloth>
+	  <Filth_Trash>1</Filth_Trash>
+    </products>
+    <recipeUsers>
+      <li>AM_AncientDismantlingWorkbench</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  
+   <RecipeDef>
+    <defName>AM_DisassembleHeavyArmor</defName>
+    <label>disassemble heavy armor</label>
+    <description>Disassemble heavy armor into armor plates and fibers.</description>
+    <jobString>disassembling heavy armor.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	 <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+           <li>AM_MK4aDefensive</li>
+			<li MayRequire="TW.FlakDress">FD_HeavyFD</li>
+			<li MayRequire="TW.FlakDress">FD_CompFD</li>
+			<li MayRequire="ExGT UrbanCombat">ST_BulletproofShield</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+          <thingDefs>
+            <li>AM_MK4aDefensive</li>
+			<li MayRequire="TW.FlakDress">FD_HeavyFD</li>
+			<li MayRequire="TW.FlakDress">FD_CompFD</li>
+			<li MayRequire="ExGT UrbanCombat">ST_BulletproofShield</li>
+          </thingDefs>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltableApparel</li>
+      <li>AllowBurnableApparel</li>
+      <li>AllowNonBurnableApparel</li>
+    </forceHiddenSpecialFilters>
+	<products>
+     <AM_HeavyCompositePlate>1</AM_HeavyCompositePlate>
+	  <AM_AramidCloth>15</AM_AramidCloth>
+    </products>
+    <recipeUsers>
+      <li>AM_AncientDismantlingWorkbench</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

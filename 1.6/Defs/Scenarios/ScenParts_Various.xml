@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>AM_StartWithStructure</defName>
+    <label>start with structure</label>
+    <category>Misc</category>
+    <scenPartClass>AncientMarket_Libraray.ScenPart_GenerateCustomMap</scenPartClass>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+</Defs>

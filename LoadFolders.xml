@@ -2,7 +2,14 @@
 <loadFolders>
 	<v1.5>
 		<li>/</li>
-		<li IfModActive="ceteam.combatextended">CE</li>
-		<li IfModNotActive="CETeam.CombatExtended">Vanilla</li>
+		<li>1.5</li>
+		<li IfModActive="ceteam.combatextended,CETeam.CombatExtended_steam">CE</li>
+		<li IfModNotActive="ceteam.combatextended,CETeam.CombatExtended_steam">Vanilla</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="ceteam.combatextended,CETeam.CombatExtended_steam">CE</li>
+		<li IfModNotActive="ceteam.combatextended,CETeam.CombatExtended_steam">Vanilla</li>
+	</v1.6>
 </loadFolders>
