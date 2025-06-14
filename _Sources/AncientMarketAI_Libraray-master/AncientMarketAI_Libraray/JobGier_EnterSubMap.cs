@@ -21,10 +21,10 @@ namespace AncientMarketAI_Libraray
                     && (pawn.mindState.duty is PawnDuty duty && (duty.def == DutyDefOf.AssaultColony 
                     || (duty.def == DutyDefOf.Steal && !StealAIUtility.TryFindBestItemToSteal(pawn.Position, pawn.Map, 50f, out Thing t, pawn)))))
                 {
-                    if (MapComponent_Submap.GetComp(pawn.Map).Submaps.Any() && MapComponent_Submap.GetComp(pawn.Map).Submaps.FindAll(e => pawn.CanReach(e.entrance, PathEndMode.Touch, Danger.Deadly) && e.entrance.IsAvailable(pawn)) is List<MapParent_Custom> entrances)
+                    if (MapComponent_Submap.GetComp(pawn.Map).Submaps.Any() && MapComponent_Submap.GetComp(pawn.Map).Submaps.FindAll(e => pawn.CanReach(e.entrance, PathEndMode.Touch, Danger.Deadly) && e.entrance.IsAvailable(pawn)) is List<MapParent_Custom> entrances && entrances.Any())
                     {
                         entrances.SortBy(e => -e.Map.wealthWatcher.HealthTotal);
-                        if (entrances.Any() && entrances.First().entrance is Thing entrance)
+                        if (entrances.First().entrance is Thing entrance)
                         {
                             result = JobMaker.MakeJob(JobDefOf.EnterPortal, entrance);
                         }

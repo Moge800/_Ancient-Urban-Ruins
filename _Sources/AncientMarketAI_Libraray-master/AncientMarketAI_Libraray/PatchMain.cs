@@ -49,7 +49,16 @@ namespace AncientMarketAI_Libraray
 			if (__result != null && AM_ModSetting.setting.enableAICrossLevel && pawn.RaceProps.Humanlike
 				&& !pawn.Downed && !pawn.Crawling && __result.targetA.Thing == null && GameComponent_AncientMarket.GetComp.GetSchedule(pawn) is LevelSchedule schedule && schedule.timeSchedule[GenLocalDate.HourOfDay(pawn.Map)])
 			{
-				List<AMMapPortal> available = new List<AMMapPortal>();
+                if (schedule.sleepLevel is AMMapPortal sleep && pawn.timetable.CurrentAssignment == TimeAssignmentDefOf.Sleep)
+                {
+                    if (LevelPather.GetPathPortal(pawn.Map, sleep) is List<AMMapPortal> portals && portals.Any()
+                        && pawn.CanReach(portals.First(), PathEndMode.Touch, Danger.Deadly))
+                    {
+                        __result = JobMaker.MakeJob(JobDefOf.EnterPortal, portals.First());
+						return;
+                    }
+                }
+                List<AMMapPortal> available = new List<AMMapPortal>();
 				MapComponent_Submap.GetComp(pawn.Map).Submaps.FindAll(m => m.entrance != null && pawn.CanReach(m.entrance, PathEndMode.Touch, Danger.Deadly) && m.entrance.IsAvailable(pawn)).ForEach(m => available.Add(m.entrance));
 				if (pawn.Map.Parent is MapParent_Custom custom && custom.Exit != null && custom.Exit.IsAvailable(pawn) && pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly))
 				{
