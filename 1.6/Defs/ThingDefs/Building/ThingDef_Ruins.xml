@@ -441,7 +441,7 @@
       <passability>PassThroughOnly</passability>
       <pathCost>60</pathCost>
       <blockWind>false</blockWind>
-	   <placingDraggableDimensions>1</placingDraggableDimensions>
+	    
       <fillPercent>0.55</fillPercent>
       <tickerType>Never</tickerType>
       <rotatable>false</rotatable>

@@ -235,7 +235,7 @@
     	<altitudeLayer>SmallWire</altitudeLayer>
     	<passability>Standable</passability>
         <useHitPoints>false</useHitPoints>
-    	<placingDraggableDimensions>1</placingDraggableDimensions>
+    	 
     	<costList>
     	  <Steel>8</Steel>
     	</costList>
@@ -266,7 +266,7 @@
     	<altitudeLayer>SmallWire</altitudeLayer>
     	<passability>Standable</passability>
         <useHitPoints>false</useHitPoints>
-    	<placingDraggableDimensions>1</placingDraggableDimensions>
+    	 
     	<costList>
     	  <Steel>8</Steel>
     	</costList>
@@ -305,7 +305,7 @@
     	<statBases>
       		<MaxHitPoints>80</MaxHitPoints>
 		</statBases>
-    	<placingDraggableDimensions>1</placingDraggableDimensions>
+    	 
     	<costList>
     	  <Steel>8</Steel>
     	</costList>

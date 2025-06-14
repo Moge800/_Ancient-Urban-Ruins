@@ -5,6 +5,18 @@
         <label>Safe House</label>
 		<description>You've wandered this rimworld, living off the spoils of ancient ruins. You traverse the desolate ruins of cities, devoid of any signs of life. On the outskirts of town, you discover an abandoned ancient underground shelter. Though its resources won't last long...\n\nNote: You have no operable colonists and lack essential survival resources. Scavengers start off starving, making this a challenging scenario.</description>
 		<scenario>
+		<surfaceLayer>
+                <def>SurfaceLayerFixed</def>
+                <tag>Surface</tag>
+                <layer>Surface</layer>
+                <settingsDef>Surface</settingsDef>
+                <hide>true</hide>
+                <connections>
+                    <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+                        <zoomMode>ZoomOut</zoomMode>
+                    </Orbit>
+                </connections>
+        </surfaceLayer>
 		<summary>A lone scavenger discovers an old underground bunker. Particularly challenging.</summary>
 		<playerFaction>
 			<def>PlayerFaction</def>
@@ -78,6 +90,18 @@
         <label>Scavenger Group</label>
 		<description>In your earlier explorations, the regions nearer to the settlement were thoroughly examined. You've been left with no option but to venture into uncharted territories. On this day, you have discovered an entrance to an unknown underground facility. You have decided to settle here, but the strange odor and faint, incessant sounds seem to hint that this place is not as safe as you once imagined....</description>
 		<scenario>
+		<surfaceLayer>
+                <def>SurfaceLayerFixed</def>
+                <tag>Surface</tag>
+                <layer>Surface</layer>
+                <settingsDef>Surface</settingsDef>
+                <hide>true</hide>
+                <connections>
+                    <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+                        <zoomMode>ZoomOut</zoomMode>
+                    </Orbit>
+                </connections>
+        </surfaceLayer>
 		<summary>A group of three scavengers wandering between the ruins of a city. Particularly challenging.</summary>
 		<playerFaction>
 			<def>PlayerFaction</def>

@@ -37,7 +37,7 @@
 	 <blockLight>true</blockLight>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
+     
     <coversFloor>true</coversFloor>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <altitudeLayer>Building</altitudeLayer>
@@ -97,7 +97,7 @@
       <WorkToBuild>70</WorkToBuild>
     </statBases>
     <surfaceType>Eat</surfaceType>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
+     
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
