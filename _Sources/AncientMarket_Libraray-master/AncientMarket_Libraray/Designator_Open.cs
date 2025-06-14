@@ -18,13 +18,7 @@ namespace AncientMarket_Libraray
             this.icon = ContentFinder<Texture2D>.Get("UI/Designators/Open", true);
             this.useMouseIcon = true;
 		}
-        public override int DraggableDimensions
-        {
-            get
-            {
-                return 2;
-            }
-        }
+        public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.Areas;
         public override bool DragDrawMeasurements
         {
             get

@@ -281,10 +281,10 @@ namespace AncientMarket_Libraray
                 {
                     if (map != null && p.kindDef != null && CellFinderLoose.TryFindRandomNotEdgeCellWith(5, i2 => i2.Standable(map), map, out IntVec3 pos))
                     {
-                        Faction f = Find.FactionManager.FirstFactionOfDef(p.kindDef.defaultFactionType);
+                        Faction f = Find.FactionManager.FirstFactionOfDef(p.kindDef.defaultFactionDef);
 
                         Pawn t = (Pawn)GenSpawn.Spawn(PawnGenerator.GeneratePawn(p.kindDef, f), pos, map);
-                        Lord l = map.lordManager.lords.Find(l2 => l2.LordJob?.GetType() == typeof(LordJob_Scavenger) && l2.faction?.def == p.kindDef.defaultFactionType);
+                        Lord l = map.lordManager.lords.Find(l2 => l2.LordJob?.GetType() == typeof(LordJob_Scavenger) && l2.faction?.def == p.kindDef.defaultFactionDef);
                         if (l == null)
                         {
                             l = LordMaker.MakeNewLord(f, new LordJob_Scavenger(), map, new List<Pawn>() { t });

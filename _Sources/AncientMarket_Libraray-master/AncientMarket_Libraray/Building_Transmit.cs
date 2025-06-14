@@ -11,7 +11,7 @@ namespace AncientMarket_Libraray
     public class Building_Transmit : Building_Storage
     {
         public bool CanTransmit => this.PowerComp is CompPowerTrader comp && comp.PowerOn && this.receive != null;
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (this.IsHashIntervalTick(10) && this.CanTransmit)

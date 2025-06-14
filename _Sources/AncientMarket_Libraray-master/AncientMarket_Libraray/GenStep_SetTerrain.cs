@@ -13,14 +13,12 @@ namespace AncientMarket_Libraray
         public override int SeedPart => 12121;
         public override void Generate(Map map, GenStepParams parms)
         {
-            BeachMaker.Init(map);
             TerrainDef nullDef = AMDefOf.AM_RCFloor;
             TerrainGrid terrainGrid = map.terrainGrid;
             foreach (IntVec3 c in map.AllCells)
             {
                 terrainGrid.SetTerrain(c, nullDef);
             }
-            BeachMaker.Cleanup();
             foreach (TerrainPatchMaker terrainPatchMaker in map.Biome.terrainPatchMakers)
             {
                 terrainPatchMaker.Cleanup();

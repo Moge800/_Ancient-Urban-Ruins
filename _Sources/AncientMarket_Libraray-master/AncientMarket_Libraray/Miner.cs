@@ -62,7 +62,7 @@ namespace AncientMarket_Libraray
             this.graphicCards.ForEach(t => GenSpawn.Spawn(t,this.Position,this.Map));
             base.Kill(dinfo, exactCulprit);
         }
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (this.graphicCards.Any() && this.PowerComp is CompPowerTrader power && power.PowerOn)

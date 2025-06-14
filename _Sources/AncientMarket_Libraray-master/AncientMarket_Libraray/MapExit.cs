@@ -12,7 +12,7 @@ namespace AncientMarket_Libraray
     public class MapExit : AMMapPortal
     {
         public override AMMapPortal MapEntrance => this.entrance;
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (this.IsHashIntervalTick(5) && this.entrance != null && this.Position.GetFirstPawn(this.Map) is Pawn p && p.Drafted)

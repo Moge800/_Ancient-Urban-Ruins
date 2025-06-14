@@ -42,7 +42,7 @@ namespace AncientMarket_Libraray
         {
             return !this.CD.ContainsKey(pawn) && this.IsAllowed(pawn);
         }
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick(); 
             if (this.PawnAndLords.Any())

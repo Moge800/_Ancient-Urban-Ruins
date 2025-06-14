@@ -74,7 +74,7 @@ namespace AncientMarket_Libraray
             Current.Game.DeinitAndRemoveMap(this.customMap, true);
             base.Destroy(mode);
         }
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (this.IsHashIntervalTick(5) && this.Exit != null && this.Position.GetFirstPawn(this.Map) is Pawn p && p.Drafted)

@@ -41,7 +41,7 @@ namespace AncientMarket_Libraray
 				this.init = true;
 			}
         }
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
 			if (this.Extension.updateGoods && this.IsHashIntervalTick(this.Extension.intervalToUpdateGoods))

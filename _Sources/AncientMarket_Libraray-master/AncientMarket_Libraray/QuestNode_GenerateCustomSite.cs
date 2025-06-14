@@ -18,10 +18,10 @@ namespace AncientMarket_Libraray
 			Quest quest = QuestGen.quest;
 			Slate slate = QuestGen.slate;
 			Faction faction = this.faction.GetValue(slate);
-			int tile = -1;
-			if ((this.tile != null && !this.tile.ToString().NullOrEmpty() && this.tile.TryGetValue(slate, out tile)) || TileFinder.TryFindPassableTileWithTraversalDistance(Find.AnyPlayerHomeMap.Tile, this.distance.min, this.distance.max, out tile, (x) => this.blacklist == null || !this.blacklist.Contains(Find.World.grid[x].biome)))
+			PlanetTile tile = default;
+			if ((this.tile != null && !this.tile.ToString().NullOrEmpty() && this.tile.TryGetValue(slate, out tile)) || TileFinder.TryFindPassableTileWithTraversalDistance(Find.AnyPlayerHomeMap.Tile, this.distance.min, this.distance.max, out tile, (x) => this.blacklist == null || !this.blacklist.Contains(Find.World.grid[x].PrimaryBiome)))
 			{
-				if (tile == -1)
+				if (tile == default)
 				{
 					return;
 				}
@@ -186,6 +186,6 @@ namespace AncientMarket_Libraray
 		public SlateRef<Faction> faction;
 		public IntRange distance = new IntRange(10, 20);
 		public List<BiomeDef> blacklist = new List<BiomeDef>();
-		public SlateRef<int> tile;
+		public SlateRef<PlanetTile> tile;
 	}
 }
