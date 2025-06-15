@@ -49,7 +49,7 @@ namespace AncientMarket_Libraray
                 {
                     DrawLabelAndText_Line(y, "LevelPowerOutput".Translate(), ref this.Comp.targetPowerOutput, ref this.Comp.buffer, x, 100f);
                     y += 30f;
-                    if (Widgets.ButtonText(new Rect(x, y, 150f, 25f), "SelectLinkedPower".Translate(this.Comp.LinkedComp?.name), false))
+                    if (Widgets.ButtonText(new Rect(x, y, 150f, 25f), "SelectLinkedPower".Translate(this.Comp.LinkedComp?.name)))
                     {
                         Map map = this.SelThing.Map;
                         List<Map> targetMaps = new List<Map>();
@@ -78,7 +78,7 @@ namespace AncientMarket_Libraray
                             }, t => t.TryGetComp<CompPowerPlantLevel>()?.name);
                         }
                     }
-                    if (this.Comp.outputMode && Widgets.ButtonText(new Rect(x + 180f, y, 150f, 25f), "Apply".Translate(), false))
+                    if (this.Comp.outputMode && Widgets.ButtonText(new Rect(x + 180f, y, 150f, 25f), "Apply".Translate()))
                     {
                         this.Comp.PowerOutput = -this.Comp.targetPowerOutput;
                     }

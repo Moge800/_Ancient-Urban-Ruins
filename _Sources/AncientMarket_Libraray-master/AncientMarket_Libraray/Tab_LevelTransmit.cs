@@ -41,7 +41,7 @@ namespace AncientMarket_Libraray
             }
             if (this.transmit != null) 
             {
-                if (Widgets.ButtonText(new Rect(x, y, 150f, 25f), "SelectLinkedReceiver".Translate(this.transmit.receive?.name), false))
+                if (Widgets.ButtonText(new Rect(x, y, 150f, 25f), "SelectLinkedReceiver".Translate(this.transmit.receive?.name)))
                 {
                     Map map = this.SelThing.Map;
                     List<Map> targetMaps = new List<Map>();
