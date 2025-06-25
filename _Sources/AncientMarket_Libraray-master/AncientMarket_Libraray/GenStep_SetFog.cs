@@ -16,11 +16,19 @@ namespace AncientMarket_Libraray
         public override void Generate(Map map, GenStepParams parms)
         {
             CellIndices cellIndices = map.cellIndices;
-            NativeArray<bool> f = (NativeArray<bool>)typeof(FogGrid).GetField("fogGrid", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(map.fogGrid);
-            foreach (IntVec3 c in map.AllCells)
+            GenStep_SetFog.FogMap(map);
+            if (map.Tile == Find.GameInfo.startingTile)
             {
-                f[cellIndices.CellToIndex(c)] = true;
+                FloodFillerFog.FloodUnfog(MapGenerator.PlayerStartSpot, map);
             }
+            if (Current.ProgramState == ProgramState.Playing)
+            {
+                map.roofGrid.Drawer.SetDirty();
+            }
+        }
+        public static void FogMap(Map map)
+        {
+            map.fogGrid.Refog(CellRect.WholeMap(map));
             if (Current.ProgramState == ProgramState.Playing)
             {
                 map.roofGrid.Drawer.SetDirty();

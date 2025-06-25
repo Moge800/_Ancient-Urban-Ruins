@@ -1,192 +1,193 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef Name = "PortalBase" Abstract="True">
-        <altitudeLayer>Building</altitudeLayer>
-        <drawGUIOverlay>true</drawGUIOverlay>
-        <useHitPoints>false</useHitPoints>
-        <tickerType>Normal</tickerType>
-        <passability>Standable</passability>
-        <selectable>true</selectable>
-        <category>Building</category>
-        <receivesSignals>true</receivesSignals>
-        <building>
-            <canPlaceOverWall>true</canPlaceOverWall>
-            <deconstructible>false</deconstructible>
-            <alwaysDeconstructible>false</alwaysDeconstructible>
-        </building>
-		<pathCost>50</pathCost>	 
- 	  <!--<designationCategory>AM_FLOOR</designationCategory>-->
-    </ThingDef>
-	
-	 <ThingDef ParentName="PortalBase">
-        <defName>AM_Exit_L</defName>
-        <label>Ancient escalator</label>
-        <description>An upward escalator that has ceased operation.</description>
-        <thingClass>AncientMarket_Libraray.MapExit</thingClass>
-        <category>Building</category>
-        <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Things/Building/AscendingEscalator</texPath>
-            <drawSize>7</drawSize>
-        </graphicData>
-        <size>(4,4)</size>
-        <rotatable>true</rotatable>
-        <building>
-            <expandHomeArea>true</expandHomeArea>
-            <claimable>true</claimable>
-        </building>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<modExtensions>
-            <li Class="AncientMarket_Libraray.ModExtension_Portal">
-                <distance>1</distance>
-            </li>
-        </modExtensions> 
-    </ThingDef>
-	
-    <ThingDef ParentName="PortalBase">
-        <defName>AM_Exit_S</defName>
-        <label>Ancient escalator</label>
-        <description>An upward escalator that has ceased operation.</description>
-        <thingClass>AncientMarket_Libraray.MapExit</thingClass>
-        <category>Building</category>
-        <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Things/Building/AscendingEscalatorA</texPath>
-            <drawSize>7</drawSize>
-        </graphicData>
-        <size>(2,4)</size>
-        <rotatable>true</rotatable>
-        <building>
-            <expandHomeArea>true</expandHomeArea>
-            <claimable>true</claimable>
-        </building>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<modExtensions>
-            <li Class="AncientMarket_Libraray.ModExtension_Portal">
-                <distance>1</distance>
-            </li>
-        </modExtensions> 
-    </ThingDef>
+  <ThingDef Name = "PortalBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <passability>Standable</passability>
+    <selectable>true</selectable>
+    <category>Building</category>
+    <receivesSignals>true</receivesSignals>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <deconstructible>false</deconstructible>
+      <alwaysDeconstructible>false</alwaysDeconstructible>
+    </building>
+    <pathCost>50</pathCost>
+    <!--<designationCategory>AM_FLOOR</designationCategory>-->
+    <portal></portal>
+  </ThingDef>
 
-	
-	 <ThingDef ParentName="PortalBase">
-        <defName>AM_DownwardStairs</defName>
-        <label>Ancient construction site staircase</label>
-        <description>A staircase descends into the basement, where it is quite dark.</description>
-        <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
-        <category>Building</category>
-        <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Things/Building/DownwardStairs</texPath>
-            <drawSize>7</drawSize>
-        </graphicData>
-        <size>(2,3)</size>
-        <rotatable>true</rotatable>
-        <building>
-            <expandHomeArea>true</expandHomeArea>
-            <claimable>true</claimable>
-        </building>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-        <modExtensions>
-            <li Class="AncientMarket_Libraray.ModExtension_Map">
-                 <maps>
-                    <li>AM_Bunker_A</li>
-                    <li>AM_Bunker_B</li>
-					<li>AM_Bunker_C</li>
-                    <li>AM_Bunker_D</li>
-					<li>AM_Bunker_E</li>
-                    <li>AM_Bunker_F</li>
-                    <li>AM_Bunker_G</li>
-                    <li>AM_Bunker_H</li>
-                    <li>AM_Bunker_I</li>
-                </maps>
-            </li>
-        </modExtensions>
-    </ThingDef>
+  <ThingDef ParentName="PortalBase">
+    <defName>AM_Exit_L</defName>
+    <label>Ancient escalator</label>
+    <description>An upward escalator that has ceased operation.</description>
+    <thingClass>AncientMarket_Libraray.MapExit</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/AscendingEscalator</texPath>
+      <drawSize>7</drawSize>
+    </graphicData>
+    <size>(4,4)</size>
+    <rotatable>true</rotatable>
+    <building>
+      <expandHomeArea>true</expandHomeArea>
+      <claimable>true</claimable>
+    </building>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Portal">
+        <distance>1</distance>
+      </li>
+    </modExtensions>
+  </ThingDef>
 
-   
-
-    <ThingDef ParentName="PortalBase">
-        <defName>AM_Trader</defName>
-        <label>ancient logistics terminal</label>
-        <description>Ancient logistics terminal, this is part of the ancient underground automatic logistics system.You can purchase goods from ancient material storage stations through the interactive panel, which constitutes a logistics system within an ancient city.</description>
-        <thingClass>AncientMarket_Libraray.BuildingTrader</thingClass>
-        <category>Building</category>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Building/AncientLogisticsTerminal</texPath>
-            <drawSize>(4,4)</drawSize>
-        </graphicData>
-        <size>(4,4)</size>
-        <rotatable>false</rotatable>
-		<passability>Impassable</passability>
-		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
-        <building>
-            <expandHomeArea>false</expandHomeArea>
-            <claimable>false</claimable>
-        </building>
-        <modExtensions>
-            <li Class="AncientMarket_Libraray.ModExtension_Trader">
-                <tradeKind>AM_AncientLogisticsSystem</tradeKind>                <!-- 贸易类型，也决定了会刷新什么货物 -->
-                <intervalToUpdateGoods>900000</intervalToUpdateGoods>                <!-- 更新货物的间隔 -->
-                <updateGoods>true</updateGoods>                <!-- 是否定期更新货物 -->
-                <leaveGoods>false</leaveGoods>                <!-- 掉落商品当摧毁时 -->
-            </li>
-        </modExtensions>
-    </ThingDef>
+  <ThingDef ParentName="PortalBase">
+    <defName>AM_Exit_S</defName>
+    <label>Ancient escalator</label>
+    <description>An upward escalator that has ceased operation.</description>
+    <thingClass>AncientMarket_Libraray.MapExit</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/AscendingEscalatorA</texPath>
+      <drawSize>7</drawSize>
+    </graphicData>
+    <size>(2,4)</size>
+    <rotatable>true</rotatable>
+    <building>
+      <expandHomeArea>true</expandHomeArea>
+      <claimable>true</claimable>
+    </building>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Portal">
+        <distance>1</distance>
+      </li>
+    </modExtensions>
+  </ThingDef>
 
 
-    <ThingDef ParentName="BuildingBase">
-        <defName>AM_TransportPod</defName>
-        <label>transport pod</label>
-        <description>A launchable sub-orbital cargo pod capable of carrying people, items, or animals. Can be used for sending gifts, transporting people or supplies, surprise attacks, or reinforcing battles.</description>
-        <graphicData>
-            <texPath>Things/Special/DropPod</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,2)</drawSize>
-        </graphicData>
-        <size>(1,1)</size>
-        <rotatable>false</rotatable>
-        <tickerType>Normal</tickerType>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <castEdgeShadows>false</castEdgeShadows>
-        <designationHotKey>Misc12</designationHotKey>
-        <fillPercent>0.5</fillPercent>
-        <uiOrder>2200</uiOrder>
-        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        <statBases>
-            <MaxHitPoints>250</MaxHitPoints>
-            <WorkToBuild>1600</WorkToBuild>
-            <Flammability>0.5</Flammability>
-        </statBases>
-        <costList>
-            <Steel>60</Steel>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <comps>
-            <li Class="AncientMarket_Libraray.CompProperties_TransporterRequiredDialog">
-                <restEffectiveness>0.8</restEffectiveness>
-                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
-            </li>
-            <li Class="CompProperties_Launchable">
-                <skyfallerLeaving>DropPodLeaving</skyfallerLeaving>
-            </li>
-            <li Class="AncientMarket_Libraray.CompPropertiesDialogable">
-                <dialog>AM_Test</dialog>
-            </li>
-        </comps>
-        <inspectorTabs>
-            <li>ITab_ContentsTransporter</li>
-        </inspectorTabs>
-        <placeWorkers>
-            <li>PlaceWorker_NeedsFuelingPort</li>
-            <li>PlaceWorker_NotUnderRoof</li>
-        </placeWorkers>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-        <uiIconScale>0.65</uiIconScale>
-    </ThingDef>
+  <ThingDef ParentName="PortalBase">
+    <defName>AM_DownwardStairs</defName>
+    <label>Ancient construction site staircase</label>
+    <description>A staircase descends into the basement, where it is quite dark.</description>
+    <thingClass>AncientMarket_Libraray.MapEntrance</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/DownwardStairs</texPath>
+      <drawSize>7</drawSize>
+    </graphicData>
+    <size>(2,3)</size>
+    <rotatable>true</rotatable>
+    <building>
+      <expandHomeArea>true</expandHomeArea>
+      <claimable>true</claimable>
+    </building>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Map">
+        <maps>
+          <li>AM_Bunker_A</li>
+          <li>AM_Bunker_B</li>
+          <li>AM_Bunker_C</li>
+          <li>AM_Bunker_D</li>
+          <li>AM_Bunker_E</li>
+          <li>AM_Bunker_F</li>
+          <li>AM_Bunker_G</li>
+          <li>AM_Bunker_H</li>
+          <li>AM_Bunker_I</li>
+        </maps>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="PortalBase">
+    <defName>AM_Trader</defName>
+    <label>ancient logistics terminal</label>
+    <description>Ancient logistics terminal, this is part of the ancient underground automatic logistics system.You can purchase goods from ancient material storage stations through the interactive panel, which constitutes a logistics system within an ancient city.</description>
+    <thingClass>AncientMarket_Libraray.BuildingTrader</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/AncientLogisticsTerminal</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <size>(4,4)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+    <building>
+      <expandHomeArea>false</expandHomeArea>
+      <claimable>false</claimable>
+    </building>
+    <modExtensions>
+      <li Class="AncientMarket_Libraray.ModExtension_Trader">
+        <tradeKind>AM_AncientLogisticsSystem</tradeKind>        <!-- 贸易类型，也决定了会刷新什么货物 -->
+        <intervalToUpdateGoods>900000</intervalToUpdateGoods>        <!-- 更新货物的间隔 -->
+        <updateGoods>true</updateGoods>        <!-- 是否定期更新货物 -->
+        <leaveGoods>false</leaveGoods>        <!-- 掉落商品当摧毁时 -->
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_TransportPod</defName>
+    <label>transport pod</label>
+    <description>A launchable sub-orbital cargo pod capable of carrying people, items, or animals. Can be used for sending gifts, transporting people or supplies, surprise attacks, or reinforcing battles.</description>
+    <graphicData>
+      <texPath>Things/Special/DropPod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <designationHotKey>Misc12</designationHotKey>
+    <fillPercent>0.5</fillPercent>
+    <uiOrder>2200</uiOrder>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>1600</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="AncientMarket_Libraray.CompProperties_TransporterRequiredDialog">
+        <restEffectiveness>0.8</restEffectiveness>
+        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+      </li>
+      <li Class="CompProperties_Launchable">
+        <skyfallerLeaving>DropPodLeaving</skyfallerLeaving>
+      </li>
+      <li Class="AncientMarket_Libraray.CompPropertiesDialogable">
+        <dialog>AM_Test</dialog>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsTransporter</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsFuelingPort</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <uiIconScale>0.65</uiIconScale>
+  </ThingDef>
 
 
 
@@ -353,7 +354,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
   </ThingDef>
-  
+
   <WorkGiverDef>
     <defName>AM_DoBillsMachiningTable</defName>
     <label>take apart at dismantling table</label>
@@ -371,7 +372,7 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
-<ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="ArtableFurnitureBase">
     <defName>AM_DiningChair</defName>
     <label>dining chair</label>
     <description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
@@ -398,9 +399,9 @@
       <Beauty>8</Beauty>
       <Comfort>0.70</Comfort>
     </statBases>
-	<costList>
-		<Steel>50</Steel>
-	</costList>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <socialPropernessMatters>true</socialPropernessMatters>
     <pathCost>30</pathCost>
     <designationHotKey>Misc7</designationHotKey>
@@ -415,128 +416,128 @@
       <li>ComplexFurniture</li>
     </researchPrerequisites>
   </ThingDef>
-  
-    <ThingDef ParentName="BuildingBase">
-        <defName>AM_LargeScreenTelevision</defName>
-        <label>large-screen television</label>
-        <description>A super large ancient television capable of displaying 3D images, providing an entertainment experience akin to a 3D cinema.</description>
-        <graphicData>
-          <texPath>Things/Building/LargeScreenTelevision</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>(7,1)</drawSize>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-        <rotatable>true</rotatable>
-        <minifiedDef>MinifiedThing</minifiedDef>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <fillPercent>0.35</fillPercent>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <thingCategories>
-          <li>BuildingsJoy</li>
-        </thingCategories>
-        <thingSetMakerTags>
-          <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
-        <costList>
-          <Steel>260</Steel>
-          <ComponentIndustrial>22</ComponentIndustrial>
-        </costList>
-        <statBases>
-          <WorkToBuild>80000</WorkToBuild>
-          <MaxHitPoints>185</MaxHitPoints>
-          <Flammability>1.0</Flammability>
-          <Mass>10</Mass>
-          <JoyGainFactor>2</JoyGainFactor>
-        </statBases>
-        <pathCost>50</pathCost>
-        <passability>PassThroughOnly</passability>
-        <size>(7,1)</size>
-        <building>
-          <joyKind>Television</joyKind>
-          <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
-          <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
-          <watchBuildingStandDistanceRange>4~14</watchBuildingStandDistanceRange>
-          <watchBuildingStandRectWidth>11</watchBuildingStandRectWidth>
-          <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
-          <effectWatching>WatchingTelevision</effectWatching>
-        </building>
-        <placeWorkers>
-          <li>PlaceWorker_WatchArea</li>
-        </placeWorkers>
-        <comps>
-          <li Class="CompProperties_Power">
-            <compClass>CompPowerTrader</compClass>
-            <shortCircuitInRain>true</shortCircuitInRain>
-            <basePowerConsumption>450</basePowerConsumption>
-          </li>
-          <li Class="CompProperties_Flickable"/>
-        </comps>
-        <tradeTags>
-          <li>Television</li>
-        </tradeTags>
 
-    </ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>AM_ElectricalBox</defName>
-		<label>electrical box</label>
-		<description>A electrical box used to supply power to multi story building facilities, which can adjust the output power of each floor freely.</description>
-		<thingClass>Building</thingClass>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<graphicData>
-			<texPath>Things/Building/ElectricalBox</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,3)</drawSize>
-			<shadowData>
-				<volume>(1.93,1,1.69)</volume>
-				<offset>(-0.03,0,-0.1)</offset>
-			</shadowData>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.9</fillPercent>
-		<pathCost>50</pathCost>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>false</castEdgeShadows>
-		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>2500</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>-20</Beauty>
-		</statBases>
-		<tickerType>Normal</tickerType>
-		<canOverlapZones>false</canOverlapZones>
-		<size>(2,2)</size>
-		<building>
-			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
-		</building>
-		<costList>
-			<Steel>100</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-		<inspectorTabs>
-			<li>AncientMarket_Libraray.Tab_LevelPower</li>
-		</inspectorTabs>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>AncientMarket_Libraray.CompPowerPlantLevel</compClass>
-				<basePowerConsumption>1</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
-				<soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
-			</li>
-		</comps>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<designationCategory>Power</designationCategory>
-		<uiOrder>2100</uiOrder>
-		<constructEffect>ConstructMetal</constructEffect>
-		<researchPrerequisites>
-			<li>Electricity</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-	</ThingDef>
-	
-	
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_LargeScreenTelevision</defName>
+    <label>large-screen television</label>
+    <description>A super large ancient television capable of displaying 3D images, providing an entertainment experience akin to a 3D cinema.</description>
+    <graphicData>
+      <texPath>Things/Building/LargeScreenTelevision</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.35</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>260</Steel>
+      <ComponentIndustrial>22</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToBuild>80000</WorkToBuild>
+      <MaxHitPoints>185</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>10</Mass>
+      <JoyGainFactor>2</JoyGainFactor>
+    </statBases>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <size>(7,1)</size>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>4~14</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>11</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>450</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
 
-	
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_ElectricalBox</defName>
+    <label>electrical box</label>
+    <description>A electrical box used to supply power to multi story building facilities, which can adjust the output power of each floor freely.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/ElectricalBox</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.9</fillPercent>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(2,2)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <inspectorTabs>
+      <li>AncientMarket_Libraray.Tab_LevelPower</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>AncientMarket_Libraray.CompPowerPlantLevel</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <uiOrder>2100</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+
+
+
+
 </Defs>
