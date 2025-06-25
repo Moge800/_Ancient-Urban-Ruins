@@ -2,13 +2,14 @@
 <Defs>
 	<QuestScriptDef>
 		<defName>ACM_AncientRandomSite</defName>
-		<rootSelectionWeight>0.8</rootSelectionWeight>
+		<rootSelectionWeight>0.3</rootSelectionWeight>
 		<rootMinPoints>350</rootMinPoints>
 		<autoAccept>true</autoAccept>
 		<defaultChallengeRating>2</defaultChallengeRating>
 		<isRootSpecial>true</isRootSpecial>
 		<questNameRules>
 			<rulesStrings>
+
 				<!-- quest name -->
 				<li>questName(p=3)->[complexAdj] [complex]</li>
 				<li>questName->[complex]</li>
@@ -112,18 +113,17 @@
 		<defName>ACM_AncientRandomComplex_Loot</defName>
 		<workerClass>AncientMarket_Libraray.ACM_AncientRandomComplex_Loot</workerClass>
 		<roomRewardCrateFactor>0</roomRewardCrateFactor>
+		<canDisconnectRooms>false</canDisconnectRooms>
 		<roomDefs>
-			<li>ACM_HoboRoomLayout</li>
-			<li>ACM_StoreRoomLayout</li>
-			<li>ACM_BuildingRoomLayout</li>
-			<li>ACM_BuildingRoomWithNoForkliftLayout</li>
-			<li>ACM_ResturantLayout</li>
-			<li>ACM_UnderRoomLayout</li>
+			<ACM_HoboRoomLayout>3</ACM_HoboRoomLayout>
+			<ACM_StoreRoomLayout>3</ACM_StoreRoomLayout>
+			<ACM_BuildingRoomLayout>3</ACM_BuildingRoomLayout>
+			<ACM_BuildingRoomWithNoForkliftLayout>3</ACM_BuildingRoomWithNoForkliftLayout>
+			<ACM_ResturantLayout>2</ACM_ResturantLayout>
+			<ACM_UnderRoomLayout>1</ACM_UnderRoomLayout>
 		</roomDefs>
 		<threats>
-			<li>
-				<def>HangingPirates</def>
-			</li>
+			<HangingPirates/>
 		</threats>
 	</ComplexLayoutDef>
 
@@ -131,6 +131,7 @@
 		<defName>HangingPirates</defName>
 		<workerClass>AncientMarket_Libraray.ComplexThreatWorker_HangingPirates</workerClass>
 		<faction>Pirate</faction>
+		<fallbackToRoomEnteredTrigger>false</fallbackToRoomEnteredTrigger>
 		<minPoints>100</minPoints>
 	</ComplexThreatDef>
 
@@ -140,7 +141,6 @@
 		<minSingleRectWidth>7</minSingleRectWidth>
 		<minSingleRectHeight>7</minSingleRectHeight>
 		<canBeInMixedRoom>false</canBeInMixedRoom>
-		<countRange>1~2</countRange>
 		<floorTypes>
 			<li>Concrete</li>
 		</floorTypes>
@@ -158,7 +158,6 @@
 		<minSingleRectWidth>7</minSingleRectWidth>
 		<minSingleRectHeight>5</minSingleRectHeight>
 		<canBeInMixedRoom>false</canBeInMixedRoom>
-		<countRange>1</countRange>
 		<floorTypes>
 			<li>Concrete</li>
 		</floorTypes>
@@ -176,7 +175,6 @@
 		<minSingleRectWidth>4</minSingleRectWidth>
 		<minSingleRectHeight>4</minSingleRectHeight>
 		<canBeInMixedRoom>false</canBeInMixedRoom>
-		<countRange>1</countRange>
 		<floorTypes>
 			<li>Concrete</li>
 		</floorTypes>
@@ -194,7 +192,6 @@
 		<minSingleRectWidth>8</minSingleRectWidth>
 		<minSingleRectHeight>7</minSingleRectHeight>
 		<canBeInMixedRoom>false</canBeInMixedRoom>
-		<countRange>1</countRange>
 		<floorTypes>
 			<li>Concrete</li>
 			<li>BrokenAsphalt</li>
@@ -213,7 +210,6 @@
 		<minSingleRectWidth>5</minSingleRectWidth>
 		<minSingleRectHeight>5</minSingleRectHeight>
 		<canBeInMixedRoom>false</canBeInMixedRoom>
-		<countRange>1</countRange>
 		<floorTypes>
 			<li>Concrete</li>
 		</floorTypes>
