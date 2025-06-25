@@ -1,18 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-
-
 	<QuestScriptDef>
 		<defName>ACM_AncientRandomSite</defName>
-		<rootSelectionWeight>0.3</rootSelectionWeight>
+		<rootSelectionWeight>0.8</rootSelectionWeight>
 		<rootMinPoints>350</rootMinPoints>
 		<autoAccept>true</autoAccept>
 		<defaultChallengeRating>2</defaultChallengeRating>
 		<isRootSpecial>true</isRootSpecial>
 		<questNameRules>
 			<rulesStrings>
-
 				<!-- quest name -->
 				<li>questName(p=3)->[complexAdj] [complex]</li>
 				<li>questName->[complex]</li>

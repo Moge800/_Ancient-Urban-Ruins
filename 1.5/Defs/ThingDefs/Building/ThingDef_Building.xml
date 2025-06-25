@@ -16,7 +16,7 @@
             <alwaysDeconstructible>false</alwaysDeconstructible>
         </building>
 		<pathCost>50</pathCost>	 
- 	 <designationCategory>AM_FLOOR</designationCategory>
+	  <!--<designationCategory>AM_FLOOR</designationCategory>-->
     </ThingDef>
 	
 	 <ThingDef ParentName="PortalBase">

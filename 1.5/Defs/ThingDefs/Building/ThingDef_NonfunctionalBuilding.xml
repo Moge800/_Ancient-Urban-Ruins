@@ -17,7 +17,7 @@
         </building>
 		<fillPercent>0.40</fillPercent>
 		<pathCost>50</pathCost>	 
-        <designationCategory>Misc</designationCategory>
+		 <!--<designationCategory>Misc</designationCategory>-->
     </ThingDef>
 
     <ThingDef ParentName="AM_NonfunctionalBuilding" Name ="AM_NonfunctionalBuilding_Impassable" Abstract="True">

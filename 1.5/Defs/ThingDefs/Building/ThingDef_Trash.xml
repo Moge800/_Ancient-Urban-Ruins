@@ -21,7 +21,7 @@
           <isEdifice>false</isEdifice>
 		  <isTargetable>false</isTargetable>
         </building>
-         <designationCategory>AM_FLOOR</designationCategory>
+         <!--<designationCategory>AM_FLOOR</designationCategory>-->
     </ThingDef>
     
 

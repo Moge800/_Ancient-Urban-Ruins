@@ -113,7 +113,7 @@
       <isInert>true</isInert>
       <ai_chillDestination>false</ai_chillDestination>
     </building>
-	 <designationCategory>Misc</designationCategory>
+	 <!--<designationCategory>Misc</designationCategory>-->
   </ThingDef>    
 
 

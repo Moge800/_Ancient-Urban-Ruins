@@ -12,7 +12,7 @@
             <claimable>false</claimable>
             <deconstructible>true</deconstructible>
         </building>
-         <designationCategory>AM_FLOOR</designationCategory>
+         	  <!--<designationCategory>AM_FLOOR</designationCategory>-->
         <pathCost>50</pathCost>	 
     </ThingDef>
 
