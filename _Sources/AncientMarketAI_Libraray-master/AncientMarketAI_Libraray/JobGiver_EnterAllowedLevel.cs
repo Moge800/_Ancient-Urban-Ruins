@@ -16,11 +16,12 @@ namespace AncientMarketAI_Libraray
         {
             if (AM_ModSetting.setting.enableAICrossLevel && pawn.IsColonist && GameComponent_AncientMarket.GetComp.GetSchedule(pawn) is LevelSchedule schedule && schedule.timeSchedule[GenLocalDate.HourOfDay(pawn.Map)])
             {
-                if (pawn.Map.Parent is MapParent_Custom custom && !schedule.allowedLevels.Contains(custom.entrance) && this.FindBestExitForExit(pawn,schedule,pawn.Map) is AMMapPortal exit) 
+                if (pawn.Map.Parent is MapParent_Custom custom && !schedule.allowedLevels.Contains(custom.entrance) && this.FindBestExitForExit(pawn,schedule,pawn.Map) is MapPortal exit) 
                 {
                     return JobMaker.MakeJob(JobDefOf.EnterPortal, exit);
                 }
-                if (pawn.mindState.lastJobTag == JobTag.Idle && this.FindBestExit(pawn, schedule, pawn.Map) is AMMapPortal portal) 
+                if (pawn.mindState.lastJobTag == JobTag.Idle && 
+                    this.FindBestExit(pawn, schedule, pawn.Map) is MapPortal portal) 
                 {
                     return JobMaker.MakeJob(JobDefOf.EnterPortal, portal);
                 }
@@ -36,6 +37,7 @@ namespace AncientMarketAI_Libraray
             if (pawn.Map.Parent is MapParent_Custom custom && custom.Exit != null && custom.Exit.IsAvailable(pawn) && pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly))
             {
                 available.Add(custom.Exit);
+
             }
             if (available.Any())
             {
