@@ -34,16 +34,17 @@ namespace AncientMarket_Libraray
                 {
                     if (this.customMap.listerThings.GetThingsOfType<MapExit>().Any())
                     {
-                        this.exit = this.customMap.listerThings.GetThingsOfType<MapExit>().First();
-                        this.exit.entrance = this;
-                        this.exit.parentMap = this.Map;
+                        this.exit = (PocketMapExit)this.customMap.listerThings.GetThingsOfType<MapExit>().First();
+                        MapExit exitAM = exit as MapExit;
+                        exitAM.entrance = this;
+                        exitAM.parentMap = this.Map;
                     }
                     else 
                     {
                         Log.Error("AM Error:No exit in sub map"); 
                     }
                 }
-                return this.exit;
+                return this.exit as MapExit;
             }
         }
 
@@ -95,7 +96,7 @@ namespace AncientMarket_Libraray
             {
                 this.PawnAndLords.SetOrAdd(pawn, pawn.GetLord());
             }
-            this.exit.CD.SetOrAdd(pawn, 1200);
+            this.Exit.CD.SetOrAdd(pawn, 1200);
         }
         public void GenerateCustomMap(Map map, CustomMapDataDef def)
         {
@@ -116,6 +117,7 @@ namespace AncientMarket_Libraray
             LongEventHandler.SetCurrentEventText("GenerateSubMap".Translate());
             DeepProfiler.Start("Generate map");
             custom.sourceMap = map;
+            PocketMapUtility.currentlyGeneratingPortal = this;
             this.customMap = MapGenerator.GenerateMap(def.size, custom, DefDatabase<MapGeneratorDef>.GetNamed("AM_CustomMap_Editor_Generator"), null, null, true);
             map.mapPawns.FreeColonists.ForEach(p => GameComponent_AncientMarket.GetComp.GetSchedule(p).AllowedLevels.Add(this));
             Find.World.pocketMaps.Add(custom);
@@ -154,14 +156,12 @@ namespace AncientMarket_Libraray
             Scribe_Values.Look(ref this.customName, "customName");
             Scribe_Values.Look(ref this.generatedMap, "generatedMap");
             Scribe_References.Look(ref this.customMap, "customMap");
-            Scribe_References.Look(ref this.exit, "customExit");
         }
 
         public string customName;
         public bool init = false;
         public bool generatedMap = false;
         public Map customMap;
-        public new MapExit exit;
     }
 
     public class ModExtension_Portal : DefModExtension 

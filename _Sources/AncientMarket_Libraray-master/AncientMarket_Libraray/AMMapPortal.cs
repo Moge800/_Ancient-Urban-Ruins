@@ -40,7 +40,7 @@ namespace AncientMarket_Libraray
         }
         public bool IsAvailable(Pawn pawn) 
         {
-            return !this.CD.ContainsKey(pawn) && this.IsAllowed(pawn);
+            return (this.CD.NullOrEmpty() ||!this.CD.ContainsKey(pawn)) && this.IsAllowed(pawn);
         }
         protected override void Tick()
         {
