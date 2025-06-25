@@ -19,7 +19,7 @@ namespace AncientMarketAI_Libraray
             {
                 if (pawn.timetable.CurrentAssignment == TimeAssignmentDefOf.Work && schedule.workLevel is MapEntrance work && pawn.Map != work.customMap)
                 {
-                    if (LevelPather.GetPathPortal(pawn.Map, work) is List<AMMapPortal> portals && portals.Any()
+                    if (LevelPather.GetPathPortal(pawn.Map, work) is List<MapPortal> portals && portals.Any()
                         && pawn.CanReach(portals.First(), PathEndMode.Touch, Danger.Deadly))
                     {
                         if (portals.Count == 1) 
@@ -32,7 +32,7 @@ namespace AncientMarketAI_Libraray
                 }
                 if (pawn.timetable.CurrentAssignment == TimeAssignmentDefOf.Joy && schedule.joyLevel is MapEntrance joy && pawn.Map != joy.customMap)
                 {
-                    if (LevelPather.GetPathPortal(pawn.Map, joy) is List<AMMapPortal> portals && portals.Any()
+                    if (LevelPather.GetPathPortal(pawn.Map, joy) is List<MapPortal> portals && portals.Any()
                         && pawn.CanReach(portals.First(), PathEndMode.Touch, Danger.Deadly))
                     {
                         if (portals.Count == 1)
@@ -45,7 +45,7 @@ namespace AncientMarketAI_Libraray
                 }
                 if (pawn.timetable.CurrentAssignment == TimeAssignmentDefOf.Sleep && schedule.sleepLevel is MapEntrance sleep && pawn.Map != sleep.customMap)
                 {
-                    if (LevelPather.GetPathPortal(pawn.Map, sleep) is List<AMMapPortal> portals && portals.Any()
+                    if (LevelPather.GetPathPortal(pawn.Map, sleep) is List<MapPortal> portals && portals.Any()
                         && pawn.CanReach(portals.First(), PathEndMode.Touch, Danger.Deadly))
                     {
                         if (portals.Count == 1)

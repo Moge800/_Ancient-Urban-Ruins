@@ -11,6 +11,7 @@ namespace AncientMarket_Libraray
 {
     public class MapExit : PocketMapExit
     {
+        public override string EnteringString => "ExitUnderground".Translate();
         public AMMapPortal MapEntrance => (AMMapPortal)this.entrance;
         protected override void Tick()
         {
@@ -37,12 +38,11 @@ namespace AncientMarket_Libraray
             }
             if (this.CD.Any())
             {
-                for (int i = 0; i < this.CD.Count(); i++)
+                foreach (var item in this.CD)
                 {
-                    Pawn p2 = this.CD.ToList()[i].Key;
-                    this.CD[p2] = this.CD[p2] - 1;
+                    item.Tick();
                 }
-                this.CD.RemoveAll(c => c.Value <= 0);
+                this.CD.RemoveAll(c => c.cd <= 0);
             }
             if (this.IsHashIntervalTick(5) && this.entrance != null && this.Position.GetFirstPawn(this.Map) is Pawn p && p.Drafted)
             {
@@ -58,7 +58,16 @@ namespace AncientMarket_Libraray
             {
                 this.PawnAndLords.SetOrAdd(pawn, pawn.GetLord());
             }
-            this.MapEntrance.CD.SetOrAdd(pawn, 1200);
+            if (this.MapEntrance.CD.Find(c => c.pawn == pawn) is CD cd)
+            {
+                cd.cd = 1200;
+                return;
+            }
+            this.MapEntrance.CD.Add(new CD(){pawn =pawn,cd = 1200});
+        }
+        public bool IsAvailable(Pawn pawn)
+        {
+            return (!this.CD.Any() || !this.CD.Exists(c => c.pawn == pawn)) && this.IsAllowed(pawn);
         }
         public virtual bool IsAllowed(Pawn pawn)
         {
@@ -67,11 +76,6 @@ namespace AncientMarket_Libraray
         public override IntVec3 GetDestinationLocation()
         {
             return this.entrance.Position + (this.entrance.Rotation.FacingCell * (this.def.HasModExtension<ModExtension_Portal>() ? this.def.GetModExtension<ModExtension_Portal>().distance : 1));
-        }
-
-        public override Map GetOtherMap()
-        {
-            return this.parentMap;
         }
         public Dictionary<Pawn, Lord> PawnAndLords
         {
@@ -84,13 +88,13 @@ namespace AncientMarket_Libraray
                 return this.pawnAndLords;
             }
         }
-        public Dictionary<Pawn, int> CD
+        public List<CD> CD
         {
             get
             {
                 if (this.CDs == null)
                 {
-                    this.CDs = new Dictionary<Pawn, int>();
+                    this.CDs = new List<CD>();
                 }
                 return this.CDs;
             }
@@ -109,17 +113,13 @@ namespace AncientMarket_Libraray
         {
             base.ExposeData();
             Scribe_Collections.Look(ref this.pawnAndLords, "pawnAndLords", LookMode.Reference, LookMode.Reference, ref this.pawnAndLords_p, ref this.pawnAndLords_l);
-            Scribe_Collections.Look(ref this.CDs, "CDs", LookMode.Reference, LookMode.Value, ref this.CDs_p, ref this.CDs_i);
-            Scribe_References.Look(ref this.parentMap, "parentMap");
+            Scribe_Collections.Look(ref this.CDs, "CDs", LookMode.Deep);
         }
 
         public List<Pawn> pawnAndLords_p = new List<Pawn>();
         public List<Lord> pawnAndLords_l = new List<Lord>();
         private Dictionary<Pawn, Lord> pawnAndLords = new Dictionary<Pawn, Lord>();
 
-        public List<Pawn> CDs_p = new List<Pawn>();
-        public List<int> CDs_i = new List<int>();
-        public Dictionary<Pawn, int> CDs = new Dictionary<Pawn, int>();
-        public Map parentMap;
+        public List<CD> CDs = new List<CD>();
     }
 }

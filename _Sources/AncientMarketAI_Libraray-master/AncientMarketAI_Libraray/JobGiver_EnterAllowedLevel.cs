@@ -27,10 +27,12 @@ namespace AncientMarketAI_Libraray
             }
             return null;
         }
-        public AMMapPortal FindBestExit(Pawn pawn, LevelSchedule s, Map map)
+        public MapPortal FindBestExit(Pawn pawn, LevelSchedule s, Map map)
         {
-            List<AMMapPortal> available = new List<AMMapPortal>();
-            MapComponent_Submap.GetComp(map).Submaps.FindAll(m => m.entrance != null && pawn.CanReach(m.entrance, PathEndMode.Touch, Danger.Deadly) && m.entrance.IsAvailable(pawn)).ForEach(m => available.Add(m.entrance));
+            List<MapPortal> available = new List<MapPortal>();
+            MapComponent_Submap.GetComp(map).Submaps.FindAll(m => m.entrance != null
+            && pawn.CanReach(m.entrance, PathEndMode.Touch, Danger.Deadly
+            ) && m.entrance.IsAvailable(pawn)).ForEach(m => available.Add(m.entrance));
             if (pawn.Map.Parent is MapParent_Custom custom && custom.Exit != null && custom.Exit.IsAvailable(pawn) && pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly))
             {
                 available.Add(custom.Exit);
@@ -41,9 +43,9 @@ namespace AncientMarketAI_Libraray
             }
             return null;
         }
-        public AMMapPortal FindBestExitForExit(Pawn pawn,LevelSchedule s,Map map) 
+        public MapPortal FindBestExitForExit(Pawn pawn,LevelSchedule s,Map map) 
         {
-            List<AMMapPortal> available = new List<AMMapPortal>();
+            List<MapPortal> available = new List<MapPortal>();
             MapComponent_Submap.GetComp(map).Submaps.FindAll(m => m.entrance != null && pawn.CanReach(m.entrance, PathEndMode.Touch, Danger.Deadly) && m.entrance.IsAllowed(pawn)).ForEach(m => available.Add(m.entrance));
             if (pawn.Map.Parent is MapParent_Custom custom && custom.Exit != null && pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly))
             {

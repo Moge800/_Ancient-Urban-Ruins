@@ -6,35 +6,37 @@
   <Stat_Hediff_Regeneration_Stat>{0}点耐久/天</Stat_Hediff_Regeneration_Stat>
 
   <AbandonQuestMap>放弃地点</AbandonQuestMap>
-   <ConfirmAbandonQuestMap>请确保人员和物品已全部撤出。确定放弃地图吗？</ConfirmAbandonQuestMap>
+  <ConfirmAbandonQuestMap>请确保人员和物品已全部撤出。确定放弃地图吗？</ConfirmAbandonQuestMap>
   <AbandonQuestMapDesc>放弃对该区域的探索将导致留在区域内的人员和物品被遗弃.</AbandonQuestMapDesc>
-    <RandomSiteDeleteMap>放弃地点</RandomSiteDeleteMap>
-   <CommandViewQuestDesc>放弃对该区域的探索将导致留在区域内的人员和物品被遗弃.</CommandViewQuestDesc>
-    <RandomSite_Confirm_Accept>接受</RandomSite_Confirm_Accept>
+  <RandomSiteDeleteMap>放弃地点</RandomSiteDeleteMap>
+  <CommandViewQuestDesc>放弃对该区域的探索将导致留在区域内的人员和物品被遗弃.</CommandViewQuestDesc>
+  <RandomSite_Confirm_Accept>接受</RandomSite_Confirm_Accept>
   <RandomSite_Confirm>请确保人员和物品已全部撤出。确定放弃地图吗？</RandomSite_Confirm>
   <AM_Trade>与远古物流终端交易</AM_Trade>
-   <AncientMarket>远古城市废墟</AncientMarket>
-   <EnableAICrossLevel>启用跨楼层AI行为(如遇上不兼容等问题，停用该选项)</EnableAICrossLevel>
-   <Allow>允许</Allow>
-   <Unallow>禁止</Unallow>
-   <AllowLevel>允许的楼层</AllowLevel>
-   <LevelPowerName>楼层名</LevelPowerName>
-   <OutputMode>作为输出端</OutputMode>
-   <LevelPowerOutput>输出</LevelPowerOutput>
-   <SelectLinkedPower>当前链接对象：{0}</SelectLinkedPower>
-   <Apply>应用</Apply>
-    <EnableLandfill>开启可填埋的设施（开启选项后部分楼梯可以主动填埋以放弃地下设施）</EnableLandfill>
-	<ReceiverName>接收端名</ReceiverName>
-	<SelectLinkedReceiver>当前接收端：{0}</SelectLinkedReceiver>
-	<Tab_LevelTransmit>运输选项</Tab_LevelTransmit>
-	<VirtualMiningProgress>还有{0}天产生下一个物品</VirtualMiningProgress>
-<CommandToggleAllowAutoAddGraphicCard>切换自动装填</CommandToggleAllowAutoAddGraphicCard>
-<CommandToggleAllowAutoAddGraphicCardDesc>把显卡装入计算中心</CommandToggleAllowAutoAddGraphicCardDesc>
-<GPUCount>显卡数量{0}</GPUCount>
-<NoGPU>需要装载显卡来运行</NoGPU>
-<AddThisToMiner>在计算中心装载此显卡</AddThisToMiner>
-<SleepLevel>睡眠层：{0}</SleepLevel>
-<WorkLevel>工作层：{0}</WorkLevel>
-<JoyLevel>娱乐层：{0}</JoyLevel>
-<NotSet>无</NotSet>
+  <AncientMarket>远古城市废墟</AncientMarket>
+  <EnableAICrossLevel>启用跨楼层AI行为(如遇上不兼容等问题，停用该选项)</EnableAICrossLevel>
+  <Allow>允许</Allow>
+  <Unallow>禁止</Unallow>
+  <AllowLevel>允许的楼层</AllowLevel>
+  <LevelPowerName>楼层名</LevelPowerName>
+  <OutputMode>作为输出端</OutputMode>
+  <LevelPowerOutput>输出</LevelPowerOutput>
+  <SelectLinkedPower>当前链接对象：{0}</SelectLinkedPower>
+  <Apply>应用</Apply>
+  <EnableLandfill>开启可填埋的设施（开启选项后部分楼梯可以主动填埋以放弃地下设施）</EnableLandfill>
+  <ReceiverName>接收端名</ReceiverName>
+  <SelectLinkedReceiver>当前接收端：{0}</SelectLinkedReceiver>
+  <Tab_LevelTransmit>运输选项</Tab_LevelTransmit>
+  <VirtualMiningProgress>还有{0}天产生下一个物品</VirtualMiningProgress>
+  <CommandToggleAllowAutoAddGraphicCard>切换自动装填</CommandToggleAllowAutoAddGraphicCard>
+  <CommandToggleAllowAutoAddGraphicCardDesc>把显卡装入计算中心</CommandToggleAllowAutoAddGraphicCardDesc>
+  <GPUCount>显卡数量{0}</GPUCount>
+  <NoGPU>需要装载显卡来运行</NoGPU>
+  <AddThisToMiner>在计算中心装载此显卡</AddThisToMiner>
+  <SleepLevel>睡眠层：{0}</SleepLevel>
+  <WorkLevel>工作层：{0}</WorkLevel>
+  <JoyLevel>娱乐层：{0}</JoyLevel>
+  <NotSet>无</NotSet>
+
+  <ExitUnderground>离开地下</ExitUnderground>
 </LanguageData>

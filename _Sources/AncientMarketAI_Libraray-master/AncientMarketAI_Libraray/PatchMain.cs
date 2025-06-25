@@ -51,14 +51,14 @@ namespace AncientMarketAI_Libraray
 			{
                 if (schedule.sleepLevel is AMMapPortal sleep && pawn.timetable.CurrentAssignment == TimeAssignmentDefOf.Sleep)
                 {
-                    if (LevelPather.GetPathPortal(pawn.Map, sleep) is List<AMMapPortal> portals && portals.Any()
+                    if (LevelPather.GetPathPortal(pawn.Map, sleep) is List<MapPortal> portals && portals.Any()
                         && pawn.CanReach(portals.First(), PathEndMode.Touch, Danger.Deadly))
                     {
                         __result = JobMaker.MakeJob(JobDefOf.EnterPortal, portals.First());
 						return;
                     }
                 }
-                List<AMMapPortal> available = new List<AMMapPortal>();
+                List<MapPortal> available = new List<MapPortal>();
 				MapComponent_Submap.GetComp(pawn.Map).Submaps.FindAll(m => m.entrance != null && pawn.CanReach(m.entrance, PathEndMode.Touch, Danger.Deadly) && m.entrance.IsAvailable(pawn)).ForEach(m => available.Add(m.entrance));
 				if (pawn.Map.Parent is MapParent_Custom custom && custom.Exit != null && custom.Exit.IsAvailable(pawn) && pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly))
 				{

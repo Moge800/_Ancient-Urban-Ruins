@@ -14,6 +14,7 @@ namespace AncientMarket_Libraray
 {
     public class MapEntrance : AMMapPortal, IRenameable
     {
+        
         public override string Label
         {
             get
@@ -37,7 +38,6 @@ namespace AncientMarket_Libraray
                         this.exit = (PocketMapExit)this.customMap.listerThings.GetThingsOfType<MapExit>().First();
                         MapExit exitAM = exit as MapExit;
                         exitAM.entrance = this;
-                        exitAM.parentMap = this.Map;
                     }
                     else 
                     {
@@ -96,7 +96,12 @@ namespace AncientMarket_Libraray
             {
                 this.PawnAndLords.SetOrAdd(pawn, pawn.GetLord());
             }
-            this.Exit.CD.SetOrAdd(pawn, 1200);
+            if (this.Exit.CD.Find(c => c.pawn == pawn) is CD cd)
+            {
+                cd.cd = 1200;
+                return;
+            }
+            this.Exit.CD.Add(new CD() { pawn = pawn, cd = 1200 });
         }
         public void GenerateCustomMap(Map map, CustomMapDataDef def)
         {

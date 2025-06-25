@@ -23,13 +23,13 @@ namespace AncientMarket_Libraray
                 return this.pawnAndLords;
             }
         }
-        public Dictionary<Pawn, int> CD
+        public List<CD> CD
         {
             get
             {
                 if (this.CDs == null)
                 {
-                    this.CDs = new Dictionary<Pawn, int>();
+                    this.CDs = new List<CD>();
                 }
                 return this.CDs;
             }
@@ -40,7 +40,7 @@ namespace AncientMarket_Libraray
         }
         public bool IsAvailable(Pawn pawn) 
         {
-            return (this.CD.NullOrEmpty() ||!this.CD.ContainsKey(pawn)) && this.IsAllowed(pawn);
+            return (!this.CD.Any() || !this.CD.Exists(c => c.pawn == pawn)) && this.IsAllowed(pawn);
         }
         protected override void Tick()
         {
@@ -67,12 +67,11 @@ namespace AncientMarket_Libraray
             }
             if (this.CD.Any())
             {
-                for (int i = 0; i<this.CD.Count(); i++) 
+                foreach (var item in this.CD)
                 {
-                    Pawn p = this.CD.ToList()[i].Key;
-                    this.CD[p] = this.CD[p] - 1;
+                    item.Tick();
                 }
-                this.CD.RemoveAll(c => c.Value <= 0);
+                this.CD.RemoveAll(c => c.cd <= 0);
             }
         }
         public override string GetInspectString()
@@ -89,15 +88,30 @@ namespace AncientMarket_Libraray
         {
             base.ExposeData();
             Scribe_Collections.Look(ref this.pawnAndLords, "pawnAndLords", LookMode.Reference, LookMode.Reference, ref this.pawnAndLords_p, ref this.pawnAndLords_l);
-            Scribe_Collections.Look(ref this.CDs, "CDs", LookMode.Reference, LookMode.Value, ref this.CDs_p, ref this.CDs_i);
+            Scribe_Collections.Look(ref this.CDs, "CDs", LookMode.Deep);
         }
 
         public List<Pawn> pawnAndLords_p = new List<Pawn>();
         public List<Lord> pawnAndLords_l = new List<Lord>();
         private Dictionary<Pawn, Lord> pawnAndLords = new Dictionary<Pawn, Lord>();
 
-        public List<Pawn> CDs_p = new List<Pawn>();
-        public List<int> CDs_i = new List<int>();
-        public Dictionary<Pawn, int> CDs = new Dictionary<Pawn, int>();
+        public List<CD> CDs = new List<CD>();
+    }
+
+    public class CD :IExposable
+    {
+        public void ExposeData()
+        {
+            Scribe_Values.Look(ref this.cd,"cd");
+            Scribe_References.Look(ref this.pawn, "pawn");
+        }
+
+        public void Tick() 
+        {
+            this.cd--;
+        }
+
+        public Pawn pawn;
+        public int cd;
     }
 }

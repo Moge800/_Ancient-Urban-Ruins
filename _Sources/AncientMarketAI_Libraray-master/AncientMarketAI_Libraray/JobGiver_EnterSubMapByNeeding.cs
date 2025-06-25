@@ -18,7 +18,7 @@ namespace AncientMarketAI_Libraray
                 (pawn.needs.food.CurCategory >= HungerCategory.UrgentlyHungry) && 
                 (!pawn.IsColonist || GameComponent_AncientMarket.GetComp.GetSchedule(pawn) is LevelSchedule schedule && schedule.timeSchedule[GenLocalDate.HourOfDay(pawn.Map)]))
             {
-                List<AMMapPortal> available = new List<AMMapPortal>();
+                List<MapPortal> available = new List<MapPortal>();
                 MapComponent_Submap.GetComp(pawn.Map).Submaps.FindAll(m => m.entrance != null && pawn.CanReach(m.entrance, PathEndMode.Touch, Danger.Deadly) && m.entrance.IsAvailable(pawn)).ForEach(m => available.Add(m.entrance));
                 if (pawn.Map.Parent is MapParent_Custom custom && custom.Exit != null && pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly) && custom.Exit.IsAvailable(pawn))
                 {

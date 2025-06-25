@@ -17,7 +17,9 @@
     </building>
     <pathCost>50</pathCost>
     <!--<designationCategory>AM_FLOOR</designationCategory>-->
-    <portal></portal>
+    <portal>
+      <pocketMapGenerator>AM_CustomMap_Editor_Generator</pocketMapGenerator>
+    </portal>
   </ThingDef>
 
   <ThingDef ParentName="PortalBase">

@@ -1,4 +1,5 @@
 ﻿using AncientMarket_Libraray;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace AncientMarketAI_Libraray
 {
     public static class LevelPather
     {
-        public static List<AMMapPortal> GetPathPortal(Map root, AMMapPortal destination)
+        public static List<MapPortal> GetPathPortal(Map root, AMMapPortal destination)
         {
-            List<AMMapPortal> result = new List<AMMapPortal>();
+            List<MapPortal> result = new List<MapPortal>();
             List<Map> destinationToRoot = GetAllParentMaps(destination);
             if (destinationToRoot.Contains(root))
             {
@@ -45,9 +46,9 @@ namespace AncientMarketAI_Libraray
             }
             return result;
         }
-        public static List<AMMapPortal> GetPathLineReverse(Map root, Map destination)
+        public static List<MapPortal> GetPathLineReverse(Map root, Map destination)
         {
-            List<AMMapPortal> result = new List<AMMapPortal>();
+            List<MapPortal> result = new List<MapPortal>();
             Map curMap = root;
             while (curMap.Parent as MapParent_Custom != null)
             {
