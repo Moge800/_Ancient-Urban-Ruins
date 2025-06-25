@@ -154,14 +154,14 @@ namespace AncientMarket_Libraray
             Scribe_Values.Look(ref this.customName, "customName");
             Scribe_Values.Look(ref this.generatedMap, "generatedMap");
             Scribe_References.Look(ref this.customMap, "customMap");
-            Scribe_References.Look(ref this.exit, "exit");
+            Scribe_References.Look(ref this.exit, "customExit");
         }
 
         public string customName;
         public bool init = false;
         public bool generatedMap = false;
         public Map customMap;
-        public MapExit exit;
+        public new MapExit exit;
     }
 
     public class ModExtension_Portal : DefModExtension 

@@ -17,10 +17,6 @@ namespace AncientMarket_Libraray
         {
             CellIndices cellIndices = map.cellIndices;
             GenStep_SetFog.FogMap(map);
-            if (map.Tile == Find.GameInfo.startingTile)
-            {
-                FloodFillerFog.FloodUnfog(MapGenerator.PlayerStartSpot, map);
-            }
             if (Current.ProgramState == ProgramState.Playing)
             {
                 map.roofGrid.Drawer.SetDirty();
