@@ -71,8 +71,11 @@ namespace AncientMarket_Libraray
         }
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
-            this.customMap?.Parent.Destroy();
-            Current.Game.DeinitAndRemoveMap(this.customMap, true);
+            if (this.customMap != null) 
+            {
+                this.customMap?.Parent.Destroy();
+                Current.Game.DeinitAndRemoveMap(this.customMap, true);
+            }
             base.Destroy(mode);
         }
         protected override void Tick()
