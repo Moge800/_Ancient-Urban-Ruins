@@ -61,6 +61,7 @@
     <Compile Include="JobDriver_AddGraphicCard.cs" />
     <Compile Include="JobDriver_Repair.cs" />
     <Compile Include="Miner.cs" />
+    <Compile Include="Patch\Patch_QuestMapSize.cs" />
     <Compile Include="PawnColumnWorker_CopyPasteLevelTimetable.cs" />
     <Compile Include="Tab_LevelTransmit.cs" />
     <Compile Include="Tab_LevelPower.cs" />
@@ -76,9 +77,9 @@
     <Compile Include="MapParent_Custom.cs" />
     <Compile Include="ModExtension_Trader.cs" />
     <Compile Include="ModExtension_Map.cs" />
-    <Compile Include="PatchMain.cs" />
-    <Compile Include="Patch_Stat.cs" />
-    <Compile Include="Patch_Tend.cs" />
+    <Compile Include="Patch\PatchMain.cs" />
+    <Compile Include="Patch\Patch_Stat.cs" />
+    <Compile Include="Patch\Patch_Tend.cs" />
     <Compile Include="PawnColumnWorker_AllowLevel.cs" />
     <Compile Include="PawnColumnWorker_LevelTimetable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -12,7 +12,7 @@ namespace AncientMarket_Libraray
 	[StaticConstructorOnStartup]
 	public class CustomSite : Site
     {
-		public override IEnumerable<Gizmo> GetGizmos()
+        public override IEnumerable<Gizmo> GetGizmos()
 		{
 			foreach (Gizmo gizmo in base.GetGizmos())
 			{
@@ -52,6 +52,14 @@ namespace AncientMarket_Libraray
             alsoRemoveWorldObject = false;
             return false;
         }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+			Scribe_Defs.Look(ref this.mapDef, "mapDef");
+        }
+
+        public CustomMapDataDef mapDef;
 		private static readonly Texture2D AbandonCommandTex = ContentFinder<Texture2D>.Get("UI/Commands/AbandonHome", true);
 	}
 }

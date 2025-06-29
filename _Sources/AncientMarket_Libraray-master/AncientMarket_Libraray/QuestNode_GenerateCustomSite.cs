@@ -161,7 +161,7 @@ namespace AncientMarket_Libraray
 
 		public Site MakeCustomSite(IEnumerable<SitePartDefWithParams> siteParts, int tile, Faction faction, bool ifHostileThenMustRemainHostile = true)
 		{
-			Site site = (Site)WorldObjectMaker.MakeWorldObject(this.worldObjectDef.GetValue(QuestGen.slate));
+			CustomSite site = (CustomSite)WorldObjectMaker.MakeWorldObject(this.worldObjectDef.GetValue(QuestGen.slate));
 			site.Tile = tile;
 			site.SetFaction(faction);
 			if (ifHostileThenMustRemainHostile && faction != null && faction.HostileTo(Faction.OfPlayer))
@@ -172,9 +172,17 @@ namespace AncientMarket_Libraray
 			{
 				foreach (SitePartDefWithParams sitePartDefWithParams in siteParts)
 				{
-					site.AddPart(new SitePart(site, sitePartDefWithParams.def, sitePartDefWithParams.parms));
+					SitePart part = new SitePart(site, sitePartDefWithParams.def, sitePartDefWithParams.parms);
+					site.AddPart(part);
+					if (site.mapDef == null && part.def.GetModExtension<ModExtension_Map>() is ModExtension_Map modExtension
+					 && modExtension.maps.Any()) 
+					{
+						site.mapDef = modExtension.maps.RandomElement();
+					}
+
 				}
 			}
+			
 			site.desiredThreatPoints = site.ActualThreatPoints;
 			return site;
 		}
