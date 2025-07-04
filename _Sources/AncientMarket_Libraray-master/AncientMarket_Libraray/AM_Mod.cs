@@ -24,6 +24,9 @@ namespace AncientMarket_Libraray
             Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, 300f, 30f), "EnableAICrossLevel".Translate(), ref this.setting.enableAICrossLevel);
             inRect.y += 50f;
             Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, 300f, 30f), "EnableLandfill".Translate(), ref this.setting.enableLandfill);
+            inRect.y += 50f;
+            Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, 300f, 30f), "AMEnablePatch".Translate(), ref this.setting.enablePatch);
+
         }
         public AM_ModSetting setting = null;
     }
@@ -37,10 +40,12 @@ namespace AncientMarket_Libraray
         public override void ExposeData()
         {
             base.ExposeData();
+            Scribe_Values.Look(ref this.enablePatch, "patch");
             Scribe_Values.Look(ref this.enableLandfill, "enableLandfill");
             Scribe_Values.Look(ref this.enableAICrossLevel, "enableAICrossLevel");
         }
 
+        public bool enablePatch = true;
         public bool enableLandfill = true;
         public bool enableAICrossLevel = true;
         public static AM_ModSetting setting;

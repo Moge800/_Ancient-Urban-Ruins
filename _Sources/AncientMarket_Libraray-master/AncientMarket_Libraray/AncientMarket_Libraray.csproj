@@ -61,6 +61,7 @@
     <Compile Include="JobDriver_AddGraphicCard.cs" />
     <Compile Include="JobDriver_Repair.cs" />
     <Compile Include="Miner.cs" />
+    <Compile Include="PatchOperationConditionModSetting.cs" />
     <Compile Include="Patch\Patch_QuestMapSize.cs" />
     <Compile Include="PawnColumnWorker_CopyPasteLevelTimetable.cs" />
     <Compile Include="Tab_LevelTransmit.cs" />
@@ -122,6 +123,7 @@
       <HintPath>..\..\..\..\Game\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Unity.AI.Navigation">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Unity.AI.Navigation.dll</HintPath>

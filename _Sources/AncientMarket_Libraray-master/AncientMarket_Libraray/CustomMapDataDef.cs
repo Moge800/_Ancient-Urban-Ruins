@@ -43,10 +43,19 @@ namespace AncientMarket_Libraray
                     result.Add(p);
                 }
             };
-            this.thingDatas.ForEach(d => add(d.position));
+            this.thingDatas.ForEach(d =>
+            {
+                add(d.position);
+                d.allPositions.ForEach(add);
+                d.allRect.ForEach(d2 => d2.Cells.ToList().ForEach(d3 => add(d3)));
+            });
             this.routes.Values.ToList().ForEach(p => p.ForEach(p2 => add(p2)));
             this.terrains.Values.ToList().ForEach(p => p.ForEach(p2 => add(p2)));
+            this.terrainsRect.Values.ToList().ForEach(p => p.ForEach(p2 => p2.Cells.ToList().ForEach(p3 =>
+            add(p3))));
             this.roofs.Values.ToList().ForEach(p => p.ForEach(p2 => add(p2)));
+            this.roofRects.Values.ToList().ForEach(p => p.ForEach(p2 => p2.Cells.ToList().ForEach(p3 =>
+add(p3))));
             return result;
         }
         public CustomMapDataDef Copy(string name)
@@ -63,8 +72,12 @@ namespace AncientMarket_Libraray
             this.thingDatas.ForEach(d => result.thingDatas.Add(d.Copy()));
             result.terrains = new Dictionary<string, List<IntVec3>>();
             this.terrains.ToList().ForEach(t => result.terrains.Add(t.Key, t.Value));
+            result.terrainsRect = new Dictionary<string, List<CellRect>>();
+            this.terrainsRect.ToList().ForEach(t => result.terrainsRect.Add(t.Key, t.Value));
             result.roofs = new Dictionary<RoofDef, List<IntVec3>>();
             this.roofs.ToList().ForEach(t => result.roofs.Add(t.Key, t.Value));
+            result.roofRects = new Dictionary<RoofDef, List<CellRect>>();
+            this.roofRects.ToList().ForEach(t => result.roofRects.Add(t.Key, t.Value));
             result.routes = new Dictionary<string, List<IntVec3>>();
             this.routes.ToList().ForEach(t => result.routes.Add(t.Key, t.Value));
             result.origin = this;
@@ -80,7 +93,9 @@ namespace AncientMarket_Libraray
         public string faction = null;
         public Dictionary<string, List<IntVec3>> routes = new Dictionary<string, List<IntVec3>>();
         public Dictionary<RoofDef, List<IntVec3>> roofs = new Dictionary<RoofDef, List<IntVec3>>();
+        public Dictionary<RoofDef, List<CellRect>> roofRects = new Dictionary<RoofDef, List<CellRect>>();
         public Dictionary<string, List<IntVec3>> terrains = new Dictionary<string, List<IntVec3>>();
+        public Dictionary<string, List<CellRect>> terrainsRect = new Dictionary<string, List<CellRect>>();
         public List<ThingData> thingDatas = new List<ThingData>();
         public List<string> tags = new List<string>();
         public List<IntVec3> disgenerate = new List<IntVec3>();
@@ -97,11 +112,11 @@ namespace AncientMarket_Libraray
         public ThingData() { }
         public ThingData(Thing thing, IntVec3 pos)
         {
-            this.def = thing.def;
+            this.def = thing.def.defName;
             this.rotation = thing.Rotation;
             this.position = pos;
             this.count = thing.stackCount;
-            this.stuff = thing.Stuff;
+            this.stuff = thing.Stuff.defName;
             this.style = thing.StyleDef;
             this.faction = thing.Faction?.def;
             if (thing.TryGetQuality(out QualityCategory q))
@@ -127,50 +142,62 @@ namespace AncientMarket_Libraray
         }
         public Thing Spawn(Map map, IntVec3 pos, Func<ThingDef, bool, ThingDef> getDef, ThingDef forcedStuff = null, Rot4? forcedRot = null)
         {
-            ThingDef def = getDef(this.def, false);
-            if (def == null)
+            try
             {
-                Log.Error("Spawn thing data error:" + this.ToString());
-                return null;
+                ThingDef def = getDef(ThingDef.Named(this.def), false);
+                if (def == null)
+                {
+                    Log.Error("Spawn thing data error:" + this.ToString());
+                    return null;
+                }
+                Thing thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? ((forcedStuff ??
+                    getDef(ThingDef.Named(this.stuff), true)) ?? GenStuff.DefaultStuffFor(def)) : null);
+                thing.stackCount = this.count;
+                thing.StyleDef = this.style;
+                thing.Rotation = this.rotation;
+                thing.stackCount = this.count;
+                if (thing.TryGetComp<CompQuality>() is CompQuality compQ)
+                {
+                    compQ.SetQuality(this.quality, null);
+                }
+                if (thing.TryGetComp<CompPowerBattery>() is CompPowerBattery compB)
+                {
+                    compB.AddEnergy(this.storedEnergy);
+                }
+                if (thing.TryGetComp<CompRefuelable>() is CompRefuelable compR)
+                {
+                    compR.Refuel(this.storedEnergy);
+                }
+                if (thing.def.useHitPoints)
+                {
+                    thing.HitPoints = (int)(((float)this.hitPoint / 
+                        (float)ThingDef.Named(this.def)
+                        .GetStatValueAbstract(StatDefOf.MaxHitPoints, ThingDef.Named(this.stuff) ?? 
+                        GenStuff.DefaultStuffFor(ThingDef.Named(this.def))) * thing.MaxHitPoints));
+                }
+                if (thing is Plant plant)
+                {
+                    plant.Growth = this.growth;
+                }
+                if (this.faction != null && Find.FactionManager.FirstFactionOfDef(this.faction) is Faction faction)
+                {
+                    thing.SetFaction(faction);
+                }
+                if (thing.TryGetComp<CompColorable>() is CompColorable color)
+                {
+                    this.color = color.Color;
+                }
+                if (thing is Building b)
+                {
+                    b.ChangePaint(this.colorDef);
+                }
+                return GenSpawn.Spawn(thing, pos, map, forcedRot ?? this.rotation);
             }
-            Thing thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? forcedStuff ?? getDef(this.stuff, true) : null);
-            thing.stackCount = this.count;
-            thing.StyleDef = this.style;
-            thing.Rotation = this.rotation;
-            thing.stackCount = this.count;
-            if (thing.TryGetComp<CompQuality>() is CompQuality compQ)
+            catch (Exception ex) 
             {
-                compQ.SetQuality(this.quality, null);
+            
             }
-            if (thing.TryGetComp<CompPowerBattery>() is CompPowerBattery compB)
-            {
-                compB.AddEnergy(this.storedEnergy);
-            }
-            if (thing.TryGetComp<CompRefuelable>() is CompRefuelable compR)
-            {
-                compR.Refuel(this.storedEnergy);
-            }
-            if (thing.def.useHitPoints)
-            {
-                thing.HitPoints = (int)(((float)this.hitPoint / (float)this.def.GetStatValueAbstract(StatDefOf.MaxHitPoints, this.stuff ?? GenStuff.DefaultStuffFor(this.def)) * thing.MaxHitPoints));
-            }
-            if (thing is Plant plant)
-            {
-                plant.Growth = this.growth;
-            }
-            if (this.faction != null && Find.FactionManager.FirstFactionOfDef(this.faction) is Faction faction)
-            {
-                thing.SetFaction(faction);
-            }
-            if (thing.TryGetComp<CompColorable>() is CompColorable color)
-            {
-                this.color = color.Color;
-            }
-            if (thing is Building b)
-            {
-                b.ChangePaint(this.colorDef);
-            }
-            return GenSpawn.Spawn(thing, pos, map, forcedRot ?? this.rotation);
+            return null;
         }
         public ThingData Copy()
         {
@@ -188,13 +215,14 @@ namespace AncientMarket_Libraray
             result.storedEnergy = this.storedEnergy;
             result.colorDef = this.colorDef;
             result.allPositions = this.allPositions.ListFullCopy();
+            result.allRect = this.allRect.ListFullCopy();
             return result;
         }
         public void ExposeData()
         {
-            Scribe_Defs.Look(ref this.def, "def");
+            Scribe_Values.Look(ref this.def, "def");
             Scribe_Defs.Look(ref this.style, "style");
-            Scribe_Defs.Look(ref this.stuff, "stuff");
+            Scribe_Values.Look(ref this.stuff, "stuff");
             Scribe_Defs.Look(ref this.faction, "faction");
             Scribe_Values.Look(ref this.hitPoint, "QE_ThingData_hitPoint");
             Scribe_Values.Look(ref this.growth, "QE_ThingData_growth");
@@ -203,6 +231,7 @@ namespace AncientMarket_Libraray
             Scribe_Values.Look(ref this.storedEnergy, "QE_ThingData_storedEnergy");
             Scribe_Values.Look(ref this.quality, "quality");
             Scribe_Collections.Look(ref this.allPositions, "positions", LookMode.Value);
+            Scribe_Collections.Look(ref this.allRect, "allRect", LookMode.Value);
         }
 
         public bool Equals_Def(ThingData data)
@@ -211,8 +240,8 @@ namespace AncientMarket_Libraray
                && data.hitPoint == this.hitPoint && this.growth == data.growth && this.storedEnergy == data.storedEnergy;
         }
 
-        public ThingDef def = null;
-        public ThingDef stuff = null;
+        public string def = null;
+        public string stuff = null;
         public ThingStyleDef style = null;
         public FactionDef faction = null;
         public Rot4 rotation = Rot4.North;
@@ -220,6 +249,7 @@ namespace AncientMarket_Libraray
         public Color color = Color.white;
         public ColorDef colorDef;
         public List<IntVec3> allPositions = new List<IntVec3>();
+        public List<CellRect> allRect = new List<CellRect>();
         public QualityCategory quality = QualityCategory.Normal;
         public int count = 1;
         public float growth = 0f;
@@ -302,11 +332,16 @@ namespace AncientMarket_Libraray
             foreach (ThingData content in def.thingDatas)
             {
                 List<IntVec3> poss = new List<IntVec3>();
+                bool enablePosition = !content.allPositions.Any() && !content.allRect.Any();
                 if (content.allPositions.Any())
                 {
-                    poss.AddRange(content.allPositions);
+                    content.allPositions.ForEach(pos => poss.Add(pos));
                 }
-                else
+                if (content.allRect.Any())
+                {
+                    content.allRect.ForEach(rect => poss.AddRange(rect.Cells));
+                }
+                if (enablePosition)
                 {
                     poss.Add(content.position);
                 }
@@ -329,7 +364,7 @@ namespace AncientMarket_Libraray
                 });
             }
         }
-        public static void SetRoofAndTerrain(Map map, CustomMapDataDef def, IntVec3 center)
+        public static void SetRoofAndTerrain(Map map, CustomMapDataDef def, IntVec3 center, bool ignoreDisgenerate = false)
         {
             foreach (KeyValuePair<string, List<IntVec3>> content in def.terrains)
             {
@@ -342,6 +377,20 @@ namespace AncientMarket_Libraray
                     }
                 });
             }
+            foreach (KeyValuePair<string, List<CellRect>> content in def.terrainsRect)
+            {
+                TerrainDef terrain = TerrainDef.Named(content.Key);
+                content.Value.ForEach(x =>
+                {
+                    foreach (var item in x.Cells.ToList())
+                    {
+                        if ((item + center).InBounds(map))
+                        {
+                            map.terrainGrid.SetTerrain(item + center, terrain);
+                        }
+                    }
+                });
+            }
             foreach (KeyValuePair<RoofDef, List<IntVec3>> content in def.roofs)
             {
                 content.Value.ForEach(x =>
@@ -349,6 +398,19 @@ namespace AncientMarket_Libraray
                     if ((x + center).InBounds(map))
                     {
                         map.roofGrid.SetRoof(x + center, content.Key);
+                    }
+                });
+            }
+            foreach (KeyValuePair<RoofDef, List<CellRect>> content in def.roofRects)
+            {
+                content.Value.ForEach(x =>
+                {
+                    foreach (var item in x.Cells.ToList())
+                    {
+                        if ((item + center).InBounds(map))
+                        {
+                            map.roofGrid.SetRoof(item + center, content.Key);
+                        }
                     }
                 });
             }
