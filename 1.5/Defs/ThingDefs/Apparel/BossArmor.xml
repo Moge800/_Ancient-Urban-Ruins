@@ -289,10 +289,10 @@
           <offset>(0,0)</offset>
         </south>
         <east>
-          <offset>(0,0)</offset>
+          <offset>(0.05,0)</offset>
         </east>
         <west>
-          <offset>(0,0)</offset>
+          <offset>(-0.05,0)</offset>
         </west>
         <male>
           <scale>(1,1)</scale>
