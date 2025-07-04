@@ -21,11 +21,11 @@ namespace AncientMarket_Libraray
         public override void DoSettingsWindowContents(Rect inRect)
         {
             inRect.y += 30f;
-            Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, 300f, 30f), "EnableAICrossLevel".Translate(), ref this.setting.enableAICrossLevel);
+            Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, inRect.width, 30f), "EnableAICrossLevel".Translate(), ref this.setting.enableAICrossLevel);
             inRect.y += 50f;
-            Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, 300f, 30f), "EnableLandfill".Translate(), ref this.setting.enableLandfill);
+            Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, inRect.width, 30f), "EnableLandfill".Translate(), ref this.setting.enableLandfill);
             inRect.y += 50f;
-            Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, 300f, 30f), "AMEnablePatch".Translate(), ref this.setting.enablePatch);
+            Widgets.CheckboxLabeled(new Rect(inRect.x, inRect.y, inRect.width, 30f), "AMEnablePatch".Translate(), ref this.setting.enablePatch);
 
         }
         public AM_ModSetting setting = null;
