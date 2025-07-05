@@ -45,7 +45,7 @@ namespace AncientMarket_Libraray
             Scribe_Values.Look(ref this.enableAICrossLevel, "enableAICrossLevel");
         }
 
-        public bool enablePatch = true;
+        public bool enablePatch = false;
         public bool enableLandfill = true;
         public bool enableAICrossLevel = true;
         public static AM_ModSetting setting;

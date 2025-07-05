@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
   <Operation Class="AncientMarket_Libraray.PatchOperationConditionModSetting">
+    <success>Always</success>
     <math Class="PatchOperationSequence">
       <operations>
-
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="AM_AScompFD"]/costList</xpath>
           <value>
@@ -26,7 +26,7 @@
               <ComponentIndustrial>3</ComponentIndustrial>
             </costList>
           </value>
-        </Operation>
+        </li>
 
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="AM_MK4aDefensive"]/costList</xpath>
@@ -50,7 +50,7 @@
               <ComponentIndustrial>5</ComponentIndustrial>
             </costList>
           </value>
-        </Operation>
+        </li>
 
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="AM_FullyEnclosedHelmet"]/costList</xpath>
@@ -814,6 +814,46 @@
               <MedicineIndustrial>3</MedicineIndustrial>
             </fixedInventory>
           </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AM_PotatoChipsB" or defName="AM_PotatoChipsC" or defName="AM_PotatoChipsD" or defName="AM_PotatoChipsE" or defName="AM_PotatoChipsF" or defName="AM_MRE"
+		or defName="AM_CannedBraisedPorkbelly" or defName="AM_CannedHerring" or defName="AM_CannedPeas" or defName="AM_CannedStewedBeef" or defName="AM_DeliciousCannedBeef" or defName="AM_TsingtaoBeer" 
+		or defName="AM_Budweiser" or defName="AM_MilkBeer" or defName="AM_Coca" or defName="AM_Fanta" or defName="AM_Pepsi" or defName="AM_Sprite"]</xpath>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AM_BakingThermometer" or defName="AM_CPU" or defName="AM_AluminumSplint" or defName="AM_PelvicHammock" or defName="AM_PackagedCPU" or defName="AM_GPU"
+		or defName="AM_PackagedGPU" or defName="AM_HDD" or defName="AM_SSD" or defName="AM_CreditCard" or defName="AM_KeyCard" or defName="AM_ElectricalTape" 
+		or defName="AM_GameConsole" or defName="AM_OneLiterGlassAdhesive" or defName="AM_LEDX" or defName="AM_RadioIntercom" or defName="AM_TapeMeasure" or defName="AM_GoldenEgg" 
+		or defName="AM_GoldenRoosterStatue" or defName="AM_BrassLionStatue" or defName="AM_SICC" or defName="AM_BriefCase" or defName="AM_LEGO_GiantRockExcavator_NotOpen" 
+		or defName="AM_LEGO_HeavyCrane_NotOpen" or defName="AM_LEGO_LandmarkBuilding_NotOpen" or defName="AM_LEGO_LightCrane_NotOpen" or defName="AM_LEGO_MediumCrane_NotOpen"  
+		or defName="AM_LEGO_Palace_NotOpen" or defName="AM_EmptyBox" or defName="LEGO_GiantRockExcavator_Accomplish" or defName="LEGO_HeavyCrane_Accomplish" 
+		or defName="LEGO_LandmarkBuilding_Accomplish" or defName="LEGO_LightCrane_Accomplish" or defName="LEGO_MediumCrane_Accomplish" or defName="LEGO_Palace_Accomplish" or defName="UnfinishedLEGO"]</xpath>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AM_ComponentWeapon" or defName="AM_227FURYComponents" or defName="AM_338PrecisionComponents" or defName="AM_PKPMagazineComponents" or defName="AM_AramidCloth" or defName="AM_HeavyCompositePlate"
+		or defName="AM_UHMWPEPlate" or defName="AM_Spear68C" or defName="AM_Spear68A" or defName="AM_M5A3LT" or defName="AM_TKB68A" or defName="AM_AK68A" 
+		or defName="AM_MK68A" or defName="AM_RM68A" or defName="AM_MCX" or defName="AM_MCXC" or defName="AM_ADAR" or defName="AM_M4A" 
+		or defName="AM_M4ASOP" or defName="AM_M4C" or defName="AM_M42U" or defName="AM_AK101A" or defName="AM_ASVAL" 
+		or defName="AM_VSS" or defName="AM_DTMDR" or defName="AM_MK17A" or defName="AM_R11A"  
+		or defName="AM_SR25A" or defName="AM_Hunter" or defName="AM_M700A" or defName="AM_MK18M" 
+		or defName="AM_PKM" or defName="AM_PKP" or defName="AM_AVT" or defName="AM_MPX" or defName="AM_MPXL" or defName="AM_STM" or defName="AM_STMC" or defName="AM_APS" 
+		or defName="AM_Makarov" or defName="AM_FNHG" or defName="AM_CPHG"]</xpath>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AM_SurgicalBag" or defName="AM_BigSurgicalBag" or defName="AM_AI2A" or defName="AM_HemostaticAgent" or defName="AM_FirstAidKit" or defName="AM_Salewa"
+		or defName="AM_Grizzly" or defName="AM_AncientGrizzly" or defName="AM_MetalbloodInjector" or defName="AM_AnalgesicRegenerationInjector" or defName="AM_CellRegenerationInjector" or defName="AM_EssentialBalm" 
+		or defName="AM_Ibuprofen" or defName="AM_Antibiotic"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingCategoryDef[defName="AM_Manufactured" or defName="AM_Electronics" or defName="AM_Tool" or defName="AM_MedicalSupplies" or defName="AM_SpecialComp"]</xpath>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="AM_DecomposingWeapons" or defName="AM_DecomposingWeaponsI" or defName="AM_DisassembleLightArmor" or defName="AM_DisassemblePolyethylenePlate" 
+		or defName="AM_DisassembleHeavyArmor"]</xpath>
         </li>
       </operations>
     </math>
