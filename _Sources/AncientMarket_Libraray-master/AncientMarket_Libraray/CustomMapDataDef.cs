@@ -144,7 +144,7 @@ add(p3))));
         {
             try
             {
-                ThingDef def = ThingDef.Named(this.def);
+                ThingDef def = DefDatabase<ThingDef>.GetNamed(this.def, false);
                 ThingDef stuff = null;
                 if (this.stuff != null)
                 {
@@ -152,7 +152,6 @@ add(p3))));
                 }
                 if (def == null)
                 {
-                    Log.Error("Spawn thing data error:" + this.ToString());
                     return null;
                 }
                 Thing thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? ((forcedStuff ??
@@ -200,8 +199,6 @@ add(p3))));
             }
             catch (Exception ex)
             {
-                Log.Message(this.def);
-                Log.Message(ex);
             }
             return null;
         }

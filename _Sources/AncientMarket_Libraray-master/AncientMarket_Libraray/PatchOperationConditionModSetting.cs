@@ -13,16 +13,16 @@ namespace AncientMarket_Libraray
     {
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (this.key != null && this.math != null 
-                && AM_ModSetting.setting is AM_ModSetting setting 
-                && setting.enablePatch) 
+            if (this.math != null
+                && AM_ModSetting.setting is AM_ModSetting setting
+                && (setting.enablePatch != this.invert))
             {
                 return this.math.Apply(xml);
             }
-            return false;
+            return true;
         }
 
-        public string key;
+        public bool invert = false;
         public PatchOperation math;
     }
 }
