@@ -38,5 +38,6 @@
   <JoyLevel>娱乐层：{0}</JoyLevel>
   <NotSet>无</NotSet>
 
+   <AMEnablePatch>原版战利品模式（取消大部分物品，武器，需要重启游戏）</AMEnablePatch>
   <ExitUnderground>离开地下</ExitUnderground>
 </LanguageData>

@@ -39,5 +39,6 @@
   <JoyLevel>Joy Level：{0}</JoyLevel>
   <NotSet>No Floor Selected</NotSet>
 
+  <AMEnablePatch>Vanilla loot (requires game restart)</AMEnablePatch>
   <ExitUnderground>exit underground</ExitUnderground>
 </LanguageData>
