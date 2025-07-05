@@ -6,9 +6,6 @@
     <alwaysShowWeapon>true</alwaysShowWeapon>
     <thinkNode Class="ThinkNode_Priority">
       <subNodes>
-        <li Class="JobGiver_TakeCombatEnhancingDrug">
-          <onlyIfInDanger>true</onlyIfInDanger>
-        </li>
         <li Class="JobGiver_AIDefendPoint">
           <targetAcquireRadius>65</targetAcquireRadius>
           <targetKeepRadius>72</targetKeepRadius>
