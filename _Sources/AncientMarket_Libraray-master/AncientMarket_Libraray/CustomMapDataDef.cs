@@ -144,14 +144,19 @@ add(p3))));
         {
             try
             {
-                ThingDef def = getDef(ThingDef.Named(this.def), false);
+                ThingDef def = ThingDef.Named(this.def);
+                ThingDef stuff = null;
+                if (this.stuff != null)
+                {
+                    stuff = DefDatabase<ThingDef>.GetNamed(this.stuff, false);
+                }
                 if (def == null)
                 {
                     Log.Error("Spawn thing data error:" + this.ToString());
                     return null;
                 }
                 Thing thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? ((forcedStuff ??
-                    getDef(ThingDef.Named(this.stuff), true)) ?? GenStuff.DefaultStuffFor(def)) : null);
+                    stuff) ?? GenStuff.DefaultStuffFor(def)) : null);
                 thing.stackCount = this.count;
                 thing.StyleDef = this.style;
                 thing.Rotation = this.rotation;
@@ -170,9 +175,9 @@ add(p3))));
                 }
                 if (thing.def.useHitPoints)
                 {
-                    thing.HitPoints = (int)(((float)this.hitPoint / 
+                    thing.HitPoints = (int)(((float)this.hitPoint /
                         (float)ThingDef.Named(this.def)
-                        .GetStatValueAbstract(StatDefOf.MaxHitPoints, ThingDef.Named(this.stuff) ?? 
+                        .GetStatValueAbstract(StatDefOf.MaxHitPoints, stuff ??
                         GenStuff.DefaultStuffFor(ThingDef.Named(this.def))) * thing.MaxHitPoints));
                 }
                 if (thing is Plant plant)
@@ -193,9 +198,10 @@ add(p3))));
                 }
                 return GenSpawn.Spawn(thing, pos, map, forcedRot ?? this.rotation);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-            
+                Log.Message(this.def);
+                Log.Message(ex);
             }
             return null;
         }
@@ -267,10 +273,38 @@ add(p3))));
                 List<IntVec3> disgenerate2 = new List<IntVec3>();
                 CustomMapDataDef origin = def;
                 IntVec3 center = centerP == null ? map.Center - new IntVec3(def.size.x / 2, 0, def.size.z / 2) : centerP.Value;
-                MapGeneratingUtility.Pretreat(map, def, center);
-                MapGeneratingUtility.SetRoofAndTerrain(map, def, center);
-                MapGeneratingUtility.SpawnThings(map, def, center);
-                MapGeneratingUtility.SpawnPawns(map, def, center);
+                try
+                {
+                    MapGeneratingUtility.Pretreat(map, def, center);
+                }
+                catch
+                {
+
+                }
+                try
+                {
+                    MapGeneratingUtility.SetRoofAndTerrain(map, def, center);
+                }
+                catch
+                {
+
+                }
+                try
+                {
+                    MapGeneratingUtility.SpawnThings(map, def, center);
+                }
+                catch
+                {
+
+                }
+                try
+                {
+                    MapGeneratingUtility.SpawnPawns(map, def, center);
+                }
+                catch
+                {
+
+                }
             }
             catch (Exception e)
             {

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
   <Operation Class="AncientMarket_Libraray.PatchOperationConditionModSetting">
-    <success>Always</success>
     <math Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationReplace">
@@ -84,14 +83,12 @@
             </costList>
           </value>
         </li>
-
+        <!-- 错误 -->
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_FlakMaterial"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_FlakMaterial"]/root/options</xpath>
           <value>
             <options>
 
-
-              <!-- 超织物 -->
               <li>
                 <weight>0.1</weight>
                 <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -105,7 +102,6 @@
                   </fixedParams>
                 </thingSetMaker>
               </li>
-              <!-- 复数材料 -->
               <li>
                 <weight>0.75</weight>
                 <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -122,8 +118,6 @@
                   </fixedParams>
                 </thingSetMaker>
               </li>
-
-              <!--高级零件 -->
               <li>
                 <weight>0.35</weight>
                 <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -132,7 +126,6 @@
                       <thingDefs>
                         <li>ComponentSpacer</li>
                         <li>ComponentIndustrial</li>
-                        <li>AM_MRE</li>
                       </thingDefs>
                     </filter>
                     <countRange>1~2</countRange>
@@ -140,7 +133,6 @@
                 </thingSetMaker>
               </li>
 
-              <!--零件 -->
               <li>
                 <weight>0.5</weight>
                 <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -160,7 +152,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_OrdinaryWeapons"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_OrdinaryWeapons"]/root/options</xpath>
           <value>
             <options>
               <!--手枪 -->
@@ -185,7 +177,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_AdvancedWeapons"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_AdvancedWeapons"]/root/options</xpath>
           <value>
             <options>
               <!--轻武器 -->
@@ -215,7 +207,7 @@
 
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_Materials"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_Materials"]/root/options</xpath>
           <value>
             <options>
               <!--高级零件 -->
@@ -271,7 +263,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_LEGO"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_LEGO"]/root/options</xpath>
           <value>
             <options>
               <!--高级零件 -->
@@ -309,7 +301,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_ComputerAccessories"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_ComputerAccessories"]/root/options</xpath>
           <value>
             <options>
               <!--高级零件 -->
@@ -347,7 +339,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_MISC"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_MISC"]/root/options</xpath>
           <value>
             <options>
               <!--情报 -->
@@ -390,7 +382,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_MedicalSupplies"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_MedicalSupplies"]/root/options</xpath>
           <value>
             <options>
               <!--超高价值 -->
@@ -460,7 +452,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_Injector"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_Injector"]/root/options</xpath>
           <value>
             <options>
               <!--医药 -->
@@ -498,7 +490,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_Collectible"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_Collectible"]/root/options</xpath>
           <value>
             <options>
               <!--常见奢侈品 -->
@@ -541,7 +533,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_Tool"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_Tool"]/root/options</xpath>
           <value>
             <options>
               <!--工具 -->
@@ -564,7 +556,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_ElectronicProduct"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_ElectronicProduct"]/root/options</xpath>
           <value>
             <options>
               <!--零件 -->
@@ -587,7 +579,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_PotatoChips"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_PotatoChips"]/root/options</xpath>
           <value>
             <options>
               <!--包装食物 -->
@@ -609,7 +601,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_Food"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_Food"]/root/options</xpath>
           <value>
             <options>
 
@@ -648,7 +640,7 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingSetMakerDef[defName="AM_Beverages"]/options</xpath>
+          <xpath>Defs/ThingSetMakerDef[defName="AM_Beverages"]/root/options</xpath>
           <value>
             <options>
               <!--饮料 -->
@@ -814,7 +806,29 @@
               <MedicineIndustrial>3</MedicineIndustrial>
             </fixedInventory>
           </value>
+
         </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="AM_Scavenger"]/fixedInventory</xpath>
+          <value>
+            <fixedInventory>
+              <MedicineHerbal>2</MedicineHerbal>
+              <MealSurvivalPack>6</MealSurvivalPack>
+            </fixedInventory>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="AM_DilapidatedMap" or defName="AM_DilapidatedMapB"
+        or defName="AM_ConfidentialIntelMapA" or defName="AM_IntelMap" or defName="AM_WayBill"
+        or defName="AM_ConfidentialIntelMapB"]/thingCategories</xpath>
+          <value>
+            <thingCategories>
+              <li>Books</li>
+            </thingCategories>
+          </value>
+        </li>
+
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="AM_PotatoChipsB" or defName="AM_PotatoChipsC" or defName="AM_PotatoChipsD" or defName="AM_PotatoChipsE" or defName="AM_PotatoChipsF" or defName="AM_MRE"
 		or defName="AM_CannedBraisedPorkbelly" or defName="AM_CannedHerring" or defName="AM_CannedPeas" or defName="AM_CannedStewedBeef" or defName="AM_DeliciousCannedBeef" or defName="AM_TsingtaoBeer" 
@@ -846,6 +860,10 @@
           <xpath>/Defs/ThingDef[defName="AM_SurgicalBag" or defName="AM_BigSurgicalBag" or defName="AM_AI2A" or defName="AM_HemostaticAgent" or defName="AM_FirstAidKit" or defName="AM_Salewa"
 		or defName="AM_Grizzly" or defName="AM_AncientGrizzly" or defName="AM_MetalbloodInjector" or defName="AM_AnalgesicRegenerationInjector" or defName="AM_CellRegenerationInjector" or defName="AM_EssentialBalm" 
 		or defName="AM_Ibuprofen" or defName="AM_Antibiotic"]</xpath>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AM_VirutalMiner"]</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingCategoryDef[defName="AM_Manufactured" or defName="AM_Electronics" or defName="AM_Tool" or defName="AM_MedicalSupplies" or defName="AM_SpecialComp"]</xpath>
