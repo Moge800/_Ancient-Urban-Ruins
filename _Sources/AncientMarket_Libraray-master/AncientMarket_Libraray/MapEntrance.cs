@@ -73,8 +73,7 @@ namespace AncientMarket_Libraray
         {
             if (this.customMap != null) 
             {
-                this.customMap?.Parent.Destroy();
-                Current.Game.DeinitAndRemoveMap(this.customMap, true);
+                PocketMapUtility.DestroyPocketMap(this.customMap);
             }
             base.Destroy(mode);
         }

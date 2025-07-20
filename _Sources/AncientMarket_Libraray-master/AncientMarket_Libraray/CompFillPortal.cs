@@ -45,7 +45,8 @@ namespace AncientMarket_Libraray
         {
             if (this.planFill && selPawn.CanReserveAndReach(this.parent,PathEndMode.Touch,Danger.Deadly))
             {
-                yield return new FloatMenuOption("FillEntrance".Translate(),() => selPawn.jobs.StartJob(JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("AM_FillEntrance"),this.parent)));
+                yield return new FloatMenuOption("FillEntrance".Translate(),() => 
+                selPawn.jobs.StartJob(JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("AM_FillEntrance"),this.parent)));
             }
             yield break;
         }
