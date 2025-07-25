@@ -17,7 +17,11 @@ namespace AncientMarket_Libraray
             {
                 if (this.exit == null)
                 {
-                    this.exit = this.Map.listerThings.GetThingsOfType<MapExit>().First();
+                    var exits = this.Map.listerThings.GetThingsOfType<MapExit>().ToList();
+                    if (exits.Any())
+                    {
+                        this.exit = exits.First();
+                    }
                 }
                 return this.exit;
             }

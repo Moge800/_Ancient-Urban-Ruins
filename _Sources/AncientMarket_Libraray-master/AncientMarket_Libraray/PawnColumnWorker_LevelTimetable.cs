@@ -83,10 +83,10 @@ namespace AncientMarket_Libraray
 				if (Mouse.IsOver(rect))
 				{
 					Widgets.DrawBox(rect, 2, null);
-					if (mouseButton)
+					if (mouseButton && allow != MainTabWindow_LevelSchedule.allow)
 					{
 						SoundDefOf.Designate_DragStandard_Changed_NoCam.PlayOneShotOnCamera(null);
-						comp.GetSchedule(p).timeSchedule[hour] = MainTabWindow_LevelSchedule.allow;
+						s.timeSchedule[hour] = MainTabWindow_LevelSchedule.allow;
 					}
 				}
 			}

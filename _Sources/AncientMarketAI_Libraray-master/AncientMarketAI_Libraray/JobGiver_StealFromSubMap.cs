@@ -16,7 +16,9 @@ namespace AncientMarketAI_Libraray
         protected override Job TryGiveJob(Pawn pawn)
         {
             Job result = null;
-            if (AM_ModSetting.setting.enableAICrossLevel && pawn.Faction != null && !pawn.Faction.IsPlayer && pawn.Map.Parent is MapParent_Custom custom && pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly)
+            if (AM_ModSetting.setting.enableAICrossLevel && pawn.Faction != null 
+                && !pawn.Faction.IsPlayer && pawn.Map.Parent is MapParent_Custom custom && custom.Exit != null &&
+                pawn.CanReach(custom.Exit, PathEndMode.Touch, Danger.Deadly)
                 && pawn.mindState.duty is PawnDuty duty && duty.def == DutyDefOf.Steal && StealAIUtility.TryFindBestItemToSteal(pawn.Position, pawn.Map, 50f, out Thing t, pawn))
             {
                 result = JobMaker.MakeJob(JobDefOf.CarryDownedPawnToPortal, custom.Exit, t);
