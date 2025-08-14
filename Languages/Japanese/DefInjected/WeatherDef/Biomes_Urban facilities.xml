@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: facilities -->
+  <AM_Facilities.label>施設</AM_Facilities.label>
+  <!-- EN: There is no weather in facilities. -->
+  <AM_Facilities.description>施設内には天候がありません。</AM_Facilities.description>
+  
+</LanguageData>

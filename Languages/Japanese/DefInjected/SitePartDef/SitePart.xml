@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_CustomSite.label>カスタムサイト</AM_CustomSite.label>
+  <AM_CustomSite.description>カスタムサイトです</AM_CustomSite.description>
+  <AM_CustomSite.approachingReportString>{0}を調査中</AM_CustomSite.approachingReportString>
+  <AM_CustomSite.approachOrderString>{0}へ移動</AM_CustomSite.approachOrderString>
+  
+  <AM_MALL_L_Site.label>商業センター</AM_MALL_L_Site.label>
+  <AM_MALL_L_Site.description>大規模商業センター</AM_MALL_L_Site.description>
+  <AM_MALL_L_Site.approachingReportString>商業センターへ向かっています</AM_MALL_L_Site.approachingReportString>
+  <AM_MALL_L_Site.approachOrderString>商業センターに侵入</AM_MALL_L_Site.approachOrderString>
+  
+  <AM_MALL_S_Site.label>商業センター</AM_MALL_S_Site.label>
+  <AM_MALL_S_Site.description>小規模商業センター</AM_MALL_S_Site.description>
+  <AM_MALL_S_Site.approachingReportString>商業センターへ向かっています</AM_MALL_S_Site.approachingReportString>
+  <AM_MALL_S_Site.approachOrderString>商業センターに侵入</AM_MALL_S_Site.approachOrderString>
+  
+  <AM_ReserveSite.label>備蓄基地</AM_ReserveSite.label>
+  <AM_ReserveSite.description>備蓄基地</AM_ReserveSite.description>
+  <AM_ReserveSite.approachingReportString>備蓄基地へ向かっています</AM_ReserveSite.approachingReportString>
+  <AM_ReserveSite.approachOrderString>備蓄基地に侵入</AM_ReserveSite.approachOrderString>
+  
+  <AM_StreetSite.label>街区</AM_StreetSite.label>
+  <AM_StreetSite.description>街区遺跡</AM_StreetSite.description>
+  <AM_StreetSite.approachingReportString>街区へ向かっています</AM_StreetSite.approachingReportString>
+  <AM_StreetSite.approachOrderString>街区に侵入</AM_StreetSite.approachOrderString>
+  
+  <ACM_AncientRandomComplex.label>建築廃墟</ACM_AncientRandomComplex.label>
+  <ACM_AncientRandomComplex.description>古代の建築物の廃墟で、メカニターの残骸が含まれています。危険な構造物に侵入してメカニターのメックリンクを抽出できます。</ACM_AncientRandomComplex.description>
+  <ACM_AncientRandomComplex.approachingReportString>建築廃墟へ向かっています</ACM_AncientRandomComplex.approachingReportString>
+  <ACM_AncientRandomComplex.approachOrderString>建築廃墟に侵入</ACM_AncientRandomComplex.approachOrderString>
+
+</LanguageData>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_ChemicalPlantIntern.description>[PAWN_nameDef]は化学工場の研修生で、特定の化学薬品の取り扱いや工場の設備操作を学ぶ任務を負っています。[PAWN_pronoun]は学習が早く、時折、労働者が仕事中に負った怪我の治療を手伝うこともあります。[PAWN_pronoun]は余暇に絵を描くことも楽しんでいます。</AM_ChemicalPlantIntern.description>
+  <AM_ChemicalPlantIntern.title>化学工場研修生</AM_ChemicalPlantIntern.title>
+  <AM_ChemicalPlantIntern.titleFemale>化学工場研修生</AM_ChemicalPlantIntern.titleFemale>
+  <AM_ChemicalPlantIntern.titleShort>研修生</AM_ChemicalPlantIntern.titleShort>
+  <AM_ChemicalPlantIntern.titleShortFemale>研修生</AM_ChemicalPlantIntern.titleShortFemale>
+  
+  <AM_DisasterOrphans.description>[PAWN_nameDef]は昆虫の蔓延で両親を失い、地下の洞窟網で一人で暮らしていました。[PAWN_pronoun]はしばしば飢えていましたが、ある日、秘密の実験室の倉庫の裏口を発見しました。[PAWN_pronoun]は侵入して中の食料を盗みましたが、2回目の試みで捕まりました。</AM_DisasterOrphans.description>
+  <AM_DisasterOrphans.title>災害孤児</AM_DisasterOrphans.title>
+  <AM_DisasterOrphans.titleFemale>災害孤児</AM_DisasterOrphans.titleFemale>
+  <AM_DisasterOrphans.titleShort>孤児</AM_DisasterOrphans.titleShort>
+  <AM_DisasterOrphans.titleShortFemale>孤児</AM_DisasterOrphans.titleShortFemale>
+  
+  <AM_FailedExperimentalSubjects.description>[PAWN_nameDef]は化学工場の事故で大量の有毒ガスを吸い込みました。[PAWN_possessive]双子の兄弟は[PAWN_pronoun]を救うために化学工場付属の病院に送りましたが、病院は[PAWN_nameDef]を治療しませんでした。代わりに、彼らは[PAWN_possessive]家族に[PAWN_pronoun]が死亡したと嘘をつき、[PAWN_nameDef]を寄生虫実験の被験体として使用しました。この失敗した実験は[PAWN_possessive]精神を破壊しました。</AM_FailedExperimentalSubjects.description>
+  <AM_FailedExperimentalSubjects.title>失敗した被験体</AM_FailedExperimentalSubjects.title>
+  <AM_FailedExperimentalSubjects.titleShort>失敗作</AM_FailedExperimentalSubjects.titleShort>
+  
+  <AM_FashionGuy.description>怪我をした後、[PAWN_nameDef]はアスリートとしてのキャリアを続けることができなくなりました。失意の中、[PAWN_pronoun]はショッピングモールの警備員として雇われました。このおしゃれな男は、夜にクラシックな黒いストライプのスポーツウェアを着てモールをパトロールし、機関銃を使ってこそこそする泥棒をすべて叩きのめすのが好きでした。</AM_FashionGuy.description>
+  <AM_FashionGuy.title>おしゃれな男</AM_FashionGuy.title>
+  <AM_FashionGuy.titleShort>おしゃれな男</AM_FashionGuy.titleShort>
+  
+  <AM_FormerAthlete.description>[PAWN_nameDef]は元アスリートでした。[PAWN_pronoun]は怪我をする前に複数のスポーツ選手権で優勝していました。[PAWN_pronoun]には若い頃に化学工場で働き始めた双子の兄弟がいましたが、それ以来彼からの連絡はありません。</AM_FormerAthlete.description>
+  <AM_FormerAthlete.title>元アスリート</AM_FormerAthlete.title>
+  <AM_FormerAthlete.titleFemale>元アスリート</AM_FormerAthlete.titleFemale>
+  <AM_FormerAthlete.titleShort>元アスリート</AM_FormerAthlete.titleShort>
+  <AM_FormerAthlete.titleShortFemale>元アスリート</AM_FormerAthlete.titleShortFemale>
+  
+  <AM_LaboratoryKid.description>[PAWN_nameDef]は秘密の実験室の試験管で生まれ、そこではすべての子供が軍隊式の教育を受け、頻繁に薬物を投与されました。そこで、[PAWN_nameDef]は多くの知識を習得しました。</AM_LaboratoryKid.description>
+  <AM_LaboratoryKid.title>実験室の子供</AM_LaboratoryKid.title>
+  <AM_LaboratoryKid.titleFemale>実験室の子供</AM_LaboratoryKid.titleFemale>
+  <AM_LaboratoryKid.titleShort>実験室の子供</AM_LaboratoryKid.titleShort>
+  <AM_LaboratoryKid.titleShortFemale>実験室の子供</AM_LaboratoryKid.titleShortFemale>
+  
+  <AM_ResearchersChild.description>[PAWN_nameDef]の父親は古代の実験室の研究者で、実験に対する不自然なほどの愛着を持っていました。その結果、[PAWN_nameDef]は頻繁に無許可の薬物を投与され、激しい苦痛を味わいました。</AM_ResearchersChild.description>
+  <AM_ResearchersChild.title>研究者の子供</AM_ResearchersChild.title>
+  <AM_ResearchersChild.titleFemale>研究者の子供</AM_ResearchersChild.titleFemale>
+  <AM_ResearchersChild.titleShort>研究者の子供</AM_ResearchersChild.titleShort>
+  <AM_ResearchersChild.titleShortFemale>研究者の子供</AM_ResearchersChild.titleShortFemale>
+  
+  <AM_RisingStar.description>[PAWN_nameDef]は士官学校の新星で、優れた身体能力と戦闘スキルを持っていましたが、それが原因で誘拐され、秘密の実験室に送られました。その後、クローンが身代わりとして[PAWN_possessive]家族に送られました。</AM_RisingStar.description>
+  <AM_RisingStar.title>士官学校の新星</AM_RisingStar.title>
+  <AM_RisingStar.titleFemale>士官学校の新星</AM_RisingStar.titleFemale>
+  <AM_RisingStar.titleShort>新星</AM_RisingStar.titleShort>
+  <AM_RisingStar.titleShortFemale>新星</AM_RisingStar.titleShortFemale>
+  
+  <AM_RunawayChild.description>[PAWN_nameDef]は両親から頻繁に虐待を受けていたため、激怒して家を飛び出しました。悲劇的なことに、[PAWN_pronoun]はすぐに何者かに誘拐され、秘密の実験室に連れ去られました。</AM_RunawayChild.description>
+  <AM_RunawayChild.title>家出少年</AM_RunawayChild.title>
+  <AM_RunawayChild.titleFemale>家出少女</AM_RunawayChild.titleFemale>
+  <AM_RunawayChild.titleShort>家出っ子</AM_RunawayChild.titleShort>
+  <AM_RunawayChild.titleShortFemale>家出っ子</AM_RunawayChild.titleShortFemale>
+  
+  <AM_SpecialUnits.description>特殊な「合意の上での」寄生虫実験の後、[PAWN_nameDef]は強化され、特殊部隊の一員として指定され、頻繁に秘密任務を遂行しました。</AM_SpecialUnits.description>
+  <AM_SpecialUnits.title>特殊部隊</AM_SpecialUnits.title>
+  <AM_SpecialUnits.titleShort>特殊部隊</AM_SpecialUnits.titleShort>
+  
+</LanguageData>

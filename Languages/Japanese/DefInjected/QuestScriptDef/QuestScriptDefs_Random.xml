@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <ACM_AncientRandomSite.questDescriptionRules.rulesStrings>
+    <li>questDescription -> 廃墟となった建設現場の場所を発見しました。そこは遠古都市の地下システムへの入り口と噂されており、旧バンカーから盗まれた装備を身に着けた警備員が駐屯しています。彼らは発見されていることに気づいていないようです。</li>
+  </ACM_AncientRandomSite.questDescriptionRules.rulesStrings>
+  <ACM_AncientRandomSite.questNameRules.rulesStrings>
+    <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->秘密の</li>
+    <li>complexAdj->遠古の</li>
+    <li>complexAdj->古びた</li>
+    <li>complexAdj->隠された</li>
+    <li>complexAdj->ほこりを被った</li>
+    <li>complexAdj->危険な</li>
+    <li>complexAdj->隠された</li>
+    <li>complex->建設現場</li>
+    <li>complex->工事現場廃墟</li>
+    <li>complex->建築残骸</li>
+    <li>complex->建築廃墟</li>
+  </ACM_AncientRandomSite.questNameRules.rulesStrings>
+  
+  <AM_Quest_Test.questDescriptionRules.rulesStrings>TODO</AM_Quest_Test.questDescriptionRules.rulesStrings>
+  <AM_Quest_Test.questNameRules.rulesStrings>TODO</AM_Quest_Test.questNameRules.rulesStrings>
+
+</LanguageData>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_LevelSchedule.label>階層スケジュール</AM_LevelSchedule.label>
+  <AM_LevelSchedule.description>入植者の活動階層と階層間移動の時間帯を計画します。入植者は許可されていない階層には行かず（メインマップは制限されません）、許可された時間帯にのみ階層間を移動します。</AM_LevelSchedule.description>
+  
+</LanguageData>

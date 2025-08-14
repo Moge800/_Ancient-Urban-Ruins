@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_Quest_Mall_L.questDescriptionRules.rulesStrings>
+    <li>questDescription -> 私たちは膨大な物資を備えた遠古の巨大ショッピングモールを発見しました。他の派閥もこの場所を発見しており、衝突は避けられません。</li>
+  </AM_Quest_Mall_L.questDescriptionRules.rulesStrings>
+  <AM_Quest_Mall_L.questNameRules.rulesStrings>
+    <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->巨大な</li>
+    <li>complexAdj->遠古の</li>
+    <li>complexAdj->古びた</li>
+    <li>complexAdj->大型の</li>
+    <li>complexAdj->ほこりを被った</li>
+    <li>complex->商業センター</li>
+    <li>complex->スーパー</li>
+    <li>complex->ショッピングセンター</li>
+    <li>complex->モール</li>
+  </AM_Quest_Mall_L.questNameRules.rulesStrings>
+
+  <AM_Quest_Mall_S.questDescriptionRules.rulesStrings>
+    <li>questDescription -> 私たちは膨大な物資を備えた遠古の巨大ショッピングモールを発見しました。他の派閥もこの場所を発見しており、衝突は避けられません。</li>
+  </AM_Quest_Mall_S.questDescriptionRules.rulesStrings>
+  <AM_Quest_Mall_S.questNameRules.rulesStrings>
+    <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->巨大な</li>
+    <li>complexAdj->遠古の</li>
+    <li>complexAdj->古びた</li>
+    <li>complexAdj->大型の</li>
+    <li>complexAdj->ほこりを被った</li>
+    <li>complex->商業センター</li>
+    <li>complex->スーパー</li>
+    <li>complex->ショッピングセンター</li>
+    <li>complex->モール</li>
+  </AM_Quest_Mall_S.questNameRules.rulesStrings>
+
+  <AM_Quest_Reserve.questDescriptionRules.rulesStrings>
+    <li>questDescription -> 私たちは厳重に守られた遠古の軍事備蓄基地の位置を発見しました。装備の整った古代の精鋭兵士が駐屯していると伝えられています。潜入には大きなリスクがありますが、それに見合う報酬もあります。</li>
+  </AM_Quest_Reserve.questDescriptionRules.rulesStrings>
+  <AM_Quest_Reserve.questNameRules.rulesStrings>
+    <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->秘密の</li>
+    <li>complexAdj->遠古の</li>
+    <li>complexAdj->古びた</li>
+    <li>complexAdj->隠された</li>
+    <li>complexAdj->ほこりを被った</li>
+    <li>complexAdj->危険な</li>
+    <li>complexAdj->隠された</li>
+    <li>complex->中継基地</li>
+    <li>complex->備蓄基地</li>
+    <li>complex->軍事基地</li>
+    <li>complex->基地</li>
+    <li>complex->軍事倉庫</li>
+  </AM_Quest_Reserve.questNameRules.rulesStrings>
+
+  <AM_Quest_Street.questDescriptionRules.rulesStrings>
+    <li>questDescription -> 私たちは遠古の街区遺跡を発見しました。かつて店が立ち並んでいた通りで、地図には地下商店街への入口も示されています。多くの高価なアイテムの発見が期待できます。</li>
+  </AM_Quest_Street.questDescriptionRules.rulesStrings>
+  <AM_Quest_Street.questNameRules.rulesStrings>
+    <li>questName(p=3)->[complexAdj][complex]</li>
+    <li>questName->[complex]</li>
+    <li>complexAdj->秘密の</li>
+    <li>complexAdj->遠古の</li>
+    <li>complexAdj->古びた</li>
+    <li>complexAdj->隠された</li>
+    <li>complexAdj->ほこりを被った</li>
+    <li>complexAdj->危険な</li>
+    <li>complexAdj->隠された</li>
+    <li>complex->街区廃墟</li>
+    <li>complex->近隣廃墟</li>
+    <li>complex->通り廃墟</li>
+  </AM_Quest_Street.questNameRules.rulesStrings>
+
+</LanguageData>

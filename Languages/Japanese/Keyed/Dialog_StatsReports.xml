@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Stat_Hediff_Regeneration_Name>治癒</Stat_Hediff_Regeneration_Name>
+  <Stat_Hediff_Regeneration_Desc>毎日、一定量の耐久値を回復します。</Stat_Hediff_Regeneration_Desc>
+  <Stat_Hediff_Regeneration_Stat>{0} 耐久値/日</Stat_Hediff_Regeneration_Stat>
+
+  <AbandonQuestMap>場所を放棄</AbandonQuestMap>
+  <ConfirmAbandonQuestMap>人員とアイテムがすべて撤去されていることを確認してください。マップを放棄してもよろしいですか？</ConfirmAbandonQuestMap>
+  <AbandonQuestMapDesc>このエリアの探索を放棄すると、エリア内に残っている人員やアイテムは放棄されます。</AbandonQuestMapDesc>
+  <RandomSiteDeleteMap>場所を放棄</RandomSiteDeleteMap>
+  <CommandViewQuestDesc>このエリアの探索を放棄すると、エリア内に残っている人員やアイテムは放棄されます。</CommandViewQuestDesc>
+  <RandomSite_Confirm_Accept>承認</RandomSite_Confirm_Accept>
+  <RandomSite_Confirm>人員とアイテムがすべて撤去されていることを確認してください。マップを放棄してもよろしいですか？</RandomSite_Confirm>
+  <AM_Trade>古代物流ターミナルと取引</AM_Trade>
+  <AncientMarket>古代都市の廃墟</AncientMarket>
+  <EnableAICrossLevel>階層をまたいだAIの行動を有効にする（互換性の問題などが発生した場合は、このオプションを無効にしてください）</EnableAICrossLevel>
+  <Allow>許可</Allow>
+  <Unallow>禁止</Unallow>
+  <AllowLevel>許可された階層</AllowLevel>
+  <LevelPowerName>階層名</LevelPowerName>
+  <OutputMode>出力側として</OutputMode>
+  <LevelPowerOutput>出力</LevelPowerOutput>
+  <SelectLinkedPower>現在リンク中のオブジェクト：{0}</SelectLinkedPower>
+  <Apply>適用</Apply>
+  <EnableLandfill>埋め立て可能な施設を有効にする（有効にすると、一部の階段を能動的に埋め立てて地下施設を放棄できます）</EnableLandfill>
+  <ReceiverName>受信側名</ReceiverName>
+  <SelectLinkedReceiver>現在の受信側：{0}</SelectLinkedReceiver>
+  <Tab_LevelTransmit>輸送オプション</Tab_LevelTransmit>
+  <VirtualMiningProgress>あと{0}日で次のアイテムが生成されます</VirtualMiningProgress>
+  <CommandToggleAllowAutoAddGraphicCard>自動装填の切り替え</CommandToggleAllowAutoAddGraphicCard>
+  <CommandToggleAllowAutoAddGraphicCardDesc>グラフィックカードをコンピューティングセンターに搭載します</CommandToggleAllowAutoAddGraphicCardDesc>
+  <GPUCount>グラフィックカードの数 {0}</GPUCount>
+  <NoGPU>実行するにはグラフィックカードを搭載する必要があります</NoGPU>
+  <AddThisToMiner>このグラフィックカードをコンピューティングセンターに搭載します</AddThisToMiner>
+  <SleepLevel>睡眠階層：{0}</SleepLevel>
+  <WorkLevel>作業階層：{0}</WorkLevel>
+  <JoyLevel>娯楽階層：{0}</JoyLevel>
+  <NotSet>なし</NotSet>
+
+   <AMEnablePatch>バニラ戦利品モード（ほとんどのアイテム、武器を削除、ゲームの再起動が必要）</AMEnablePatch>
+  <ExitUnderground>地下から出る</ExitUnderground>
+</LanguageData>

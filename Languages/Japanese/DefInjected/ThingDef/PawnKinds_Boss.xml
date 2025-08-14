@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_IntegratedTorsoArmor.label>統合寄生虫装甲</AM_IntegratedTorsoArmor.label>
+  <AM_IntegratedTorsoArmor.description>選別された寄生虫を体内に植え込み、防弾繊維のような体と強化された筋力を提供する古代の特殊インプラント。この技術は失われ再現不可能です。</AM_IntegratedTorsoArmor.description>
+  
+  <AM_RampageParasite.label>狂暴寄生虫</AM_RampageParasite.label>
+  <AM_RampageParasite.description>古代の寄生虫実験の失敗作。戦闘能力は大幅に向上するが、知性を失い制御不能になります。</AM_RampageParasite.description>
+  
+</LanguageData>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: damaged large shelves -->
+  <AM_BDAShelfA.label>損傷した大型棚</AM_BDAShelfA.label>
+  <!-- EN: There are still some goods on top that have not been crushed. -->
+  <AM_BDAShelfA.description>いくつかの商品がまだ壊されずに残っています。</AM_BDAShelfA.description>
+
+  <!-- EN: book case -->
+  <AM_BookCase.label>本棚</AM_BookCase.label>
+  <!-- EN: There are still some goods on top that have not been crushed. -->
+  <AM_BookCase.description>古い本が並ぶ本棚。</AM_BookCase.description>
+
+  <!-- EN: damaged large shelves -->
+  <AM_BDAShelfB.label>損傷した大型棚</AM_BDAShelfB.label>
+  <!-- EN: There are still some goods on top that have not been crushed. -->
+  <AM_BDAShelfB.description>いくつかの商品がまだ壊されずに残っています。</AM_BDAShelfB.description>
+
+  <!-- EN: large military supplies case -->
+  <AM_BigCase.label>大型軍用補給箱</AM_BigCase.label>
+  <!-- EN: A large military supplies case. Maybe it has something inside. -->
+  <AM_BigCase.description>内部に何か残っているかもしれない大型軍用補給箱。</AM_BigCase.description>
+
+  <!-- EN: briefcase -->
+  <AM_BriefCase_SalvagePoint.label>書類ケース</AM_BriefCase_SalvagePoint.label>
+  <!-- EN: A briefcase, probably containing something. -->
+  <AM_BriefCase_SalvagePoint.description>何かが入っていそうな書類ケース。</AM_BriefCase_SalvagePoint.description>
+
+  <!-- EN: ancient suspended IFV -->
+  <AM_BTR82A.label>古代浮遊歩兵戦闘車</AM_BTR82A.label>
+  <!-- EN: A damaged suspended IFV. -->
+  <AM_BTR82A.description>破壊された古代の浮遊歩兵戦闘車の残骸。</AM_BTR82A.description>
+
+  <!-- EN: clothes rack -->
+  <AM_ClothesHanger.label>ハンガーラック</AM_ClothesHanger.label>
+  <!-- EN: A set of hangers holding old pieces of clothing. -->
+  <AM_ClothesHanger.description>古い衣類を掛けたハンガーのセット。</AM_ClothesHanger.description>
+
+  <!-- EN: computer case -->
+  <AM_ComputerCase.label>コンピュータケース</AM_ComputerCase.label>
+  <!-- EN: An ancient computer case. -->
+  <AM_ComputerCase.description>古代のコンピュータケース。</AM_ComputerCase.description>
+
+  <!-- EN: large shelves -->
+  <AM_DoubleDeckRacks.label>大型二段棚</AM_DoubleDeckRacks.label>
+  <!-- EN: The top layer of the large shelf is missing, and there are still some boxes on it. -->
+  <AM_DoubleDeckRacks.description>上段が失われた大型棚で、いくつかの箱が残っています。</AM_DoubleDeckRacks.description>
+
+  <!-- EN: freezer -->
+  <AM_Freezer.label>冷蔵庫</AM_Freezer.label>
+  <!-- EN: An old dessert refrigerator with unknown contents. -->
+  <AM_Freezer.description>中身は不明な古い冷蔵庫。</AM_Freezer.description>
+
+  <!-- EN: injection storage racks -->
+  <AM_Injection_StorageRacks.label>注射器収納棚</AM_Injection_StorageRacks.label>
+  <!-- EN: Some shelves scattered with syringes and medical supplies. -->
+  <AM_Injection_StorageRacks.description>注射器や医療用品が散らばった棚。</AM_Injection_StorageRacks.description>
+
+  <!-- EN: large backpack -->
+  <AM_LargeBackpack.label>大型バックパック</AM_LargeBackpack.label>
+  <!-- EN: An oversized military backpack that is already broken, but seems to contain something inside. -->
+  <AM_LargeBackpack.description>破損しているが何か入っていそうな超大型軍用バックパック。</AM_LargeBackpack.description>
+
+  <!-- EN: LBT -->
+  <AM_LBT.label>LBTメディカルバッグ</AM_LBT.label>
+  <!-- EN: A medical supplies backpack that is broken, but seems to contain something inside. -->
+  <AM_LBT.description>破損しているが何か入っていそうな医療物資用バックパック。</AM_LBT.description>
+
+  <!-- EN: MBSS -->
+  <AM_MBSS.label>MBSSアウトドアバッグ</AM_MBSS.label>
+  <!-- EN: A small military backpack that is broken, but seems to contain something inside. -->
+  <AM_MBSS.description>破損しているが何か入っていそうな小型軍用バックパック。</AM_MBSS.description>
+
+  <!-- EN: medical storage racks -->
+  <AM_MedicalSupplies_StorageRacks.label>医療用品棚</AM_MedicalSupplies_StorageRacks.label>
+  <!-- EN: Some shelves scattered with medical supplies. -->
+  <AM_MedicalSupplies_StorageRacks.description>医療用品が散らばった棚。</AM_MedicalSupplies_StorageRacks.description>
+
+  <!-- EN: Military storage racks -->
+  <AM_MilitarySupplies_StorageRacks.label>軍需品棚</AM_MilitarySupplies_StorageRacks.label>
+  <!-- EN: Some shelves with scattered military supplies. -->
+  <AM_MilitarySupplies_StorageRacks.description>軍需品が散らばった棚。</AM_MilitarySupplies_StorageRacks.description>
+
+  <!-- EN: model dummy -->
+  <AM_Model.label>マネキン</AM_Model.label>
+  <!-- EN: A clothing model dummy. -->
+  <AM_Model.description>古い服屋のマネキン。</AM_Model.description>
+
+  <!-- EN: model dummy -->
+  <AM_Modelf.label>マネキン</AM_Modelf.label>
+  <!-- EN: A clothing model dummy. -->
+  <AM_Modelf.description>古い服屋のマネキン。</AM_Modelf.description>
+
+  <!-- EN: ancient large military supplies case -->
+  <AM_OldBigCase.label>古代大型軍用補給箱</AM_OldBigCase.label>
+  <!-- EN: A damaged military supplies case. Maybe it has something inside. -->
+  <AM_OldBigCase.description>内部に何か残っているかもしれない古代の大型軍用補給箱。</AM_OldBigCase.description>
+
+  <!-- EN: ancient small military Case -->
+  <AM_OldSmallCase.label>古代小型軍用補給箱</AM_OldSmallCase.label>
+  <!-- EN: A damaged military supplies case. Maybe it has something inside. -->
+  <AM_OldSmallCase.description>内部に何か残っているかもしれない古代の小型軍用補給箱。</AM_OldSmallCase.description>
+
+  <!-- EN: ancient weapon case -->
+  <AM_OldWeaponCase.label>古代武器箱</AM_OldWeaponCase.label>
+  <!-- EN: A long forgotten container. It seems to have something inside. -->
+  <AM_OldWeaponCase.description>内部に何か残っていそうな長い間忘れ去られた箱。</AM_OldWeaponCase.description>
+
+  <!-- EN: cardboard box -->
+  <AM_PaperBox_A.label>ダンボール箱</AM_PaperBox_A.label>
+  <!-- EN: A cardboard box. It seems to have something inside. -->
+  <AM_PaperBox_A.description>内部に何か残っていそうなダンボール箱。</AM_PaperBox_A.description>
+
+  <!-- EN: cardboard box -->
+  <AM_PaperBox_B.label>ダンボール箱</AM_PaperBox_B.label>
+  <!-- EN: A cardboard box. It seems to have something inside. -->
+  <AM_PaperBox_B.description>内部に何か残っていそうなダンボール箱。</AM_PaperBox_B.description>
+
+  <!-- EN: cardboard box -->
+  <AM_PaperBox_C.label>ダンボール箱</AM_PaperBox_C.label>
+  <!-- EN: A cardboard box. It seems to have something inside. -->
+  <AM_PaperBox_C.description>内部に何か残っていそうなダンボール箱。</AM_PaperBox_C.description>
+
+  <!-- EN: postman shoulder bag -->
+  <AM_PostmanShoulderBag.label>郵便配達員ショルダーバッグ</AM_PostmanShoulderBag.label>
+  <!-- EN: A mail-carrying shoulder bag. While already broken, it seems to contain something inside. -->
+  <AM<PostmanShoulderBag.description>破損しているが何か入っていそうな郵便配達員の肩掛けバッグ。</AM_PostmanShoulderBag.description>
+
+  <!-- EN: refrigerator -->
+  <AM_Refrigerator.label>冷凍庫</AM_Refrigerator.label>
+  <!-- EN: A refrigerator containing various foods. Has long been powered off. -->
+  <AM_Refrigerator.description>様々な食品が入った冷凍庫。長らく通電されていない。</AM_Refrigerator.description>
+
+  <!-- EN: scav bag -->
+  <AM_Scav.label>SCAVバックパック</AM_Scav.label>
+  <!-- EN: A backpack made by a scavenger. It is broken, but it seems to hold something. -->
+  <AM_Scav.description>破損しているが何か入っていそうなSCAV自作バックパック。</AM_Scav.description>
+
+  <!-- EN: SICC -->
+  <AM_SICC_SalvagePoint.label>SICCバッグ</AM_SICC_SalvagePoint.label>
+  <!-- EN: A small soft bag that seems to hold various items. -->
+  <AM_SICC_SalvagePoint.description>さまざまなアイテムが入っていそうな小型ソフトバッグ。</AM_SICC_SalvagePoint.description>
+
+  <!-- EN: small military Case Case -->
+  <AM_SmallCase.label>小型軍用補給箱</AM_SmallCase.label>
+  <!-- EN: A military supplies case. It seems to have something inside. -->
+  <AM_SmallCase.description>内部に何か残っていそうな小型軍用補給箱。</AM_SmallCase.description>
+
+  <!-- EN: snack storage racks -->
+  <AM_Snack_StorageRacks.label>スナック棚</AM_Snack_StorageRacks.label>
+  <!-- EN: Some shelves with scattered packaged snacks. -->
+  <AM_Snack_StorageRacks.description>パッケージされたスナック菓子が散らばった棚。</AM_Snack_StorageRacks.description>
+
+  <!-- EN: sports bag -->
+  <AM_SportsBag.label>スポーツバッグ</AM_SportsBag.label>
+  <!-- EN: A sporting bag. It is already broken, but seems to contain something inside. -->
+  <AM_SportsBag.description>破損しているが何か入っていそうなスポーツバッグ。</AM_SportsBag.description>
+
+  <!-- EN: storage racks -->
+  <AM_StorageRacks.label>収納棚</AM_StorageRacks.label>
+  <!-- EN: Some shelves with scattered goods. -->
+  <AM_StorageRacks.description>さまざまな物が置かれた棚。</AM_StorageRacks.description>
+
+  <!-- EN: large shelves -->
+  <AM_ThreeLayerRacks.label>三段棚</AM_ThreeLayerRacks.label>
+  <!-- EN: A large shelf cluttered with boxes. -->
+  <AM_ThreeLayerRacks.description>箱が積まれた大型棚。</AM_ThreeLayerRacks.description>
+
+  <!-- EN: miscellaneous storage racks -->
+  <AM_TousledStorageRacks.label>雑多収納棚</AM_TousledStorageRacks.label>
+  <!-- EN: Some shelves with scattered goods. -->
+  <AM_TousledStorageRacks.description>さまざまな物が置かれた棚。</AM_TousledStorageRacks.description>
+
+  <!-- EN: travel bag -->
+  <AM_TravelBag.label>トラベルバッグ</AM_TravelBag.label>
+  <!-- EN: An oversized and eye-catching purple travel bag. It is already broken, but seems to contain something inside. -->
+  <AM_TravelBag.description>破損しているが何か入っていそうな目立つ紫色の超大型トラベルバッグ。</AM_TravelBag.description>
+
+  <!-- EN: vegetable shelf -->
+  <AM_VegetableShelf.label>野菜棚</AM_VegetableShelf.label>
+  <!-- EN: A long forgotten shelf containing vegetables. -->
+  <AM_VegetableShelf.description>忘れ去られた野菜が並ぶ棚。</AM_VegetableShelf.description>
+
+  <!-- EN: vending machine -->
+  <AM_VendingMachine.label>自動販売機</AM_VendingMachine.label>
+  <!-- EN: A damaged ancient vending machine. -->
+  <AM_VendingMachine.description>破損した古い自動販売機。</AM_VendingMachine.description>
+
+  <!-- EN: weapon case -->
+  <AM_WeaponCase.label>武器箱</AM_WeaponCase.label>
+  <!-- EN: A well-worn container. It seems to have something inside. -->
+  <AM_WeaponCase.description>破損しているが何か入っていそうな武器箱。</AM_WeaponCase.description>
+
+  <!-- EN: opened weapon case -->
+  <AM_WeaponCaseLow.label>開かれた武器箱</AM_WeaponCaseLow.label>
+  <!-- EN: A weapon case that has been pried open. It seems to have something inside. -->
+  <AM_WeaponCaseLow.description>開かれた武器箱で、何か残っていそうです。</AM_WeaponCaseLow.description>
+
+</LanguageData>

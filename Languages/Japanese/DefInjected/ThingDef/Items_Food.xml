@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_Budweiser.label>バドワイザー</AM_Budweiser.label>
+  <AM_Budweiser.description>かつて人気を博した古代のビールブランド。缶詰にされている。</AM_Budweiser.description>
+  <AM_Budweiser.ingestible.ingestCommandString>飲む</AM_Budweiser.ingestible.ingestCommandString>
+  <AM_Budweiser.ingestible.ingestReportString>飲んでいる</AM_Budweiser.ingestible.ingestReportString>
+  
+  <AM_CannedBraisedPorkbelly.label>紅焼き豚肉缶</AM_CannedBraisedPorkbelly.label>
+  <AM_CannedBraisedPorkbelly.description>古代の紅焼き豚肉の缶詰。ホコリをかぶっていても幸福をもたらす一品。</AM_CannedBraisedPorkbelly.description>
+  
+  <AM_CannedHerring.label>ニシンの缶詰</AM_CannedHerring.label>
+  <AM_CannedHerring.description>古代のニシンの缶詰。塩気が強いが、記憶に残る鮮度がある。</AM_CannedHerring.description>
+  
+  <AM_CannedPeas.label>エンドウ豆缶</AM_CannedPeas.label>
+  <AM_CannedPeas.description>古代の柔らかく甘いエンドウ豆の缶詰。</AM_CannedPeas.description>
+  
+  <AM_CannedStewedBeef.label>シチュービーフ缶</AM_CannedStewedBeef.label>
+  <AM_CannedStewedBeef.description>古代の雪牛肉とジャガイモ・トマトのシチュー缶。とても美味しい。</AM_CannedStewedBeef.description>
+  
+  <AM_Coca.label>コカ・コーラ</AM_Coca.label>
+  <AM_Coca.description>古代の高糖度炭酸飲料。一口で一日中幸せになれる。</AM_Coca.description>
+  <AM_Coca.ingestible.ingestCommandString>飲む</AM_Coca.ingestible.ingestCommandString>
+  <AM_Coca.ingestible.ingestReportString>飲んでいる</AM_Coca.ingestible.ingestReportString>
+  
+  <AM_DeliciousCannedBeef.label>高級ビーフシチュー缶</AM_DeliciousCannedBeef.label>
+  <AM_DeliciousCannedBeef.description>古代の純粋な雪牛肉シチュー缶。バターの香りが強い。</AM_DeliciousCannedBeef.description>
+  
+  <AM_Fanta.label>ファンタ</AM_Fanta.label>
+  <AM_Fanta.description>古代のオレンジ味炭酸飲料。甘くて美味しい。</AM_Fanta.description>
+  <AM_Fanta.ingestible.ingestCommandString>飲む</AM_Fanta.ingestible.ingestCommandString>
+  <AM_Fanta.ingestible.ingestReportString>飲んでいる</AM_Fanta.ingestible.ingestReportString>
+  
+  <AM_MilkBeer.label>ミルクビール</AM_MilkBeer.label>
+  <AM_MilkBeer.description>古代の牛乳とビールのミックス缶。空腹を満たしてくれる。</AM_MilkBeer.description>
+  <AM_MilkBeer.ingestible.ingestCommandString>飲む</AM_MilkBeer.ingestible.ingestCommandString>
+  <AM_MilkBeer.ingestible.ingestReportString>飲んでいる</AM_MilkBeer.ingestible.ingestReportString>
+  
+  <AM_MRE.label>軍用レーション</AM_MRE.label>
+  <AM_MRE.description>古代の軍用携行食。品質は保たれているが、食欲をそそらない。</AM_MRE.description>
+  
+  <AM_Pepsi.label>ペプシ</AM_Pepsi.label>
+  <AM_Pepsi.description>古代の炭酸飲料。コカ・コーラより甘い。</AM_Pepsi.description>
+  <AM_Pepsi.ingestible.ingestCommandString>飲む</AM_Pepsi.ingestible.ingestCommandString>
+  <AM_Pepsi.ingestible.ingestReportString>飲んでいる</AM_Pepsi.ingestible.ingestReportString>
+  
+  <AM_PotatoChipsA.label>クラシックポテトチップス</AM_PotatoChipsA.label>
+  <AM_PotatoChipsA.description>古代の薄切り塩味ポテトチップス。窒素ガス包装で腐敗しにくい。</AM_PotatoChipsA.description>
+  
+  <AM_PotatoChipsB.label>トマトポテトチップス</AM_PotatoChipsB.label>
+  <AM_PotatoChipsB.description>古代のトマト味ポテトチップス。甘酸っぱく、美味しい。窒素ガス包装。</AM_PotatoChipsB.description>
+  
+  <AM_PotatoChipsC.label>キュウリ味ポテトチップス</AM_PotatoChipsC.label>
+  <AM_PotatoChipsC.description>古代のキュウリ味ポテトチップス。窒素ガス包装で変質しにくい。</AM_PotatoChipsC.description>
+  
+  <AM_PotatoChipsD.label>ステーキ味ポテトチップス</AM_PotatoChipsD.label>
+  <AM_PotatoChipsD.description>古代のステーキ味ポテトチップス。まるでごちそうを食べているような味。窒素ガス包装。</AM_PotatoChipsD.description>
+  
+  <AM_PotatoChipsE.label>レモン味ポテトチップス</AM_PotatoChipsE.label>
+  <AM_PotatoChipsE.description>古代のレモン味ポテトチップス。夏の味が広がる。窒素ガス包装。</AM_PotatoChipsE.description>
+  
+  <AM_PotatoChipsF.label>イタリアンシチューポテトチップス</AM_PotatoChipsF.label>
+  <AM_PotatoChipsF.description>古代のイタリアンシチュー味ポテトチップス。トマトミートシチューの味わい。窒素ガス包装。</AM_PotatoChipsF.description>
+  
+  <AM_Sprite.label>スプライト</AM_Sprite.label>
+  <AM_Sprite.description>古代のレモンライム炭酸飲料。酸味が強い。</AM_Sprite.description>
+  <AM_Sprite.ingestible.ingestCommandString>飲む</AM_Sprite.ingestible.ingestCommandString>
+  <AM_Sprite.ingestible.ingestReportString>飲んでいる</AM_Sprite.ingestible.ingestReportString>
+  
+  <AM_TsingtaoBeer.label>チンタオビール</AM_TsingtaoBeer.label>
+  <AM_TsingtaoBeer.description>回味深い古代の缶ビール。</AM_TsingtaoBeer.description>
+  <AM_TsingtaoBeer.ingestible.ingestCommandString>飲む</AM_TsingtaoBeer.ingestible.ingestCommandString>
+  <AM_TsingtaoBeer.ingestible.ingestReportString>飲んでいる</AM_TsingtaoBeer.ingestible.ingestReportString>
+</LanguageData>

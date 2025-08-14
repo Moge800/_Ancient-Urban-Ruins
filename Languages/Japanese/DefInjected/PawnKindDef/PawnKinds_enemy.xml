@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_Drifter.label>さすらい人</AM_Drifter.label>
+  
+  <AM_EnemyScavenger.label>スカベンジャー銃手</AM_EnemyScavenger.label>
+  
+  <AM_Megascarab.label>巨大甲虫</AM_Megascarab.label>
+  
+  <AM_Megaspider.label>巨大クモ</AM_Megaspider.label>
+  
+  <AM_Mercenary_Slasher.label>傭兵斬撃手</AM_Mercenary_Slasher.label>
+  
+  <AM_Pirate.label>パイレーツ銃手</AM_Pirate.label>
+  
+  <AM_PirateBoss.label>ギャングボス</AM_PirateBoss.label>
+  <AM_PirateBoss.labelPlural>ボス</AM_PirateBoss.labelPlural>
+  
+  <AM_Spelopede.label>洞窟大型虫</AM_Spelopede.label>
+  
+  <AM_Thrasher.label>スカベンジャー打撃手</AM_Thrasher.label>
+  
+</LanguageData>

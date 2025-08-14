@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- AM_SafeHouse Scenario -->
+  <AM_SafeHouse.label>セーフハウス</AM_SafeHouse.label>
+  <AM_SafeHouse.description>あなたはこの辺境世界を彷徨い、古代遺跡の略奪品で生き延びてきた。廃墟と化した都市の荒涼たる跡を歩き、ほとんど生命の気配すら感じられない。町はずれで発見したのは放棄された古代の地下シェルター……だが資源は豊富ではない。
+
+注：操作可能な入植者はおらず、必須の生存資源も不足している。スカベンジャーは飢えた状態から始まるため、非常に厳しいシナリオ。</AM_SafeHouse.description>
+  <AM_SafeHouse.summary>孤独なスカベンジャーが古い地下バンカーを発見する。非常に挑戦的なシナリオ。</AM_SafeHouse.summary>
+</LanguageData>

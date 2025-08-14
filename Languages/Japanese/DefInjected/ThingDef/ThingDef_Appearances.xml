@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_Counter_Atlas_JewelryA.label>古代金縁ガラスカウンターA</AM_Counter_Atlas_JewelryA.label>
+  <AM_Counter_Atlas_JewelryA.description>金縁で装飾された古代の展示カウンター。</AM_Counter_Atlas_JewelryA.description>
+  
+  <AM_Counter_Atlas_JewelryB.label>古代金縁ガラスカウンターB</AM_Counter_Atlas_JewelryB.label>
+  <AM_Counter_Atlas_JewelryB.description>金縁で装飾された古代の展示カウンター。</AM_Counter_Atlas_JewelryB.description>
+  
+  <AM_Counter_Atlas_Weapon.label>古代ガラスカウンター</AM_Counter_Atlas_Weapon.label>
+  <AM_Counter_Atlas_Weapon.description>古代の展示カウンター。</AM_Counter_Atlas_Weapon.description>
+  
+  <AM_FrontDesk.label>古代フロントデスク</AM_FrontDesk.label>
+  <AM_FrontDesk.description>金属と石で作られた古代のカウンター。</AM_FrontDesk.description>
+  
+  <AM_FrontDeskB.label>古代フロントデスクB</AM_FrontDeskB.label>
+  <AM_FrontDeskB.description>金属と石で作られた古代のカウンター。</AM_FrontDeskB.description>
+  
+  <AM_Wall_Atlas_AcientConcrete.label>古代コンクリート壁</AM_Wall_Atlas_AcientConcrete.label>
+  <AM_Wall_Atlas_AcientConcrete.description>防水層を備えた鉄筋コンクリート構造、地下施設や旧建築でよく見られる。</AM_Wall_Atlas_AcientConcrete.description>
+  
+  <AM_Wall_Atlas_AcientConcrete_HP.label>古代コンクリート壁（風化）</AM_Wall_Atlas_AcientConcrete_HP.label>
+  <AM_Wall_Atlas_AcientConcrete_HP.description>古代コンクリート壁の風化版で、破壊されやすい。</AM_Wall_Atlas_AcientConcrete_HP.description>
+  
+  <AM_Wall_Atlas_Concrete.label>古代鉄筋コンクリート壁</AM_Wall_Atlas_Concrete.label>
+  <AM_Wall_Atlas_Concrete.description>頑強な古代の鉄筋コンクリート壁。</AM_Wall_Atlas_Concrete.description>
+  
+  <AM_Wall_Atlas_Concrete_HP.label>古代鉄筋コンクリート壁（風化）</AM_Wall_Atlas_Concrete_HP.label>
+  <AM_Wall_Atlas_Concrete_HP.description>風化した古代コンクリート壁、力を加えれば破壊可能。</AM_Wall_Atlas_Concrete_HP.description>
+  
+  <AM_Wall_Atlas_Glass.label>古代ガラスカーテンウォール</AM_Wall_Atlas_Glass.label>
+  <AM_Wall_Atlas_Glass.description>脆いガラスと金属フレームで構成された古代の壁。</AM_Wall_Atlas_Glass.description>
+  
+  <AM_Wall_Atlas_LoadBearing.label>古代耐力壁</AM_Wall_Atlas_LoadBearing.label>
+  <AM_Wall_Atlas_LoadBearing.description>太い鉄骨補強を備えた古代の耐力コンクリート壁。</AM_Wall_Atlas_LoadBearing.description>
+  
+</LanguageData>

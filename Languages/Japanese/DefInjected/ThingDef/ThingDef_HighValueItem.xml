@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aluminum splint -->
+  <AM_AluminumSplint.label>アルミ製ギプス</AM_AluminumSplint.label>
+  <!-- EN: A medical fracture splint, which needs to be used in conjunction with other items in the medical kit. It is not very useful if it is the only one. -->
+  <AM_AluminumSplint.description>医療用骨折副木。医療キットの他のアイテムと併用する必要があり、単体ではあまり役に立ちません。</AM_AluminumSplint.description>
+  
+  <!-- EN: baking thermometer -->
+  <AM_BakingThermometer.label>ベーキング温度計</AM_BakingThermometer.label>
+  <!-- EN: Some thermometers for cooking, maybe traders could be interested. -->
+  <AM_BakingThermometer.description>調理用温度計。商人が興味を持つかもしれません。</AM_BakingThermometer.description>
+  
+  <!-- EN: brass lion statue -->
+  <AM_BrassLionStatue.label>真鍮製ライオン像</AM_BrassLionStatue.label>
+  <!-- EN: A lion ornaments made of brass. -->
+  <AM_BrassLionStatue.description>真鍮製のライオンオブジェ。</AM_BrassLionStatue.description>
+  
+  <!-- EN: briefcase -->
+  <AM_BriefCase.label>ブリーフケース</AM_BriefCase.label>
+  <!-- EN: A leather briefcase from a well-known brand that collectors will love. -->
+  <AM_BriefCase.description>有名ブランドの革製ブリーフケース。コレクターに人気です。</AM_BriefCase.description>
+  
+  <!-- EN: confidential intel map -->
+  <AM_ConfidentialIntelMapA.label>機密情報地図A</AM_ConfidentialIntelMapA.label>
+  <!-- EN: An confidential intelligence map that records a certain location. -->
+  <AM_ConfidentialIntelMapA.description>特定の場所を記録した機密情報地図。</AM_ConfidentialIntelMapA.description>
+  <!-- EN: Read -->
+  <AM_ConfidentialIntelMapA.comps.CompUsable.useLabel>読む</AM_ConfidentialIntelMapA.comps.CompUsable.useLabel>
+  
+  <!-- EN: confidential intel map -->
+  <AM_ConfidentialIntelMapB.label>機密情報地図B</AM_ConfidentialIntelMapB.label>
+  <!-- EN: An confidential intelligence map that records a certain location. -->
+  <AM_ConfidentialIntelMapB.description>特定の場所を記録した機密情報地図。</AM_ConfidentialIntelMapB.comps.CompUsable.useLabel>
+  <!-- EN: Read -->
+  <AM_ConfidentialIntelMapB.comps.CompUsable.useLabel>読む</AM_ConfidentialIntelMapB.comps.CompUsable.useLabel>
+
+  <!-- EN: CPU -->
+  <AM_CPU.label>CPU</AM_CPU.label>
+  <!-- EN: An ancient computer component with specifications completely different from modern devices. -->
+  <AM_CPU.description>古代のコンピュータ部品。現代の機器とはまったく異なる仕様です。</AM_CPU.description>
+  
+  <!-- EN: credit card -->
+  <AM_CreditCard.label>クレジットカード</AM_CreditCard.label>
+  <!-- EN: A set of various abandoned credit cards. Unclear whether they can still be used. -->
+  <AM_CreditCard.description>廃棄されたさまざまなクレジットカードのセット。まだ使えるかは不明です。</AM_CreditCard.description>
+  
+  <!-- EN: dilapidated map -->
+  <AM_DilapidatedMap.label>ボロボロの地図</AM_DilapidatedMap.label>
+  <!-- EN: An dilapidated map that records a certain location. -->
+  <AM_DilapidatedMap.description>特定の場所を示したボロボロの地図。</AM_DilapidatedMap.description>
+  <!-- EN: Read -->
+  <AM_DilapidatedMap.comps.CompUsable.useLabel>読む</AM_DilapidatedMap.comps.CompUsable.useLabel>
+  
+  <!-- EN: electrical tape -->
+  <AM_ElectricalTape.label>電気テープ</AM_ElectricalTape.label>
+  <!-- EN: A roll of electrical tape. -->
+  <AM_ElectricalTape.description>電気作業用のロールテープ。</AM_ElectricalTape.description>
+  <AM_ElectricalTape.comps.CompUsable.useLabel>{0_label}で修理する</AM_ElectricalTape.comps.CompUsable.useLabel>
+  
+  <!-- EN: empty box -->
+  <AM_EmptyBox.label>空の箱</AM_EmptyBox.label>
+  <!-- EN: Empty LEGO box. -->
+  <AM_EmptyBox.description>空のLEGOの箱。</AM_EmptyBox.description>
+  
+  <!-- EN: game console -->
+  <AM_GameConsole.label>ゲーム機</AM_GameConsole.label>
+  <!-- EN: A strange game console. Internals seem to be fried. -->
+  <AM_GameConsole.description>奇妙なゲーム機。内部が焦げたように見えます。</AM_GameConsole.description>
+  
+  <!-- EN: glass adhesive -->
+  <AM_OneLiterGlassAdhesive.label>1リットルガラス接着剤</AM_OneLiterGlassAdhesive.label>
+  <!-- EN: Foam glass adhesive, one liter pack. -->
+  <AM_OneLiterGlassAdhesive.description>フォームガラス用接着剤、1リットル入り。武器や装備の修理に使えます。</AM_OneLiterGlassAdhesive.description>
+  <!-- EN: Use {0_label} -->
+  <AM_OneLiterGlassAdhesive.comps.CompUsable.useLabel>{0_label}で修理する</AM_OneLiterGlassAdhesive.comps.CompUsable.useLabel>
+  <!-- EN: golden egg -->
+  <AM_GoldenEgg.label>金の卵</AM_GoldenEgg.label>
+  <!-- EN: Hollow egg ornaments made of gold. -->
+  <AM_GoldenEgg.description>金製の中空卵オーナメント。</AM_GoldenEgg.description>
+  
+  <!-- EN: golden rooster statue -->
+  <AM_GoldenRoosterStatue.label>金の雄鶏像</AM_GoldenRoosterStatue.label>
+  <!-- EN: A rooster ornament made of gold. -->
+  <AM_GoldenRoosterStatue.description>金製の雄鶏オブジェ。</AM_GoldenRoosterStatue.description>
+  
+  <!-- EN: GPU -->
+  <AM_GPU.label>GPU</AM_GPU.label>
+  <!-- EN: An ancient graphics display card. May still be usable. -->
+  <AM_GPU.description>古代のグラフィックカード。まだ使える可能性があります。</AM_GPU.description>
+  
+  <!-- EN: HDD -->
+  <AM_HDD.label>ハードディスクドライブ</AM_HDD.label>
+  <!-- EN: Mechanical hard drives used in ancient computers. -->
+  <AM_HDD.description>古代のコンピュータで使用された機械式ハードドライブ。</AM_HDD.description>
+  
+  <!-- EN: intel map -->
+  <AM_IntelMap.label>情報地図</AM_IntelMap.label>
+  <!-- EN: An intelligence map that records a certain location. -->
+  <AM_IntelMap.description>特定の場所を記録した情報地図。</AM_IntelMap.description>
+  <!-- EN: Read -->
+  <AM_IntelMap.comps.CompUsable.useLabel>読む</AM_IntelMap.comps.CompUsable.useLabel>
+  
+  <!-- EN: key card -->
+  <AM_KeyCard.label>キーカード</AM_KeyCard.label>
+  <!-- EN: A discarded key card used for an unknown door. May have interest from traders. -->
+  <AM_KeyCard.description>不明なドア用の廃棄されたキーカード。商人が興味を持つかもしれません。</AM_KeyCard.description>
+  
+  <!-- EN: ledx皮肤透照仪 -->
+  <AM_LEDX.label>LEDX皮下血管透視装置</AM_LEDX.label>
+  <!-- EN: A device designed to accurately confirm the position of subcutaneous veins, which is very useful for emergency treatment. -->
+  <AM_LEDX.description>皮下静脈の位置を正確に確認する装置。緊急治療に非常に有用です。</AM_LEDX.description>
+  
+  <!-- EN: LEGO giant rock excavator -->
+  <AM_LEGO_GiantRockExcavator_NotOpen.label>LEGO 巨大岩石掘削機キット</AM_LEGO_GiantRockExcavator_NotOpen.label>
+  <!-- EN: A plastic building block toy for a giant excavator. -->
+  <AM_LEGO_GiantRockExcavator_NotOpen.description>巨大掘削機のプラスチックブロック玩具キット。</AM_LEGO_GiantRockExcavator_NotOpen.description>
+  
+  <!-- EN: LEGO heavy crane -->
+  <AM_LEGO_HeavyCrane_NotOpen.label>LEGO 重型クレーンキット</AM_LEGO_HeavyCrane_NotOpen.label>
+  <!-- EN: A plastic building block toy for a heavy crane. -->
+  <AM_LEGO_HeavyCrane_NotOpen.description>重型クレーンのプラスチックブロック玩具キット。</AM_LEGO_HeavyCrane_NotOpen.description>
+  
+  <!-- EN: LEGO landmark building -->
+  <AM_LEGO_LandmarkBuilding_NotOpen.label>LEGO 地標建築キット</AM_LEGO_LandmarkBuilding_NotOpen.label>
+  <!-- EN: A plastic building block toy for a landmark building. -->
+  <AM_LEGO_LandmarkBuilding_NotOpen.description>地標建築のプラスチックブロック玩具キット。</AM_LEGO_LandmarkBuilding_NotOpen.description>
+  
+  <!-- EN: LEGO light crane -->
+  <AM_LEGO_LightCrane_NotOpen.label>LEGO 軽型クレーンキット</AM_LEGO_LightCrane_NotOpen.label>
+  <!-- EN: A plastic building block toy for a light crane. -->
+  <AM_LEGO_LightCrane_NotOpen.description>軽型クレーンのプラスチックブロック玩具キット。</AM_LEGO_LightCrane_NotOpen.description>
+  
+  <!-- EN: LEGO medium crane -->
+  <AM_LEGO_MediumCrane_NotOpen.label>LEGO 中型クレーンキット</AM_LEGO_MediumCrane_NotOpen.label>
+  <!-- EN: A plastic building block toy for a medium crane. -->
+  <AM_LEGO_MediumCrane_NotOpen.description>中型クレーンのプラスチックブロック玩具キット。</AM_LEGO_MediumCrane_NotOpen.description>
+  
+  <!-- EN: LEGO palace -->
+  <AM_LEGO_Palace_NotOpen.label>LEGO 宮殿キット</AM_LEGO_Palace_NotOpen.label>
+  <!-- EN: A plastic building block toy for a palace. -->
+  <AM_LEGO_Palace_NotOpen.description>宮殿のプラスチックブロック玩具キット。</AM_LEGO_Palace_NotOpen.description>
+  
+  <!-- EN: packaged CPU -->
+  <AM_PackagedCPU.label>未開封CPU</AM_PackagedCPU.label>
+  <!-- EN: An unopened ancient computer component, once a very rare commodity. -->
+  <AM_PackagedCPU.description>未開封の古代コンピュータ部品。かつては非常に希少でした。</AM_PackagedCPU.description>
+  
+  <!-- EN: packaged GPU -->
+  <AM_PackagedGPU.label>未開封GPU</AM_PackagedGPU.label>
+  <!-- EN: A well packaged ancient graphics display card, brand new. -->
+  <AM_PackagedGPU.description>美しく包装された古代のグラフィックカード。新品です。</AM_PackagedGPU.description>
+  
+  <!-- EN: pelvic hammock -->
+  <AM_PelvicHammock.label>骨盤ハンモック</AM_PelvicHammock.label>
+  <!-- EN: A clamp for thigh fractures in emergency situations, which needs to be used in conjunction with other items in the medical kit, is not very useful on its own. -->
+  <AM_PelvicHammock.description>緊急時の大腿骨骨折用クランプ。医療キットの他のアイテムと併用しないとあまり役に立ちません。</AM_PelvicHammock.description>
+  
+  <!-- EN: radio intercom -->
+  <AM_RadioIntercom.label>無線インカム</AM_RadioIntercom.label>
+  <!-- EN: An ancient radio intercom is already out of power. -->
+  <AM_RadioIntercom.description>古代の無線インカム。既に電力が切れています。</AM_RadioIntercom.description>
+  
+  <!-- EN: SICC -->
+  <AM_SICC.label>SICCバッグ</AM_SICC.label>
+  <!-- EN: A small soft bag used to store various small items such as keycards, banknotes, coins, as well as dog tags and metal keys, popular brands, and loved by collectors. -->
+  <AM_SICC.description>キーカード、紙幣、硬貨、ドッグタグ、金属製鍵などを収納できる小型ソフトバッグ。人気ブランドでコレクターに愛されています。</AM_SICC.description>
+  
+  <!-- EN: SSD -->
+  <AM_SSD.label>SSD</AM_SSD.label>
+  <!-- EN: A solid-state drive used in ancient computers. Appears to still function. -->
+  <AM_SSD.description>古代のコンピュータで使用されたSSD。まだ機能しているようです。</AM_SSD.description>
+  
+  <!-- EN: tape measure -->
+  <AM_TapeMeasure.label>巻き尺</AM_TapeMeasure.label>
+  <!-- EN: Common tape measures on construction sites. -->
+  <AM_TapeMeasure.description>建設現場で一般的に使われる巻き尺。</AM_TapeMeasure.description>
+  
+  <!-- EN: way bill -->
+  <AM_WayBill.label>送り状</AM_WayBill.label>
+  <!-- EN: A shopping mall supply waybill, maybe it can be used to find the source warehouse. -->
+  <AM_WayBill.description>ショッピングモールの仕入れ用送り状。発注元の倉庫を探す手掛かりになるかもしれません。</AM_WayBill.description>
+  <!-- EN: Read -->
+  <AM_WayBill.comps.CompUsable.useLabel>読む</AM_WayBill.comps.CompUsable.useLabel>
+  
+  <!-- EN: LEGO giant rock excavator -->
+  <LEGO_GiantRockExcavator_Accomplish.label>LEGO 巨大岩石掘削機</LEGO_GiantRockExcavator_Accomplish.label>
+  <!-- EN: A plastic building block toy for a giant excavator. -->
+  <LEGO_GiantRockExcavator_Accomplish.description>巨大な掘削機のプラスチックブロック玩具。</LEGO_GiantRockExcavator_Accomplish.description>
+  
+  <!-- EN: LEGO heavy crane -->
+  <LEGO_HeavyCrane_Accomplish.label>LEGO 重型クレーン</LEGO_HeavyCrane_Accomplish.label>
+  <!-- EN: A plastic building block toy for a heavy crane. -->
+  <LEGO_HeavyCrane_Accomplish.description>重型クレーンのプラスチックブロック玩具。</LEGO_HeavyCrane_Accomplish.description>
+  
+  <!-- EN: LEGO landmark building -->
+  <LEGO_LandmarkBuilding_Accomplish.label>LEGO 地標建築</LEGO_LandmarkBuilding_Accomplish.label>
+  <!-- EN: A plastic building block toy for a landmark building. -->
+  <LEGO_LandmarkBuilding_Accomplish.description>地標建築のプラスチックブロック玩具。</LEGO_LandmarkBuilding_Accomplish.description>
+  
+  <!-- EN: LEGO light crane -->
+  <LEGO_LightCrane_Accomplish.label>LEGO 軽型クレーン</LEGO_LightCrane_Accomplish.label>
+  <!-- EN: A plastic building block toy for a light crane. -->
+  <LEGO_LightCrane_Accomplish.description>軽型クレーンのプラスチックブロック玩具。</LEGO_LightCrane_Accomplish.description>
+  
+  <!-- EN: LEGO medium crane -->
+  <LEGO_MediumCrane_Accomplish.label>LEGO 中型クレーン</LEGO_MediumCrane_Accomplish.label>
+  <!-- EN: A plastic building block toy for a medium crane. -->
+  <LEGO_MediumCrane_Accomplish.description>中型クレーンのプラスチックブロック玩具。</LEGO_MediumCrane_Accomplish.description>
+  
+  <!-- EN: LEGO palace -->
+  <LEGO_Palace_Accomplish.label>LEGO 宮殿</LEGO_Palace_Accomplish.label>
+  <!-- EN: A plastic building block toy for a palace. -->
+  <LEGO_Palace_Accomplish.description>宮殿のプラスチックブロック玩具。</LEGO_Palace_Accomplish.description>
+  
+  <!-- EN: unfinished Lego -->
+  <UnfinishedLEGO.label>未完成のLEGOパーツ</UnfinishedLEGO.label>
+  <!-- EN: unfinished Lego. -->
+  <UnfinishedLEGO.description>未完成のLEGO部品。</UnfinishedLEGO.description>
+  
+</LanguageData>

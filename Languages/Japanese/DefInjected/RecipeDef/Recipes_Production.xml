@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_DecomposingWeapons.label>銃器を分解する</AM_DecomposingWeapons.label>
+  <AM_DecomposingWeapons.description>銃器を武器部品に分解します</AM_DecomposingWeapons.description>
+  <AM_DecomposingWeapons.jobString>銃器を分解しています</AM_DecomposingWeapons.jobString>
+  
+  <AM_DecomposingWeaponsI.label>精密銃器を分解する</AM_DecomposingWeaponsI.label>
+  <AM_DecomposingWeaponsI.description>精密銃器を複数の武器部品に分解します</AM_DecomposingWeaponsI.description>
+  <AM_DecomposingWeaponsI.jobString>精密銃器を分解しています</AM_DeletingWeaponsI.jobString>
+  
+  <AM_DisassembleHeavyArmor.label>重装甲を分解する</AM_DisassembleHeavyArmor.label>
+  <AM_DisassembleHeavyArmor.description>重装甲を防弾装甲板と繊維に分解します</AM_DisassembleHeavyArmor.description>
+  <AM_DisassembleHeavyArmor.jobString>重装甲を分解しています</AM_DisassembleHeavyArmor.jobString>
+  
+  <AM_DisassembleLightArmor.label>軽装甲を分解する</AM_DisassembleLightArmor.label>
+  <AM_DisassembleLightArmor.description>軽装甲を防弾装甲板と繊維に分解します</AM_DisassembleLightArmor.description>
+  <AM_DisassembleLightArmor.jobString>軽装甲を分解しています</AM_DisassembleLightArmor.jobString>
+  
+  <AM_DisassemblePolyethylenePlate.label>ポリエチレンプレートを分解する</AM_DisassemblePolyethylenePlate.label>
+  <AM_DisassemblePolyethylenePlate.description>ポリエチレン装甲板からアラミド繊維層をはぎ取り、貴重なアラミドを回収します</AM_DisassemblePolyethylenePlate.description>
+  <AM_DisassemblePolyethylenePlate.jobString>ポリエチレンプレートを分解しています</AM_DisassemblePolyethylenePlate.jobString>
+  
+</LanguageData>

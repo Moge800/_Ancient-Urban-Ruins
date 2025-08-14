@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Burger paper bag -->
+  <AM_BurgerPaperBag.label>ハンバーガー紙袋</AM_BurgerPaperBag.label>
+  <!-- EN: Paper bags from fried chicken restaurants. -->
+  <AM_BurgerPaperBag.description>フライドチキン店のハンバーガー包装用紙袋。</AM_BurgerPaperBag.description>
+  
+  <!-- EN: Burger paper box -->
+  <AM_BurgerPaperBox.label>ハンバーガー紙箱</AM_BurgerPaperBox.label>
+  <!-- EN: Paper box from fried chicken restaurants. -->
+  <AM_BurgerPaperBox.description>フライドチキン店のテイクアウト用ハンバーガー紙箱。</AM_BurgerPaperBox.description>
+  
+  <!-- EN: large backpack -->
+  <AM_LargeBackpack_Decoration.label>大型バックパック</AM_LargeBackpack_Decoration.label>
+  <!-- EN: an oversized military backpack that is already broken. -->
+  <AM_LargeBackpack_Decoration.description>かなり大きな軍用バックパックで、すでに破損しています。</AM_LargeBackpack_Decoration.description>
+  
+  <!-- EN: LBT -->
+  <AM_LBT_Decoration.label>LBTメディカルバッグ</AM_LBT_Decoration.label>
+  <!-- EN: The medical supplies backpack is broken. -->
+  <AM_LBT_Decoration.description>医療物資専用バックパックで、すでに破損しています。</AM_LBT_Decoration.description>
+  
+  <!-- EN: MBSS -->
+  <AM_MBSS_Decoration.label>MBSSアウトドアバッグ</AM_MBSS_Decoration.label>
+  <!-- EN: The small military backpack is broken. -->
+  <AM_MBSS_Decoration.description>小型軍用バックパックで、すでに破損しています。</AM_MBSS_Decoration.description>
+  
+  <!-- EN: Postman shoulder bag -->
+  <AM_PostmanShoulderBag_Decoration.label>郵便配達員ショルダーバッグ</AM_PostmanShoulderBag_Decoration.label>
+  <!-- EN: The postman's small shoulder bag is already broken. -->
+  <AM_PostmanShoulderBag_Decoration.description>郵便配達員用の小型ショルダーバッグで、すでに破損しています。</AM_PostmanShoulderBag_Decoration.description>
+  
+  <!-- EN: Scav bag -->
+  <AM_Scav_Decoration.label>SCAVバックパック</AM_Scav_Decoration.label>
+  <!-- EN: The backpack made by the scavenger is broken. -->
+  <AM_Scav_Decoration.description>スキャヴが自作したバックパックで、すでに破損しています。</AM_Scav_Decoration.description>
+  
+  <!-- EN: Sports bag -->
+  <AM_SportsBag_Decoration.label>スポーツバッグ</AM_SportsBag_Decoration.label>
+  <!-- EN: The sports bag is already broken. -->
+  <AM_SportsBag_Decoration.description>スポーツバッグで、すでに破損しています。</AM_SportsBag_Decoration.description>
+  
+  <!-- EN: Travel bag -->
+  <AM_TravelBag_Decoration.label>トラベルバッグ</AM_TravelBag_Decoration.label>
+  <!-- EN: The oversized and eye-catching purple travel bag is already broken. -->
+  <AM_TravelBag_Decoration.description>目立つ超大型の紫色トラベルバッグで、すでに破損しています。</AM_TravelBag_Decoration.description>
+  
+</LanguageData>

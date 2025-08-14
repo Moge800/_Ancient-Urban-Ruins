@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_AScompFD.label>複合アサルトドレス</AM_AScompFD.label>
+  <AM_AScompFD.description>4枚の防弾プレートで保護されたアサルトドレス。第4世代のPEプレートを使用し、重量を許容範囲に収めていますが、依然として嵩張り、フラックベストは装着できません。戦術ベスト機能を統合し、パワーアーマー並みの防弾能力を提供します。</AM_AScompFD.description>
+  
+  <AM_MK4aConcealed.label>隠蔽型防弾チェストリグ</AM_MK4aConcealed.label>
+  <AM_MK4aConcealed.description>防弾プレートを装備した戦術チェストリグ。軽量設計でアウターの下に隠蔽でき、上半身全体を効果的に保護します。</AM_MK4aConcealed.description>
+  
+  <AM_MK4aDefensive.label>防御型防弾チェストリグ</AM_MK4aDefensive.label>
+  <AM_MK4aDefensive.description>防弾プレートを装備した戦術チェストリグ。重装甲構造で効果的な保護を提供しますが、脚部の保護はありません。</AM_MK4aDefensive.description>
+  
+</LanguageData>

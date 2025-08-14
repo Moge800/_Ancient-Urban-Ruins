@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_PlayerColony.label>セーフハウス</AM_PlayerColony.label>
+  <AM_PlayerColony.description>地下のセーフハウスを見つけた貧しいスカベンジャーたち。</AM_PlayerColony.description>
+  <AM_PlayerColony.leaderTitle>リーダー</AM_PlayerColony.leaderTitle>
+  <AM_PlayerColony.pawnSingular>スカベンジャー</AM_PlayerColony.pawnSingular>
+  <AM_PlayerColony.pawnsPlural>スカベンジャー</AM_PlayerColony.pawnsPlural>
+  
+</LanguageData>

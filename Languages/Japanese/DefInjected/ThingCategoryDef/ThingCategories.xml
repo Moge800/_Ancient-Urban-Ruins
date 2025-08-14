@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_Container.label>コンテナ</AM_Container.label>
+  
+  <AM_Electronics.label>電子機器</AM_Electronics.label>
+  
+  <AM_Manufactured.label>レアアイテム</AM_Manufactured.label>
+  
+  <AM_MedicalSupplies.label>医療用品</AM_MedicalSupplies.label>
+  
+  <AM_SpecialComp.label>軍用部品</AM_SpecialComp.label>
+  
+  <AM_Tool.label>工具</AM_Tool.label>
+  
+</LanguageData>

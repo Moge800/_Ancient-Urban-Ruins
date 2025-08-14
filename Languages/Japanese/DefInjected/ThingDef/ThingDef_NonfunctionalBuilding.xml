@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: abandoned big bread -->
+  <AM_AbandonedBigBread.label>放棄された古代のワンボックス車</AM_AbandonedBigBread.label>
+  <!-- EN: Damaged ancient van. -->
+  <AM_AbandonedBigBread.description>損傷した古代のワンボックス車。</AM_AbandonedBigBread.description>
+  
+  <!-- EN: abandoned big bread -->
+  <AM_BlockedStairsX.label>塞がれた階段</AM_BlockedStairsX.label>
+  <!-- EN: Damaged ancient van. -->
+  <AM_BlockedStairsX.description>埋め立てられ通行不能になった階段。</AM_BlockedStairsX.description>
+  
+  <!-- EN: abandoned bus -->
+  <AM_AbandonedBus.label>放棄された古代のバス</AM_AbandonedBus.label>
+  <!-- EN: Damaged ancient buses. -->
+  <AM_AbandonedBus.description>損傷した放棄バス。</AM_AbandonedBus.description>
+  
+  <!-- EN: abandoned forklift -->
+  <AM_AbandonedForklift.label>放棄された古代のフォークリフト</AM_AbandonedForklift.label>
+  <!-- EN: An ancient forklift, whose parts are completely useless, was abandoned. -->
+  <AM_AbandonedForklift.description>部品が完全に破損した放棄フォークリフト。</AM_AbandonedForklift.description>
+  
+  <!-- EN: ancient amublance -->
+  <AM_Amublance.label>放棄された古代の救急車</AM_Amublance.label>
+  <!-- EN: A damaged and corroded ancient vehicle. -->
+  <AM_Amublance.description>腐食し損傷した放棄救急車。</AM_Amublance.description>
+  
+  <!-- EN: ancient cash register -->
+  <AM_AncientCashRegister.label>放棄された古代のレジスター</AM_AncientCashRegister.label>
+  <!-- EN: The cash register commonly found in ancient supermarkets has been damaged. -->
+  <AM_AncientCashRegister.description>損傷した古代のスーパーマーケット用レジスター。</AM_AncientCashRegister.description>
+  
+  <!-- EN: ancient revolving door -->
+  <AM_AncientRevolvingDoorA.label>故障した古代の回転ドアA</AM_AncientRevolvingDoorA.label>
+  <!-- EN: An ancient glass revolving door, now it's stuck -->
+  <AM_AncientRevolvingDoorA.description>動かなくなった古代のガラス製回転ドア。</AM_AncientRevolvingDoorA.description>
+  
+  <!-- EN: ancient revolving door -->
+  <AM_AncientRevolvingDoorB.label>故障した古代の回転ドアB</AM_AncientRevolvingDoorB.label>
+  <!-- EN: An ancient glass revolving door, now it's stuck -->
+  <AM_AncientRevolvingDoorB.description>動かなくなった古代のガラス製回転ドア。</AM_AncientRevolvingDoorB.description>
+  
+  <!-- EN: ancient revolving door -->
+  <AM_AncientRevolvingDoorC.label>故障した古代の回転ドアC</AM_AncientRevolvingDoorC.label>
+  <!-- EN: An ancient glass revolving door, now it's stuck -->
+  <AM_AncientRevolvingDoorC.description>動かなくなった古代のガラス製回転ドア。</AM_AncientRevolvingDoorC.description>
+  
+  <!-- EN: ancient roadblocks -->
+  <AM_AncientRoadblocks.label>古代の路障</AM_AncientRoadblocks.label>
+  <!-- EN: Ancient roadblocks -->
+  <AM_AncientRoadblocks.description>放棄された古代の路障。</AM_AncientRoadblocks.description>
+  
+  <!-- EN: ancient truck carriages -->
+  <AM_AncientTruckCarriages.label>放棄された古代トラックの荷台</AM_AncientTruckCarriages.label>
+  <!-- EN: The carriages of ancient trucks. -->
+  <AM_AncientTruckCarriages.description>トラックの前部が失われた古代の荷台。</AM_AncientTruckCarriages.description>
+  
+  <!-- EN: ancient armored gate -->
+  <AM_ArmoredGate.label>古代の装甲門</AM_ArmoredGate.label>
+  <!-- EN: Armored gates, commonly found in some underground military facilities. -->
+  <AM_ArmoredGate.description>地下軍事施設で見られる古代の装甲門。</AM_ArmoredGate.description>
+  
+  <!-- EN: ancient armored gate -->
+  <AM_ArmoredGate_invincible.label>古代の装甲門（無敵）</AM_ArmoredGate_invincible.label>
+  <!-- EN: A structure commonly found in some underground military facilities. -->
+  <AM_ArmoredGate_invincible.description>壊れない古代の装甲門。</AM_ArmoredGate_invincible.description>
+  
+  <!-- EN: ancient armored gate -->
+  <AM_ArmoredGateL.label>大型古代装甲門</AM_ArmoredGateL.label>
+  <!-- EN: Armored gates, commonly found in some underground military facilities. -->
+  <AM_ArmoredGateL.description>大型の古代装甲門。</AM_ArmoredGateL.description>
+  
+  <!-- EN: ancient armored gate -->
+  <AM_ArmoredGateS.label>小型古代装甲門</AM_ArmoredGateS.label>
+  <!-- EN: Armored gates, commonly found in some underground military facilities. -->
+  <AM_ArmoredGateS.description>小型の古代装甲門。</AM_ArmoredGateS.description>
+  
+  <!-- EN: ancient armored gate -->
+  <AM_ArmoredGateXS.label>極小型古代装甲門</AM_ArmoredGateXS.label>
+  <!-- EN: Armored gates, commonly found in some underground military facilities. -->
+  <AM_ArmoredGateXS.description>極小型の古代装甲門。</AM_ArmoredGateXS.description>
+  
+  <!-- EN: atrium -->
+  <AM_AtriumA.label>アトリウムA</AM_AtriumA.label>
+  <!-- EN: The atrium of an ancient shopping mall... -->
+  <AM_AtriumA.description>古代のショッピングモールのアトリウム。天井の光で明るく照らされた空間。</AM_AtriumA.description>
+  
+  <!-- EN: atrium -->
+  <AM_AtriumB.label>アトリウムB</AM_AtriumB.label>
+  <!-- EN: The atrium of an ancient shopping mall... -->
+  <AM_AtriumB.description>古代のショッピングモールのアトリウム。天井の光で明るく照らされた空間。</AM_AtriumB.description>
+  
+  <!-- EN: atrium -->
+  <AM_AtriumC.label>アトリウムC</AM_AtriumC.label>
+  <!-- EN: The atrium of an ancient shopping mall... -->
+  <AM_AtriumC.description>古代のショッピングモールのアトリウム。天井の光で明るく照らされた空間。</AM_AtriumC.description>
+  
+  <!-- EN: atrium -->
+  <AM_AtriumCorridorEast.label>東側アトリウム通路</AM_AtriumCorridorEast.label>
+  <!-- EN: The atrium of an ancient shopping mall... -->
+  <AM_AtriumCorridorEast.description>古代のショッピングモールの東側アトリウム通路。</AM_AtriumCorridorEast.description>
+  
+  <!-- EN: atrium -->
+  <AM_AtriumCorridorNorth.label>北側アトリウム通路</AM_AtriumCorridorNorth.label>
+  <!-- EN: The atrium of an ancient shopping mall... -->
+  <AM_AtriumCorridorNorth.description>古代のショッピングモールの北側アトリウム通路。</AM_AtriumCorridorNorth.description>
+  
+  <!-- EN: ancient vending machine -->
+  <AM_AVendingMachine.label>故障した古代の自動販売機</AM_AVendingMachine.label>
+  <!-- EN: Damaged ancient vending machines. -->
+  <AM_AVendingMachine.description>故障している古代の自動販売機。</AM_AVendingMachine.description>
+  
+  <!-- EN: blocked elevator -->
+  <AM_BlockedElevators.label>塞がれたエスカレーター</AM_BlockedElevators.label>
+  <!-- EN: This elevator is blocked by debris and cannot pass through from here. -->
+  <AM_BlockedElevators.description>瓦礫で塞がれ、通行不能なエスカレーター。</AM_BlockedElevators.description>
+  
+  <!-- EN: blocked elevator -->
+  <AM_BlockedElevatorsA.label>塞がれたエスカレーターA</AM_BlockedElevatorsA.label>
+  <!-- EN: This elevator is blocked by debris and cannot pass through from here. -->
+  <AM_BlockedElevatorsA.description>瓦礫で塞がれ、通行不能なエスカレーター。</AM_BlockedElevatorsA.description>
+  
+  <!-- EN: blocked elevator -->
+  <AM_BlockedElevatorsD.label>塞がれたエスカレーターD</AM_BlockedElevatorsD.label>
+  <!-- EN: This elevator is blocked by debris and cannot pass through from here. -->
+  <AM_BlockedElevatorsD.description>瓦礫で塞がれ、通行不能なエスカレーター。</AM_BlockedElevatorsD.description>
+  
+  <!-- Additional entries translation omitted for brevity... -->
+</LanguageData>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_AncientDismantlingWorkbench.label>古代分解作業台</AM_AncientDismantlingWorkbench.label>
+  <AM_AncientDismantlingWorkbench.description>機械加工と縫製を統合した古代の分解作業台。</AM_AncientDismantlingWorkbench.description>
+  
+  <AM_Entrance_LargeElevator.label>大型施設エレベーター</AM_Entrance_LargeElevator.label>
+  <AM_Entrance_LargeElevator.description>人員および小型車両を輸送するための大型エレベーター。</AM_Entrance_LargeElevator.description>
+  
+  <AM_Exit_Staircase_LargeElevator.label>大型施設エレベーター（出口）</AM_Exit_Staircase_LargeElevator.label>
+  <AM_Exit_Staircase_LargeElevator.description>人員および小型車両を輸送するための大型エレベーター。</AM_Exit_Staircase_LargeElevator.description>
+  
+  <AM_BlockedLargeElevator.label>廃棄大型施設エレベーター</AM_BlockedLargeElevator.label>
+  <AM_BlockedLargeElevator.description>解体の準備が整った廃棄されたエレベーター。</AM_BlockedLargeElevator.description>
+  
+  <AM_MaterialElevatorA.label>物資輸送エレベーターA</AM_MaterialElevatorA.label>
+  <AM_MaterialElevatorA.description>通電時に物資を出口エレベーターへ輸送する専用エレベーター。運行中は乗員立ち入り禁止。</AM_MaterialElevatorA.description>
+  
+  <AM_MaterialElevatorC.label>物資輸送エレベーターC（地下）</AM_MaterialElevatorC.label>
+  <AM_MaterialElevatorC.description>地下施設で一般的な物資輸送専用エレベーター。通電時に物資を出口エレベーターへ輸送。運行中は乗員立ち入り禁止。</AM_MaterialElevatorC.description>
+  
+  <AM_MaterialElevatorB.label>物資出口エレベーターB</AM_MaterialElevatorB.label>
+  <AM_MaterialElevatorB.description>入口から到着した物資がプラットフォーム上に保持される大型エレベーター。</AM_MaterialElevatorB.description>
+  
+  <AM_MaterialElevatorD.label>物資出口エレベーターD（地下）</AM_MaterialElevatorD.label>
+  <AM_MaterialElevatorD.description>地下施設で一般的な物資出口専用エレベーター。入口から到着した物資がプラットフォーム上に保持される。</AM_MaterialElevatorD.description>
+  
+  <AM_DiningChair.label>古代ダイニングチェア</AM_DiningChair.label>
+  <AM_DiningChair.description>テーブルや作業台などで使用できる快適なチェア。</AM_DiningChair.description>
+  
+  <AM_DownwardStairs.label>古代階段（下り）</AM_DownwardStairs.label>
+  <AM_DownwardStairs.description>地下に続く薄暗い古代の階段。</AM_DownwardStairs.description>
+  
+  <AM_Exit_L.label>古代エスカレーター（上り）</AM_Exit_L.label>
+  <AM_Exit_L.description>上階へ続く運転停止中の古代エスカレーター。</AM_Exit_L.description>
+  
+  <AM_Exit_S.label>古代エスカレーターS（上り）</AM_Exit_S.label>
+  <AM_Exit_S.description>上階へ続く運転停止中の古代エスカレーター。</AM_Exit_S.description>
+  
+  <AM_LargeScreenTelevision.label>古代大型テレビ</AM_LargeScreenTelevision.label>
+  <AM_LargeScreenTelevision.description>3D画像表示可能な超大型古代テレビ。3D映画館のような体験を提供。</AM_LargeScreenTelevision.description>
+  
+  <AM_SmallGenerator.label>小型燃料発電機</AM_SmallGenerator.label>
+  <AM_SmallGenerator.description>小規模な燃料発電機。</AM_SmallGenerator.description>
+  
+  <AM_Trader.label>古代物流ターミナル</AM_Trader.label>
+  <AM_Trader.description>古代地下自動化物流システムの稼働中ターミナル。交互パネルから古代備蓄基地の物資を購入可能。</AM_Trader.description>
+  
+  <AM_ElectricalBox.label>配電盤</AM_ElectricalBox.label>
+  <AM_ElectricalBox.description>多層建築施設に電力を供給し、各階の出力を調整可能な配電盤。</AM_ElectricalBox.description>
+  
+</LanguageData>

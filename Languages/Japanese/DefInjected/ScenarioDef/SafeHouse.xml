@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_SafeHouse.label>セーフハウス</AM_SafeHouse.label>
+  <AM_SafeHouse.description>あなたは辺境の世界をさまよい、古代遺跡の略奪品で生活しています。荒廃した都市の廃墟を進み、生き物の気配はありません。街の郊外で廃棄された古代の地下シェルターを発見しましたが、資源は長く持ちません……
+注意：使用可能な植民者がおらず、基本的な生存資源も不足しています。スカベンジャーは到着時に飢えた状態であり、非常に難易度の高いシナリオです。</AM_SafeHouse.description>
+  <AM_SafeHouse.scenario.description>あなたは辺境の世界をさまよい、古代遺跡の略奪品で生活しています。荒廃した都市の廃墟を進み、生き物の気配はありません。街の郊外で廃棄された古代の地下シェルターを発見しましたが、資源は長く持ちません……
+注意：使用可能な植民者がおらず、基本的な生存資源も不足しています。スカベンジャーは到着時に飢えた状態であり、非常に難易度の高いシナリオです。</AM_SafeHouse.scenario.description>
+  <AM_SafeHouse.scenario.name>セーフハウス</AM_SafeHouse.scenario.name>
+  <AM_SafeHouse.scenario.parts.GameStartDialog.text>古代の放棄された小規模地下施設を発見しました。シェルターとして利用できそうです。</AM_SafeHouse.scenario.parts.GameStartDialog.text>
+  <AM_SafeHouse.scenario.summary>古代の地下バンカーを発見したスカベンジャー。非常に高難度。</AM_SafeHouse.scenario.summary>
+  
+  <AM_ScavengerGroup.label>スカベンジャーグループ</AM_ScavengerGroup.label>
+  <AM_ScavengerGroup.description>これまでの探索で集落近郊の地域はほぼ調査済みであり、未知の領域へ冒険するしかありませんでした。本日、あなたたちは未知の地下施設への入り口を発見しました。ここに定住することにしましたが、不気味な匂いとかすかな絶え間ない音が、この場所が想像以上に安全ではないことを示唆しています……</AM_ScavengerGroup.description>
+  <AM_ScavengerGroup.scenario.description>これまでの探索で集落近郊の地域はほぼ調査済みであり、未知の領域へ冒険するしかありませんでした。本日、あなたたちは未知の地下施設への入り口を発見しました。ここに定住することにしましたが、不気味な匂いとかすかな絶え間ない音が、この場所が想像以上に安全ではないことを示唆しています……</AM_ScavengerGroup.scenario.description>
+  <AM_ScavengerGroup.scenario.name>スカベンジャーグループ</AM_ScavengerGroup.scenario.name>
+  <AM_ScavengerGroup.scenario.parts.GameStartDialog.text>古代の地下駐車場を発見しました。拠点として使えそうですが、地下に不思議な音がします……</AM_ScavengerGroup.scenario.parts.GameStartDialog.text>
+  <AM_ScavengerGroup.scenario.summary>古代遺跡をさまよう3人のスカベンジャー。非常に高難度。</AM_ScavengerGroup.scenario.summary>
+</LanguageData>

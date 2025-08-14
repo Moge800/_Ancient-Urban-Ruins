@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_BlackTile.label>黒色タイル</AM_BlackTile.label>
+  <AM_BlackTile.description>都市でよく見られる陶器タイルの床。</AM_BlackTile.description>
+  
+  <AM_Tile.label>ストライプタイル</AM_Tile.label>
+  <AM_Tile.description>ファストフード店でよく見られるストライプのタイル床。</AM_Tile.description>
+  
+  <AM_WhiteTile.label>ホワイトタイル</AM_WhiteTile.label>
+  <AM_WhiteTile.description>都市でよく見られる陶器タイルの床。</AM_WhiteTile.description>
+  
+  <AM_RCFloor.label>鉄筋コンクリート床</AM_RCFloor.label>
+  <AM_RCFloor.description>都市施設でよく見られる鉄筋コンクリート構造の床。</AM_RCFloor.description>
+  
+</LanguageData>

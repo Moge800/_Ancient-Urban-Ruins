@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dried blood -->
+  <AM_Filth_DriedBlood.label>乾いた血痕</AM_Filth_DriedBlood.label>
+  
+  <!-- EN: ragged uniform -->
+  <AM_Filth_MoldyUniform.label>腐敗した制服</AM_Filth_MoldyUniform.label>
+  
+  <!-- EN: oil smear -->
+  <AM_Filth_OilSmear.label>油汚れ</AM_Filth_OilSmear.label>
+  
+  <!-- EN: scattered documents -->
+  <AM_Filth_ScatteredDocuments.label>散乱した書類</AM_Filth_ScatteredDocuments.label>
+  
+  <!-- EN: potato chips -->
+  <AM_PotatoChips.label>ポテトチップス</AM_PotatoChips.label>
+  
+</LanguageData>

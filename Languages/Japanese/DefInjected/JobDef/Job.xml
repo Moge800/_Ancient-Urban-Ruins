@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    
+  <AM_AddGPU.reportString>グラフィックカードをコンピューティングセンターに搭載しています</AM_AddGPU.reportString>
+  
+  <AM_Open.reportString>開いています</AM_Open.reportString>
+  
+  <AM_StartDialog.reportString>会話中</AM_StartDialog.reportString>
+  
+  <AM_TradeWithTerminal.reportString>ターミナルと取引しています</AM_TradeWithTerminal.reportString>
+  
+  <AM_Landfill.reportString>埋め立てています</AM_Landfill.reportString>
+  
+  <AM_Repair.reportString>修復中</AM_Repair.reportString>
+
+  <AM_StartTrade.reportString>取引中</AM_StartTrade.reportString>
+  
+</LanguageData>

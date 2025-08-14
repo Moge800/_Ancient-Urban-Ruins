@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ancient air conditioner -->
+  <AM_AncientAirConditioner.label>古代のエアコン室外機</AM_AncientAirConditioner.label>
+  <!-- EN: An ancient air conditioning machine. Its internals were smashed long ago and what wasn't looted has rusted away in the time since. -->
+  <AM_AncientAirConditioner.description>古代のエアコン室外機。内部は長い年月前に破壊され、残った外装も錆びついている。</AM_AncientAirConditioner.description>
+  
+  <!-- EN: ancient ATM -->
+  <AM_AncientATM.label>古代のATM</AM_AncientATM.label>
+  <!-- EN: An ancient ATM. Smashed and rusted, it is completely useless now.
+
+How it got here is hard to say. -->
+  <AM_AncientATM.description>古代のATM。壊れて錆びつき、今はまったく役に立たない。
+
+なぜここにあるのかは謎だ。</AM_AncientATM.description>
+  
+  <!-- EN: ancient barrel -->
+  <AM_AncientBarrel.label>古代の樽</AM_AncientBarrel.label>
+  <!-- EN: An ancient, broken barrel that looks like it once contained waste of some sort. The only thing it contains now is a smear of dried sludge. -->
+  <AM_AncientBarrel.description>かつて廃棄物を収めていたと思われる壊れた古代の樽。今は乾いた汚泥の跡だけが残る。</AM_AncientBarrel.description>
+  
+  <!-- EN: ancient bed -->
+  <AM_AncientBed.label>古代のベッド</AM_AncientBed.label>
+  <!-- EN: An old, rotted mattress on a rusty frame. Though uncomfortable, it can still be used, but it's too dilapidated to restore. -->
+  <AM_AncientBed.description>錆びたフレームに朽ち果てたマットレス。寝心地は悪いが、一応使用は可能。修復は不可能なほど劣化している。</AM_AncientBed.description>
+  
+  <!-- EN: ancient locker bank -->
+  <AM_AncientLockerBank.label>古代のロッカーバンク</AM_AncientLockerBank.label>
+  <!-- EN: An ancient, rusted bank of lockers. All of the lockers have been forced open with nothing valuable left behind. -->
+  <AM_AncientLockerBank.description>古代のロッカーバンク。すべてのロッカーは強制的に開けられ、貴重な物品は何も残されていない。</AM_AncientLockerBank.description>
+
+  <!-- EN: ancient crate -->
+  <AM_AncientCrate.label>古代のクレート</AM_AncientCrate.label>
+  <!-- EN: An ancient, broken crate. Any valuables it once contained have degraded to uselessness. -->
+  <AM_AncientCrate.description>古代のクレート。かつて貴重品を収めていたが、すべて劣化して価値のない破片となっている。</AM_AncientCrate.description>
+
+  <!-- EN: ancient generator -->
+  <AM_AncientGenerator.label>古代の発電機</AM_AncientGenerator.label>
+  <!-- EN: An ancient electrical generator. Its usable parts were smashed or looted long ago, and the rest has rusted into uselessness. -->
+  <AM_AncientGenerator.description>古代の発電機。使える部分は長い年月前に破壊または略奪され、残りは錆びついて無用の長物となっている。</AM_AncientGenerator.description>
+
+  <!-- EN: ancient pipes -->
+  <AM_AncientPipes.label>古代のパイプ</AM_AncientPipes.label>
+  <!-- EN: A bunch of rusted old pipes. It is hard to say how these ended up here. -->
+  <AM_AncientPipes.description>錆びついた古いパイプの束。これらがここにある理由は不明だ。</AM_AncientPipes.description>
+
+  <!-- EN: ancient razor wire -->
+  <AM_AncientRazorWire.label>古代の有刺鉄線</AM_AncientRazorWire.label>
+  <!-- EN: A piece of ancient razor wire. It has been deteriorating for many years and no longer poses any danger. -->
+  <AM_AncientRazorWire.description>古代の有刺鉄線。長年風化し、もはや危険性はない。</AM_AncientRazorWire.description>
+
+  <!-- EN: ancient security turret -->
+  <AM_AncientSecurityTurret.label>古代の警備タレット</AM_AncientSecurityTurret.label>
+  <!-- EN: An ancient, broken security turret. The valuable parts have all been looted or smashed. -->
+  <AM_AncientSecurityTurret.description>古代の警備タレット。貴重な部品はすべて略奪または破壊されている。</AM_AncientSecurityTurret.description>
+
+  <!-- EN: ancient display bank -->
+  <AM_AncientDisplayBank.label>古代のディスプレイバンク</AM_AncientDisplayBank.label>
+  <!-- EN: An ancient computer interface. Valuable parts are missing, and everything else is degraded to uselessness. -->
+  <AM_AncientDisplayBank.description>古代のコンピュータ用ディスプレイ。貴重な部品は失われ、残りは老朽化して無用となっている。</AM_AncientDisplayBank.description>
+
+  <!-- EN: ancient equipment blocks -->
+  <AM_AncientEquipmentBlocks.label>古代の機器ラック</AM_AncientEquipmentBlocks.label>
+  <!-- EN: A collection of ancient equipment blocks of unknown function. Valuable parts are missing, and everything else is degraded to uselessness. -->
+  <AM_AncientEquipmentBlocks.description>機能不明の古代機器ラック。貴重な部品は失われ、残りは老朽化している。</AM_AncientEquipmentBlocks.description>
+
+  <!-- EN: ancient fence -->
+  <AM_AncientFence.label>古代の塀</AM_AncientFence.label>
+  <!-- EN: An ancient fence made of reinforced concrete posts joined by concrete panels. -->
+  <AM_AncientFence.description>鉄筋コンクリート柱とコンクリート板で構成された古代の塀。</AM_AncientFence.description>
+
+  <!-- EN: ancient unstable fuel node -->
+  <AM_AncientFuelNode.label>古代の不安定燃料ノード</AM_AncientFuelNode.label>
+  <!-- EN: An ancient, unstable fuel node once used to charge machines with fuel. It has become unstable over the years due to lack of maintenance. -->
+  <AM_AncientFuelNode.description>かつて機械に燃料を供給していた古代の不安定燃料ノード。長年のメンテ不足で不安定化している。</AM_AncientFuelNode.description>
+
+  <!-- EN: ancient hydrant -->
+  <AM_AncientHydrant.label>古代の消火栓</AM_AncientHydrant.label>
+  <!-- EN: An ancient hydrant. Heavily rusted, it is completely useless now. -->
+  <AM_AncientHydrant.description>重度に錆びついた古代の消火栓。現在は全く機能しない。</AM_AncientHydrant.description>
+
+  <!-- EN: ancient kitchen sink -->
+  <AM_AncientKitchenSink.label>古代のキッチンシンク</AM_AncientKitchenSink.label>
+  <!-- EN: An ancient kitchen sink made of some non-metallic fiber-sheet material. It is badly deteriorated and there's no way to salvage anything from it. -->
+  <AM_AncientKitchenSink.description>繊維シート製の古代キッチンシンク。著しく劣化しており、回収可能なものは何も残っていない。</AM_AncientKitchenSink.description>
+
+  <!-- EN: ancient machine -->
+  <AM_AncientMachine.label>古代の機械装置</AM_AncientMachine.label>
+  <!-- EN: A large ancient machine case filled with unknown machinery. Valuable parts are missing, and everything else is degraded to uselessness. -->
+  <AM_AncientMachine.description>不明機構を内蔵した大型の古代機械装置。貴重な部品は失われ、残りは老朽化して無用となっている。</AM_AncientMachine.description>
+
+  <!-- EN: ancient microwave -->
+  <AM_AncientMicrowave.label>古代の電子レンジ</AM_AncientMicrowave.label>
+  <!-- EN: An ancient device for heating food. Smashed and rusted, it is completely useless now. -->
+  <AM_AncientMicrowave.description>食物加熱用の古代電子レンジ。破損と錆で完全に無用となっている。</AM_AncientMicrowave.description>
+
+  <!-- EN: ancient military crate -->
+  <AM_AncientMilitaryCrate.label>古代の軍用クレート</AM_AncientMilitaryCrate.label>
+  <!-- EN: An ancient, military-looking crate. It was broken long ago and any valuables it once contained were looted. -->
+  <AM_AncientMilitaryCrate.description>軍用を思わせる古代クレート。長年破損し、内部の貴重品はすべて略奪されている。</AM_AncientMilitaryCrate.description>
+
+  <!-- EN: ancient operating table -->
+  <AM_AncientOperatingTable.label>古代の手術台</AM_AncientOperatingTable.label>
+  <!-- EN: A table once used for surgical operations. It has long since deteriorated into uselessness. -->
+  <AM_AncientOperatingTable.description>かつて手術に使用されていた古代の手術台。長年の経過で完全に老朽化している。</AM_AncientOperatingTable.description>
+
+  <!-- EN: ancient oven -->
+  <AM_AncientOven.label>古代のオーブン</AM_AncientOven.label>
+  <!-- EN: An ancient oven. Smashed and rusted, it is completely useless now. -->
+  <AM_AncientOven.description>破損と錆で完全に無用となった古代のオーブン。</AM_AncientOven.description>
+
+  <!-- EN: ancient pipeline section -->
+  <AM_AncientPipelineSection.label>古代のパイプラインセクション</AM_AncientPipelineSection.label>
+  <!-- EN: A section from an ancient pipeline. It once carried some valuable fluid over long distances. Now it's been looted and deteriorated to uselessness. -->
+  <AM_AncientPipelineSection.description>かつて貴重な液体を輸送していた古代のパイプラインセクション。略奪と劣化により無用となっている。</AM_AncientPipelineSection.description>
+
+  <!-- EN: ancient pod car -->
+  <AM_AncientPodCar.label>古代のポッドカー</AM_AncientPodCar.label>
+  <!-- EN: An ancient pod car once capable of automated flight. Its valuable parts were looted long ago, and the rest is badly deteriorated. -->
+  <AM_AncientPodCar.description>自動飛行機能を備えた古代のポッドカー。貴重な部品は失われ、残りは著しく劣化している。</AM_AncientPodCar.description>
+
+  <!-- EN: ancient refrigerator -->
+  <AM_AncientRefrigerator.label>古代の冷蔵庫</AM_AncientRefrigerator.label>
+  <!-- EN: An ancient refrigerator. It was stripped of interesting parts long ago. -->
+  <AM_AncientRefrigerator.description>興味深い部品はすでに剥ぎ取られた古代の冷蔵庫。</AM_AncientRefrigerator.description>
+
+  <!-- EN: ancient rusted car -->
+  <AM_AncientRustedCar.label>古代の錆びた車</AM_AncientRustedCar.label>
+  <!-- EN: An ancient, broken car. Everything that isn't rusted away was looted long ago. -->
+  <AM_AncientRustedCar.description>錆びついた古代車。錆びていない部分はすべて略奪されている。</AM_AncientRustedCar.description>
+
+  <!-- EN: ancient rusted car frame -->
+  <AM_AncientRustedCarFrame.label>古代の錆びた車体骨格</AM_AncientRustedCarFrame.label>
+  <!-- EN: An ancient, rusted car frame. The body shell has long since rusted away to nothing. -->
+  <AM_AncientRustedCarFrame.description>古代の錆びた車体骨格。車体の外殻はすでに錆びて消失している。</AM_AncientRustedCarFrame.description>
+
+  <!-- EN: ancient troop carrier -->
+  <AM_AncientRustedJeep.label>古代の錆びた上陸艇</AM_AncientRustedJeep.label>
+  <!-- EN: An ancient, broken troop carrier. Everything that isn't rusted away was looted long ago. -->
+  <AM_AncientRustedJeep.description>錆びついた古代上陸艇。錆びていない部分はすべて略奪されている。</AM_AncientRustedJeep.description>
+
+  <!-- EN: ancient truck -->
+  <AM_AncientRustedTruck.label>古代の錆びたトラック</AM_AncientRustedTruck.label>
+  <!-- EN: An ancient, broken truck. Everything useful either rusted away or was looted long ago. -->
+  <AM_AncientRustedTruck.description>古代の錆びたトラック。有用な部品はすべて錆びるか略奪されている。</AM_AncientRustedTruck.description>
+
+  <!-- EN: ancient shopping cart -->
+  <AM_AncientShoppingCart.label>古代のショッピングカート</AM_AncientShoppingCart.label>
+  <!-- EN: An ancient, rusted shopping cart. How exactly it got here is a mystery, but the story is long and probably quite sad. -->
+  <AM_AncientShoppingCart.description>錆びついた古代のショッピングカート。ここに至る経緯は謎であり、その物語は長く悲しいものだろう。</AM_AncientShoppingCart.description>
+
+  <!-- EN: ancient stove -->
+  <AM_AncientStove.label>古代のストーブ</AM_AncientStove.label>
+  <!-- EN: An ancient stove. Smashed and rusted, it is completely useless now. -->
+  <AM_AncientStove.description>破損と錆で無用となった古代のストーブ。</AM_AncientStove.description>
+
+  <!-- EN: ancient tank trap -->
+  <AM_AncientTankTrap.label>古代の戦車罠</AM_AncientTankTrap.label>
+  <!-- EN: An defensive fortification for stopping vehicles. It's been deteriorating for many years. -->
+  <AM_AncientTankTrap.description>車両の進入を阻止する古代の防御施設。長年にわたり劣化している。</AM_AncientTankTrap.description>
+
+  <!-- EN: ancient toilet -->
+  <AM_AncientToilet.label>古代のトイレ</AM_AncientToilet.label>
+  <!-- EN: An ancient toilet. Smashed long ago, it is completely useless now. -->
+  <AM_AncientToilet.description>長い年月前に破壊され、現在は全く役に立たない古代のトイレ。</AM_AncientToilet.description>
+
+  <!-- EN: ancient vending machine -->
+  <AM_AncientVendingMachine.label>古代の自動販売機</AM_AncientVendingMachine.label>
+  <!-- EN: An ancient vending machine. It was smashed ages ago and generations of looters have taken every conceivably useful part. -->
+  <AM_AncientVendingMachine.description>長い年月前に破壊された古代の自動販売機。あらゆる有用部品は略奪されている。</AM_AncientVendingMachine.description>
+
+  <!-- EN: ancient wheel -->
+  <AM_AncientWheel.label>古代の車輪</AM_AncientWheel.label>
+  <!-- EN: An ancient wheel from some kind of vehicle. The rubber has deteriorated away and the metal is twisted and rusted. -->
+  <AM_AncientWheel.description>橡膠は劣化し、金属部は捻じれ錆びついた古代の車輪。</AM_AncientWheel.description>
+
+  <!-- EN: ancient giant helicopter -->
+  <AM_MI26_D.label>古代の巨大直升機</AM_MI26_D.label>
+  <!-- EN: An ancient giant helicopter that has crashed, with a vague identification number on its body: mi26. -->
+  <AM_MI26_D.description>墜落した古代の巨大直升機。機体にはうっすらと識別番号「mi26」が残っている。</AM_MI26_D.description>
+</LanguageData>

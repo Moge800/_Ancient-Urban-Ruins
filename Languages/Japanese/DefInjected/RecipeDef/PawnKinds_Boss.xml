@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <InstallIntegratedTorsoArmor.label>統合寄生虫装甲を植え込む</InstallIntegratedTorsoArmor.label>
+  <InstallIntegratedTorsoArmor.description>統合寄生虫装甲を植え込みます</InstallIntegratedTorsoArmor.description>
+  <InstallIntegratedTorsoArmor.jobString>寄生虫装甲を植え込んでいます</InstallIntegratedTorsoArmor.jobString>
+  
+  <InstallRampageParasite.label>狂暴寄生虫を植え込む</InstallRampageParasite.label>
+  <InstallRampageParasite.description>狂暴寄生虫を植え込みます</InstallRampageParasite.description>
+  <InstallRampageParasite.jobString>狂暴寄生虫を植え込んでいます</InstallRampageParasite.jobString>
+  
+</LanguageData>

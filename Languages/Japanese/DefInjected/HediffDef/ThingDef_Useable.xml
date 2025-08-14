@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AM_Analgesic.label>鎮痛剤</AM_Analgesic.label>
+  <AM_Analgesic.description>強力なエッセンシャルバームで脳を刺激し、エンドルフィンを分泌させて痛みを和らげ、集中力を高めます。</AM_Analgesic.description>
+  <AM_Analgesic.labelNoun>鎮痛剤</AM_Analgesic.labelNoun>
+  
+  <AM_AntiparasiticDrugs.label>抗寄生虫薬</AM_AntiparasiticDrugs.label>
+  <AM_AntiparasiticDrugs.description>古代の抗寄生虫薬で、寄生虫感染症を治療できます。</AM_AntiparasicDrugs.description>
+  <AM_AntiparasiticDrugs.labelNoun>抗寄生虫薬</AM_AntiparasiticDrugs.labelNoun>
+  
+  <AM_CombatEnhancementChip.label>戦闘強化チップ</AM_CombatEnhancementChip.label>
+  <AM_CombatEnhancementChip.description>古代の戦闘強化チップで、使用者の戦闘能力を向上させることができます。</AM_CombatEnhancementChip.description>
+  <AM_CombatEnhancementChip.labelNoun>戦闘強化チップ</AM_CombatEnhancementChip.labelNoun>
+  
+  <AM_Doping.label>ドーピング剤</AM_Doping.label>
+  <AM_Doping.description>古代のドーピング剤で、使用者の身体能力を向上させることができます。</AM_Doping.description>
+  <AM_Doping.labelNoun>ドーピング剤</AM_Doping.labelNoun>
+  
+  <AM_GeneRepairFluid.label>遺伝子修復液</AM_GeneRepairFluid.label>
+  <AM_GeneRepairFluid.description>古代の遺伝子修復液で、遺伝子損傷を修復できます。</AM_GeneRepairFluid.description>
+  <AM_GeneRepairFluid.labelNoun>遺伝子修復液</AM_GeneRepairFluid.labelNoun>
+  
+  <AM_MetabolismRegulator.label>代謝調整器</AM_MetabolismRegulator.label>
+  <AM_MetabolismRegulator.description>古代の代謝調整器で、使用者の代謝を調整できます。</AM_MetabolismRegulator.description>
+  <AM_MetabolismRegulator.labelNoun>代謝調整器</AM_MetabolismRegulator.labelNoun>
+  
+  <AM_MuscleStimulant.label>筋肉刺激剤</AM_MuscleStimulant.label>
+  <AM_MuscleStimulant.description>古代の筋肉刺激剤で、使用者の筋力を向上させることができます。</AM_MuscleStimulant.description>
+  <AM_MuscleStimulant.labelNoun>筋肉刺激剤</AM_MuscleStimulant.labelNoun>
+  
+  <AM_NeuralRegulator.label>神経調整器</AM_NeuralRegulator.label>
+  <AM_NeuralRegulator.description>古代の神経調整器で、使用者の神経系を調整できます。</AM_NeuralRegulator.description>
+  <AM_NeuralRegulator.labelNoun>神経調整器</AM_NeuralRegulator.labelNoun>
+  
+  <AM_ParasiteInhibitor.label>寄生虫阻害剤</AM_ParasiteInhibitor.label>
+  <AM_ParasiteInhibitor.description>古代の寄生虫阻害剤で、寄生虫の増殖を抑制できます。</AM_ParasiteInhibitor.description>
+  <AM_ParasiteInhibitor.labelNoun>寄生虫阻害剤</AM_ParasiteInhibitor.labelNoun>
+  
+  <AM_RegenerationAgent.label>再生剤</AM_RegenerationAgent.label>
+  <AM_RegenerationAgent.description>古代の再生剤で、失われた手足や臓器を再生できます。</AM_RegenerationAgent.description>
+  <AM_RegenerationAgent.labelNoun>再生剤</AM_RegenerationAgent.labelNoun>
+  
+</LanguageData>
